@@ -3,27 +3,29 @@ import java.util.Arrays;
 public class RotateArray {
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3,4,5,6,7};
+        int[] nums = {1, 2, 3, 4, 5, 6, 7};
         int k = 3;
 
-        int[] result = rotateArray(nums, k);
-        System.out.println(Arrays.toString(result));
+        rotate(nums, k);
+
+        System.out.println(Arrays.toString(nums));
     }
 
-    private static int[] rotateArray(int[] nums, int k) {
-        int i = 0;
+    public static void rotate(int[] nums, int k) {
         int n = nums.length;
+        k = k % n;
+        reverse(nums, 0, n - 1);
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, n - 1);
+    }
 
-        while (i<k){
-            int last = nums[n-1];
-            int j = n-1;
-            while (j>0){
-                nums[j]=nums[j-1];
-                j--;
-            }
-            nums[0]= last;
-            i++;
+    public static void reverse(int[] nums, int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
         }
-        return nums;
     }
 }
