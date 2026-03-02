@@ -4,21 +4,26 @@ import java.util.Arrays;
 
 public class SquaresOfSorted {
     public int[] sortedSquares(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] = nums[i] * nums[i];
-        }
-        // bubble sort
-        for (int i = 0; i < nums.length; i++) {
-            int j = 0;
-            while (nums[j] > nums[j + 1] && j < nums.length - i - 1) {
-                int temp = nums[j];
-                nums[j] = nums[j + 1];
-                nums[j + 1] = temp;
-                j++;
+        // two pointer
+        int n = nums.length;
+        int[] result = new int[n];
+        int left = 0;
+        int right = n - 1;
+        int index = n - 1;
+        while (left <= right) {
+            int leftSquare = nums[left] * nums[left];
+            int rightSquare = nums[right] * nums[right];
+            if (leftSquare > rightSquare) {
+                result[index] = leftSquare;
+                left++;
+            } else {
+                result[index] = rightSquare;
+                right--;
             }
+            index--;
 
         }
-            return nums;
+            return result;
 
     }
 
