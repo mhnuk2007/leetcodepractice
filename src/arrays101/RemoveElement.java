@@ -13,17 +13,27 @@ public class RemoveElement {
     }
 
     public int removeElement(int[] nums, int val) {
-       int left = 0;
-       int right = nums.length - 1;
+//       int left = 0;
+//       int right = nums.length - 1;
+//
+//       while (left <= right){
+//           if (nums[left] == val){
+//               nums[left] = nums[right];
+//               right--;
+//           } else {
+//               left++;
+//           }
+//       }
+//        return right + 1;
+        int i = 0;
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != val) {
+                nums[i] = nums[j];
+                i++;
+            }
 
-       while (left <= right){
-           if (nums[left] == val){
-               nums[left] = nums[right];
-               right--;
-           } else {
-               left++;
-           }
-       }
-        return right + 1;
+        }
+        return i;
     }
 }
+
