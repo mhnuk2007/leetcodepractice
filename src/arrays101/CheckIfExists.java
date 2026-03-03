@@ -2,11 +2,11 @@ package arrays101;
 
 import java.util.HashSet;
 import java.util.Set;
-
+// Largest number is equal to or greater than twice of all other numbers
 public class CheckIfExists {
     public static void main(String[] args) {
         CheckIfExists obj = new CheckIfExists();
-        int[] arr = {10,2,5,3};
+        int[] arr = {10,2,5,3,6};
         System.out.println(obj.checkIfExist(arr));
     }
     public boolean checkIfExist(int[] arr) {
