@@ -20,18 +20,17 @@ public class ValidMountainArray {
     }
 
     public boolean validMountainArray(int[] arr) {
-        int left = 0;
-        int right = arr.length - 1;
-        while (left < right && arr[left] < arr[left + 1]) {
-            left++;
+        int i = 0;
+        while (i < arr.length - 1 && arr[i] < arr[i + 1]) {
+            i++;
         }
-        if (left == 0 || left == right) {
+        if (i == 0 || i == arr.length - 1) {
             return false;
         }
-        while (left < right && arr[left] > arr[left + 1]) {
-            left++;
+        while (i < arr.length - 1 && arr[i] > arr[i + 1]) {
+            i++;
         }
-        return left == right;
+        return i == arr.length - 1;
 
     }
 }
