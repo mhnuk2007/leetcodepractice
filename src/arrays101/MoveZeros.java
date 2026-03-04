@@ -26,9 +26,9 @@ public class MoveZeros {
                 nums[right] = temp; //0
                 left++;
 
-        } else {
+        }
                 right++;
-            }
+
 
     }
     }
