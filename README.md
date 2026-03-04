@@ -46,7 +46,7 @@
 - Reversal techniques
 - Dummy nodes
 
-**Easy (5 problems):**
+**Easy (5 problems):
 16. [21] Merge Two Sorted Lists
 17. [141] Linked List Cycle
 18. [160] Intersection of Two Linked Lists
@@ -213,7 +213,7 @@
 - Multiple dimensions
 - LCS, Edit Distance
 
-**Medium (6 problems):**
+**Medium (6 problems):
 81. [62] Unique Paths
 82. [64] Minimum Path Sum
 83. [72] Edit Distance
@@ -518,3 +518,14 @@ By the end of 16 weeks, you should be able to:
 ---
 
 **Good luck with your DSA journey! Remember: The expert in anything was once a beginner. Keep practicing! 💪**
+
+---
+## 👨‍💻 Author
+
+**Mohan Lal**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mhnuk2007/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mhnuk2007)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=html5&logoColor=white)](https://mhnuk2007.github.io/)
+[![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://mhnuk2007.netlify.app)
+[![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=leetcode&logoColor=yellow)](https://leetcode.com/u/mhnuk2007/)
