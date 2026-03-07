@@ -313,4 +313,79 @@ public class SinglyLinkedList {
         return -1;
     }
 
+    /*
+     * ========================
+     * Utility Operations
+     * ========================
+     */
+
+    /*
+     * Reverse the linked list
+     * Reverses the order of nodes in the list
+     * Time Complexity: O(n)
+     */
+
+    /*
+     * Check if the list is empty
+     * Returns true if size is 0
+     * Time Complexity: O(1)
+     */
+
+    /*
+     * Get the number of nodes in the list
+     * Time Complexity: O(1)
+     */
+
+    /*
+     * Get the head node of the list
+     * Returns the first node
+     * Time Complexity: O(1)
+     */
+
+    /*
+     * Get the tail node of the list
+     * Returns the last node
+     * Time Complexity: O(1)
+     */
+
+    /*
+     * Display the linked list
+     * Example output: 1 -> 2 -> 3 -> null
+     * Time Complexity: O(n)
+     */
+
+    /*
+     * Convert the linked list to an array
+     * Returns an array containing all node values
+     * Time Complexity: O(n)
+     */
+
+    /*
+     * Get the middle node using the fast and slow pointer technique
+     * Time Complexity: O(n)
+     */
+
+    /*
+     * Detect if the linked list contains a cycle
+     * Uses Floyd's Cycle Detection Algorithm
+     * Time Complexity: O(n)
+     */
+
+    /*
+     * Find the Nth node from the end of the list
+     * Uses two-pointer technique
+     * Time Complexity: O(n)
+     */
+
+    /*
+     * Remove duplicate values from a sorted linked list
+     * Only keeps the first occurrence
+     * Time Complexity: O(n)
+     */
+
+    /*
+     * Sort the linked list using Merge Sort
+     * Time Complexity: O(n log n)
+     */
+
 }
