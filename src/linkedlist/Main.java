@@ -48,5 +48,11 @@ public class Main {
         list.display();
 
         System.out.println("\nList Size: " + list.size());
+
+        System.out.println("\nSearch value 4: " + list.searchValue(4));
+
+        System.out.println("\nValue at index 2: " + list.get(2));
+
+        System.out.println("\nIndex of value 4: " + list.indexOf(4));
     }
 }

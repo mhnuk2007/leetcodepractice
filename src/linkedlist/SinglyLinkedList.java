@@ -250,4 +250,67 @@ public class SinglyLinkedList {
     public boolean isEmpty() {
         return size == 0;
     }
+
+    /*
+     * Search Operations
+     */
+
+    /*
+     * Search for a specific value in the list
+     * Returns true if value exists
+     * Time Complexity: O(n)
+     */
+    public boolean searchValue(int val) {
+
+        ListNode current = head;
+
+        while (current != null) {
+
+            if (current.val == val) {
+                return true;
+            }
+
+            current = current.next;
+        }
+
+        return false;
+    }
+
+    /*
+     * Get the value at a given position (index)
+     * Time Complexity: O(n)
+     */
+    public int get(int position) {
+
+        if (position < 0 || position >= size) {
+            throw new IndexOutOfBoundsException(
+                    "Position: " + position + ", Size: " + size);
+        }
+
+        ListNode current = head;
+
+        for (int i = 0; i < position; i++) {
+            current = current.next;
+        }
+
+        return current.val;
+    }
+
+    /*
+     * Get the index of a value (first occurrence)
+     * Time Complexity: O(n)
+     */
+    public int indexOf(int val) {
+        ListNode current = head;
+        int index = 0;
+        while (current != null) {
+            if (current.val == val) {
+                return index;
+            }
+            current = current.next;
+            index++;
+        }
+        return -1;
+    }
+
 }
