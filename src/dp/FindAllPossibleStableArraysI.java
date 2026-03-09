@@ -23,6 +23,7 @@ public class FindAllPossibleStableArraysI {
     public static void main(String[] args) {
         FindAllPossibleStableArraysI solution = new FindAllPossibleStableArraysI();
 
+
         // Test Case 1: Basic case
         System.out.println("Test Case 1: " + solution.numberOfStableArrays(1, 1, 2));
         // Expected: 2 ([0,1] and [1,0])
