@@ -3,84 +3,33 @@ package linkedlist;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * LeetCode 141: Linked List Cycle
+ * <p>
+ * Given head, the head of a linked list, determine if the linked list has a cycle in it.
+ * <p>
+ * There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer.
+ * Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter.
+ * <p>
+ * Return true if there is a cycle in the linked list. Otherwise, return false.
+ * <p>
+ * Example 1:
+ * Input: head = [3,2,0,-4], pos = 1
+ * Output: true
+ * Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+ * <p>
+ * Example 2:
+ * Input: head = [1,2], pos = 0
+ * Output: true
+ */
 public class LinkedListCycle {
-    public static void main(String[] args) {
-        LinkedListCycle solution = new LinkedListCycle();
-
-        // Test Case 1: Cycle exists (pos = 1)
-        ListNode head1 = new ListNode(3);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(0);
-        ListNode node4 = new ListNode(-4);
-        head1.next = node2;
-        node2.next = node3;
-        node3.next = node4;
-        node4.next = node2;
-
-        System.out.println("Test 1 (Floyd) - Has cycle: " + solution.hasCycle(head1));        // true
-
-        // Need to recreate for Set method (can't reuse cyclic list safely)
-        ListNode head1b = new ListNode(3);
-        ListNode node2b = new ListNode(2);
-        ListNode node3b = new ListNode(0);
-        ListNode node4b = new ListNode(-4);
-        head1b.next = node2b;
-        node2b.next = node3b;
-        node3b.next = node4b;
-        node4b.next = node2b;
-
-        System.out.println("Test 1 (Set)   - Has cycle: " + solution.hasCycleWithSet(head1b)); // true
-
-        // Test Case 2: Cycle exists (pos = 0)
-        ListNode head2 = new ListNode(1);
-        ListNode node2_2 = new ListNode(2);
-        head2.next = node2_2;
-        node2_2.next = head2;
-
-        // Can't test both methods on same cyclic list - would cause infinite loop
-        System.out.println("Test 2 (Floyd) - Has cycle: " + solution.hasCycle(head2));        // true
-
-        // Test Case 3: No cycle [1]
-        ListNode head3 = new ListNode(1);
-        System.out.println("Test 3 (Floyd) - Has cycle: " + solution.hasCycle(head3));        // false
-        System.out.println("Test 3 (Set)   - Has cycle: " + solution.hasCycleWithSet(head3)); // false
-
-        // Test Case 4: No cycle [1, 2, 3, 4]
-        ListNode head4 = new ListNode(1);
-        head4.next = new ListNode(2);
-        head4.next.next = new ListNode(3);
-        head4.next.next.next = new ListNode(4);
-
-        System.out.println("Test 4 (Floyd) - Has cycle: " + solution.hasCycle(head4));        // false
-
-        ListNode head4b = new ListNode(1);
-        head4b.next = new ListNode(2);
-        head4b.next.next = new ListNode(3);
-        head4b.next.next.next = new ListNode(4);
-
-        System.out.println("Test 4 (Set)   - Has cycle: " + solution.hasCycleWithSet(head4b)); // false
-
-        // Test Case 5: Empty list
-        System.out.println("Test 5 (Floyd) - Has cycle: " + solution.hasCycle(null));         // false
-        System.out.println("Test 5 (Set)   - Has cycle: " + solution.hasCycleWithSet(null));  // false
-
-        // Test Case 6: Self-loop
-        ListNode head6 = new ListNode(1);
-        head6.next = head6;
-
-        System.out.println("Test 6 (Floyd) - Has cycle: " + solution.hasCycle(head6));        // true
-
-        ListNode head6b = new ListNode(1);
-        head6b.next = head6b;
-
-        System.out.println("Test 6 (Set)   - Has cycle: " + solution.hasCycleWithSet(head6b)); // true
-    }
 
     /**
-     * Floyd's Cycle Detection Algorithm (Tortoise and Hare)
-     *
-     * Time: O(n) - visits each node at most twice
-     * Space: O(1) - only two pointers
+     * Approach 1: Floyd's Cycle Detection Algorithm (Tortoise and Hare)
+     * This is the optimal approach in terms of space complexity.
+     * <p>
+     * Time: O(n) - In the worst case, each node is visited a constant number of times.
+     * Space: O(1) - We only use two pointers.
      */
     public boolean hasCycle(ListNode head) {
         ListNode slow = head;
@@ -91,31 +40,72 @@ public class LinkedListCycle {
             fast = fast.next.next;
 
             if (slow == fast) {
-                return true;
+                return true; // Pointers met, a cycle is detected.
             }
         }
 
-        return false;
+        return false; // Fast pointer reached the end, no cycle.
     }
 
     /**
-     * HashSet approach for cycle detection
-     *
-     * Time: O(n) - visit each node once
-     * Space: O(n) - store all visited nodes
+     * Approach 2: Using a HashSet
+     * This approach is intuitive but uses extra space to store visited nodes.
+     * <p>
+     * Time: O(n) - We visit each node once.
+     * Space: O(n) - In the worst case (no cycle), we store all n nodes in the set.
      */
     public boolean hasCycleWithSet(ListNode head) {
         Set<ListNode> seen = new HashSet<>();
-        ListNode cur = head;
+        ListNode current = head;
 
-        while (cur != null) {
-            if (seen.contains(cur)) {  // Already visited = cycle detected
-                return true;
+        while (current != null) {
+            if (seen.contains(current)) {
+                return true; // If we've seen this node before, there's a cycle.
             }
-            seen.add(cur);
-            cur = cur.next;
+            seen.add(current);
+            current = current.next;
         }
 
-        return false;  // Reached end = no cycle
+        return false; // Reached the end, no cycle.
+    }
+
+    public static void main(String[] args) {
+        LinkedListCycle solution = new LinkedListCycle();
+
+        // Test Case 1: Cycle exists
+        ListNode head1 = new ListNode(3);
+        ListNode node2 = new ListNode(2);
+        ListNode node0 = new ListNode(0);
+        ListNode node_4 = new ListNode(-4);
+        head1.next = node2;
+        node2.next = node0;
+        node0.next = node_4;
+        node_4.next = node2; // Cycle back to node with value 2
+        System.out.println("Test Case 1 (Cycle exists):");
+        System.out.println("  - Floyd's: " + solution.hasCycle(head1));      // Expected: true
+        System.out.println("  - HashSet: " + solution.hasCycleWithSet(head1));    // Expected: true
+        System.out.println("--------------------");
+
+        // Test Case 2: No cycle
+        ListNode head2 = new ListNode(1);
+        head2.next = new ListNode(2);
+        head2.next.next = new ListNode(3);
+        System.out.println("Test Case 2 (No cycle):");
+        System.out.println("  - Floyd's: " + solution.hasCycle(head2));      // Expected: false
+        System.out.println("  - HashSet: " + solution.hasCycleWithSet(head2));    // Expected: false
+        System.out.println("--------------------");
+
+        // Test Case 3: Empty list
+        System.out.println("Test Case 3 (Empty list):");
+        System.out.println("  - Floyd's: " + solution.hasCycle(null));       // Expected: false
+        System.out.println("  - HashSet: " + solution.hasCycleWithSet(null));     // Expected: false
+        System.out.println("--------------------");
+
+        // Test Case 4: Single node with self-loop
+        ListNode head4 = new ListNode(1);
+        head4.next = head4;
+        System.out.println("Test Case 4 (Self-loop):");
+        System.out.println("  - Floyd's: " + solution.hasCycle(head4));      // Expected: true
+        System.out.println("  - HashSet: " + solution.hasCycleWithSet(head4));    // Expected: true
     }
 }
