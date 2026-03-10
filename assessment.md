@@ -14,7 +14,7 @@ Your project structure is generally good, with problems organized by data struct
 
 **Arrays & Strings**
 
-- **Progress:** 11 out of 15 problems from the roadmap are **Completed**.
+- **Progress:** 12 out of 15 problems from the roadmap are **Completed**.
 - **Completed Problems:**
     - `[1] Two Sum`
     - `[26] Remove Duplicates from Sorted Array`
@@ -27,6 +27,7 @@ Your project structure is generally good, with problems organized by data struct
     - `[3] Longest Substring Without Repeating Characters`
     - `[15] 3Sum`
     - `[11] Container With Most Water`
+    - `[1582] Special Positions in a Binary Matrix`
 - **Remaining Problems:**
     - `[33] Search in Rotated Sorted Array`
     - `[49] Group Anagrams`
