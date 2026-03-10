@@ -71,19 +71,24 @@ public class MergeSortedArray {
         // Test Case 1: Standard case
         int[] nums1_case1 = {1, 2, 3, 0, 0, 0};
         int[] nums2_case1 = {2, 5, 6};
+        System.out.println("Test Case 1 Input: nums1=" + Arrays.toString(nums1_case1) + ", m=3, nums2=" + Arrays.toString(nums2_case1) + ", n=3");
         solution.merge(nums1_case1, 3, nums2_case1, 3);
-        System.out.println("Test Case 1: " + Arrays.toString(nums1_case1)); // Expected: [1, 2, 2, 3, 5, 6]
+        System.out.println("Test Case 1 Output: " + Arrays.toString(nums1_case1)); // Expected: [1, 2, 2, 3, 5, 6]
+        System.out.println("--------------------");
 
         // Test Case 2: nums2 is empty
         int[] nums1_case2 = {1};
         int[] nums2_case2 = {};
+        System.out.println("Test Case 2 Input: nums1=" + Arrays.toString(nums1_case2) + ", m=1, nums2=" + Arrays.toString(nums2_case2) + ", n=0");
         solution.merge(nums1_case2, 1, nums2_case2, 0);
-        System.out.println("Test Case 2: " + Arrays.toString(nums1_case2)); // Expected: [1]
+        System.out.println("Test Case 2 Output: " + Arrays.toString(nums1_case2)); // Expected: [1]
+        System.out.println("--------------------");
 
         // Test Case 3: nums1 is empty
         int[] nums1_case3 = {0, 0, 0};
         int[] nums2_case3 = {1, 2, 3};
+        System.out.println("Test Case 3 Input: nums1=" + Arrays.toString(nums1_case3) + ", m=0, nums2=" + Arrays.toString(nums2_case3) + ", n=3");
         solution.merge(nums1_case3, 0, nums2_case3, 3);
-        System.out.println("Test Case 3: " + Arrays.toString(nums1_case3)); // Expected: [1, 2, 3]
+        System.out.println("Test Case 3 Output: " + Arrays.toString(nums1_case3)); // Expected: [1, 2, 3]
     }
 }
