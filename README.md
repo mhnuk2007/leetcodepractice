@@ -529,3 +529,7 @@ By the end of 16 weeks, you should be able to:
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=html5&logoColor=white)](https://mhnuk2007.github.io/)
 [![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://mhnuk2007.netlify.app)
 [![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=leetcode&logoColor=yellow)](https://leetcode.com/u/mhnuk2007/)
+
+Portfolio sites:
+- https://mhnuk2007.netlify.app/
+- https://mhnuk2007.github.io/
