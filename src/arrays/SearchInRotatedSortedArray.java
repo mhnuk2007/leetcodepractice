@@ -18,46 +18,30 @@ public class SearchInRotatedSortedArray {
      * Output: 4
      */
     public int search(int[] nums, int target) {
-
         int n = nums.length;
-
-        int pivot = findPivot(nums, n);
-
-        if (nums[pivot] <= target && target <= nums[n - 1]) {
-            return binarySearch(pivot, n - 1, nums, target);
-        }
-
-        return binarySearch(0, pivot - 1, nums, target);
-    }
-
-    public int findPivot(int[] nums, int n) {
-
         int left = 0;
         int right = n - 1;
 
-        while (left < right) {
-
-            int mid = left + (right - left) / 2;
-
-            if (nums[mid] > nums[right]) {
-                left = mid + 1;
-            } else {
-                right = mid;
-            }
-        }
-
-        return left;
-    }
-    public int binarySearch(int left, int right, int[] nums, int target) {
         while (left <= right) {
             int mid = left + (right - left) / 2;
+
             if (nums[mid] == target) {
                 return mid;
-            } else if (nums[mid] < target) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
             }
+            if (nums[left] <= nums[mid]) {
+                if (nums[left] <= target && target < nums[mid]) {
+                    right = mid - 1;
+                } else {
+                    left = mid + 1;
+                }
+            } else {
+                if (nums[mid] < target && target <= nums[right]) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
+                }
+            }
+
         }
         return -1;
     }
