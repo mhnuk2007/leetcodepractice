@@ -65,22 +65,29 @@ public class RemoveDuplicates {
 
         // Test Case 1
         int[] nums1 = {1, 1, 2};
+        System.out.println("Test Case 1 Input: " + Arrays.toString(nums1));
         int k1 = solution.removeDuplicates(nums1);
-        System.out.println("Test Case 1: k = " + k1 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums1, k1))); // Expected: k = 2, Nums: [1, 2]
+        System.out.println("Test Case 1 Output: k = " + k1 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums1, k1))); // Expected: k = 2, Nums: [1, 2]
+        System.out.println("--------------------");
 
         // Test Case 2
         int[] nums2 = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+        System.out.println("Test Case 2 Input: " + Arrays.toString(nums2));
         int k2 = solution.removeDuplicates(nums2);
-        System.out.println("Test Case 2: k = " + k2 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums2, k2))); // Expected: k = 5, Nums: [0, 1, 2, 3, 4]
+        System.out.println("Test Case 2 Output: k = " + k2 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums2, k2))); // Expected: k = 5, Nums: [0, 1, 2, 3, 4]
+        System.out.println("--------------------");
 
         // Test Case 3: No duplicates
         int[] nums3 = {1, 2, 3, 4, 5};
+        System.out.println("Test Case 3 Input: " + Arrays.toString(nums3));
         int k3 = solution.removeDuplicates(nums3);
-        System.out.println("Test Case 3: k = " + k3 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums3, k3))); // Expected: k = 5, Nums: [1, 2, 3, 4, 5]
+        System.out.println("Test Case 3 Output: k = " + k3 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums3, k3))); // Expected: k = 5, Nums: [1, 2, 3, 4, 5]
+        System.out.println("--------------------");
 
         // Test Case 4: All duplicates
         int[] nums4 = {1, 1, 1, 1, 1};
+        System.out.println("Test Case 4 Input: " + Arrays.toString(nums4));
         int k4 = solution.removeDuplicates(nums4);
-        System.out.println("Test Case 4: k = " + k4 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums4, k4))); // Expected: k = 1, Nums: [1]
+        System.out.println("Test Case 4 Output: k = " + k4 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums4, k4))); // Expected: k = 1, Nums: [1]
     }
 }
