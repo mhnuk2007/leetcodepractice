@@ -63,24 +63,24 @@ public class RemoveElement {
         int[] nums1 = {3, 2, 2, 3};
         int val1 = 3;
         int k1 = solution.removeElement(nums1, val1);
-        System.out.println("Test Case 1: k = " + k1 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums1, k1))); // Expected: k = 2, Nums: [2, 2]
+        System.out.println("Test Case 1 (Input: " + Arrays.toString(new int[]{3,2,2,3}) + ", val=" + val1 + "): k = " + k1 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums1, k1))); // Expected: k = 2, Nums: [2, 2]
 
         // Test Case 2
         int[] nums2 = {0, 1, 2, 2, 3, 0, 4, 2};
         int val2 = 2;
         int k2 = solution.removeElement(nums2, val2);
-        System.out.println("Test Case 2: k = " + k2 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums2, k2))); // Expected: k = 5, Nums: [0, 1, 3, 0, 4] (order may vary)
+        System.out.println("Test Case 2 (Input: " + Arrays.toString(new int[]{0,1,2,2,3,0,4,2}) + ", val=" + val2 + "): k = " + k2 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums2, k2))); // Expected: k = 5, Nums: [0, 1, 3, 0, 4] (order may vary)
 
         // Test Case 3: No elements to remove
         int[] nums3 = {1, 2, 3, 4, 5};
         int val3 = 6;
         int k3 = solution.removeElement(nums3, val3);
-        System.out.println("Test Case 3: k = " + k3 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums3, k3))); // Expected: k = 5, Nums: [1, 2, 3, 4, 5]
+        System.out.println("Test Case 3 (Input: " + Arrays.toString(new int[]{1,2,3,4,5}) + ", val=" + val3 + "): k = " + k3 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums3, k3))); // Expected: k = 5, Nums: [1, 2, 3, 4, 5]
 
         // Test Case 4: All elements to remove
         int[] nums4 = {3, 3, 3, 3};
         int val4 = 3;
         int k4 = solution.removeElement(nums4, val4);
-        System.out.println("Test Case 4: k = " + k4 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums4, k4))); // Expected: k = 0, Nums: []
+        System.out.println("Test Case 4 (Input: " + Arrays.toString(new int[]{3,3,3,3}) + ", val=" + val4 + "): k = " + k4 + ", Nums: " + Arrays.toString(Arrays.copyOf(nums4, k4))); // Expected: k = 0, Nums: []
     }
 }
