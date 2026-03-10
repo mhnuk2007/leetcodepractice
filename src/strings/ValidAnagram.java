@@ -27,13 +27,13 @@ public class ValidAnagram {
      * <p>
      * This optimal approach uses an integer array of size 26 to act as a frequency map for the English alphabet.
      * 1. It first checks if the strings have different lengths, which would immediately mean they cannot be anagrams.
-     * 2. It iterates through the first string `s`, incrementing the count for each character.
-     * 3. It then iterates through the second string `t`, decrementing the count for each character.
-     * 4. If the strings are anagrams, the frequency map should end up with all zeros. If any count is non-zero,
-     *    it means the character frequencies did not match.
+     * 2. It iterates through both strings simultaneously. For each character in `s`, it increments its corresponding
+     *    counter in the frequency map. For each character in `t`, it decrements the counter.
+     * 3. After the loop, it iterates through the frequency map. If the strings are anagrams, all counts should be zero.
+     *    If any count is non-zero, it means the character frequencies did not match.
      * <p>
-     * Time Complexity: O(n), where n is the length of the strings. We perform a few linear passes.
-     * Space Complexity: O(1), because the frequency map's size (26) is constant and does not depend on the input string length.
+     * Time Complexity: O(n), where n is the length of the strings.
+     * Space Complexity: O(1), because the frequency map's size (26) is constant.
      *
      * @param s The first string.
      * @param t The second string.
@@ -44,8 +44,7 @@ public class ValidAnagram {
             return false;
         }
 
-        int[] charCounts = new int[26]; // For lowercase English letters 'a' through 'z'
-
+        int[] charCounts = new int[26];
         for (int i = 0; i < s.length(); i++) {
             charCounts[s.charAt(i) - 'a']++;
             charCounts[t.charAt(i) - 'a']--;
@@ -76,10 +75,7 @@ public class ValidAnagram {
         System.out.println("Test Case 3 (s=\"a\", t=\"ab\"): " + solution.isAnagram(s3, t3)); // Expected: false
 
         // Test Case 4: Same characters, different frequencies
-        String s4 = "aacc", t4 = "ccac";
-        System.out.println("Test Case 4 (s=\"aacc\", t=\"ccac\"): " + solution.isAnagram(s4, t4)); // This is a tricky one, should be false. Let's trace.
-        // My original code was wrong, let's fix it.
-        // The original code would have returned true. The corrected code will return false.
-        // Let's re-read the original file to see what the logic was.
+        String s4 = "aacc", t4 = "ccaa";
+        System.out.println("Test Case 4 (s=\"aacc\", t=\"ccaa\"): " + solution.isAnagram(s4, t4)); // Expected: true
     }
 }
