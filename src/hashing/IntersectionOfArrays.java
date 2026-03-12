@@ -1,4 +1,5 @@
 package hashing;
+
 import java.util.*;
 
 /**
@@ -38,27 +39,27 @@ public class IntersectionOfArrays {
     public static void main(String[] args) {
         // Test 1: standard case
         System.out.println(Arrays.toString(
-                intersectionHashSet(new int[]{4,9,5}, new int[]{9,4,9,8,4}))); // [9,4]
+            intersectionHashSet(new int[]{4,9,5}, new int[]{9,4,9,8,4}))); // [9,4]
 
         // Test 2: one common element
         System.out.println(Arrays.toString(
-                intersectionHashSet(new int[]{1,2,2,1}, new int[]{2,2})));     // [2]
+            intersectionHashSet(new int[]{1,2,2,1}, new int[]{2,2})));     // [2]
 
         // Test 3: no intersection
         System.out.println(Arrays.toString(
-                intersectionHashSet(new int[]{1,2,3}, new int[]{4,5,6})));     // []
+            intersectionHashSet(new int[]{1,2,3}, new int[]{4,5,6})));     // []
 
         // Test 4: identical arrays
         System.out.println(Arrays.toString(
-                intersectionHashSet(new int[]{1,2,3}, new int[]{1,2,3})));     // [1,2,3]
+            intersectionHashSet(new int[]{1,2,3}, new int[]{1,2,3})));     // [1,2,3]
 
         // Test 5: one empty array
         System.out.println(Arrays.toString(
-                intersectionHashSet(new int[]{}, new int[]{1,2,3})));          // []
+            intersectionHashSet(new int[]{}, new int[]{1,2,3})));          // []
 
         // Test 6: all duplicates in both
         System.out.println(Arrays.toString(
-                intersectionHashSet(new int[]{1,1,1}, new int[]{1,1,1})));     // [1]
+            intersectionHashSet(new int[]{1,1,1}, new int[]{1,1,1})));     // [1]
     }
 
     // Approach 1 — Sort + Two Pointers
@@ -117,9 +118,10 @@ public class IntersectionOfArrays {
 
         List<Integer> list = new ArrayList<>();
         for (int num : nums2) {
-            if (set.contains(num)) {
+            // If the element is in the set, remove it and add to the list.
+            // The remove() method returns true if the element was present.
+            if (set.remove(num)) {
                 list.add(num);
-                set.remove(num); // remove to prevent duplicate matches
             }
         }
 
