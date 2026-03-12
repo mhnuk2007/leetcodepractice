@@ -1,30 +1,33 @@
-# DSA Notes (Java)
+# 📘 Data Structures & Algorithms Notes (Java)
 
-This document summarizes core patterns, techniques, and Java templates used for common data structures and algorithms problems.
+This document serves as a comprehensive reference for core patterns, techniques, and Java templates used in solving DSA problems.
 
-## 1. Two Pointers
-Idea
-- Use two indices that move toward each other or in the same direction.
+---
 
-Use when
-- Array is sorted
-- You need pairs or ranges
-- You need palindrome checks
+## 1️⃣ Two Pointers
+**Idea:** Use two indices that traverse the data structure (usually an array or string) from different directions or at different speeds to save space or time.
 
-Example problems
-- Two Sum (sorted)
-- Container With Most Water
-- 3Sum
-- Valid Palindrome
-- Remove Duplicates from Sorted Array
+**When to use:**
+- Input array is **sorted** (e.g., Two Sum II, 3Sum).
+- You need to find **pairs** or triplets that satisfy a condition.
+- **Palindrome** checks (e.g., Valid Palindrome).
+- Removing duplicates or elements in-place (e.g., Remove Duplicates).
+- Merging two sorted arrays.
 
-Java template
+**Common Patterns:**
+1.  **Opposite Direction:** `left = 0`, `right = n - 1`. Move towards center.
+2.  **Same Direction:** `fast` and `slow` (often for removing elements).
+
+**Java Template (Opposite Direction):**
 ```java
 int left = 0;
 int right = arr.length - 1;
 
 while (left < right) {
-    if (condition) {
+    int sum = arr[left] + arr[right];
+    if (sum == target) {
+        return new int[]{left, right};
+    } else if (sum < target) {
         left++;
     } else {
         right--;
@@ -32,84 +35,84 @@ while (left < right) {
 }
 ```
 
-## 2. Sliding Window
-Idea
-- Expand and shrink a window to avoid recomputing subarrays.
+---
 
-Use when
-- Subarray or substring problems
-- You need max/min over a range
+## 2️⃣ Sliding Window
+**Idea:** Convert nested loops (O(n²)) into a single loop (O(n)) by maintaining a "window" of elements that satisfies a certain condition.
 
-Example problems
-- Longest Substring Without Repeating Characters
-- Minimum Window Substring
-- Maximum Sum Subarray
+**When to use:**
+- **Subarray** or **substring** problems.
+- Finding the **longest** or **shortest** subarray with a specific property.
+- Calculating a sum or product within a window of size `k`.
 
-Java template
+**Java Template:**
 ```java
 int left = 0;
-for (int right = 0; right < arr.length; right++) {
-    // expand window
+int currentSum = 0;
+int ans = 0;
 
-    while (windowInvalid) {
-        left++; // shrink window
+for (int right = 0; right < arr.length; right++) {
+    // 1. Add current element to window
+    currentSum += arr[right];
+
+    // 2. Shrink window while condition is invalid
+    while (currentSum > target) {
+        currentSum -= arr[left];
+        left++;
     }
 
-    // update answer
+    // 3. Update answer (window is valid here)
+    ans = Math.max(ans, right - left + 1);
 }
 ```
 
-## 3. Fast and Slow Pointer (Floyd)
-Idea
-- Two pointers move at different speeds.
+---
 
-Use when
-- Cycle detection
-- Find middle node
-- Duplicate detection
+## 3️⃣ Fast & Slow Pointers (Floyd’s Cycle Detection)
+**Idea:** Use two pointers moving at different speeds (usually `1x` and `2x`).
 
-Example problems
-- Linked List Cycle
-- Find Duplicate Number
-- Middle of Linked List
-- Happy Number
+**When to use:**
+- **Cycle detection** in Linked Lists or Arrays (e.g., Linked List Cycle, Find Duplicate Number).
+- Finding the **middle** of a Linked List.
+- Determining if a Linked List is a **palindrome**.
 
-Java template
+**Java Template:**
 ```java
 ListNode slow = head;
 ListNode fast = head;
 
 while (fast != null && fast.next != null) {
-    slow = slow.next;
-    fast = fast.next.next;
+    slow = slow.next;         // Move 1 step
+    fast = fast.next.next;    // Move 2 steps
 
     if (slow == fast) {
-        // cycle detected
-        break;
+        return true; // Cycle detected
     }
 }
+return false;
 ```
 
-## 4. Binary Search
-Idea
-- Works on sorted arrays or monotonic search space.
+---
 
-Time complexity
-- O(log n)
+## 4️⃣ Binary Search
+**Idea:** Divide the search space in half at every step. This reduces time complexity from O(n) to O(log n).
 
-Java template
+**When to use:**
+- Input array is **sorted** or has a monotonic property.
+- You need to find a target value, an insertion point, or a boundary.
+- **Search space** problems (e.g., Koko Eating Bananas).
+
+**Java Template:**
 ```java
 int left = 0;
 int right = nums.length - 1;
 
 while (left <= right) {
-    int mid = left + (right - left) / 2;
+    int mid = left + (right - left) / 2; // Prevent overflow
 
     if (nums[mid] == target) {
         return mid;
-    }
-
-    if (nums[mid] < target) {
+    } else if (nums[mid] < target) {
         left = mid + 1;
     } else {
         right = mid - 1;
@@ -117,52 +120,17 @@ while (left <= right) {
 }
 ```
 
-## 5. DFS (Depth First Search)
-Use when
-- Trees
-- Graphs
-- Backtracking
+---
 
-Java recursive template
-```java
-void dfs(TreeNode node) {
-    if (node == null) return;
+## 5️⃣ Hashing (HashMap / HashSet)
+**Idea:** Use a Hash Table to store data for O(1) average time complexity lookups.
 
-    dfs(node.left);
-    dfs(node.right);
-}
-```
+**When to use:**
+- Checking for **existence** or duplicates (HashSet).
+- Counting **frequencies** of elements (HashMap).
+- Looking up values in O(1) time (e.g., Two Sum).
 
-## 6. BFS (Breadth First Search)
-Use when
-- Level order traversal
-- Shortest path in unweighted graph
-
-Java template
-```java
-Queue<TreeNode> queue = new LinkedList<>();
-queue.offer(root);
-
-while (!queue.isEmpty()) {
-    TreeNode node = queue.poll();
-
-    if (node.left != null) queue.offer(node.left);
-    if (node.right != null) queue.offer(node.right);
-}
-```
-
-## 7. Hashing
-Use when
-- You need O(1) lookups
-- Counting frequencies
-
-Example problems
-- Two Sum
-- Group Anagrams
-- Contains Duplicate
-- Top K Frequent Elements
-
-Java template
+**Java Template (Frequency Map):**
 ```java
 Map<Integer, Integer> map = new HashMap<>();
 for (int num : nums) {
@@ -170,97 +138,126 @@ for (int num : nums) {
 }
 ```
 
-## 8. Monotonic Stack
-Use when
-- Next greater element
-- Previous smaller element
-- Temperature or histogram problems
+---
 
-Example problems
-- Next Greater Element
-- Daily Temperatures
-- Largest Rectangle in Histogram
+## 6️⃣ Depth First Search (DFS)
+**Idea:** Explore as deep as possible along each branch before backtracking. Uses a **Stack** (explicit or via recursion).
 
-Java template
+**When to use:**
+- Traversing **Trees** (Preorder, Inorder, Postorder).
+- Graph problems: Connected components, path finding, cycle detection.
+- **Backtracking** problems (Permutations, Subsets).
+
+**Java Template (Recursive - Tree):**
 ```java
-Stack<Integer> stack = new Stack<>();
+void dfs(TreeNode node) {
+    if (node == null) return;
 
-for (int i = 0; i < nums.length; i++) {
-    while (!stack.isEmpty() && nums[i] > nums[stack.peek()]) {
-        stack.pop();
+    // Process node
+    dfs(node.left);
+    dfs(node.right);
+}
+```
+
+---
+
+## 7️⃣ Breadth First Search (BFS)
+**Idea:** Explore neighbor nodes first before moving to the next level neighbors. Uses a **Queue**.
+
+**When to use:**
+- **Shortest path** in unweighted graphs.
+- **Level order traversal** of a tree.
+- Finding all nodes at distance `k`.
+
+**Java Template (Level Order - Tree):**
+```java
+Queue<TreeNode> queue = new LinkedList<>();
+queue.offer(root);
+
+while (!queue.isEmpty()) {
+    int size = queue.size(); // Nodes at current level
+    for (int i = 0; i < size; i++) {
+        TreeNode node = queue.poll();
+        // Process node
+        if (node.left != null) queue.offer(node.left);
+        if (node.right != null) queue.offer(node.right);
     }
-    stack.push(i);
 }
 ```
 
-## 9. Dynamic Programming
-Use when
-- Overlapping subproblems
-- Optimal substructure
+---
 
-DP steps
-1. Define state
-2. Define transition
-3. Define base case
-4. Compute result
+## 8️⃣ Backtracking
+**Idea:** Build candidates for the solution incrementally and abandon a candidate ("backtrack") as soon as it determines the candidate cannot lead to a valid solution.
 
-Fibonacci example
+**When to use:**
+- Generating all **combinations**, **permutations**, or **subsets**.
+- Solving puzzles like **Sudoku** or **N-Queens**.
+
+**Java Template:**
 ```java
-int[] dp = new int[n + 1];
-dp[0] = 0;
-dp[1] = 1;
+void backtrack(int start, List<Integer> current, List<List<Integer>> result) {
+    // Base case: solution found
+    result.add(new ArrayList<>(current));
 
-for (int i = 2; i <= n; i++) {
-    dp[i] = dp[i - 1] + dp[i - 2];
+    for (int i = start; i < nums.length; i++) {
+        current.add(nums[i]);      // Choose
+        backtrack(i + 1, current, result); // Explore
+        current.remove(current.size() - 1); // Un-choose (Backtrack)
+    }
 }
 ```
 
-## 10. Heap / Priority Queue
-Use when
-- Top K problems
-- Streaming data
-- Median problems
+---
 
-Java example
-```java
-PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
-```
+## 9️⃣ Dynamic Programming (DP)
+**Idea:** Break a complex problem into simpler subproblems, solve each subproblem once, and store the result.
 
-## Complexity Cheat Sheet
-| Complexity | Meaning |
-| --- | --- |
-| O(1) | Constant |
-| O(log n) | Binary search |
-| O(n) | Linear scan |
-| O(n log n) | Sorting |
-| O(n^2) | Nested loops |
-| O(2^n) | Recursive branching |
+**When to use:**
+- **Optimization** problems (min/max).
+- Determining the number of **ways** to do something.
+- Problem has **overlapping subproblems** and **optimal substructure**.
 
-## Problem Solving Strategy
-1. Understand input and output.
-2. Write a brute force approach.
-3. Optimize using known patterns.
-4. Write clean Java code.
-5. Analyze time and space complexity.
+**Steps:**
+1.  **State:** Define `dp[i]`.
+2.  **Transition:** Find the recurrence relation (e.g., `dp[i] = dp[i-1] + dp[i-2]`).
+3.  **Base Case:** Initialization (e.g., `dp[0] = 0`).
+4.  **Result:** What value holds the final answer?
 
-## Revision Rule
-- Revisit after 1 day
-- Revisit after 1 week
-- Revisit after 1 month
+---
 
-## Goal
-- Recognize patterns quickly
-- Write optimized Java solutions
-- Solve most medium problems confidently
+## 🔟 Bit Manipulation
+**Idea:** Manipulate bits directly using operators like `&`, `|`, `^`, `~`, `<<`, `>>`.
 
-## Repository Mapping
-Current folders in `src` and how they map to patterns:
-- `arrays` and `arrays101`: core array problems and Arrays 101 practice
-- `strings`: string manipulation and parsing
-- `twopointer`: two-pointer patterns
-- `slidingwindow`: window-based problems
-- `linkedlist`: linked list fundamentals and variants
-- `dp`: dynamic programming problems
-- `sortalgrithms`: sorting algorithms and related problems
-- `dailychallenges`: daily challenge exercises
+**Common Tricks:**
+- **XOR (`^`):** `x ^ x = 0`, `x ^ 0 = x`. Useful for finding the unique number.
+- **Check if bit k is set:** `(n & (1 << k)) != 0`
+- **Set bit k:** `n | (1 << k)`
+- **Clear bit k:** `n & ~(1 << k)`
+- **Check power of 2:** `(n & (n - 1)) == 0`
+
+---
+
+## 📊 Complexity Cheat Sheet
+
+| Data Structure / Algo | Average Time | Worst Time | Space |
+| :--- | :--- | :--- | :--- |
+| **Array Access** | O(1) | O(1) | O(1) |
+| **Array Search** | O(n) | O(n) | O(1) |
+| **Binary Search** | O(log n) | O(log n) | O(1) |
+| **Linked List Access**| O(n) | O(n) | O(1) |
+| **Stack/Queue Op** | O(1) | O(1) | O(n) |
+| **HashMap Get/Put** | O(1) | O(n) | O(n) |
+| **Sorting (Merge/Quick)**| O(n log n) | O(n log n) | O(n) |
+| **DFS / BFS (Graph)** | O(V + E) | O(V + E) | O(V) |
+
+---
+
+## 🧠 Problem Solving Framework
+1.  **Clarify:** Ask questions. Understand constraints. Check for edge cases (empty, null, negatives).
+2.  **Example:** Walk through a simple test case manually.
+3.  **Brute Force:** State the naive solution first (e.g., "We could use nested loops...").
+4.  **Optimize:** Identify the bottleneck (usually time complexity). Apply a pattern (Two Pointers, Hashing, etc.).
+5.  **Code:** Write clean, modular code. Use meaningful variable names.
+6.  **Test:** Dry run your code with the example case.
+7.  **Analyze:** State the final Time and Space complexity.
