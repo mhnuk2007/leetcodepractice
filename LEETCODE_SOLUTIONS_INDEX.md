@@ -1,120 +1,113 @@
 # LeetCode Solutions Index (Java)
 
-This index is updated from the current contents of `src`.
-LeetCode entries are split into two groups:
-- Confirmed: problem number appears in the file header.
-- Inferred: problem number inferred from filename or implementation.
+This index reflects the 64 problems solved as of the last update.
 
-## Progress (from files in src)
-| Category | Count | Notes |
-| --- | --- | --- |
-| LeetCode (confirmed) | 46 | From file headers |
-| LeetCode (inferred) | 6 | From filenames |
-| LeetCode daily challenges | 5 | Names only (no header tags) |
-| Other platforms | 6 | HackerRank and GeeksforGeeks |
+## Progress
+| Category | Solved |
+|---|---|
+| Easy | 44 |
+| Medium | 19 |
+| Hard | 1 |
+| **Total** | **64** |
 
-## LeetCode - Arrays and Arrays101 (confirmed)
-| # | Problem | Difficulty | Pattern |
-| --- | --- | --- | --- |
-| 26 | Remove Duplicates from Sorted Array | Easy | Two Pointers |
-| 27 | Remove Element | Easy | Two Pointers |
-| 80 | Remove Duplicates from Sorted Array II | Medium | Two Pointers |
-| 88 | Merge Sorted Array | Easy | Two Pointers |
-| 121 | Best Time to Buy and Sell Stock | Easy | Greedy |
-| 169 | Majority Element | Easy | Boyer-Moore |
-| 189 | Rotate Array | Medium | Array Manipulation |
-| 283 | Move Zeroes | Easy | Two Pointers |
-| 414 | Third Maximum Number | Easy | Tracking Maximum |
-| 448 | Find All Numbers Disappeared in an Array | Easy | Cyclic Sort |
-| 485 | Max Consecutive Ones | Easy | Array Traversal |
-| 941 | Valid Mountain Array | Easy | Array Traversal |
-| 977 | Squares of a Sorted Array | Easy | Two Pointers |
-| 1051 | Height Checker | Easy | Sorting |
-| 1089 | Duplicate Zeros | Easy | In-place |
-| 1295 | Find Numbers with Even Number of Digits | Easy | Digit Counting |
-| 1299 | Replace Elements with Greatest Element on Right Side | Easy | Reverse Traversal |
-| 1346 | Check If N and Its Double Exist | Easy | HashSet |
-| 1582 | Special Positions in a Binary Matrix | Easy | Matrix Traversal |
-| 1758 | Minimum Changes to Make Alternating Binary String | Easy | Greedy |
-| 2824 | Count Pairs Whose Sum is Less Than Target | Easy | Two Pointers |
+---
 
-## LeetCode - Strings (confirmed)
-| # | Problem | Difficulty | Pattern |
-| --- | --- | --- | --- |
-| 3 | Longest Substring Without Repeating Characters | Medium | Sliding Window |
-| 28 | Find the Index of the First Occurrence in a String | Easy | String Search |
-| 125 | Valid Palindrome | Easy | Two Pointers |
-| 242 | Valid Anagram | Easy | HashMap |
-| 408 | Valid Word Abbreviation | Easy | Two Pointers |
-| 680 | Valid Palindrome II | Easy | Two Pointers |
-| 1689 | Partitioning Into Minimum Number of Deci-Binary Numbers | Easy | Greedy |
+### 🧮 Arrays & Matrix
+| # | Problem | Difficulty |
+|---|---|---|
+| 1 | Two Sum | Easy |
+| 26 | Remove Duplicates from Sorted Array | Easy |
+| 27 | Remove Element | Easy |
+| 75 | Sort Colors | Medium |
+| 88 | Merge Sorted Array | Easy |
+| 121 | Best Time to Buy and Sell Stock | Easy |
+| 136 | Single Number | Easy |
+| 169 | Majority Element | Easy |
+| 189 | Rotate Array | Medium |
+| 217 | Contains Duplicate | Easy |
+| 283 | Move Zeroes | Easy |
+| 414 | Third Maximum Number | Easy |
+| 448 | Find All Numbers Disappeared in an Array | Easy |
+| 457 | Circular Array Loop | Medium |
+| 485 | Max Consecutive Ones | Easy |
+| 905 | Sort Array By Parity | Easy |
+| 941 | Valid Mountain Array | Easy |
+| 977 | Squares of a Sorted Array | Easy |
+| 1051 | Height Checker | Easy |
+| 1089 | Duplicate Zeros | Easy |
+| 1295 | Find Numbers with Even Number of Digits | Easy |
+| 1299 | Replace Elements with Greatest Element on Right Side | Easy |
+| 1342 | Number of Steps to Reduce a Number to Zero | Easy |
+| 1346 | Check If N and Its Double Exist | Easy |
+| 1480 | Running Sum of 1d Array | Easy |
+| 1536 | Minimum Swaps to Arrange a Binary Grid | Medium |
+| 1582 | Special Positions in a Binary Matrix | Easy |
+| 1672 | Richest Customer Wealth | Easy |
+| 2824 | Count Pairs Whose Sum is Less than Target | Easy |
 
-## LeetCode - Two Pointers (confirmed)
-| # | Problem | Difficulty | Pattern |
-| --- | --- | --- | --- |
-| 1 | Two Sum | Easy | HashMap |
-| 15 | 3Sum | Medium | Two Pointers |
-| 167 | Two Sum II - Input Array Is Sorted | Easy | Two Pointers |
-| 202 | Happy Number | Easy | Floyd Cycle Detection |
-| 287 | Find the Duplicate Number | Medium | Floyd Cycle Detection |
-| 876 | Middle of the Linked List | Easy | Fast/Slow Pointer |
+### 🔤 Strings
+| # | Problem | Difficulty |
+|---|---|---|
+| 3 | Longest Substring Without Repeating Characters | Medium |
+| 28 | Find the Index of the First Occurrence in a String | Easy |
+| 125 | Valid Palindrome | Easy |
+| 242 | Valid Anagram | Easy |
+| 344 | Reverse String | Easy |
+| 383 | Ransom Note | Easy |
+| 680 | Valid Palindrome II | Easy |
+| 1545 | Find Kth Bit in Nth Binary String | Medium |
+| 1689 | Partitioning Into Minimum Number Of Deci-Binary Numbers | Medium |
+| 1758 | Minimum Changes To Make Alternating Binary String | Easy |
+| 1784 | Check if Binary String Has at Most One Segment of Ones | Easy |
+| 1888 | Minimum Number of Flips to Make the Binary String Alternating | Medium |
+| 1980 | Find Unique Binary String | Medium |
+| 2486 | Append Characters to String to Make Subsequence | Medium |
+| 412 | Fizz Buzz | Easy |
 
-## LeetCode - Linked Lists (confirmed)
-| # | Problem | Difficulty | Pattern |
-| --- | --- | --- | --- |
-| 21 | Merge Two Sorted Lists | Easy | Merge |
-| 141 | Linked List Cycle | Easy | Fast/Slow Pointer |
-| 142 | Linked List Cycle II | Medium | Floyd Cycle Detection |
-| 206 | Reverse Linked List | Easy | Pointer Reversal |
-| 234 | Palindrome Linked List | Easy | Reverse + Two Pointers |
-| 237 | Delete Node in a Linked List | Easy | Pointer Manipulation |
-| 707 | Design Linked List | Medium | Design |
-| 2130 | Maximum Twin Sum of a Linked List | Medium | Two Pointers |
+### 🔗 Linked Lists
+| # | Problem | Difficulty |
+|---|---|---|
+| 19 | Remove Nth Node From End of List | Medium |
+| 21 | Merge Two Sorted Lists | Easy |
+| 141 | Linked List Cycle | Easy |
+| 142 | Linked List Cycle II | Medium |
+| 160 | Intersection of Two Linked Lists | Easy |
+| 206 | Reverse Linked List | Easy |
+| 234 | Palindrome Linked List | Easy |
+| 237 | Delete Node in a Linked List | Medium |
+| 876 | Middle of the Linked List | Easy |
+| 2130 | Maximum Twin Sum of a Linked List | Medium |
 
-## LeetCode - Dynamic Programming (confirmed)
-| # | Problem | Difficulty | Pattern |
-| --- | --- | --- | --- |
-| 3129 | Find All Possible Stable Binary Arrays I | Unknown | DP |
+### 🧠 Two Pointers & Cycle Detection
+| # | Problem | Difficulty |
+|---|---|---|
+| 11 | Container With Most Water | Medium |
+| 15 | 3Sum | Medium |
+| 167 | Two Sum II - Input Array Is Sorted | Medium |
+| 202 | Happy Number | Easy |
+| 287 | Find the Duplicate Number | Medium |
 
-## LeetCode - Binary Search (confirmed)
-| # | Problem | Difficulty | Pattern |
-| --- | --- | --- | --- |
-| 69 | Sqrt(x) | Easy | Binary Search |
+### 💾 Data Structure Design
+| # | Problem | Difficulty |
+|---|---|---|
+| 705 | Design HashSet | Easy |
+| 706 | Design HashMap | Easy |
+| 707 | Design Linked List | Medium |
 
-## LeetCode - Data Structure Design (confirmed)
-| # | Problem | Difficulty | Pattern |
-| --- | --- | --- | --- |
-| 705 | Design HashSet | Easy | Design |
-| 706 | Design HashMap | Easy | Design |
+### 🔢 Math & Bit Manipulation
+| # | Problem | Difficulty |
+|---|---|---|
+| 69 | Sqrt(x) | Easy |
+| 1009 | Complement of Base 10 Integer | Easy |
 
-## LeetCode - Inferred from filenames
-| # | Problem | Difficulty | Pattern |
-| --- | --- | --- | --- |
-| 11 | Container With Most Water | Medium | Two Pointers |
-| 19 | Remove Nth Node From End of List | Medium | Two Pointers |
-| 75 | Sort Colors | Medium | Two Pointers |
-| 160 | Intersection of Two Linked Lists | Easy | Two Pointers |
-| 217 | Contains Duplicate | Easy | HashSet |
-| 239 | Sliding Window Maximum | Hard | Deque |
+### 🚀 Dynamic Programming
+| # | Problem | Difficulty |
+|---|---|---|
+| 3129 | Find All Possible Stable Binary Arrays I | Medium |
+| 3130 | Find All Possible Stable Binary Arrays II | Hard |
 
-## LeetCode - Daily Challenges (names only)
-- Check One Segment
-- Find Kth Bit in Nth Binary String
-- Find Unique Binary String
-- Minimum Swaps (binary grid)
-- Minimum Flips (alternating binary string)
-
-## Other Platforms
-HackerRank
-- Java Anagrams
-- Java String Tokens
-- Java Substring Comparisons
-- Java String Reverse (Palindrome)
-
-GeeksforGeeks
-- Split a Circular Linked List into Two Halves
-- Find Length of Loop
-
-## Notes
-- Some files in `src` are duplicates or legacy variants (for example `MaxProfit.java`, `RotateArray.java`).
-- The inferred section is based on filenames and should be verified if you want strict accuracy.
+---
+### Profiles
+- GitHub: https://github.com/mhnuk2007
+- LinkedIn: https://linkedin.com/in/mhnuk2007
+- LeetCode: https://leetcode.com/u/mhnuk2007/
