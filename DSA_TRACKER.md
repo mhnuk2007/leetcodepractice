@@ -13,12 +13,12 @@ Goal: Master data structures and algorithms for software engineering interviews.
 | Phase 2 | Stack and Queue | 10 | 0 / 10 |
 | Phase 3 | Trees | 17 | 0 / 17 |
 | Phase 4 | Graphs | 15 | 0 / 15 |
-| Phase 5 | Dynamic Programming | 18 | 0 / 18 |
-| Phase 6 | Advanced Techniques | 15 | 0 / 15 |
+| Phase 5 | Dynamic Programming | 18 | 1 / 18 |
+| Phase 6 | Advanced Techniques | 15 | 1 / 15 |
 
 Total Problems: 100  
-Completed: 17  
-Remaining: 83
+Completed: 18
+Remaining: 82
 
 ## Phase 1 - Arrays and Strings
 Completed
@@ -106,7 +106,10 @@ Hard
 - Alien Dictionary
 
 ## Phase 5 - Dynamic Programming
-1D DP
+Completed
+- Find All Possible Stable Binary Arrays I
+
+Remaining
 - Climbing Stairs
 - Min Cost Climbing Stairs
 - Fibonacci
@@ -117,8 +120,6 @@ Hard
 - Word Break
 - Maximum Product Subarray
 - Palindromic Substrings
-
-2D DP
 - Unique Paths
 - Minimum Path Sum
 - Edit Distance
@@ -130,6 +131,10 @@ Hard
 
 ## Phase 6 - Advanced Techniques
 Binary Search
+Completed
+- Sqrt(x)
+
+Remaining
 - Binary Search
 - Search Insert Position
 - Search 2D Matrix
@@ -144,6 +149,11 @@ Heap and Priority Queue
 - Kth Largest Element in Array
 - Top K Frequent Elements
 - Find Median from Data Stream
+
+## Data Structure Design
+Completed
+- Design HashSet
+- Design HashMap
 
 ## DSA Pattern Tracker
 | Pattern | Learned | Mastered |
