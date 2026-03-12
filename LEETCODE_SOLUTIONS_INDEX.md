@@ -8,7 +8,7 @@ LeetCode entries are split into two groups:
 ## Progress (from files in src)
 | Category | Count | Notes |
 | --- | --- | --- |
-| LeetCode (confirmed) | 43 | From file headers |
+| LeetCode (confirmed) | 46 | From file headers |
 | LeetCode (inferred) | 6 | From filenames |
 | LeetCode daily challenges | 5 | Names only (no header tags) |
 | Other platforms | 6 | HackerRank and GeeksforGeeks |
@@ -76,6 +76,17 @@ LeetCode entries are split into two groups:
 | --- | --- | --- | --- |
 | 3129 | Find All Possible Stable Binary Arrays I | Unknown | DP |
 
+## LeetCode - Binary Search (confirmed)
+| # | Problem | Difficulty | Pattern |
+| --- | --- | --- | --- |
+| 69 | Sqrt(x) | Easy | Binary Search |
+
+## LeetCode - Data Structure Design (confirmed)
+| # | Problem | Difficulty | Pattern |
+| --- | --- | --- | --- |
+| 705 | Design HashSet | Easy | Design |
+| 706 | Design HashMap | Easy | Design |
+
 ## LeetCode - Inferred from filenames
 | # | Problem | Difficulty | Pattern |
 | --- | --- | --- | --- |
@@ -107,4 +118,3 @@ GeeksforGeeks
 ## Notes
 - Some files in `src` are duplicates or legacy variants (for example `MaxProfit.java`, `RotateArray.java`).
 - The inferred section is based on filenames and should be verified if you want strict accuracy.
-
