@@ -1,14 +1,14 @@
 # LeetCode Solutions Index (Java)
 
-This index reflects the 64 problems solved as of the last update.
+This index reflects the 67 problems solved as of the last update.
 
 ## Progress
 | Category | Solved |
 |---|---|
-| Easy | 44 |
-| Medium | 19 |
+| Easy | 46 |
+| Medium | 20 |
 | Hard | 1 |
-| **Total** | **64** |
+| **Total** | **67** |
 
 ---
 
@@ -18,6 +18,7 @@ This index reflects the 64 problems solved as of the last update.
 | 1 | Two Sum | Easy |
 | 26 | Remove Duplicates from Sorted Array | Easy |
 | 27 | Remove Element | Easy |
+| 33 | Search in Rotated Sorted Array | Medium |
 | 75 | Sort Colors | Medium |
 | 88 | Merge Sorted Array | Easy |
 | 121 | Best Time to Buy and Sell Stock | Easy |
@@ -77,6 +78,13 @@ This index reflects the 64 problems solved as of the last update.
 | 237 | Delete Node in a Linked List | Medium |
 | 876 | Middle of the Linked List | Easy |
 | 2130 | Maximum Twin Sum of a Linked List | Medium |
+
+### 🧠 Hashing
+| # | Problem | Difficulty |
+|---|---|---|
+| 349 | Intersection of Two Arrays | Easy |
+| 387 | First Unique Character in a String | Easy |
+| 599 | Minimum Index Sum of Two Lists | Easy |
 
 ### 🧠 Two Pointers & Cycle Detection
 | # | Problem | Difficulty |

@@ -70,6 +70,12 @@ Completed
 - [x] Design HashSet
 - [x] Design HashMap
 
+## Hashing
+Completed
+- [x] Intersection of Two Arrays
+- [x] First Unique Character in a String
+- [x] Minimum Index Sum of Two Lists
+
 ## Other Notable Solved Problems
 - [x] 136. Single Number
 - [x] 1009. Complement of Base 10 Integer
