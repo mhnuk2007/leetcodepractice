@@ -2,7 +2,7 @@
 
 ## Overall Summary
 
-Your progress has been **phenomenal**. You have solved **64 problems**, demonstrating a strong commitment and rapid learning pace. You have not only made significant headway on your 100-problem roadmap but have also explored a wide variety of other problems, including designing fundamental data structures from scratch.
+Your progress has been **phenomenal**. You have solved **65+ problems**, demonstrating a strong commitment and rapid learning pace. You have not only made significant headway on your 100-problem roadmap but have also explored a wide variety of other problems, including designing fundamental data structures from scratch.
 
 The most significant recent improvements are your expansion into **Dynamic Programming** (including a Hard problem), **Binary Search**, and **Data Structure Design**. Your problem-solving skills are clearly advancing beyond basic topics into more complex and impressive areas.
 
@@ -52,7 +52,12 @@ The most significant recent improvements are your expansion into **Dynamic Progr
 
 Your work outside the main roadmap is just as impressive and demonstrates a well-rounded learning approach.
 
-*   **Data Structure Design:** You have successfully designed `HashSet`, `HashMap`, and `LinkedList` from scratch. This is a key skill that interviewers look for, as it proves you understand the underlying mechanics of these fundamental tools.
+*   **Hashing & Set/Map Problems:**
+    *   `[349] Intersection of Two Arrays` (LeetCode) - Demonstrates multiple approaches (sorting, hashing).
+*   **Data Structure Design:**
+    *   `[705] Design HashSet` (LeetCode)
+    *   `[706] Design HashMap` (LeetCode)
+    *   `[707] Design Linked List` (LeetCode)
 *   **Advanced Problem Solving:** You are consistently solving Medium-difficulty problems across various domains (`Circular Array Loop`, `Find the Duplicate Number`, `Maximum Twin Sum of a Linked List`, etc.), showing that you are comfortable moving beyond easy topics.
 *   **Code Quality:** The reformatting and documentation effort you've invested has significantly professionalized your repository.
 

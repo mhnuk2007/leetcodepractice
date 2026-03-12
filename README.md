@@ -5,8 +5,9 @@
 
 ## 📊 Progress Overview
 
-*   **Phase 1 (Arrays & Strings):** 11 / 15
+*   **Phase 1 (Arrays & Strings):** 12 / 15
 *   **Phase 2 (Linked Lists):** 6 / 10
+*   **Hashing (Ad-hoc):** 1 / 1 (Intersection of Two Arrays)
 *   **Phase 5 (Dynamic Programming):** 2 / 18
 *   **Phase 6 (Binary Search):** 1 / 15
 
