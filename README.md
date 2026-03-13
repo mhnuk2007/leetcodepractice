@@ -1,4 +1,4 @@
-# Java DSA Roadmap – 232 Essential LeetCode Problems
+# Java DSA Roadmap – 233 Essential LeetCode Problems
 
 **Author:** Mohan Lal | **GitHub:** [mhnuk2007](https://github.com/mhnuk2007) | **LeetCode:** [mhnuk2007](https://leetcode.com/mhnuk2007) | **Language:** Java
 
@@ -21,10 +21,10 @@
 | Heap / Priority Queue  |  15   |     0     | ░░░░░░░░░░   0%      |
 | Trees                  |  25   |     1     | ░░░░░░░░░░   4%      |
 | Backtracking           |  15   |     0     | ░░░░░░░░░░   0%      |
-| Graphs                 |  20   |     0     | ░░░░░░░░░░   0%      |
+| Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  30   |     2     | █░░░░░░░░░   7%      |
 | Bit Manipulation       |  10   |     2     | ██░░░░░░░░  20%      |
-| **Total**              | **232** | **46** | **██░░░░░░░░ 19.8%** |
+| **Total**              | **233** | **46** | **██░░░░░░░░ 19.7%** |
 
 ---
 
@@ -324,7 +324,8 @@
 | 787  | Cheapest Flights Within K Stops              | Medium     | ⬜      | Bellman-Ford        |
 | 802  | Find Eventual Safe States                    | Medium     | ⬜      | DFS                 |
 | 827  | Making A Large Island                        | Hard       | ⬜      | DFS                 |
-| 3600 | Maximize Spanning Tree Stability with Upgrades | Hard     | ⬜      | Binary Search + MST |
+| 1091 | Shortest Path in Binary Matrix               | Medium     | ⬜      | BFS                 |
+| 1584 | Min Cost to Connect All Points               | Medium     | ⬜      | MST (Prim's)        |
 
 ---
 
