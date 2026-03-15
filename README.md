@@ -12,7 +12,7 @@
 
 | Category               | Total | Completed | Progress             |
 |------------------------|-------|-----------|----------------------|
-| Arrays & Two Pointers  |  26   |    22     | █████████░  85%      |
+| Arrays & Two Pointers  |  26   |    24     | ██████████  92%      |
 | Sliding Window         |  15   |     1     | █░░░░░░░░░   7%      |
 | HashMap / HashSet      |  22   |    10     | ████░░░░░░  45%      |
 | Binary Search          |  20   |     1     | ░░░░░░░░░░   5%      |
@@ -24,7 +24,7 @@
 | Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  30   |     2     | █░░░░░░░░░   7%      |
 | Bit Manipulation       |  10   |     2     | ██░░░░░░░░  20%      |
-| **Total**              | **234** | **50** | **███░░░░░░░ 21.4%** |
+| **Total**              | **234** | **52** | **███░░░░░░░ 22.2%** |
 
 ---
 
@@ -62,7 +62,7 @@
 
 | Date   | Problems Solved                        | Notes                   |
 |--------|----------------------------------------|-------------------------|
-| Mar 14 | 724                                    | Prefix Sum Practice     |
+| Mar 14 | 747, 724                               | Array & Prefix Sum      |
 | Mar 13 | 31, 42, 2, 599, 387, 350, 219, 205, 136 | Arrays, LL & Hashing    |
 | Mar 12 | 136, 706, 705, 1009, 69, 2486, 33      | Very productive day!    |
 | Mar 11 | 3130, 2130, 21                         | DP and Linked Lists     |
@@ -70,7 +70,7 @@
 
 ---
 
-## 1️⃣ Arrays & Two Pointers (22 / 26)
+## 1️⃣ Arrays & Two Pointers (24 / 26)
 
 | #    | Problem                                     | Difficulty | Status                    | Pattern               |
 |------|---------------------------------------------|------------|---------------------------|-----------------------|
@@ -91,6 +91,7 @@
 | 414  | Third Maximum Number                        | Easy       | ✅ [Solution](src/arrays101/ThirdMaximumNumber.java) | Tracking |
 | 485  | Max Consecutive Ones                        | Easy       | ✅ [Solution](src/arrays101/MaxConsecutiveOnes.java) | Array Traversal |
 | 724  | Find Pivot Index                            | Easy       | ✅ [Solution](src/arrays/FindPivotIndex.java) | Prefix Sum |
+| 747  | Largest Number At Least Twice of Others     | Easy       | ✅ [Solution](src/arrays/LargestNumberAtLeastTwiceOfOthers.java) | Array Traversal |
 | 941  | Valid Mountain Array                        | Easy       | ✅ [Solution](src/arrays101/ValidMountainArray.java) | Array Traversal |
 | 977  | Squares of a Sorted Array                   | Easy       | ✅ [Solution](src/arrays101/SquaresOfASortedArray.java) | Two Pointers |
 | 1299 | Replace Elements with Greatest on Right     | Easy       | ✅ [Solution](src/arrays101/ReplaceElementsWithGreatestElementOnRightSide.java) | Reverse Traversal |
