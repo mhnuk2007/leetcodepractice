@@ -12,7 +12,7 @@
 
 | Category               | Total | Completed | Progress             |
 |------------------------|-------|-----------|----------------------|
-| Arrays & Two Pointers  |  27   |    25     | ██████████  93%      |
+| Arrays & Two Pointers  |  28   |    26     | ██████████  93%      |
 | Sliding Window         |  15   |     1     | █░░░░░░░░░   7%      |
 | HashMap / HashSet      |  22   |    10     | ████░░░░░░  45%      |
 | Binary Search          |  20   |     1     | ░░░░░░░░░░   5%      |
@@ -24,7 +24,7 @@
 | Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  30   |     2     | █░░░░░░░░░   7%      |
 | Bit Manipulation       |  10   |     2     | ██░░░░░░░░  20%      |
-| **Total**              | **235** | **53** | **███░░░░░░░ 22.5%** |
+| **Total**              | **236** | **54** | **███░░░░░░░ 23.1%** |
 
 ---
 
@@ -62,7 +62,7 @@
 
 | Date   | Problems Solved                        | Notes                   |
 |--------|----------------------------------------|-------------------------|
-| Mar 14 | 66, 747, 724                           | Array Day               |
+| Mar 14 | 118, 66, 747, 724                      | Array Day               |
 | Mar 13 | 31, 42, 2, 599, 387, 350, 219, 205, 136 | Arrays, LL & Hashing    |
 | Mar 12 | 136, 706, 705, 1009, 69, 2486, 33      | Very productive day!    |
 | Mar 11 | 3130, 2130, 21                         | DP and Linked Lists     |
@@ -70,7 +70,7 @@
 
 ---
 
-## 1️⃣ Arrays & Two Pointers (25 / 27)
+## 1️⃣ Arrays & Two Pointers (26 / 28)
 
 | #    | Problem                                     | Difficulty | Status                    | Pattern               |
 |------|---------------------------------------------|------------|---------------------------|-----------------------|
@@ -85,6 +85,7 @@
 | 66   | Plus One                                    | Easy       | ✅ [Solution](src/arrays/PlusOne.java) | Array Manipulation |
 | 75   | Sort Colors                                 | Medium     | ✅ [Solution](src/arrays/SortColors.java) | Two Pointers |
 | 88   | Merge Sorted Array                          | Easy       | ✅ [Solution](src/arrays101/MergeSortedArray.java) | Two Pointers |
+| 118  | Pascal's Triangle                           | Easy       | ✅ [Solution](src/arrays/PascalsTriangle.java) | DP / Simulation |
 | 121  | Best Time to Buy and Sell Stock             | Easy       | ✅ [Solution](src/arrays/BestTimeToBuyAndSellStock.java) | Greedy |
 | 189  | Rotate Array                                | Medium     | ⬜ *(TLE — revisit)*       | Array Manipulation    |
 | 283  | Move Zeroes                                 | Easy       | ✅ [Solution](src/arrays101/MoveZeroes.java) | Two Pointers |
