@@ -1,0 +1,114 @@
+Solved Problems List
+
+**Arrays & arrays101**
+- PlusOne
+- RotateArray
+- FindPivotIndex
+- MajorityElement
+- NextPermutation
+- PascalsTriangle
+- CircularArrayLoop
+- ContainsDuplicate
+- TrappingRainWater
+- TrappingRainWaterPrefix
+- LargestNumberTwiceOthers
+- BestTimeToBuyAndSellStock
+- SearchInRotatedSortedArray
+- SpecialPositionsInBinaryMatrix
+- MoveZeroes
+- CountPairs
+- CheckIfExists
+- HeightChecker
+- RemoveElement
+- DuplicateZeros
+- EvenNoOfDigits
+- ReplaceElement
+- SquaresOfSorted
+- MergeSortedArray
+- RemoveDuplicates
+- RemoveDuplicates2
+- MaxConsecutiveOnes
+- ThirdMaximumNumber
+- ValidMountainArray
+- FindDisappearedNumber
+- SquaresOfASortedArray
+- CheckIfNAndItsDoubleExist
+- FindNumbersWithEvenNumberOfDigits
+- MinChangesAlternatingBinaryString
+- RemoveDuplicatesFromSortedArrayII
+- FindAllNumbersDisappearedInAnArray
+- ReplaceElementsWithGreatestElementOnRightSide
+
+**Binary Search**
+- SqrtX
+
+**Daily Challenges**
+- MinFlips
+- FindKthBit
+- MinimumSwaps
+- CheckOneSegment
+- FindUniqueBinaryString
+- ComplementBase10Integer
+
+**Dynamic Programming**
+- FindAllPossibleStableArraysI
+
+**Hashing**
+- MinimumIndexSum
+- ContainsDuplicatesII
+- FirstUniqueCharacter
+- IntersectionOfArrays
+- IntersectionOfArraysII
+
+**Linked List**
+- DeleteNode
+- MyLinkedList
+- AddTwoNumbers
+- LinkedListCycle
+- DesignLinkedList
+- SinglyLinkedList
+- LinkedListCycleII
+- ReverseLinkedList
+- MergeTwoSortedLists
+- PalindromeLinkedList
+- RemoveNthNodeFromEnd
+- LinkedListsIntersection
+- SplitCircularLinkedList
+- MaximumTwinSumOfLinkedList
+
+**Map & Set Design**
+- MyHashMap
+- MyHashSet
+
+**Sliding Window**
+- SlidingWindow
+- MaxSlidingWindow
+
+**Strings**
+- Anagram
+- Palindrome
+- PalindromeI
+- SplitString
+- PalindromeII
+- ValidAnagram
+- ValidPalindrome
+- JavaStringTokens
+- IsomorphicStrings
+- SmallestAndLargestSub
+- ValidWordAbbreviation
+- FindIndexOfFirstOccurrence
+- MinChangesAlternatingBinaryString
+- PartitioningIntoMinDeciBinaryNumbers
+- LongestSubstringWithoutRepeatingCharacters
+
+**Two Pointers**
+- TwoSum
+- ThreeSum
+- TwoSumII
+- HappyNumber
+- LengthOfLoop
+- AppendCharacters
+- MiddleOfLinkedList
+- StrobogrammaticNumber
+- ContainerWithMostWater
+- FindTheDuplicateNumber
