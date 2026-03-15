@@ -12,21 +12,21 @@
 
 | Category               | Total | Completed | Progress              |
 |------------------------|-------|-----------|----------------------|
-| Arrays & Two Pointers  |  37   |    36     | ██████████  97%      |
-| Sliding Window         |  16   |     2     | █░░░░░░░░░   13%     |
-| Strings                |  14   |     7     | █████░░░░░  50%      |
-| HashMap / HashSet      |  22   |    10     | ████░░░░░░  45%      |
+| Arrays & Two Pointers  |  37   |    37     | ██████████ 100%      |
+| Sliding Window         |  16   |     3     | ██░░░░░░░░  19%      |
+| Strings                |  14   |     9     | ███████░░░  64%      |
+| HashMap / HashSet      |  22   |    14     | ███████░░░  64%      |
 | Binary Search          |  20   |     1     | ░░░░░░░░░░   5%      |
-| Linked List            |  21   |    12     | █████░░░░░  57%      |
+| Linked List            |  21   |    13     | ██████░░░░  62%      |
 | Stack                  |  15   |     0     | ░░░░░░░░░░   0%      |
 | Heap / Priority Queue  |  15   |     0     | ░░░░░░░░░░   0%      |
 | Trees                  |  25   |     1     | ░░░░░░░░░░   4%      |
 | Backtracking           |  15   |     0     | ░░░░░░░░░░   0%      |
 | Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  30   |     2     | █░░░░░░░░░   7%      |
-| Bit Manipulation       |  10   |     2     | ██░░░░░░░░  20%      |
-| Daily Challenges       |   5   |     0     | ░░░░░░░░░░   0%      |
-| **Total**              | **266** | **73** | **████░░░░░░ 27.4%** |
+| Bit Manipulation       |  10   |     3     | ███░░░░░░░  30%      |
+| Daily Challenges       |   5   |     5     | ██████████ 100%      |
+| **Total**              | **266** | **91** | **██████░░░░ 34.2%** |
 
 ---
 
@@ -73,7 +73,7 @@
 
 ---
 
-## 1️⃣ Arrays & Two Pointers (36 / 37)
+## 1️⃣ Arrays & Two Pointers (37 / 37)
 
 | #    | Problem                                     | Difficulty | Status                    | Pattern               |
 |------|---------------------------------------------|------------|---------------------------|-----------------------|
@@ -87,45 +87,46 @@
 | 42   | Trapping Rain Water                         | Hard       | ✅ [Solution](src/arrays/TrappingRainWater.java) | Two Pointers / Stack  |
 | 66   | Plus One                                    | Easy       | ✅ [Solution](src/arrays/PlusOne.java) | Array Manipulation |
 | 75   | Sort Colors                                 | Medium     | ✅ [Solution](src/arrays/SortColors.java) | Two Pointers |
+| 80   | Remove Duplicates from Sorted Array II      | Medium     | ✅ [Solution](src/arrays101/RemoveDuplicatesFromSortedArrayII.java) | Two Pointers |
 | 88   | Merge Sorted Array                          | Easy       | ✅ [Solution](src/arrays101/MergeSortedArray.java) | Two Pointers |
 | 118  | Pascal's Triangle                           | Easy       | ✅ [Solution](src/arrays/PascalsTriangle.java) | DP / Simulation |
 | 121  | Best Time to Buy and Sell Stock             | Easy       | ✅ [Solution](src/arrays/BestTimeToBuyAndSellStock.java) | Greedy |
+| 167  | Two Sum II - Input Array Is Sorted          | Medium     | ✅ [Solution](src/twopointer/TwoSumII.java) | Two Pointers |
+| 169  | Majority Element                            | Easy       | ✅ [Solution](src/arrays/MajorityElement.java) | Sorting / Boyer-Moore |
 | 189  | Rotate Array                                | Medium     | ✅ [Solution](src/arrays/RotateArray.java) | Array Manipulation    |
+| 202  | Happy Number                                | Easy       | ✅ [Solution](src/twopointer/HappyNumber.java) | Fast & Slow Pointers |
+| 246  | Strobogrammatic Number                      | Easy       | ✅ [Solution](src/twopointer/StrobogrammaticNumber.java) | Two Pointers |
 | 283  | Move Zeroes                                 | Easy       | ✅ [Solution](src/arrays101/MoveZeroes.java) | Two Pointers |
 | 287  | Find the Duplicate Number                   | Medium     | ✅ [Solution](src/twopointer/FindTheDuplicateNumber.java) | Floyd's Cycle |
 | 414  | Third Maximum Number                        | Easy       | ✅ [Solution](src/arrays101/ThirdMaximumNumber.java) | Tracking |
-| 485  | Max Consecutive Ones                        | Easy       | ✅ [Solution](src/arrays101/MaxConsecutiveOnes.java) | Array Traversal |
-| 941  | Valid Mountain Array                        | Easy       | ✅ [Solution](src/arrays101/ValidMountainArray.java) | Array Traversal |
-| 977  | Squares of a Sorted Array                   | Easy       | ✅ [Solution](src/arrays101/SquaresOfASortedArray.java) | Two Pointers |
-| 1299 | Replace Elements with Greatest on Right     | Easy       | ✅ [Solution](src/arrays101/ReplaceElementsWithGreatestElementOnRightSide.java) | Reverse Traversal |
-| 1346 | Check If N and Its Double Exist             | Easy       | ✅ [Solution](src/arrays101/CheckIfNAndItsDoubleExist.java) | Hashing |
-| 1480 | Running Sum of 1d Array                     | Easy       | ✅ [Solution](src/arrays/RunningSum1d.java) | Prefix Sum |
-| 1672 | Richest Customer Wealth                     | Easy       | ✅ [Solution](src/arrays/RichestCustomerWealth.java) | Matrix Traversal |
-| 724  | Find Pivot Index                            | Easy       | ✅ [Solution](src/arrays/FindPivotIndex.java) | Prefix Sum |
-| 747  | Largest Number At Least Twice of Others     | Easy       | ✅ [Solution](src/arrays/LargestNumberTwiceOthers.java) | Array Traversal |
-| 80   | Remove Duplicates from Sorted Array II      | Medium     | ✅ [Solution](src/arrays101/RemoveDuplicatesFromSortedArrayII.java) | Two Pointers |
-| 167  | Two Sum II - Input Array Is Sorted          | Medium     | ✅ [Solution](src/twopointer/TwoSumII.java) | Two Pointers |
-| 202  | Happy Number                                | Easy       | ✅ [Solution](src/twopointer/HappyNumber.java) | Fast & Slow Pointers |
-| 246  | Strobogrammatic Number                      | Easy       | ✅ [Solution](src/twopointer/StrobogrammaticNumber.java) | Two Pointers |
 | 448  | Find All Numbers Disappeared in an Array    | Easy       | ✅ [Solution](src/arrays101/FindAllNumbersDisappearedInAnArray.java) | Array Traversal |
 | 457  | Circular Array Loop                         | Medium     | ✅ [Solution](src/arrays/CircularArrayLoop.java) | Fast & Slow Pointers |
+| 485  | Max Consecutive Ones                        | Easy       | ✅ [Solution](src/arrays101/MaxConsecutiveOnes.java) | Array Traversal |
+| 724  | Find Pivot Index                            | Easy       | ✅ [Solution](src/arrays/FindPivotIndex.java) | Prefix Sum |
+| 747  | Largest Number At Least Twice of Others     | Easy       | ✅ [Solution](src/arrays/LargestNumberTwiceOthers.java) | Array Traversal |
+| 941  | Valid Mountain Array                        | Easy       | ✅ [Solution](src/arrays101/ValidMountainArray.java) | Array Traversal |
+| 977  | Squares of a Sorted Array                   | Easy       | ✅ [Solution](src/arrays101/SquaresOfASortedArray.java) | Two Pointers |
 | 1051 | Height Checker                              | Easy       | ✅ [Solution](src/arrays101/HeightChecker.java) | Sorting |
 | 1089 | Duplicate Zeros                             | Easy       | ✅ [Solution](src/arrays101/DuplicateZeros.java) | Two Pointers |
 | 1295 | Find Numbers with Even Number of Digits     | Easy       | ✅ [Solution](src/arrays101/FindNumbersWithEvenNumberOfDigits.java) | Array Traversal |
+| 1299 | Replace Elements with Greatest on Right     | Easy       | ✅ [Solution](src/arrays101/ReplaceElementsWithGreatestElementOnRightSide.java) | Reverse Traversal |
+| 1346 | Check If N and Its Double Exist             | Easy       | ✅ [Solution](src/arrays101/CheckIfNAndItsDoubleExist.java) | Hashing |
+| 1480 | Running Sum of 1d Array                     | Easy       | ✅ [Solution](src/arrays/RunningSum1d.java) | Prefix Sum |
 | 1582 | Special Positions in a Binary Matrix        | Easy       | ✅ [Solution](src/arrays/SpecialPositionsInBinaryMatrix.java) | Matrix Traversal |
-| 1758 | Minimum Changes to Make Alternating String  | Easy       | ✅ [Solution](src/strings/MinChangesAlternatingBinaryString.java) | String |
+| 1672 | Richest Customer Wealth                     | Easy       | ✅ [Solution](src/arrays/RichestCustomerWealth.java) | Matrix Traversal |
 | 2176 | Count Equal and Divisible Pairs in an Array | Easy       | ✅ [Solution](src/arrays/CountPairs.java) | Array Traversal |
 | 2486 | Append Characters to String to Make Subsequence | Medium | ✅ [Solution](src/twopointer/AppendCharacters.java) | Two Pointers |
 
 ---
 
-## 2️⃣ Sliding Window (2 / 16)
+## 2️⃣ Sliding Window (3 / 16)
 
 | #    | Problem                                               | Difficulty | Status | Pattern        |
 |------|-------------------------------------------------------|------------|--------|----------------|
 | 3    | Longest Substring Without Repeating Characters        | Medium     | ✅ [Solution](src/strings/LongestSubstringWithoutRepeatingCharacters.java) | Sliding Window |
 | 76   | Minimum Window Substring                              | Hard       | ⬜      | Sliding Window |
 | 209  | Minimum Size Subarray Sum                             | Medium     | ⬜      | Sliding Window |
+| 239  | Sliding Window Maximum                                | Hard       | ✅ [Solution](src/slidingwindow/MaxSlidingWindow.java) | Sliding Window |
 | 424  | Longest Repeating Character Replacement               | Medium     | ⬜      | Sliding Window |
 | 438  | Find All Anagrams in a String                         | Medium     | ⬜      | Sliding Window |
 | 567  | Permutation in String                                 | Medium     | ⬜      | Sliding Window |
@@ -137,12 +138,11 @@
 | 1423 | Maximum Points You Can Obtain from Cards              | Medium     | ⬜      | Sliding Window |
 | 1493 | Longest Subarray of 1's After Deleting One Element    | Medium     | ⬜      | Sliding Window |
 | 1838 | Frequency of the Most Frequent Element                | Medium     | ⬜      | Sliding Window |
-| 2090 | K Radius Subarray Averages                            | Medium     | ⬜      | Sliding Window |
-| 239  | Sliding Window Maximum                                | Hard       | ✅ [Solution](src/slidingwindow/MaxSlidingWindow.java) | Sliding Window |
+| 1758 | Minimum Changes to Make Alternating String            | Easy       | ✅ [Solution](src/strings/MinChangesAlternatingBinaryString.java) | String |
 
 ---
 
-## 2️⃣b Strings (7 / 14)
+## 3️⃣ Strings (9 / 14)
 
 | #    | Problem                                               | Difficulty | Status | Pattern        |
 |------|-------------------------------------------------------|------------|--------|----------------|
@@ -150,10 +150,11 @@
 | 125  | Valid Palindrome                                      | Easy       | ✅ [Solution](src/strings/ValidPalindrome.java) | Two Pointers |
 | 205  | Isomorphic Strings                                    | Easy       | ✅ [Solution](src/strings/IsomorphicStrings.java) | Hashing |
 | 242  | Valid Anagram                                         | Easy       | ✅ [Solution](src/strings/ValidAnagram.java) | Hashing |
+| 344  | Reverse String                                        | Easy       | ✅ [Solution](src/strings/ReverseString.java) | Two Pointers |
 | 408  | Valid Word Abbreviation                               | Easy       | ✅ [Solution](src/strings/ValidWordAbbreviation.java) | Two Pointers |
 | 680  | Valid Palindrome II                                   | Easy       | ✅ [Solution](src/strings/PalindromeII.java) | Two Pointers |
 | 1689 | Partitioning Into Minimum Number of Deci-Binary Numbers | Easy    | ✅ [Solution](src/strings/PartitioningIntoMinDeciBinaryNumbers.java) | Greedy |
-| 1758 | Minimum Changes to Make Alternating Binary String     | Easy       | ✅ [Solution](src/strings/MinChangesAlternatingBinaryString.java) | String |
+| 1758 | Minimum Changes to Make Alternating String            | Easy       | ✅ [Solution](src/strings/MinChangesAlternatingBinaryString.java) | String |
 | 3    | Longest Substring Without Repeating Characters        | Medium     | ✅ [Solution](src/strings/LongestSubstringWithoutRepeatingCharacters.java) | Sliding Window |
 | 49   | Group Anagrams                                        | Medium     | ⬜      | Hashing |
 | 76   | Minimum Window Substring                              | Hard       | ⬜      | Sliding Window |
@@ -163,7 +164,7 @@
 
 ---
 
-## 3️⃣ HashMap / HashSet (10 / 22)
+## 4️⃣ HashMap / HashSet (14 / 22)
 
 | #    | Problem                            | Difficulty | Status | Pattern              |
 |------|------------------------------------|------------|--------|----------------------|
@@ -192,7 +193,7 @@
 
 ---
 
-## 4️⃣ Binary Search (1 / 20)
+## 5️⃣ Binary Search (2 / 21)
 
 | #    | Problem                                               | Difficulty | Status | Pattern                 |
 |------|-------------------------------------------------------|------------|--------|-------------------------|
@@ -216,10 +217,11 @@
 | 2187 | Minimum Time to Complete Trips                        | Medium     | ⬜      | Binary Search on Answer |
 | 2226 | Maximum Candies Allocated to K Children               | Medium     | ⬜      | Binary Search on Answer |
 | 2300 | Successful Pairs of Spells and Potions                | Medium     | ⬜      | Binary Search           |
+| 3296 | Minimum Number of Seconds to Make Mountain Height Zero | Medium  | ✅ [Solution](src/binarysearch/MakeHeightZero.java) | Binary Search on Answer |
 
 ---
 
-## 5️⃣ Linked List (12 / 21)
+## 6️⃣ Linked List (13 / 21)
 
 | #    | Problem                              | Difficulty | Status | Pattern              |
 |------|--------------------------------------|------------|--------|----------------------|
@@ -247,7 +249,7 @@
 
 ---
 
-## 6️⃣ Stack (0 / 15)
+## 7️⃣ Stack (0 / 15)
 
 | #   | Problem                          | Difficulty | Status | Pattern         |
 |-----|----------------------------------|------------|--------|-----------------|
@@ -269,7 +271,7 @@
 
 ---
 
-## 7️⃣ Heap / Priority Queue (0 / 15)
+## 8️⃣ Heap / Priority Queue (0 / 15)
 
 | #    | Problem                                       | Difficulty | Status | Pattern           |
 |------|-----------------------------------------------|------------|--------|-------------------|
@@ -291,7 +293,7 @@
 
 ---
 
-## 8️⃣ Trees (1 / 25)
+## 9️⃣ Trees (1 / 25)
 
 | #    | Problem                                         | Difficulty | Status | Pattern                |
 |------|-------------------------------------------------|------------|--------|------------------------|
@@ -323,7 +325,7 @@
 
 ---
 
-## 9️⃣ Backtracking (0 / 15)
+## 🔟 Backtracking (0 / 15)
 
 | #   | Problem                               | Difficulty | Status | Pattern             |
 |-----|---------------------------------------|------------|--------|---------------------|
@@ -345,7 +347,7 @@
 
 ---
 
-## 🔟 Graphs (0 / 20)
+## 1️⃣1️⃣ Graphs (0 / 20)
 
 | #    | Problem                                      | Difficulty | Status | Pattern             |
 |------|----------------------------------------------|------------|--------|---------------------|
@@ -373,7 +375,7 @@
 
 ---
 
-## 1️⃣1️⃣ Dynamic Programming (2 / 30)
+## 1️⃣2️⃣ Dynamic Programming (2 / 30)
 
 | #    | Problem                                                   | Difficulty | Status | Pattern         |
 |------|-----------------------------------------------------------|------------|--------|-----------------|
@@ -410,7 +412,7 @@
 
 ---
 
-## 1️⃣2️⃣ Bit Manipulation (2 / 10)
+## 1️⃣3️⃣ Bit Manipulation (2 / 10)
 
 | #    | Problem                             | Difficulty | Status | Pattern          |
 |------|-------------------------------------|------------|--------|------------------|
@@ -424,6 +426,18 @@
 | 461  | Hamming Distance                    | Easy       | ⬜      | XOR              |
 | 693  | Binary Number with Alternating Bits | Easy       | ⬜      | Bit Manipulation |
 | 1009 | Complement of Base 10 Integer       | Easy       | ✅ [Solution](src/bitmanipulation/ComplementBase10Integer.java) | Bit Mask |
+
+---
+
+## 🌟 Daily Challenges (0 / 5)
+
+| #    | Problem                                                  | Difficulty | Status | Pattern          |
+|------|----------------------------------------------------------|------------|--------|------------------|
+| 1318 | Minimum Flips to Make a OR b Equal to c                  | Medium     | ⬜      | Bit Manipulation |
+| 1545 | Find Kth Bit in Nth Binary String                        | Medium     | ⬜      | Recursion        |
+| 1784 | Check if Binary String Has at Most One Segment of Ones   | Easy       | ⬜      | String           |
+| 1980 | Find Unique Binary String                                | Medium     | ⬜      | Backtracking     |
+| 2193 | Minimum Number of Moves to Make Palindrome               | Hard       | ⬜      | Greedy           |
 
 ---
 
