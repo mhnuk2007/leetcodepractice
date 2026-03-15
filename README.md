@@ -12,11 +12,11 @@
 
 | Category               | Total | Completed | Progress             |
 |------------------------|-------|-----------|----------------------|
-| Arrays & Two Pointers  |  25   |    19     | ████████░░  76%      |
+| Arrays & Two Pointers  |  26   |    22     | █████████░  85%      |
 | Sliding Window         |  15   |     1     | █░░░░░░░░░   7%      |
 | HashMap / HashSet      |  22   |    10     | ████░░░░░░  45%      |
 | Binary Search          |  20   |     1     | ░░░░░░░░░░   5%      |
-| Linked List            |  20   |    10     | █████░░░░░  50%      |
+| Linked List            |  20   |    11     | █████░░░░░  55%      |
 | Stack                  |  15   |     0     | ░░░░░░░░░░   0%      |
 | Heap / Priority Queue  |  15   |     0     | ░░░░░░░░░░   0%      |
 | Trees                  |  25   |     1     | ░░░░░░░░░░   4%      |
@@ -24,7 +24,7 @@
 | Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  30   |     2     | █░░░░░░░░░   7%      |
 | Bit Manipulation       |  10   |     2     | ██░░░░░░░░  20%      |
-| **Total**              | **233** | **46** | **██░░░░░░░░ 19.7%** |
+| **Total**              | **234** | **50** | **███░░░░░░░ 21.4%** |
 
 ---
 
@@ -62,14 +62,15 @@
 
 | Date   | Problems Solved                        | Notes                   |
 |--------|----------------------------------------|-------------------------|
-| Mar 13 | 599, 387, 350, 219, 205, 136           | Hashing focus           |
+| Mar 14 | 724                                    | Prefix Sum Practice     |
+| Mar 13 | 31, 42, 2, 599, 387, 350, 219, 205, 136 | Arrays, LL & Hashing    |
 | Mar 12 | 136, 706, 705, 1009, 69, 2486, 33      | Very productive day!    |
 | Mar 11 | 3130, 2130, 21                         | DP and Linked Lists     |
 | Mar 10 | 234, 287, 206, 3129, 19                | Heavy on Linked Lists   |
 
 ---
 
-## 1️⃣ Arrays & Two Pointers (19 / 25)
+## 1️⃣ Arrays & Two Pointers (22 / 26)
 
 | #    | Problem                                     | Difficulty | Status                    | Pattern               |
 |------|---------------------------------------------|------------|---------------------------|-----------------------|
@@ -78,9 +79,9 @@
 | 15   | 3Sum                                        | Medium     | ✅ [Solution](src/twopointer/ThreeSum.java) | Two Pointers |
 | 26   | Remove Duplicates from Sorted Array         | Easy       | ✅ [Solution](src/arrays101/RemoveDuplicates.java) | Two Pointers |
 | 27   | Remove Element                              | Easy       | ✅ [Solution](src/arrays101/RemoveElement.java) | Two Pointers |
-| 31   | Next Permutation                            | Medium     | ⬜                         | Array Manipulation    |
+| 31   | Next Permutation                            | Medium     | ✅ [Solution](src/arrays/NextPermutation.java) | Array Manipulation    |
 | 33   | Search in Rotated Sorted Array              | Medium     | ✅ [Solution](src/arrays/SearchInRotatedSortedArray.java) | Binary Search |
-| 42   | Trapping Rain Water                         | Hard       | ⬜                         | Two Pointers / Stack  |
+| 42   | Trapping Rain Water                         | Hard       | ✅ [Solution](src/arrays/TrappingRainWater.java) | Two Pointers / Stack  |
 | 75   | Sort Colors                                 | Medium     | ✅ [Solution](src/arrays/SortColors.java) | Two Pointers |
 | 88   | Merge Sorted Array                          | Easy       | ✅ [Solution](src/arrays101/MergeSortedArray.java) | Two Pointers |
 | 121  | Best Time to Buy and Sell Stock             | Easy       | ✅ [Solution](src/arrays/BestTimeToBuyAndSellStock.java) | Greedy |
@@ -89,6 +90,7 @@
 | 287  | Find the Duplicate Number                   | Medium     | ✅ [Solution](src/twopointer/FindTheDuplicateNumber.java) | Floyd's Cycle |
 | 414  | Third Maximum Number                        | Easy       | ✅ [Solution](src/arrays101/ThirdMaximumNumber.java) | Tracking |
 | 485  | Max Consecutive Ones                        | Easy       | ✅ [Solution](src/arrays101/MaxConsecutiveOnes.java) | Array Traversal |
+| 724  | Find Pivot Index                            | Easy       | ✅ [Solution](src/arrays/FindPivotIndex.java) | Prefix Sum |
 | 941  | Valid Mountain Array                        | Easy       | ✅ [Solution](src/arrays101/ValidMountainArray.java) | Array Traversal |
 | 977  | Squares of a Sorted Array                   | Easy       | ✅ [Solution](src/arrays101/SquaresOfASortedArray.java) | Two Pointers |
 | 1299 | Replace Elements with Greatest on Right     | Easy       | ✅ [Solution](src/arrays101/ReplaceElementsWithGreatestElementOnRightSide.java) | Reverse Traversal |
@@ -176,11 +178,11 @@
 
 ---
 
-## 5️⃣ Linked List (10 / 20)
+## 5️⃣ Linked List (11 / 20)
 
 | #    | Problem                              | Difficulty | Status | Pattern              |
 |------|--------------------------------------|------------|--------|----------------------|
-| 2    | Add Two Numbers                      | Medium     | ⬜      | Linked List Math     |
+| 2    | Add Two Numbers                      | Medium     | ✅ [Solution](src/linkedlist/AddTwoNumbers.java) | Linked List Math     |
 | 19   | Remove Nth Node From End of List     | Medium     | ✅ [Solution](src/linkedlist/RemoveNthNodeFromEnd.java) | Two Pointers |
 | 21   | Merge Two Sorted Lists               | Easy       | ✅ [Solution](src/linkedlist/MergeTwoSortedLists.java) | Two Pointers |
 | 61   | Rotate List                          | Medium     | ⬜      | Two Pointers         |
@@ -275,7 +277,7 @@
 | 572  | Subtree of Another Tree                         | Easy       | ⬜      | DFS                    |
 | 700  | Search in a Binary Search Tree                  | Easy       | ⬜      | BST Properties         |
 | 814  | Binary Tree Pruning                             | Medium     | ⬜      | DFS                    |
-| 1650 | Lowest Common Ancestor of Binary Tree III       | Medium     | ✅ [Solution](src/tree/LowestCommonAncestorIII.java) | Two Pointers |
+| 1650 | Lowest Common Ancestor of a Binary Tree III       | Medium     | ✅ [Solution](src/tree/LowestCommonAncestorIII.java) | Two Pointers |
 
 ---
 
