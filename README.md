@@ -12,7 +12,7 @@
 
 | Category               | Total | Completed | Progress             |
 |------------------------|-------|-----------|----------------------|
-| Arrays & Two Pointers  |  26   |    24     | ██████████  92%      |
+| Arrays & Two Pointers  |  27   |    25     | ██████████  93%      |
 | Sliding Window         |  15   |     1     | █░░░░░░░░░   7%      |
 | HashMap / HashSet      |  22   |    10     | ████░░░░░░  45%      |
 | Binary Search          |  20   |     1     | ░░░░░░░░░░   5%      |
@@ -24,7 +24,7 @@
 | Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  30   |     2     | █░░░░░░░░░   7%      |
 | Bit Manipulation       |  10   |     2     | ██░░░░░░░░  20%      |
-| **Total**              | **234** | **52** | **███░░░░░░░ 22.2%** |
+| **Total**              | **235** | **53** | **███░░░░░░░ 22.5%** |
 
 ---
 
@@ -62,7 +62,7 @@
 
 | Date   | Problems Solved                        | Notes                   |
 |--------|----------------------------------------|-------------------------|
-| Mar 14 | 747, 724                               | Array & Prefix Sum      |
+| Mar 14 | 66, 747, 724                           | Array Day               |
 | Mar 13 | 31, 42, 2, 599, 387, 350, 219, 205, 136 | Arrays, LL & Hashing    |
 | Mar 12 | 136, 706, 705, 1009, 69, 2486, 33      | Very productive day!    |
 | Mar 11 | 3130, 2130, 21                         | DP and Linked Lists     |
@@ -70,7 +70,7 @@
 
 ---
 
-## 1️⃣ Arrays & Two Pointers (24 / 26)
+## 1️⃣ Arrays & Two Pointers (25 / 27)
 
 | #    | Problem                                     | Difficulty | Status                    | Pattern               |
 |------|---------------------------------------------|------------|---------------------------|-----------------------|
@@ -82,6 +82,7 @@
 | 31   | Next Permutation                            | Medium     | ✅ [Solution](src/arrays/NextPermutation.java) | Array Manipulation    |
 | 33   | Search in Rotated Sorted Array              | Medium     | ✅ [Solution](src/arrays/SearchInRotatedSortedArray.java) | Binary Search |
 | 42   | Trapping Rain Water                         | Hard       | ✅ [Solution](src/arrays/TrappingRainWater.java) | Two Pointers / Stack  |
+| 66   | Plus One                                    | Easy       | ✅ [Solution](src/arrays/PlusOne.java) | Array Manipulation |
 | 75   | Sort Colors                                 | Medium     | ✅ [Solution](src/arrays/SortColors.java) | Two Pointers |
 | 88   | Merge Sorted Array                          | Easy       | ✅ [Solution](src/arrays101/MergeSortedArray.java) | Two Pointers |
 | 121  | Best Time to Buy and Sell Stock             | Easy       | ✅ [Solution](src/arrays/BestTimeToBuyAndSellStock.java) | Greedy |
