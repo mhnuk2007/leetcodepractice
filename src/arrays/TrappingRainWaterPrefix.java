@@ -1,7 +1,7 @@
 package arrays;
 
 /**
- * LC 42 - Trapping Rain Water
+ * LeetCode 42 - Trapping Rain Water
  *
  * Problem:
  *   Given n non-negative integers representing an elevation map where the
