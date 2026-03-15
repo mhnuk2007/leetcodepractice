@@ -3,7 +3,7 @@ package arrays;
 import java.util.Arrays;
 
 /**
- * LC 31 - Next Permutation
+ * Leetcode 31 - Next Permutation
  *
  * Problem:
  *   Rearrange nums into the lexicographically next greater permutation.
