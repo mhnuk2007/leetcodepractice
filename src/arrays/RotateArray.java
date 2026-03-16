@@ -3,117 +3,115 @@ package arrays;
 import java.util.Arrays;
 
 /**
- * LeetCode 189: Rotate Array
+ * LC 189 - Rotate Array
  *
- * Rotate an array to the right by k steps.
+ * Problem:
+ *   Given an integer array nums, rotate the array to the right by k steps.
+ *
+ * Approach 1 — Reverse (Optimal):
+ *   Step 1: reverse entire array       → last k elements are now at front, but reversed
+ *   Step 2: reverse first k elements   → first k elements corrected
+ *   Step 3: reverse remaining n-k      → rest corrected
+ *   Time: O(n)  Space: O(1)
+ *
+ * Approach 2 — Cyclic Replacements:
+ *   Place each element directly at its final position: (i + k) % n
+ *   Follow each cycle until it returns to the start index.
+ *   Repeat from the next start until all n elements are placed (tracked by count).
+ *   Time: O(n)  Space: O(1)
+ *
+ * Example (Approach 1):
+ *   nums=[1,2,3,4,5,6,7], k=3
+ *   reverse all   → [7,6,5,4,3,2,1]
+ *   reverse [0,2] → [5,6,7,4,3,2,1]
+ *   reverse [3,6] → [5,6,7,1,2,3,4] ✓
+ *
+ * Time  : O(n)
+ * Space : O(1)
  */
 public class RotateArray {
 
-    /**
-     * Optimal Solution: Reversal Algorithm
-     *
-     * Steps:
-     * 1. Reverse the whole array
-     * 2. Reverse first k elements
-     * 3. Reverse remaining elements
-     *
-     * Time Complexity: O(n)
-     * Space Complexity: O(1)
-     */
+    public static void main(String[] args) {
+        RotateArray solution = new RotateArray();
+        int[] arr;
+
+        // Test 1: standard case
+        arr = new int[]{1, 2, 3, 4, 5, 6, 7};
+        solution.rotate(arr, 3);
+        System.out.println(Arrays.toString(arr));           // Expected: [5, 6, 7, 1, 2, 3, 4]
+
+        // Test 2: k = 2
+        arr = new int[]{-1, -100, 3, 99};
+        solution.rotate(arr, 2);
+        System.out.println(Arrays.toString(arr));           // Expected: [3, 99, -1, -100]
+
+        // Test 3: k > n — effective rotation is k % n
+        arr = new int[]{1, 2};
+        solution.rotate(arr, 3);
+        System.out.println(Arrays.toString(arr));           // Expected: [2, 1]
+
+        // Test 4: k = 0 — no rotation
+        arr = new int[]{1, 2, 3};
+        solution.rotate(arr, 0);
+        System.out.println(Arrays.toString(arr));           // Expected: [1, 2, 3]
+
+        // Test 5: k = n — full rotation, same array
+        arr = new int[]{1, 2, 3};
+        solution.rotate(arr, 3);
+        System.out.println(Arrays.toString(arr));           // Expected: [1, 2, 3]
+
+        // Test 6: cyclic approach
+        arr = new int[]{1, 2, 3, 4, 5, 6, 7};
+        solution.rotateCyclic(arr, 3);
+        System.out.println(Arrays.toString(arr));           // Expected: [5, 6, 7, 1, 2, 3, 4]
+    }
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // Approach 1 — Reverse (Optimal)
+    // Time: O(n)  Space: O(1)
+    // ─────────────────────────────────────────────────────────────────────────
     public void rotate(int[] nums, int k) {
-
-        if (nums == null || nums.length <= 1) {
-            return;
-        }
-
         int n = nums.length;
-        k %= n;
+        k = k % n;                          // handles k > n, k = 0, k = n
+        if (k == 0) return;
 
-        if (k == 0) {
-            return;
-        }
-
-        reverse(nums, 0, n - 1);     // Step 1
-        reverse(nums, 0, k - 1);     // Step 2
-        reverse(nums, k, n - 1);     // Step 3
+        reverse(nums, 0, n - 1);            // Step 1: reverse all
+        reverse(nums, 0, k - 1);            // Step 2: reverse first k
+        reverse(nums, k, n - 1);            // Step 3: reverse last n-k
     }
 
-    /**
-     * Reverse helper function
-     */
-    private void reverse(int[] nums, int start, int end) {
-
-        while (start < end) {
-
-            int temp = nums[start];
-            nums[start] = nums[end];
-            nums[end] = temp;
-
-            start++;
-            end--;
-        }
-    }
-
-    /**
-     * Cyclic Replacement Approach
-     *
-     * Move elements directly to their correct position.
-     *
-     * Time Complexity: O(n)
-     * Space Complexity: O(1)
-     */
-    public void rotateV2(int[] nums, int k) {
-
-        if (nums == null || nums.length <= 1) {
-            return;
-        }
-
+    // ─────────────────────────────────────────────────────────────────────────
+    // Approach 2 — Cyclic Replacements
+    // Each element is placed directly at its final position (i + k) % n.
+    // Follow each cycle back to its start, then advance to the next unvisited
+    // start. count ensures all n elements are moved exactly once.
+    // Time: O(n)  Space: O(1)
+    // ─────────────────────────────────────────────────────────────────────────
+    public void rotateCyclic(int[] nums, int k) {
         int n = nums.length;
-        k %= n;
-
-        if (k == 0) {
-            return;
-        }
+        k = k % n;
+        if (k == 0) return;
 
         int count = 0;
-
         for (int start = 0; count < n; start++) {
-
-            int current = start;
+            int curr = start;
             int prev = nums[start];
-
             do {
-
-                int next = (current + k) % n;
-
+                int next = (curr + k) % n;
                 int temp = nums[next];
                 nums[next] = prev;
                 prev = temp;
-
-                current = next;
+                curr = next;
                 count++;
-
-            } while (start != current);
+            } while (curr != start);       // cycle complete when we return to start
         }
     }
 
-    public static void main(String[] args) {
-
-        RotateArray solution = new RotateArray();
-
-        int[] nums1 = {1,2,3,4,5,6,7};
-        solution.rotate(nums1,3);
-        System.out.println(Arrays.toString(nums1));
-        // [5,6,7,1,2,3,4]
-
-        int[] nums2 = {-1,-100,3,99};
-        solution.rotate(nums2,2);
-        System.out.println(Arrays.toString(nums2));
-        // [3,99,-1,-100]
-
-        int[] nums3 = {1,2};
-        solution.rotate(nums3,3);
-        System.out.println(Arrays.toString(nums3));
-        // [2,1]
+    private void reverse(int[] nums, int left, int right) {
+        while (left < right) {
+            int temp = nums[left];
+            nums[left++] = nums[right];
+            nums[right--] = temp;
+        }
     }
 }
