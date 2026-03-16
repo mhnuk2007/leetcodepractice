@@ -1,7 +1,7 @@
 package strings;
 
 /**
- * LC 557 - Reverse Words in a String III
+ * LeetCode 557 - Reverse Words in a String III
  *
  * Problem:
  *   Given a string s, reverse the order of characters in each word
