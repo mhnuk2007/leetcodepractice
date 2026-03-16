@@ -13,6 +13,7 @@ Solved Problems List
 - FindDisappearedNumber
 - FindNumbersWithEvenNumberOfDigits
 - FindPivotIndex
+- RunningSum1d
 - HeightChecker
 - LargestNumberTwiceOthers
 - MajorityElement
@@ -30,6 +31,7 @@ Solved Problems List
 - RemoveElement
 - ReplaceElement
 - ReplaceElementsWithGreatestElementOnRightSide
+- RichestCustomerWealth
 - RotateArray
 - SearchInRotatedSortedArray
 - SpecialPositionsInBinaryMatrix
@@ -53,6 +55,7 @@ Solved Problems List
 
 **Dynamic Programming**
 - FindAllPossibleStableArraysI
+- FindAllPossibleStableArraysII
 
 **Hashing**
 - ContainsDuplicatesII
