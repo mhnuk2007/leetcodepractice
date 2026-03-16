@@ -53,8 +53,8 @@ public class ReverseWordsInStringIII {
         char[] arr = s.toCharArray();
         int n = arr.length;
         int i = 0;
-        for (int j = 0; j < n; j++) {
-            if (j == n - 1 || arr[j] == ' ') {
+        for (int j = 0; j <= n; j++) {
+            if (j == n || arr[j] == ' ') {
                 reverse(arr, i, j - 1);
                 i = j + 1;
             }
