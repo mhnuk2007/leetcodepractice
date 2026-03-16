@@ -1,114 +1,138 @@
 Solved Problems List
 
 **Arrays & arrays101**
-- PlusOne
-- RotateArray
-- FindPivotIndex
-- MajorityElement
-- NextPermutation
-- PascalsTriangle
+- BestTimeToBuyAndSellStock
+- CheckIfExists
+- CheckIfNAndItsDoubleExist
 - CircularArrayLoop
 - ContainsDuplicate
-- TrappingRainWater
-- TrappingRainWaterPrefix
-- LargestNumberTwiceOthers
-- BestTimeToBuyAndSellStock
-- SearchInRotatedSortedArray
-- SpecialPositionsInBinaryMatrix
-- MoveZeroes
 - CountPairs
-- CheckIfExists
-- HeightChecker
-- RemoveElement
 - DuplicateZeros
 - EvenNoOfDigits
-- ReplaceElement
-- SquaresOfSorted
+- FindAllNumbersDisappearedInAnArray
+- FindDisappearedNumber
+- FindNumbersWithEvenNumberOfDigits
+- FindPivotIndex
+- HeightChecker
+- LargestNumberTwiceOthers
+- MajorityElement
+- MaxConsecutiveOnes
 - MergeSortedArray
+- MinChangesAlternatingBinaryString
+- MoveZeroes
+- MoveZeros
+- NextPermutation
+- PascalsTriangle
+- PlusOne
 - RemoveDuplicates
 - RemoveDuplicates2
-- MaxConsecutiveOnes
-- ThirdMaximumNumber
-- ValidMountainArray
-- FindDisappearedNumber
-- SquaresOfASortedArray
-- CheckIfNAndItsDoubleExist
-- FindNumbersWithEvenNumberOfDigits
-- MinChangesAlternatingBinaryString
 - RemoveDuplicatesFromSortedArrayII
-- FindAllNumbersDisappearedInAnArray
+- RemoveElement
+- ReplaceElement
 - ReplaceElementsWithGreatestElementOnRightSide
+- RotateArray
+- SearchInRotatedSortedArray
+- SpecialPositionsInBinaryMatrix
+- SquaresOfASortedArray
+- SquaresOfSorted
+- ThirdMaximumNumber
+- TrappingRainWater
+- TrappingRainWaterPrefix
+- ValidMountainArray
 
 **Binary Search**
 - SqrtX
 
 **Daily Challenges**
-- MinFlips
-- FindKthBit
-- MinimumSwaps
 - CheckOneSegment
-- FindUniqueBinaryString
 - ComplementBase10Integer
+- FindKthBit
+- FindUniqueBinaryString
+- MinFlips
+- MinimumSwaps
 
 **Dynamic Programming**
 - FindAllPossibleStableArraysI
 
 **Hashing**
-- MinimumIndexSum
 - ContainsDuplicatesII
 - FirstUniqueCharacter
 - IntersectionOfArrays
 - IntersectionOfArraysII
+- MinimumIndexSum
 
 **Linked List**
-- DeleteNode
-- MyLinkedList
 - AddTwoNumbers
-- LinkedListCycle
+- DeleteNode
 - DesignLinkedList
-- SinglyLinkedList
+- LinkedListCycle
 - LinkedListCycleII
-- ReverseLinkedList
+- LinkedListsIntersection
+- MaximumTwinSumOfLinkedList
 - MergeTwoSortedLists
+- MyLinkedList
 - PalindromeLinkedList
 - RemoveNthNodeFromEnd
-- LinkedListsIntersection
+- ReverseLinkedList
+- SinglyLinkedList
 - SplitCircularLinkedList
-- MaximumTwinSumOfLinkedList
 
 **Map & Set Design**
 - MyHashMap
 - MyHashSet
 
 **Sliding Window**
-- SlidingWindow
 - MaxSlidingWindow
+- SlidingWindow
 
 **Strings**
 - Anagram
+- FindIndexOfFirstOccurrence
+- IsomorphicStrings
+- JavaStringTokens
+- LongestSubstringWithoutRepeatingCharacters
+- MinChangesAlternatingBinaryString
 - Palindrome
 - PalindromeI
-- SplitString
 - PalindromeII
+- PartitioningIntoMinDeciBinaryNumbers
+- ReverseString
+- ReverseWordsInString
+- ReverseWordsInStringII
+- ReverseWordsInStringIII
+- SmallestAndLargestSub
+- SplitString
 - ValidAnagram
 - ValidPalindrome
-- JavaStringTokens
-- IsomorphicStrings
-- SmallestAndLargestSub
 - ValidWordAbbreviation
-- FindIndexOfFirstOccurrence
-- MinChangesAlternatingBinaryString
-- PartitioningIntoMinDeciBinaryNumbers
-- LongestSubstringWithoutRepeatingCharacters
 
 **Two Pointers**
-- TwoSum
-- ThreeSum
-- TwoSumII
-- HappyNumber
-- LengthOfLoop
 - AppendCharacters
-- MiddleOfLinkedList
-- StrobogrammaticNumber
 - ContainerWithMostWater
 - FindTheDuplicateNumber
+- HappyNumber
+- LengthOfLoop
+- MiddleOfLinkedList
+- StrobogrammaticNumber
+- ThreeSum
+- TwoSum
+- TwoSumII
+
+**Sorting Algorithms**
+- BubbleSort
+- SortColors
+- TwoColorSort
+
+**Patterns**
+- FloydTriangle
+- FloydTriangleMathematically
+
+**Bit Manipulation**
+- SingleNumber
+
+**Root (Legacy / Standalone)**
+- FirstOccuranceInAString
+- MajorityElement
+- MaxProfit
+- PartitionDeciBinary
+- RotateArray

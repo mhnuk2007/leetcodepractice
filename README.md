@@ -29,6 +29,149 @@
 | **Total**              | **266** | **91** | **██████░░░░ 34.2%** |
 
 ---
+<!-- SOLUTIONS_INDEX_START -->
+## Solutions Index (from src)
+This section is generated from the current contents of `src/` (excluding helper files like `Main`, `Solution`, and `ListNode`).
+
+### Arrays & arrays101 (38)
+- BestTimeToBuyAndSellStock - [Solution](src/arrays/BestTimeToBuyAndSellStock.java)
+- CheckIfExists - [Solution](src/arrays101/CheckIfExists.java)
+- CheckIfNAndItsDoubleExist - [Solution](src/arrays101/CheckIfNAndItsDoubleExist.java)
+- CircularArrayLoop - [Solution](src/arrays/CircularArrayLoop.java)
+- ContainsDuplicate - [Solution](src/arrays/ContainsDuplicate.java)
+- CountPairs - [Solution](src/arrays101/CountPairs.java)
+- DuplicateZeros - [Solution](src/arrays101/DuplicateZeros.java)
+- EvenNoOfDigits - [Solution](src/arrays101/EvenNoOfDigits.java)
+- FindAllNumbersDisappearedInAnArray - [Solution](src/arrays101/FindAllNumbersDisappearedInAnArray.java)
+- FindDisappearedNumber - [Solution](src/arrays101/FindDisappearedNumber.java)
+- FindNumbersWithEvenNumberOfDigits - [Solution](src/arrays101/FindNumbersWithEvenNumberOfDigits.java)
+- FindPivotIndex - [Solution](src/arrays/FindPivotIndex.java)
+- HeightChecker - [Solution](src/arrays101/HeightChecker.java)
+- LargestNumberTwiceOthers - [Solution](src/arrays/LargestNumberTwiceOthers.java)
+- MajorityElement - [Solution](src/arrays/MajorityElement.java)
+- MaxConsecutiveOnes - [Solution](src/arrays101/MaxConsecutiveOnes.java)
+- MergeSortedArray - [Solution](src/arrays101/MergeSortedArray.java)
+- MinChangesAlternatingBinaryString - [Solution](src/arrays101/MinChangesAlternatingBinaryString.java)
+- MoveZeroes - [Solution](src/arrays101/MoveZeroes.java)
+- MoveZeros - [Solution](src/arrays101/MoveZeros.java)
+- NextPermutation - [Solution](src/arrays/NextPermutation.java)
+- PascalsTriangle - [Solution](src/arrays/PascalsTriangle.java)
+- PlusOne - [Solution](src/arrays/PlusOne.java)
+- RemoveDuplicates - [Solution](src/arrays101/RemoveDuplicates.java)
+- RemoveDuplicates2 - [Solution](src/arrays101/RemoveDuplicates2.java)
+- RemoveDuplicatesFromSortedArrayII - [Solution](src/arrays101/RemoveDuplicatesFromSortedArrayII.java)
+- RemoveElement - [Solution](src/arrays101/RemoveElement.java)
+- ReplaceElement - [Solution](src/arrays101/ReplaceElement.java)
+- ReplaceElementsWithGreatestElementOnRightSide - [Solution](src/arrays101/ReplaceElementsWithGreatestElementOnRightSide.java)
+- RotateArray - [Solution](src/arrays/RotateArray.java)
+- SearchInRotatedSortedArray - [Solution](src/arrays/SearchInRotatedSortedArray.java)
+- SpecialPositionsInBinaryMatrix - [Solution](src/arrays/SpecialPositionsInBinaryMatrix.java)
+- SquaresOfASortedArray - [Solution](src/arrays101/SquaresOfASortedArray.java)
+- SquaresOfSorted - [Solution](src/arrays101/SquaresOfSorted.java)
+- ThirdMaximumNumber - [Solution](src/arrays101/ThirdMaximumNumber.java)
+- TrappingRainWater - [Solution](src/arrays/TrappingRainWater.java)
+- TrappingRainWaterPrefix - [Solution](src/arrays/TrappingRainWaterPrefix.java)
+- ValidMountainArray - [Solution](src/arrays101/ValidMountainArray.java)
+
+### Binary Search (1)
+- SqrtX - [Solution](src/binarysearch/SqrtX.java)
+
+### Daily Challenges (6)
+- CheckOneSegment - [Solution](src/dailychallenges/CheckOneSegment.java)
+- ComplementBase10Integer - [Solution](src/dailychallenges/ComplementBase10Integer.java)
+- FindKthBit - [Solution](src/dailychallenges/FindKthBit.java)
+- FindUniqueBinaryString - [Solution](src/dailychallenges/FindUniqueBinaryString.java)
+- MinFlips - [Solution](src/dailychallenges/MinFlips.java)
+- MinimumSwaps - [Solution](src/dailychallenges/MinimumSwaps.java)
+
+### Dynamic Programming (1)
+- FindAllPossibleStableArraysI - [Solution](src/dp/FindAllPossibleStableArraysI.java)
+
+### Hashing (5)
+- ContainsDuplicatesII - [Solution](src/hashing/ContainsDuplicatesII.java)
+- FirstUniqueCharacter - [Solution](src/hashing/FirstUniqueCharacter.java)
+- IntersectionOfArrays - [Solution](src/hashing/IntersectionOfArrays.java)
+- IntersectionOfArraysII - [Solution](src/hashing/IntersectionOfArraysII.java)
+- MinimumIndexSum - [Solution](src/hashing/MinimumIndexSum.java)
+
+### Linked List (14)
+- AddTwoNumbers - [Solution](src/linkedlist/AddTwoNumbers.java)
+- DeleteNode - [Solution](src/linkedlist/DeleteNode.java)
+- DesignLinkedList - [Solution](src/linkedlist/DesignLinkedList.java)
+- LinkedListCycle - [Solution](src/linkedlist/LinkedListCycle.java)
+- LinkedListCycleII - [Solution](src/linkedlist/LinkedListCycleII.java)
+- LinkedListsIntersection - [Solution](src/linkedlist/LinkedListsIntersection.java)
+- MaximumTwinSumOfLinkedList - [Solution](src/linkedlist/MaximumTwinSumOfLinkedList.java)
+- MergeTwoSortedLists - [Solution](src/linkedlist/MergeTwoSortedLists.java)
+- MyLinkedList - [Solution](src/linkedlist/MyLinkedList.java)
+- PalindromeLinkedList - [Solution](src/linkedlist/PalindromeLinkedList.java)
+- RemoveNthNodeFromEnd - [Solution](src/linkedlist/RemoveNthNodeFromEnd.java)
+- ReverseLinkedList - [Solution](src/linkedlist/ReverseLinkedList.java)
+- SinglyLinkedList - [Solution](src/linkedlist/SinglyLinkedList.java)
+- SplitCircularLinkedList - [Solution](src/linkedlist/SplitCircularLinkedList.java)
+
+### Map & Set Design (2)
+- MyHashMap - [Solution](src/map/designhashmap/MyHashMap.java)
+- MyHashSet - [Solution](src/set/designhashset/MyHashSet.java)
+
+### Sliding Window (2)
+- MaxSlidingWindow - [Solution](src/slidingwindow/MaxSlidingWindow.java)
+- SlidingWindow - [Solution](src/slidingwindow/SlidingWindow.java)
+
+### Strings (19)
+- Anagram - [Solution](src/strings/Anagram.java)
+- FindIndexOfFirstOccurrence - [Solution](src/strings/FindIndexOfFirstOccurrence.java)
+- IsomorphicStrings - [Solution](src/strings/IsomorphicStrings.java)
+- JavaStringTokens - [Solution](src/strings/JavaStringTokens.java)
+- LongestSubstringWithoutRepeatingCharacters - [Solution](src/strings/LongestSubstringWithoutRepeatingCharacters.java)
+- MinChangesAlternatingBinaryString - [Solution](src/strings/MinChangesAlternatingBinaryString.java)
+- Palindrome - [Solution](src/strings/Palindrome.java)
+- PalindromeI - [Solution](src/strings/PalindromeI.java)
+- PalindromeII - [Solution](src/strings/PalindromeII.java)
+- PartitioningIntoMinDeciBinaryNumbers - [Solution](src/strings/PartitioningIntoMinDeciBinaryNumbers.java)
+- ReverseString - [Solution](src/strings/ReverseString.java)
+- ReverseWordsInString - [Solution](src/strings/ReverseWordsInString.java)
+- ReverseWordsInStringII - [Solution](src/strings/ReverseWordsInStringII.java)
+- ReverseWordsInStringIII - [Solution](src/strings/ReverseWordsInStringIII.java)
+- SmallestAndLargestSub - [Solution](src/strings/SmallestAndLargestSub.java)
+- SplitString - [Solution](src/strings/SplitString.java)
+- ValidAnagram - [Solution](src/strings/ValidAnagram.java)
+- ValidPalindrome - [Solution](src/strings/ValidPalindrome.java)
+- ValidWordAbbreviation - [Solution](src/strings/ValidWordAbbreviation.java)
+
+### Two Pointers (10)
+- AppendCharacters - [Solution](src/twopointer/AppendCharacters.java)
+- ContainerWithMostWater - [Solution](src/twopointer/ContainerWithMostWater.java)
+- FindTheDuplicateNumber - [Solution](src/twopointer/FindTheDuplicateNumber.java)
+- HappyNumber - [Solution](src/twopointer/HappyNumber.java)
+- LengthOfLoop - [Solution](src/twopointer/LengthOfLoop.java)
+- MiddleOfLinkedList - [Solution](src/twopointer/MiddleOfLinkedList.java)
+- StrobogrammaticNumber - [Solution](src/twopointer/StrobogrammaticNumber.java)
+- ThreeSum - [Solution](src/twopointer/ThreeSum.java)
+- TwoSum - [Solution](src/twopointer/TwoSum.java)
+- TwoSumII - [Solution](src/twopointer/TwoSumII.java)
+
+### Sorting Algorithms (3)
+- BubbleSort - [Solution](src/sortalgrithms/BubbleSort.java)
+- SortColors - [Solution](src/sortalgrithms/SortColors.java)
+- TwoColorSort - [Solution](src/sortalgrithms/TwoColorSort.java)
+
+### Patterns (2)
+- FloydTriangle - [Solution](src/patterns/FloydTriangle.java)
+- FloydTriangleMathematically - [Solution](src/patterns/FloydTriangleMathematically.java)
+
+### Bit Manipulation (1)
+- SingleNumber - [Solution](src/set/SingleNumber.java)
+
+### Root (Legacy / Standalone) (5)
+- FirstOccuranceInAString - [Solution](src/FirstOccuranceInAString.java)
+- MajorityElement - [Solution](src/MajorityElement.java)
+- MaxProfit - [Solution](src/MaxProfit.java)
+- PartitionDeciBinary - [Solution](src/PartitionDeciBinary.java)
+- RotateArray - [Solution](src/RotateArray.java)
+
+<!-- SOLUTIONS_INDEX_END -->
+---
 
 ## 📌 Current Focus & Recommended Next Problems
 
@@ -451,4 +594,4 @@
 
 ---
 
-*Last updated: March 2026*
+*Last updated: March 16, 2026*
