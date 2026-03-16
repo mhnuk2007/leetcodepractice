@@ -1,4 +1,4 @@
-# Java DSA Roadmap – 266 Essential LeetCode Problems
+# Java DSA Roadmap – 269 Essential LeetCode Problems
 
 **Author:** Mohan Lal | **GitHub:** [mhnuk2007](https://github.com/mhnuk2007) | **LeetCode:** [mhnuk2007](https://leetcode.com/mhnuk2007) | **Language:** Java
 
@@ -12,165 +12,22 @@
 
 | Category               | Total | Completed | Progress              |
 |------------------------|-------|-----------|----------------------|
-| Arrays & Two Pointers  |  37   |    37     | ██████████ 100%      |
-| Sliding Window         |  16   |     3     | ██░░░░░░░░  19%      |
-| Strings                |  14   |     9     | ███████░░░  64%      |
-| HashMap / HashSet      |  22   |    14     | ███████░░░  64%      |
+| Arrays & Two Pointers  |  39   |    39     | ██████████ 100%      |
+| Sliding Window         |  16   |     2     | █░░░░░░░░░  13%      |
+| Strings                |  14   |     7     | █████░░░░░  50%      |
+| HashMap / HashSet      |  22   |    10     | ████░░░░░░  45%      |
 | Binary Search          |  20   |     1     | ░░░░░░░░░░   5%      |
-| Linked List            |  21   |    13     | ██████░░░░  62%      |
+| Linked List            |  21   |    12     | █████░░░░░  57%      |
 | Stack                  |  15   |     0     | ░░░░░░░░░░   0%      |
 | Heap / Priority Queue  |  15   |     0     | ░░░░░░░░░░   0%      |
 | Trees                  |  25   |     1     | ░░░░░░░░░░   4%      |
 | Backtracking           |  15   |     0     | ░░░░░░░░░░   0%      |
 | Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  30   |     2     | █░░░░░░░░░   7%      |
-| Bit Manipulation       |  10   |     3     | ███░░░░░░░  30%      |
-| Daily Challenges       |   5   |     5     | ██████████ 100%      |
-| **Total**              | **266** | **91** | **██████░░░░ 34.2%** |
+| Bit Manipulation       |  10   |     2     | ██░░░░░░░░  20%      |
+| Daily Challenges       |   5   |     0     | ░░░░░░░░░░   0%      |
+| **Total**              | **269** | **78** | **████░░░░░░ 29.0%** |
 
----
-<!-- SOLUTIONS_INDEX_START -->
-## Solutions Index (from src)
-This section is generated from the current contents of `src/` (excluding helper files like `Main`, `Solution`, and `ListNode`).
-
-### Arrays & arrays101 (38)
-- BestTimeToBuyAndSellStock - [Solution](src/arrays/BestTimeToBuyAndSellStock.java)
-- CheckIfExists - [Solution](src/arrays101/CheckIfExists.java)
-- CheckIfNAndItsDoubleExist - [Solution](src/arrays101/CheckIfNAndItsDoubleExist.java)
-- CircularArrayLoop - [Solution](src/arrays/CircularArrayLoop.java)
-- ContainsDuplicate - [Solution](src/arrays/ContainsDuplicate.java)
-- CountPairs - [Solution](src/arrays101/CountPairs.java)
-- DuplicateZeros - [Solution](src/arrays101/DuplicateZeros.java)
-- EvenNoOfDigits - [Solution](src/arrays101/EvenNoOfDigits.java)
-- FindAllNumbersDisappearedInAnArray - [Solution](src/arrays101/FindAllNumbersDisappearedInAnArray.java)
-- FindDisappearedNumber - [Solution](src/arrays101/FindDisappearedNumber.java)
-- FindNumbersWithEvenNumberOfDigits - [Solution](src/arrays101/FindNumbersWithEvenNumberOfDigits.java)
-- FindPivotIndex - [Solution](src/arrays/FindPivotIndex.java)
-- HeightChecker - [Solution](src/arrays101/HeightChecker.java)
-- LargestNumberTwiceOthers - [Solution](src/arrays/LargestNumberTwiceOthers.java)
-- MajorityElement - [Solution](src/arrays/MajorityElement.java)
-- MaxConsecutiveOnes - [Solution](src/arrays101/MaxConsecutiveOnes.java)
-- MergeSortedArray - [Solution](src/arrays101/MergeSortedArray.java)
-- MinChangesAlternatingBinaryString - [Solution](src/arrays101/MinChangesAlternatingBinaryString.java)
-- MoveZeroes - [Solution](src/arrays101/MoveZeroes.java)
-- MoveZeros - [Solution](src/arrays101/MoveZeros.java)
-- NextPermutation - [Solution](src/arrays/NextPermutation.java)
-- PascalsTriangle - [Solution](src/arrays/PascalsTriangle.java)
-- PlusOne - [Solution](src/arrays/PlusOne.java)
-- RemoveDuplicates - [Solution](src/arrays101/RemoveDuplicates.java)
-- RemoveDuplicates2 - [Solution](src/arrays101/RemoveDuplicates2.java)
-- RemoveDuplicatesFromSortedArrayII - [Solution](src/arrays101/RemoveDuplicatesFromSortedArrayII.java)
-- RemoveElement - [Solution](src/arrays101/RemoveElement.java)
-- ReplaceElement - [Solution](src/arrays101/ReplaceElement.java)
-- ReplaceElementsWithGreatestElementOnRightSide - [Solution](src/arrays101/ReplaceElementsWithGreatestElementOnRightSide.java)
-- RotateArray - [Solution](src/arrays/RotateArray.java)
-- SearchInRotatedSortedArray - [Solution](src/arrays/SearchInRotatedSortedArray.java)
-- SpecialPositionsInBinaryMatrix - [Solution](src/arrays/SpecialPositionsInBinaryMatrix.java)
-- SquaresOfASortedArray - [Solution](src/arrays101/SquaresOfASortedArray.java)
-- SquaresOfSorted - [Solution](src/arrays101/SquaresOfSorted.java)
-- ThirdMaximumNumber - [Solution](src/arrays101/ThirdMaximumNumber.java)
-- TrappingRainWater - [Solution](src/arrays/TrappingRainWater.java)
-- TrappingRainWaterPrefix - [Solution](src/arrays/TrappingRainWaterPrefix.java)
-- ValidMountainArray - [Solution](src/arrays101/ValidMountainArray.java)
-
-### Binary Search (1)
-- SqrtX - [Solution](src/binarysearch/SqrtX.java)
-
-### Daily Challenges (6)
-- CheckOneSegment - [Solution](src/dailychallenges/CheckOneSegment.java)
-- ComplementBase10Integer - [Solution](src/dailychallenges/ComplementBase10Integer.java)
-- FindKthBit - [Solution](src/dailychallenges/FindKthBit.java)
-- FindUniqueBinaryString - [Solution](src/dailychallenges/FindUniqueBinaryString.java)
-- MinFlips - [Solution](src/dailychallenges/MinFlips.java)
-- MinimumSwaps - [Solution](src/dailychallenges/MinimumSwaps.java)
-
-### Dynamic Programming (1)
-- FindAllPossibleStableArraysI - [Solution](src/dp/FindAllPossibleStableArraysI.java)
-
-### Hashing (5)
-- ContainsDuplicatesII - [Solution](src/hashing/ContainsDuplicatesII.java)
-- FirstUniqueCharacter - [Solution](src/hashing/FirstUniqueCharacter.java)
-- IntersectionOfArrays - [Solution](src/hashing/IntersectionOfArrays.java)
-- IntersectionOfArraysII - [Solution](src/hashing/IntersectionOfArraysII.java)
-- MinimumIndexSum - [Solution](src/hashing/MinimumIndexSum.java)
-
-### Linked List (14)
-- AddTwoNumbers - [Solution](src/linkedlist/AddTwoNumbers.java)
-- DeleteNode - [Solution](src/linkedlist/DeleteNode.java)
-- DesignLinkedList - [Solution](src/linkedlist/DesignLinkedList.java)
-- LinkedListCycle - [Solution](src/linkedlist/LinkedListCycle.java)
-- LinkedListCycleII - [Solution](src/linkedlist/LinkedListCycleII.java)
-- LinkedListsIntersection - [Solution](src/linkedlist/LinkedListsIntersection.java)
-- MaximumTwinSumOfLinkedList - [Solution](src/linkedlist/MaximumTwinSumOfLinkedList.java)
-- MergeTwoSortedLists - [Solution](src/linkedlist/MergeTwoSortedLists.java)
-- MyLinkedList - [Solution](src/linkedlist/MyLinkedList.java)
-- PalindromeLinkedList - [Solution](src/linkedlist/PalindromeLinkedList.java)
-- RemoveNthNodeFromEnd - [Solution](src/linkedlist/RemoveNthNodeFromEnd.java)
-- ReverseLinkedList - [Solution](src/linkedlist/ReverseLinkedList.java)
-- SinglyLinkedList - [Solution](src/linkedlist/SinglyLinkedList.java)
-- SplitCircularLinkedList - [Solution](src/linkedlist/SplitCircularLinkedList.java)
-
-### Map & Set Design (2)
-- MyHashMap - [Solution](src/map/designhashmap/MyHashMap.java)
-- MyHashSet - [Solution](src/set/designhashset/MyHashSet.java)
-
-### Sliding Window (2)
-- MaxSlidingWindow - [Solution](src/slidingwindow/MaxSlidingWindow.java)
-- SlidingWindow - [Solution](src/slidingwindow/SlidingWindow.java)
-
-### Strings (19)
-- Anagram - [Solution](src/strings/Anagram.java)
-- FindIndexOfFirstOccurrence - [Solution](src/strings/FindIndexOfFirstOccurrence.java)
-- IsomorphicStrings - [Solution](src/strings/IsomorphicStrings.java)
-- JavaStringTokens - [Solution](src/strings/JavaStringTokens.java)
-- LongestSubstringWithoutRepeatingCharacters - [Solution](src/strings/LongestSubstringWithoutRepeatingCharacters.java)
-- MinChangesAlternatingBinaryString - [Solution](src/strings/MinChangesAlternatingBinaryString.java)
-- Palindrome - [Solution](src/strings/Palindrome.java)
-- PalindromeI - [Solution](src/strings/PalindromeI.java)
-- PalindromeII - [Solution](src/strings/PalindromeII.java)
-- PartitioningIntoMinDeciBinaryNumbers - [Solution](src/strings/PartitioningIntoMinDeciBinaryNumbers.java)
-- ReverseString - [Solution](src/strings/ReverseString.java)
-- ReverseWordsInString - [Solution](src/strings/ReverseWordsInString.java)
-- ReverseWordsInStringII - [Solution](src/strings/ReverseWordsInStringII.java)
-- ReverseWordsInStringIII - [Solution](src/strings/ReverseWordsInStringIII.java)
-- SmallestAndLargestSub - [Solution](src/strings/SmallestAndLargestSub.java)
-- SplitString - [Solution](src/strings/SplitString.java)
-- ValidAnagram - [Solution](src/strings/ValidAnagram.java)
-- ValidPalindrome - [Solution](src/strings/ValidPalindrome.java)
-- ValidWordAbbreviation - [Solution](src/strings/ValidWordAbbreviation.java)
-
-### Two Pointers (10)
-- AppendCharacters - [Solution](src/twopointer/AppendCharacters.java)
-- ContainerWithMostWater - [Solution](src/twopointer/ContainerWithMostWater.java)
-- FindTheDuplicateNumber - [Solution](src/twopointer/FindTheDuplicateNumber.java)
-- HappyNumber - [Solution](src/twopointer/HappyNumber.java)
-- LengthOfLoop - [Solution](src/twopointer/LengthOfLoop.java)
-- MiddleOfLinkedList - [Solution](src/twopointer/MiddleOfLinkedList.java)
-- StrobogrammaticNumber - [Solution](src/twopointer/StrobogrammaticNumber.java)
-- ThreeSum - [Solution](src/twopointer/ThreeSum.java)
-- TwoSum - [Solution](src/twopointer/TwoSum.java)
-- TwoSumII - [Solution](src/twopointer/TwoSumII.java)
-
-### Sorting Algorithms (3)
-- BubbleSort - [Solution](src/sortalgrithms/BubbleSort.java)
-- SortColors - [Solution](src/sortalgrithms/SortColors.java)
-- TwoColorSort - [Solution](src/sortalgrithms/TwoColorSort.java)
-
-### Patterns (2)
-- FloydTriangle - [Solution](src/patterns/FloydTriangle.java)
-- FloydTriangleMathematically - [Solution](src/patterns/FloydTriangleMathematically.java)
-
-### Bit Manipulation (1)
-- SingleNumber - [Solution](src/set/SingleNumber.java)
-
-### Root (Legacy / Standalone) (5)
-- FirstOccuranceInAString - [Solution](src/FirstOccuranceInAString.java)
-- MajorityElement - [Solution](src/MajorityElement.java)
-- MaxProfit - [Solution](src/MaxProfit.java)
-- PartitionDeciBinary - [Solution](src/PartitionDeciBinary.java)
-- RotateArray - [Solution](src/RotateArray.java)
-
-<!-- SOLUTIONS_INDEX_END -->
 ---
 
 ## 📌 Current Focus & Recommended Next Problems
@@ -216,7 +73,7 @@ This section is generated from the current contents of `src/` (excluding helper 
 
 ---
 
-## 1️⃣ Arrays & Two Pointers (37 / 37)
+## 1️⃣ Arrays & Two Pointers (39 / 39)
 
 | #    | Problem                                     | Difficulty | Status                    | Pattern               |
 |------|---------------------------------------------|------------|---------------------------|-----------------------|
@@ -228,48 +85,47 @@ This section is generated from the current contents of `src/` (excluding helper 
 | 31   | Next Permutation                            | Medium     | ✅ [Solution](src/arrays/NextPermutation.java) | Array Manipulation    |
 | 33   | Search in Rotated Sorted Array              | Medium     | ✅ [Solution](src/arrays/SearchInRotatedSortedArray.java) | Binary Search |
 | 42   | Trapping Rain Water                         | Hard       | ✅ [Solution](src/arrays/TrappingRainWater.java) | Two Pointers / Stack  |
-| 66   | Plus One                                    | Easy       | ✅ [Solution](src/arrays/PlusOne.java) | Array Manipulation |
 | 75   | Sort Colors                                 | Medium     | ✅ [Solution](src/arrays/SortColors.java) | Two Pointers |
-| 80   | Remove Duplicates from Sorted Array II      | Medium     | ✅ [Solution](src/arrays101/RemoveDuplicatesFromSortedArrayII.java) | Two Pointers |
 | 88   | Merge Sorted Array                          | Easy       | ✅ [Solution](src/arrays101/MergeSortedArray.java) | Two Pointers |
-| 118  | Pascal's Triangle                           | Easy       | ✅ [Solution](src/arrays/PascalsTriangle.java) | DP / Simulation |
 | 121  | Best Time to Buy and Sell Stock             | Easy       | ✅ [Solution](src/arrays/BestTimeToBuyAndSellStock.java) | Greedy |
-| 167  | Two Sum II - Input Array Is Sorted          | Medium     | ✅ [Solution](src/twopointer/TwoSumII.java) | Two Pointers |
-| 169  | Majority Element                            | Easy       | ✅ [Solution](src/arrays/MajorityElement.java) | Sorting / Boyer-Moore |
 | 189  | Rotate Array                                | Medium     | ✅ [Solution](src/arrays/RotateArray.java) | Array Manipulation    |
-| 202  | Happy Number                                | Easy       | ✅ [Solution](src/twopointer/HappyNumber.java) | Fast & Slow Pointers |
-| 246  | Strobogrammatic Number                      | Easy       | ✅ [Solution](src/twopointer/StrobogrammaticNumber.java) | Two Pointers |
 | 283  | Move Zeroes                                 | Easy       | ✅ [Solution](src/arrays101/MoveZeroes.java) | Two Pointers |
 | 287  | Find the Duplicate Number                   | Medium     | ✅ [Solution](src/twopointer/FindTheDuplicateNumber.java) | Floyd's Cycle |
 | 414  | Third Maximum Number                        | Easy       | ✅ [Solution](src/arrays101/ThirdMaximumNumber.java) | Tracking |
-| 448  | Find All Numbers Disappeared in an Array    | Easy       | ✅ [Solution](src/arrays101/FindAllNumbersDisappearedInAnArray.java) | Array Traversal |
-| 457  | Circular Array Loop                         | Medium     | ✅ [Solution](src/arrays/CircularArrayLoop.java) | Fast & Slow Pointers |
 | 485  | Max Consecutive Ones                        | Easy       | ✅ [Solution](src/arrays101/MaxConsecutiveOnes.java) | Array Traversal |
-| 724  | Find Pivot Index                            | Easy       | ✅ [Solution](src/arrays/FindPivotIndex.java) | Prefix Sum |
-| 747  | Largest Number At Least Twice of Others     | Easy       | ✅ [Solution](src/arrays/LargestNumberTwiceOthers.java) | Array Traversal |
 | 941  | Valid Mountain Array                        | Easy       | ✅ [Solution](src/arrays101/ValidMountainArray.java) | Array Traversal |
 | 977  | Squares of a Sorted Array                   | Easy       | ✅ [Solution](src/arrays101/SquaresOfASortedArray.java) | Two Pointers |
-| 1051 | Height Checker                              | Easy       | ✅ [Solution](src/arrays101/HeightChecker.java) | Sorting |
-| 1089 | Duplicate Zeros                             | Easy       | ✅ [Solution](src/arrays101/DuplicateZeros.java) | Two Pointers |
-| 1295 | Find Numbers with Even Number of Digits     | Easy       | ✅ [Solution](src/arrays101/FindNumbersWithEvenNumberOfDigits.java) | Array Traversal |
 | 1299 | Replace Elements with Greatest on Right     | Easy       | ✅ [Solution](src/arrays101/ReplaceElementsWithGreatestElementOnRightSide.java) | Reverse Traversal |
 | 1346 | Check If N and Its Double Exist             | Easy       | ✅ [Solution](src/arrays101/CheckIfNAndItsDoubleExist.java) | Hashing |
 | 1480 | Running Sum of 1d Array                     | Easy       | ✅ [Solution](src/arrays/RunningSum1d.java) | Prefix Sum |
-| 1582 | Special Positions in a Binary Matrix        | Easy       | ✅ [Solution](src/arrays/SpecialPositionsInBinaryMatrix.java) | Matrix Traversal |
 | 1672 | Richest Customer Wealth                     | Easy       | ✅ [Solution](src/arrays/RichestCustomerWealth.java) | Matrix Traversal |
+| 66   | Plus One                                    | Easy       | ✅ [Solution](src/arrays/PlusOne.java) | Array Manipulation |
+| 118  | Pascal's Triangle                           | Easy       | ✅ [Solution](src/arrays/PascalsTriangle.java) | DP / Simulation |
+| 169  | Majority Element                            | Easy       | ✅ [Solution](src/arrays/MajorityElement.java) | Sorting / Boyer-Moore |
+| 724  | Find Pivot Index                            | Easy       | ✅ [Solution](src/arrays/FindPivotIndex.java) | Prefix Sum |
+| 747  | Largest Number At Least Twice of Others     | Easy       | ✅ [Solution](src/arrays/LargestNumberTwiceOthers.java) | Array Traversal |
+| 80   | Remove Duplicates from Sorted Array II      | Medium     | ✅ [Solution](src/arrays101/RemoveDuplicatesFromSortedArrayII.java) | Two Pointers |
+| 167  | Two Sum II - Input Array Is Sorted          | Medium     | ✅ [Solution](src/twopointer/TwoSumII.java) | Two Pointers |
+| 202  | Happy Number                                | Easy       | ✅ [Solution](src/twopointer/HappyNumber.java) | Fast & Slow Pointers |
+| 246  | Strobogrammatic Number                      | Easy       | ✅ [Solution](src/twopointer/StrobogrammaticNumber.java) | Two Pointers |
+| 448  | Find All Numbers Disappeared in an Array    | Easy       | ✅ [Solution](src/arrays101/FindAllNumbersDisappearedInAnArray.java) | Array Traversal |
+| 457  | Circular Array Loop                         | Medium     | ✅ [Solution](src/arrays/CircularArrayLoop.java) | Fast & Slow Pointers |
+| 1051 | Height Checker                              | Easy       | ✅ [Solution](src/arrays101/HeightChecker.java) | Sorting |
+| 1089 | Duplicate Zeros                             | Easy       | ✅ [Solution](src/arrays101/DuplicateZeros.java) | Two Pointers |
+| 1295 | Find Numbers with Even Number of Digits     | Easy       | ✅ [Solution](src/arrays101/FindNumbersWithEvenNumberOfDigits.java) | Array Traversal |
+| 1582 | Special Positions in a Binary Matrix        | Easy       | ✅ [Solution](src/arrays/SpecialPositionsInBinaryMatrix.java) | Matrix Traversal |
 | 2176 | Count Equal and Divisible Pairs in an Array | Easy       | ✅ [Solution](src/arrays/CountPairs.java) | Array Traversal |
 | 2486 | Append Characters to String to Make Subsequence | Medium | ✅ [Solution](src/twopointer/AppendCharacters.java) | Two Pointers |
 
 ---
 
-## 2️⃣ Sliding Window (3 / 16)
+## 2️⃣ Sliding Window (2 / 16)
 
 | #    | Problem                                               | Difficulty | Status | Pattern        |
 |------|-------------------------------------------------------|------------|--------|----------------|
 | 3    | Longest Substring Without Repeating Characters        | Medium     | ✅ [Solution](src/strings/LongestSubstringWithoutRepeatingCharacters.java) | Sliding Window |
 | 76   | Minimum Window Substring                              | Hard       | ⬜      | Sliding Window |
 | 209  | Minimum Size Subarray Sum                             | Medium     | ⬜      | Sliding Window |
-| 239  | Sliding Window Maximum                                | Hard       | ✅ [Solution](src/slidingwindow/MaxSlidingWindow.java) | Sliding Window |
 | 424  | Longest Repeating Character Replacement               | Medium     | ⬜      | Sliding Window |
 | 438  | Find All Anagrams in a String                         | Medium     | ⬜      | Sliding Window |
 | 567  | Permutation in String                                 | Medium     | ⬜      | Sliding Window |
@@ -281,11 +137,12 @@ This section is generated from the current contents of `src/` (excluding helper 
 | 1423 | Maximum Points You Can Obtain from Cards              | Medium     | ⬜      | Sliding Window |
 | 1493 | Longest Subarray of 1's After Deleting One Element    | Medium     | ⬜      | Sliding Window |
 | 1838 | Frequency of the Most Frequent Element                | Medium     | ⬜      | Sliding Window |
-| 1758 | Minimum Changes to Make Alternating String            | Easy       | ✅ [Solution](src/strings/MinChangesAlternatingBinaryString.java) | String |
+| 2090 | K Radius Subarray Averages                            | Medium     | ⬜      | Sliding Window |
+| 239  | Sliding Window Maximum                                | Hard       | ✅ [Solution](src/slidingwindow/MaxSlidingWindow.java) | Sliding Window |
 
 ---
 
-## 3️⃣ Strings (9 / 14)
+## 3️⃣ Strings (11 / 16)
 
 | #    | Problem                                               | Difficulty | Status | Pattern        |
 |------|-------------------------------------------------------|------------|--------|----------------|
@@ -293,21 +150,23 @@ This section is generated from the current contents of `src/` (excluding helper 
 | 125  | Valid Palindrome                                      | Easy       | ✅ [Solution](src/strings/ValidPalindrome.java) | Two Pointers |
 | 205  | Isomorphic Strings                                    | Easy       | ✅ [Solution](src/strings/IsomorphicStrings.java) | Hashing |
 | 242  | Valid Anagram                                         | Easy       | ✅ [Solution](src/strings/ValidAnagram.java) | Hashing |
-| 344  | Reverse String                                        | Easy       | ✅ [Solution](src/strings/ReverseString.java) | Two Pointers |
 | 408  | Valid Word Abbreviation                               | Easy       | ✅ [Solution](src/strings/ValidWordAbbreviation.java) | Two Pointers |
+| 186  | Reverse Words in a String II                          | Medium     | ✅ [Solution](src/strings/ReverseWordsInStringII.java) | In-place / O(1) space |
+| 344  | Reverse String                                        | Easy       | ✅ [Solution](src/strings/ReverseString.java) | Two Pointers |
+| 557  | Reverse Words in a String III                         | Easy       | ✅ [Solution](src/strings/ReverseWordsInStringIII.java) | Two Pointers |
 | 680  | Valid Palindrome II                                   | Easy       | ✅ [Solution](src/strings/PalindromeII.java) | Two Pointers |
 | 1689 | Partitioning Into Minimum Number of Deci-Binary Numbers | Easy    | ✅ [Solution](src/strings/PartitioningIntoMinDeciBinaryNumbers.java) | Greedy |
-| 1758 | Minimum Changes to Make Alternating String            | Easy       | ✅ [Solution](src/strings/MinChangesAlternatingBinaryString.java) | String |
+| 1758 | Minimum Changes to Make Alternating Binary String     | Easy       | ✅ [Solution](src/strings/MinChangesAlternatingBinaryString.java) | String |
 | 3    | Longest Substring Without Repeating Characters        | Medium     | ✅ [Solution](src/strings/LongestSubstringWithoutRepeatingCharacters.java) | Sliding Window |
 | 49   | Group Anagrams                                        | Medium     | ⬜      | Hashing |
 | 76   | Minimum Window Substring                              | Hard       | ⬜      | Sliding Window |
-| 151  | Reverse Words in a String                             | Medium     | ⬜      | Two Pointers |
+| 151  | Reverse Words in a String                             | Medium     | ✅ [Solution](src/strings/ReverseWordsInString.java) | Two Pointers |
 | 271  | Encode and Decode Strings                             | Medium     | ⬜      | String |
 | 424  | Longest Repeating Character Replacement               | Medium     | ⬜      | Sliding Window |
 
 ---
 
-## 4️⃣ HashMap / HashSet (14 / 22)
+## 4️⃣ HashMap / HashSet (10 / 22)
 
 | #    | Problem                            | Difficulty | Status | Pattern              |
 |------|------------------------------------|------------|--------|----------------------|
@@ -364,7 +223,7 @@ This section is generated from the current contents of `src/` (excluding helper 
 
 ---
 
-## 6️⃣ Linked List (13 / 21)
+## 6️⃣ Linked List (12 / 21)
 
 | #    | Problem                              | Difficulty | Status | Pattern              |
 |------|--------------------------------------|------------|--------|----------------------|
@@ -464,7 +323,7 @@ This section is generated from the current contents of `src/` (excluding helper 
 | 572  | Subtree of Another Tree                         | Easy       | ⬜      | DFS                    |
 | 700  | Search in a Binary Search Tree                  | Easy       | ⬜      | BST Properties         |
 | 814  | Binary Tree Pruning                             | Medium     | ⬜      | DFS                    |
-| 1650 | Lowest Common Ancestor of a Binary Tree III       | Medium     | ✅ [Solution](src/tree/LowestCommonAncestorIII.java) | Two Pointers |
+| 1650 | Lowest Common Ancestor of Binary Tree III       | Medium     | ✅ [Solution](src/tree/LowestCommonAncestorIII.java) | Two Pointers |
 
 ---
 
