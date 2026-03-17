@@ -4,35 +4,35 @@ import java.util.Arrays;
 
 /**
  * LeetCode 561 - Array Partition
- *
+ * <p>
  * Problem:
- *   Given an integer array nums of 2n integers, group these integers into n
- *   pairs such that the sum of min(a, b) of each pair is maximized.
- *   Return the maximized sum.
- *
+ * Given an integer array nums of 2n integers, group these integers into n
+ * pairs such that the sum of min(a, b) of each pair is maximized.
+ * Return the maximized sum.
+ * <p>
  * Key insight:
- *   After sorting, the optimal strategy is always to pair adjacent elements.
- *   Pairing nums[0] with nums[1], nums[2] with nums[3], etc. ensures we
- *   lose the smallest possible value in each pair.
- *   The answer is sum of elements at even indices after sorting.
- *
+ * After sorting, the optimal strategy is always to pair adjacent elements.
+ * Pairing nums[0] with nums[1], nums[2] with nums[3], etc. ensures we
+ * lose the smallest possible value in each pair.
+ * The answer is sum of elements at even indices after sorting.
+ * <p>
  * Approach 1 — Sort + Pick Even Indices:
- *   Sort the array. Sum every element at index 0, 2, 4...
- *   Time: O(n log n)  Space: O(1)
- *
+ * Sort the array. Sum every element at index 0, 2, 4...
+ * Time: O(n log n)  Space: O(1)
+ * <p>
  * Approach 2 — Counting Sort (optimized for bounded input):
- *   Use a frequency array since values are in [-10000, 10000].
- *   Simulate the sorted order by iterating through the count array.
- *   Track position parity (even/odd) to know when to add to sum.
- *   Drain each bucket fully with an inner while loop before moving on.
- *   Time: O(n + k)  Space: O(k)  where k = 20001
- *
+ * Use a frequency array since values are in [-10000, 10000].
+ * Simulate the sorted order by iterating through the count array.
+ * Track position parity (even/odd) to know when to add to sum.
+ * Drain each bucket fully with an inner while loop before moving on.
+ * Time: O(n + k)  Space: O(k)  where k = 20001
+ * <p>
  * Example:
- *   nums = [1, 4, 3, 2]
- *   sorted → [1, 2, 3, 4]
- *   pairs  → (1,2), (3,4)
- *   sum    → min(1,2) + min(3,4) = 1 + 3 = 4
- *
+ * nums = [1, 4, 3, 2]
+ * sorted → [1, 2, 3, 4]
+ * pairs  → (1,2), (3,4)
+ * sum    → min(1,2) + min(3,4) = 1 + 3 = 4
+ * <p>
  * Time  : O(n log n) Approach 1 | O(n + k) Approach 2
  * Space : O(1)       Approach 1 | O(k)     Approach 2
  */
@@ -83,19 +83,21 @@ public class ArrayPartition {
     public static int arrayPairSumV2(int[] nums) {
         final int K = 10000;
         int[] counts = new int[2 * K + 1];
-        for (int num : nums)
-            counts[num + K]++;
 
-        int maxSum = 0;
-        boolean even = true;                        // tracks position parity in sorted order
+        for (int num : nums) {
+            counts[num + K]++;
+        }
+
+        int sum = 0;
+        boolean even = true;
 
         for (int i = 0; i < counts.length; i++) {
-            while (counts[i] > 0) {                 // drain entire bucket before moving on
-                if (even) maxSum += (i - K);        // even position → this is the min of a pair
+            while (counts[i] > 0) {
+                if (even) sum += i - K;
                 even = !even;
                 counts[i]--;
             }
         }
-        return maxSum;
+        return sum;
     }
 }
