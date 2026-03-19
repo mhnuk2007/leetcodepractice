@@ -201,27 +201,27 @@
 
 | #    | Problem                                               | Difficulty | Status | Pattern                 |
 |------|-------------------------------------------------------|------------|--------|-------------------------|
-| 34 | Find First and Last Position of Element in Sorted Array | Medium | ? | Binary Search |
-| 35 | Search Insert Position | Easy | ? | Binary Search |
-| 69 | Sqrt(x) | Easy | ? [Solution](src/binarysearch/SqrtX.java) | Binary Search |
-| 81 | Search in Rotated Sorted Array II | Medium | ? | Binary Search |
-| 153 | Find Minimum in Rotated Sorted Array | Medium | ? | Binary Search |
-| 162 | Find Peak Element | Medium | ? | Binary Search |
-| 278 | First Bad Version | Easy | ? | Binary Search |
-| 374 | Guess Number Higher or Lower | Easy | ? | Binary Search |
-| 410 | Split Array Largest Sum | Hard | ? | Binary Search on Answer |
-| 704 | Binary Search | Easy | ? | Binary Search |
-| 875 | Koko Eating Bananas | Medium | ? | Binary Search on Answer |
-| 1011 | Capacity To Ship Packages Within D Days | Medium | ? | Binary Search on Answer |
-| 1283 | Find the Smallest Divisor Given a Threshold | Medium | ? | Binary Search on Answer |
-| 1482 | Minimum Number of Days to Make m Bouquets | Medium | ? | Binary Search on Answer |
-| 1760 | Minimum Limit of Balls in a Bag | Medium | ? | Binary Search on Answer |
-| 1802 | Maximum Value at a Given Index in a Bounded Array | Medium | ? | Binary Search on Answer |
-| 1891 | Cutting Ribbons | Medium | ? | Binary Search on Answer |
-| 2187 | Minimum Time to Complete Trips | Medium | ? | Binary Search on Answer |
-| 2226 | Maximum Candies Allocated to K Children | Medium | ? | Binary Search on Answer |
-| 2300 | Successful Pairs of Spells and Potions | Medium | ? | Binary Search |
-| 3296 | Minimum Number of Seconds to Make Mountain Height Zero | Medium | ? | Binary Search on Answer |
+| 34   | Find First and Last Position of Element in Sorted Array | Medium   | ⬜      | Binary Search           |
+| 35   | Search Insert Position                                | Easy       | ⬜      | Binary Search           |
+| 69   | Sqrt(x)                                               | Easy       | ✅ [Solution](src/binarysearch/Sqrt.java) | Binary Search |
+| 81   | Search in Rotated Sorted Array II                     | Medium     | ⬜      | Binary Search           |
+| 153  | Find Minimum in Rotated Sorted Array                  | Medium     | ⬜      | Binary Search           |
+| 162  | Find Peak Element                                     | Medium     | ⬜      | Binary Search           |
+| 278  | First Bad Version                                     | Easy       | ⬜      | Binary Search           |
+| 374  | Guess Number Higher or Lower                          | Easy       | ⬜      | Binary Search           |
+| 410  | Split Array Largest Sum                               | Hard       | ⬜      | Binary Search on Answer |
+| 704  | Binary Search                                         | Easy       | ⬜      | Binary Search           |
+| 875  | Koko Eating Bananas                                   | Medium     | ⬜      | Binary Search on Answer |
+| 1011 | Capacity To Ship Packages Within D Days               | Medium     | ⬜      | Binary Search on Answer |
+| 1283 | Find the Smallest Divisor Given a Threshold           | Medium     | ⬜      | Binary Search on Answer |
+| 1482 | Minimum Number of Days to Make m Bouquets             | Medium     | ⬜      | Binary Search on Answer |
+| 1760 | Minimum Limit of Balls in a Bag                       | Medium     | ⬜      | Binary Search on Answer |
+| 1802 | Maximum Value at a Given Index in a Bounded Array     | Medium     | ⬜      | Binary Search on Answer |
+| 1891 | Cutting Ribbons                                       | Medium     | ⬜      | Binary Search on Answer |
+| 2187 | Minimum Time to Complete Trips                        | Medium     | ⬜      | Binary Search on Answer |
+| 2226 | Maximum Candies Allocated to K Children               | Medium     | ⬜      | Binary Search on Answer |
+| 2300 | Successful Pairs of Spells and Potions                | Medium     | ⬜      | Binary Search           |
+| 3296 | Minimum Number of Seconds to Make Mountain Height Zero | Medium | ⬜      | Binary Search on Answer |
 
 ---
 
@@ -229,27 +229,27 @@
 
 | #    | Problem                              | Difficulty | Status | Pattern              |
 |------|--------------------------------------|------------|--------|----------------------|
-| 2 | Add Two Numbers | Medium | ? [Solution](src/linkedlist/AddTwoNumbers.java) | Linked List Math |
-| 19 | Remove Nth Node From End of List | Medium | ? [Solution](src/linkedlist/RemoveNthNodeFromEnd.java) | Two Pointers |
-| 21 | Merge Two Sorted Lists | Easy | ? [Solution](src/linkedlist/MergeTwoSortedLists.java) | Two Pointers |
-| 61 | Rotate List | Medium | ? | Two Pointers |
-| 82 | Remove Duplicates from Sorted List II | Medium | ? | Two Pointers |
-| 92 | Reverse Linked List II | Medium | ? | Pointer Manipulation |
-| 138 | Copy List with Random Pointer | Medium | ? | Hashing |
-| 141 | Linked List Cycle | Easy | ? [Solution](src/linkedlist/LinkedListCycle.java) | Fast & Slow Pointers |
-| 142 | Linked List Cycle II | Medium | ? [Solution](src/linkedlist/LinkedListCycleII.java) | Fast & Slow Pointers |
-| 143 | Reorder List | Medium | ? | Fast & Slow Pointers |
-| 148 | Sort List | Medium | ? | Merge Sort |
-| 160 | Intersection of Two Linked Lists | Easy | ? [Solution](src/linkedlist/LinkedListsIntersection.java) | Two Pointers |
-| 206 | Reverse Linked List | Easy | ? [Solution](src/linkedlist/ReverseLinkedList.java) | Pointer Manipulation |
-| 234 | Palindrome Linked List | Easy | ? [Solution](src/linkedlist/PalindromeLinkedList.java) | Fast & Slow Pointers |
-| 237 | Delete Node in a Linked List | Medium | ? [Solution](src/linkedlist/DeleteNode.java) | Pointer Manipulation |
-| 328 | Odd Even Linked List | Medium | ? | Pointer Manipulation |
-| 445 | Add Two Numbers II | Medium | ? | Linked List Math |
-| 725 | Split Linked List in Parts | Medium | ? | Pointer Manipulation |
-| 876 | Middle of the Linked List | Easy | ? [Solution](src/twopointer/MiddleOfLinkedList.java) | Fast & Slow Pointers |
-| 2130 | Maximum Twin Sum of a Linked List | Medium | ? [Solution](src/linkedlist/MaximumTwinSumOfLinkedList.java) | Fast & Slow Pointers |
-| 707 | Design Linked List | Medium | ? [Solution](src/linkedlist/DesignLinkedList.java) | Linked List Design |
+| 2    | Add Two Numbers                      | Medium     | ✅ [Solution](src/linkedlist/AddTwoNumbers.java) | Linked List Math     |
+| 19   | Remove Nth Node From End of List     | Medium     | ✅ [Solution](src/linkedlist/RemoveNthNodeFromEnd.java) | Two Pointers |
+| 21   | Merge Two Sorted Lists               | Easy       | ✅ [Solution](src/linkedlist/MergeTwoSortedLists.java) | Two Pointers |
+| 61   | Rotate List                          | Medium     | ⬜      | Two Pointers         |
+| 82   | Remove Duplicates from Sorted List II | Medium    | ⬜      | Two Pointers         |
+| 92   | Reverse Linked List II               | Medium     | ⬜      | Pointer Manipulation |
+| 138  | Copy List with Random Pointer        | Medium     | ⬜      | Hashing              |
+| 141  | Linked List Cycle                    | Easy       | ✅ [Solution](src/linkedlist/LinkedListCycle.java) | Fast & Slow Pointers |
+| 142  | Linked List Cycle II                 | Medium     | ✅ [Solution](src/linkedlist/LinkedListCycleII.java) | Fast & Slow Pointers |
+| 143  | Reorder List                         | Medium     | ⬜      | Fast & Slow Pointers |
+| 148  | Sort List                            | Medium     | ⬜      | Merge Sort           |
+| 160  | Intersection of Two Linked Lists     | Easy       | ✅ [Solution](src/linkedlist/LinkedListsIntersection.java) | Two Pointers |
+| 206  | Reverse Linked List                  | Easy       | ✅ [Solution](src/linkedlist/ReverseLinkedList.java) | Pointer Manipulation |
+| 234  | Palindrome Linked List               | Easy       | ✅ [Solution](src/linkedlist/PalindromeLinkedList.java) | Fast & Slow Pointers |
+| 237  | Delete Node in a Linked List         | Medium     | ✅ [Solution](src/linkedlist/DeleteNode.java) | Pointer Manipulation |
+| 328  | Odd Even Linked List                 | Medium     | ⬜      | Pointer Manipulation |
+| 445  | Add Two Numbers II                   | Medium     | ⬜      | Linked List Math     |
+| 725  | Split Linked List in Parts           | Medium     | ⬜      | Pointer Manipulation |
+| 876  | Middle of the Linked List            | Easy       | ✅ [Solution](src/twopointer/MiddleOfLinkedList.java) | Fast & Slow Pointers |
+| 2130 | Maximum Twin Sum of a Linked List    | Medium     | ✅ [Solution](src/linkedlist/MaximumTwinSumOfLinkedList.java) | Fast & Slow Pointers |
+| 707  | Design Linked List                   | Medium     | ✅ [Solution](src/linkedlist/DesignLinkedList.java) | Linked List Design   |
 
 ---
 
@@ -257,21 +257,21 @@
 
 | #   | Problem                          | Difficulty | Status | Pattern         |
 |-----|----------------------------------|------------|--------|-----------------|
-| 20 | Valid Parentheses | Easy | ? | Stack |
-| 71 | Simplify Path | Medium | ? | Stack |
-| 84 | Largest Rectangle in Histogram | Hard | ? | Monotonic Stack |
-| 85 | Maximal Rectangle | Hard | ? | Monotonic Stack |
-| 150 | Evaluate Reverse Polish Notation | Medium | ? | Stack |
-| 155 | Min Stack | Medium | ? | Stack |
-| 224 | Basic Calculator | Hard | ? | Stack |
-| 225 | Implement Stack using Queues | Easy | ? | Stack |
-| 232 | Implement Queue using Stacks | Easy | ? | Stack |
-| 394 | Decode String | Medium | ? | Stack |
-| 496 | Next Greater Element I | Easy | ? | Monotonic Stack |
-| 503 | Next Greater Element II | Medium | ? | Monotonic Stack |
-| 739 | Daily Temperatures | Medium | ? | Monotonic Stack |
-| 853 | Car Fleet | Medium | ? | Monotonic Stack |
-| 907 | Sum of Subarray Minimums | Medium | ? | Monotonic Stack |
+| 20  | Valid Parentheses                | Easy       | ⬜      | Stack           |
+| 71  | Simplify Path                    | Medium     | ⬜      | Stack           |
+| 84  | Largest Rectangle in Histogram   | Hard       | ⬜      | Monotonic Stack |
+| 85  | Maximal Rectangle                | Hard       | ⬜      | Monotonic Stack |
+| 150 | Evaluate Reverse Polish Notation | Medium     | ⬜      | Stack           |
+| 155 | Min Stack                        | Medium     | ⬜      | Stack           |
+| 224 | Basic Calculator                 | Hard       | ⬜      | Stack           |
+| 225 | Implement Stack using Queues     | Easy       | ⬜      | Stack           |
+| 232 | Implement Queue using Stacks     | Easy       | ⬜      | Stack           |
+| 394 | Decode String                    | Medium     | ⬜      | Stack           |
+| 496 | Next Greater Element I           | Easy       | ⬜      | Monotonic Stack |
+| 503 | Next Greater Element II          | Medium     | ⬜      | Monotonic Stack |
+| 739 | Daily Temperatures               | Medium     | ⬜      | Monotonic Stack |
+| 853 | Car Fleet                        | Medium     | ⬜      | Monotonic Stack |
+| 907 | Sum of Subarray Minimums         | Medium     | ⬜      | Monotonic Stack |
 
 ---
 
@@ -279,53 +279,53 @@
 
 | #    | Problem                                       | Difficulty | Status | Pattern           |
 |------|-----------------------------------------------|------------|--------|-------------------|
-| 23 | Merge K Sorted Lists | Hard | ? | Heap |
-| 215 | Kth Largest Element in an Array | Medium | ? | Heap |
-| 295 | Find Median from Data Stream | Hard | ? | Heap |
-| 347 | Top K Frequent Elements | Medium | ? | Heap + Hashing |
-| 355 | Design Twitter | Medium | ? | Heap |
-| 373 | Find K Pairs with Smallest Sums | Medium | ? | Heap |
-| 378 | Kth Smallest Element in a Sorted Matrix | Medium | ? | Heap |
-| 407 | Trapping Rain Water II | Hard | ? | Heap |
-| 621 | Task Scheduler | Medium | ? | Heap + Greedy |
-| 630 | Course Schedule III | Hard | ? | Heap + Greedy |
-| 632 | Smallest Range Covering Elements from K Lists | Hard | ? | Heap |
-| 703 | Kth Largest Element in a Stream | Easy | ? | Heap |
-| 743 | Network Delay Time | Medium | ? | Heap + Dijkstra's |
-| 778 | Swim in Rising Water | Hard | ? | Heap |
-| 1046 | Last Stone Weight | Easy | ? | Heap |
+| 23   | Merge K Sorted Lists                          | Hard       | ⬜      | Heap              |
+| 215  | Kth Largest Element in an Array               | Medium     | ⬜      | Heap              |
+| 295  | Find Median from Data Stream                  | Hard       | ⬜      | Heap              |
+| 347  | Top K Frequent Elements                       | Medium     | ⬜      | Heap + Hashing    |
+| 355  | Design Twitter                                | Medium     | ⬜      | Heap              |
+| 373  | Find K Pairs with Smallest Sums               | Medium     | ⬜      | Heap              |
+| 378  | Kth Smallest Element in a Sorted Matrix       | Medium     | ⬜      | Heap              |
+| 407  | Trapping Rain Water II                        | Hard       | ⬜      | Heap              |
+| 621  | Task Scheduler                                | Medium     | ⬜      | Heap + Greedy     |
+| 630  | Course Schedule III                           | Hard       | ⬜      | Heap + Greedy     |
+| 632  | Smallest Range Covering Elements from K Lists | Hard       | ⬜      | Heap              |
+| 703  | Kth Largest Element in a Stream               | Easy       | ⬜      | Heap              |
+| 743  | Network Delay Time                            | Medium     | ⬜      | Heap + Dijkstra's |
+| 778  | Swim in Rising Water                          | Hard       | ⬜      | Heap              |
+| 1046 | Last Stone Weight                             | Easy       | ⬜      | Heap              |
 
 ---
 
-## 9️⃣ Trees (0 / 25)
+## 9️⃣ Trees (1 / 25)
 
 | #    | Problem                                         | Difficulty | Status | Pattern                |
 |------|-------------------------------------------------|------------|--------|------------------------|
-| 94 | Binary Tree Inorder Traversal | Easy | ? | DFS |
-| 98 | Validate Binary Search Tree | Medium | ? | DFS |
-| 100 | Same Tree | Easy | ? | DFS / BFS |
-| 101 | Symmetric Tree | Easy | ? | DFS / BFS |
-| 102 | Binary Tree Level Order Traversal | Medium | ? | BFS |
-| 104 | Maximum Depth of Binary Tree | Easy | ? | DFS / BFS |
-| 105 | Construct Binary Tree from Preorder and Inorder | Medium | ? | Recursion |
-| 110 | Balanced Binary Tree | Easy | ? | DFS |
-| 112 | Path Sum | Easy | ? | DFS |
-| 124 | Binary Tree Maximum Path Sum | Hard | ? | DFS |
-| 199 | Binary Tree Right Side View | Medium | ? | BFS |
-| 226 | Invert Binary Tree | Easy | ? | DFS / BFS |
-| 230 | Kth Smallest Element in a BST | Medium | ? | DFS |
-| 235 | Lowest Common Ancestor of a BST | Medium | ? | BST Properties |
-| 236 | Lowest Common Ancestor of a Binary Tree | Medium | ? | DFS |
-| 297 | Serialize and Deserialize Binary Tree | Hard | ? | DFS / BFS |
-| 337 | House Robber III | Medium | ? | DP on Trees |
-| 404 | Sum of Left Leaves | Easy | ? | DFS |
-| 437 | Path Sum III | Medium | ? | DFS + Prefix Sum |
-| 450 | Delete Node in a BST | Medium | ? | BST Properties |
-| 543 | Diameter of Binary Tree | Easy | ? | DFS |
-| 572 | Subtree of Another Tree | Easy | ? | DFS |
-| 700 | Search in a Binary Search Tree | Easy | ? | BST Properties |
-| 814 | Binary Tree Pruning | Medium | ? | DFS |
-| 1650 | Lowest Common Ancestor of Binary Tree III | Medium | ? | Two Pointers |
+| 94   | Binary Tree Inorder Traversal                   | Easy       | ⬜      | DFS                    |
+| 98   | Validate Binary Search Tree                     | Medium     | ⬜      | DFS                    |
+| 100  | Same Tree                                       | Easy       | ⬜      | DFS / BFS              |
+| 101  | Symmetric Tree                                  | Easy       | ⬜      | DFS / BFS              |
+| 102  | Binary Tree Level Order Traversal               | Medium     | ⬜      | BFS                    |
+| 104  | Maximum Depth of Binary Tree                    | Easy       | ⬜      | DFS / BFS              |
+| 105  | Construct Binary Tree from Preorder and Inorder | Medium     | ⬜      | Recursion              |
+| 110  | Balanced Binary Tree                            | Easy       | ⬜      | DFS                    |
+| 112  | Path Sum                                        | Easy       | ⬜      | DFS                    |
+| 124  | Binary Tree Maximum Path Sum                    | Hard       | ⬜      | DFS                    |
+| 199  | Binary Tree Right Side View                     | Medium     | ⬜      | BFS                    |
+| 226  | Invert Binary Tree                              | Easy       | ⬜      | DFS / BFS              |
+| 230  | Kth Smallest Element in a BST                   | Medium     | ⬜      | DFS                    |
+| 235  | Lowest Common Ancestor of a BST                 | Medium     | ⬜      | BST Properties         |
+| 236  | Lowest Common Ancestor of a Binary Tree         | Medium     | ⬜      | DFS                    |
+| 297  | Serialize and Deserialize Binary Tree           | Hard       | ⬜      | DFS / BFS              |
+| 337  | House Robber III                                | Medium     | ⬜      | DP on Trees            |
+| 404  | Sum of Left Leaves                              | Easy       | ⬜      | DFS                    |
+| 437  | Path Sum III                                    | Medium     | ⬜      | DFS + Prefix Sum       |
+| 450  | Delete Node in a BST                            | Medium     | ⬜      | BST Properties         |
+| 543  | Diameter of Binary Tree                         | Easy       | ⬜      | DFS                    |
+| 572  | Subtree of Another Tree                         | Easy       | ⬜      | DFS                    |
+| 700  | Search in a Binary Search Tree                  | Easy       | ⬜      | BST Properties         |
+| 814  | Binary Tree Pruning                             | Medium     | ⬜      | DFS                    |
+| 1650 | Lowest Common Ancestor of Binary Tree III       | Medium     | ✅ [Solution](src/tree/LowestCommonAncestorIII.java) | Two Pointers |
 
 ---
 
@@ -333,49 +333,49 @@
 
 | #   | Problem                               | Difficulty | Status | Pattern             |
 |-----|---------------------------------------|------------|--------|---------------------|
-| 17 | Letter Combinations of a Phone Number | Medium | ? | Backtracking |
-| 22 | Generate Parentheses | Medium | ? | Backtracking |
-| 39 | Combination Sum | Medium | ? | Backtracking |
-| 40 | Combination Sum II | Medium | ? | Backtracking |
-| 46 | Permutations | Medium | ? | Backtracking |
-| 47 | Permutations II | Medium | ? | Backtracking |
-| 51 | N-Queens | Hard | ? | Backtracking |
-| 52 | N-Queens II | Hard | ? | Backtracking |
-| 77 | Combinations | Medium | ? | Backtracking |
-| 78 | Subsets | Medium | ? | Backtracking |
-| 90 | Subsets II | Medium | ? | Backtracking |
-| 131 | Palindrome Partitioning | Medium | ? | Backtracking |
-| 212 | Word Search II | Hard | ? | Backtracking + Trie |
-| 216 | Combination Sum III | Medium | ? | Backtracking |
-| 491 | Non-decreasing Subsequences | Medium | ? | Backtracking |
+| 17  | Letter Combinations of a Phone Number | Medium     | ⬜      | Backtracking        |
+| 22  | Generate Parentheses                  | Medium     | ⬜      | Backtracking        |
+| 39  | Combination Sum                       | Medium     | ⬜      | Backtracking        |
+| 40  | Combination Sum II                    | Medium     | ⬜      | Backtracking        |
+| 46  | Permutations                          | Medium     | ⬜      | Backtracking        |
+| 47  | Permutations II                       | Medium     | ⬜      | Backtracking        |
+| 51  | N-Queens                              | Hard       | ⬜      | Backtracking        |
+| 52  | N-Queens II                           | Hard       | ⬜      | Backtracking        |
+| 77  | Combinations                          | Medium     | ⬜      | Backtracking        |
+| 78  | Subsets                               | Medium     | ⬜      | Backtracking        |
+| 90  | Subsets II                            | Medium     | ⬜      | Backtracking        |
+| 131 | Palindrome Partitioning               | Medium     | ⬜      | Backtracking        |
+| 212 | Word Search II                        | Hard       | ⬜      | Backtracking + Trie |
+| 216 | Combination Sum III                   | Medium     | ⬜      | Backtracking        |
+| 491 | Non-decreasing Subsequences           | Medium     | ⬜      | Backtracking        |
 
 ---
 
-## 1️⃣1️⃣ Graphs (0 / 21)
+## 1️⃣1️⃣ Graphs (0 / 20)
 
 | #    | Problem                                      | Difficulty | Status | Pattern             |
 |------|----------------------------------------------|------------|--------|---------------------|
-| 133 | Clone Graph | Medium | ? | DFS / BFS |
-| 200 | Number of Islands | Medium | ? | DFS / BFS |
-| 207 | Course Schedule | Medium | ? | Topological Sort |
-| 208 | Implement Trie (Prefix Tree) | Medium | ? | Trie |
-| 210 | Course Schedule II | Medium | ? | Topological Sort |
-| 261 | Graph Valid Tree | Medium | ? | Union Find / DFS |
-| 269 | Alien Dictionary | Hard | ? | Topological Sort |
-| 286 | Walls and Gates | Medium | ? | BFS |
-| 323 | Number of Connected Components | Medium | ? | Union Find / DFS |
-| 329 | Longest Increasing Path in a Matrix | Hard | ? | DFS + Memoization |
-| 417 | Pacific Atlantic Water Flow | Medium | ? | DFS / BFS |
-| 547 | Number of Provinces | Medium | ? | Union Find / DFS |
-| 684 | Redundant Connection | Medium | ? | Union Find |
-| 695 | Max Area of Island | Medium | ? | DFS / BFS |
-| 721 | Accounts Merge | Medium | ? | Union Find / DFS |
-| 743 | Network Delay Time | Medium | ? | Dijkstra's |
-| 787 | Cheapest Flights Within K Stops | Medium | ? | Bellman-Ford |
-| 802 | Find Eventual Safe States | Medium | ? | DFS |
-| 827 | Making A Large Island | Hard | ? | DFS |
-| 1091 | Shortest Path in Binary Matrix | Medium | ? | BFS |
-| 1584 | Min Cost to Connect All Points | Medium | ? | MST (Prim's) |
+| 133  | Clone Graph                                  | Medium     | ⬜      | DFS / BFS           |
+| 200  | Number of Islands                            | Medium     | ⬜      | DFS / BFS           |
+| 207  | Course Schedule                              | Medium     | ⬜      | Topological Sort    |
+| 208  | Implement Trie (Prefix Tree)                 | Medium     | ⬜      | Trie                |
+| 210  | Course Schedule II                           | Medium     | ⬜      | Topological Sort    |
+| 261  | Graph Valid Tree                             | Medium     | ⬜      | Union Find / DFS    |
+| 269  | Alien Dictionary                             | Hard       | ⬜      | Topological Sort    |
+| 286  | Walls and Gates                              | Medium     | ⬜      | BFS                 |
+| 323  | Number of Connected Components               | Medium     | ⬜      | Union Find / DFS    |
+| 329  | Longest Increasing Path in a Matrix          | Hard       | ⬜      | DFS + Memoization   |
+| 417  | Pacific Atlantic Water Flow                  | Medium     | ⬜      | DFS / BFS           |
+| 547  | Number of Provinces                          | Medium     | ⬜      | Union Find / DFS    |
+| 684  | Redundant Connection                         | Medium     | ⬜      | Union Find          |
+| 695  | Max Area of Island                           | Medium     | ⬜      | DFS / BFS           |
+| 721  | Accounts Merge                               | Medium     | ⬜      | Union Find / DFS    |
+| 743  | Network Delay Time                           | Medium     | ⬜      | Dijkstra's          |
+| 787  | Cheapest Flights Within K Stops              | Medium     | ⬜      | Bellman-Ford        |
+| 802  | Find Eventual Safe States                    | Medium     | ⬜      | DFS                 |
+| 827  | Making A Large Island                        | Hard       | ⬜      | DFS                 |
+| 1091 | Shortest Path in Binary Matrix               | Medium     | ⬜      | BFS                 |
+| 1584 | Min Cost to Connect All Points               | Medium     | ⬜      | MST (Prim's)        |
 
 ---
 
@@ -383,55 +383,53 @@
 
 | #    | Problem                                                   | Difficulty | Status | Pattern         |
 |------|-----------------------------------------------------------|------------|--------|-----------------|
-| 62 | Unique Paths | Medium | ? | DP |
-| 63 | Unique Paths II | Medium | ? | DP |
-| 64 | Minimum Path Sum | Medium | ? | DP |
-| 70 | Climbing Stairs | Easy | ? | DP |
-| 72 | Edit Distance | Medium | ? | DP |
-| 91 | Decode Ways | Medium | ? | DP |
-| 139 | Word Break | Medium | ? | DP |
-| 152 | Maximum Product Subarray | Medium | ? | DP |
-| 198 | House Robber | Medium | ? | DP |
-| 213 | House Robber II | Medium | ? | DP |
-| 221 | Maximal Square | Medium | ? | DP |
-| 279 | Perfect Squares | Medium | ? | DP |
-| 300 | Longest Increasing Subsequence | Medium | ? | DP |
-| 309 | Best Time to Buy and Sell Stock with Cooldown | Medium | ? | DP |
-| 312 | Burst Balloons | Hard | ? | DP |
-| 322 | Coin Change | Medium | ? | DP |
-| 337 | House Robber III | Medium | ? | DP on Trees |
-| 416 | Partition Equal Subset Sum | Medium | ? | DP |
-| 494 | Target Sum | Medium | ? | DP |
-| 518 | Coin Change II | Medium | ? | DP |
-| 673 | Number of Longest Increasing Subsequence | Medium | ? | DP |
-| 714 | Best Time to Buy and Sell Stock with Transaction Fee | Medium | ? | DP |
-| 740 | Delete and Earn | Medium | ? | DP |
-| 931 | Minimum Falling Path Sum | Medium | ? | DP |
-| 1143 | Longest Common Subsequence | Medium | ? | DP |
-| 1155 | Number of Dice Rolls With Target Sum | Medium | ? | DP |
-| 1218 | Longest Arithmetic Subsequence of Given Difference | Medium | ? | DP |
-| 1639 | Number of Ways to Form a Target String Given a Dictionary | Hard | ? | DP |
-| 3129 | Find All Possible Stable Binary Arrays I | Hard | ? [Solution](src/dp/FindAllPossibleStableArraysI.java) | DP + Prefix Sum |
-| 3130 | Find All Possible Stable Binary Arrays II | Hard | ? [Solution](src/dp/FindAllPossibleStableArraysII.java) | DP + Prefix Sum |
+| 62   | Unique Paths                                              | Medium     | ⬜      | DP              |
+| 63   | Unique Paths II                                           | Medium     | ⬜      | DP              |
+| 64   | Minimum Path Sum                                          | Medium     | ⬜      | DP              |
+| 70   | Climbing Stairs                                           | Easy       | ⬜      | DP              |
+| 72   | Edit Distance                                             | Medium     | ⬜      | DP              |
+| 91   | Decode Ways                                               | Medium     | ⬜      | DP              |
+| 139  | Word Break                                                | Medium     | ⬜      | DP              |
+| 152  | Maximum Product Subarray                                  | Medium     | ⬜      | DP              |
+| 198  | House Robber                                              | Medium     | ⬜      | DP              |
+| 213  | House Robber II                                           | Medium     | ⬜      | DP              |
+| 221  | Maximal Square                                            | Medium     | ⬜      | DP              |
+| 279  | Perfect Squares                                           | Medium     | ⬜      | DP              |
+| 300  | Longest Increasing Subsequence                            | Medium     | ⬜      | DP              |
+| 309  | Best Time to Buy and Sell Stock with Cooldown             | Medium     | ⬜      | DP              |
+| 312  | Burst Balloons                                            | Hard       | ⬜      | DP              |
+| 322  | Coin Change                                               | Medium     | ⬜      | DP              |
+| 337  | House Robber III                                          | Medium     | ⬜      | DP on Trees     |
+| 416  | Partition Equal Subset Sum                                | Medium     | ⬜      | DP              |
+| 494  | Target Sum                                                | Medium     | ⬜      | DP              |
+| 518  | Coin Change II                                            | Medium     | ⬜      | DP              |
+| 673  | Number of Longest Increasing Subsequence                  | Medium     | ⬜      | DP              |
+| 714  | Best Time to Buy and Sell Stock with Transaction Fee      | Medium     | ⬜      | DP              |
+| 740  | Delete and Earn                                           | Medium     | ⬜      | DP              |
+| 931  | Minimum Falling Path Sum                                  | Medium     | ⬜      | DP              |
+| 1143 | Longest Common Subsequence                                | Medium     | ⬜      | DP              |
+| 1155 | Number of Dice Rolls With Target Sum                      | Medium     | ⬜      | DP              |
+| 1218 | Longest Arithmetic Subsequence of Given Difference        | Medium     | ⬜      | DP              |
+| 1639 | Number of Ways to Form a Target String Given a Dictionary | Hard       | ⬜      | DP              |
+| 3129 | Find All Possible Stable Binary Arrays I                  | Hard       | ✅ [Solution](src/dp/FindAllPossibleStableArraysI.java) | DP + Prefix Sum |
+| 3130 | Find All Possible Stable Binary Arrays II                 | Hard       | ✅ [Solution](src/dp/FindAllPossibleStableArraysII.java) | DP + Prefix Sum |
 
 ---
 
-## 1️⃣3️⃣ Bit Manipulation (4 / 12)
+## 1️⃣2️⃣ Bit Manipulation (2 / 10)
 
 | #    | Problem                             | Difficulty | Status | Pattern          |
 |------|-------------------------------------|------------|--------|------------------|
-| 136 | Single Number | Easy | ? [Solution](src/bitmanipulation/SingleNumber.java) | XOR |
-| 190 | Reverse Bits | Easy | ? | Bit Manipulation |
-| 191 | Number of 1 Bits | Easy | ? | Bit Manipulation |
-| 231 | Power of Two | Easy | ? | Bit Manipulation |
-| 268 | Missing Number | Easy | ? | XOR / Math |
-| 338 | Counting Bits | Easy | ? | DP + Bits |
-| 371 | Sum of Two Integers | Medium | ? | Bit Manipulation |
-| 461 | Hamming Distance | Easy | ? | XOR |
-| 693 | Binary Number with Alternating Bits | Easy | ? | Bit Manipulation |
-| 1009 | Complement of Base 10 Integer | Easy | ? [Solution](src/bitmanipulation/ComplementBase10Integer.java) | Bit Mask |
-| 67 | Add Binary | Easy | ? [Solution](src/strings/AddBinary.java) | Bit Manipulation |
-| 868 | Binary Gap | Easy | ? [Solution](src/strings/BinaryGap.java) | Bit Manipulation |
+| 136  | Single Number                       | Easy       | ✅ [Solution](src/bitmanipulation/SingleNumber.java) | XOR |
+| 190  | Reverse Bits                        | Easy       | ⬜      | Bit Manipulation |
+| 191  | Number of 1 Bits                    | Easy       | ⬜      | Bit Manipulation |
+| 231  | Power of Two                        | Easy       | ⬜      | Bit Manipulation |
+| 268  | Missing Number                      | Easy       | ⬜      | XOR / Math       |
+| 338  | Counting Bits                       | Easy       | ⬜      | DP + Bits        |
+| 371  | Sum of Two Integers                 | Medium     | ⬜      | Bit Manipulation |
+| 461  | Hamming Distance                    | Easy       | ⬜      | XOR              |
+| 693  | Binary Number with Alternating Bits | Easy       | ⬜      | Bit Manipulation |
+| 1009 | Complement of Base 10 Integer       | Easy       | ✅ [Solution](src/bitmanipulation/ComplementBase10Integer.java) | Bit Mask |
 
 ---
 
@@ -439,11 +437,11 @@
 
 | #    | Problem                                                  | Difficulty | Status | Pattern          |
 |------|----------------------------------------------------------|------------|--------|------------------|
-| 1318 | Minimum Flips to Make a OR b Equal to c | Medium | ? [Solution](src/dailychallenges/MinFlips.java) | Bit Manipulation |
-| 1545 | Find Kth Bit in Nth Binary String | Medium | ? [Solution](src/dailychallenges/FindKthBit.java) | Recursion |
-| 1784 | Check if Binary String Has at Most One Segment of Ones | Easy | ? [Solution](src/dailychallenges/CheckOneSegment.java) | String |
-| 1980 | Find Unique Binary String | Medium | ? [Solution](src/dailychallenges/FindUniqueBinaryString.java) | Backtracking |
-| 2193 | Minimum Number of Moves to Make Palindrome | Hard | ? | Greedy |
+| 1318 | Minimum Flips to Make a OR b Equal to c                  | Medium     | ⬜      | Bit Manipulation |
+| 1545 | Find Kth Bit in Nth Binary String                        | Medium     | ⬜      | Recursion        |
+| 1784 | Check if Binary String Has at Most One Segment of Ones   | Easy       | ⬜      | String           |
+| 1980 | Find Unique Binary String                                | Medium     | ⬜      | Backtracking     |
+| 2193 | Minimum Number of Moves to Make Palindrome               | Hard       | ⬜      | Greedy           |
 
 ---
 
