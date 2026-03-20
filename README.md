@@ -12,7 +12,7 @@
 
 | Category               | Total | Completed | Progress              |
 |------------------------|-------|-----------|----------------------|
-| Arrays & Two Pointers  |  40   |    39     | █████████░  97%      |
+| Arrays & Two Pointers  |  40   |    40     | ██████████ 100%      |
 | Sliding Window         |  16   |     3     | ██░░░░░░░░  19%      |
 | Strings                |  18   |    11     | ██████░░░░  61%      |
 | HashMap / HashSet      |  22   |    10     | ████░░░░░░  45%      |
@@ -26,7 +26,7 @@
 | Dynamic Programming    |  30   |     2     | █░░░░░░░░░   7%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   5   |     0     | ░░░░░░░░░░   0%      |
-| **Total**              | **275** | **83** | **███░░░░░░░ 30.2%** |
+| **Total**              | **275** | **84** | **███░░░░░░░ 30.5%** |
 
 ---
 
@@ -63,7 +63,7 @@
 
 | Date   | Problems Solved                              | Notes                        |
 |--------|----------------------------------------------|------------------------------|
-| Mar 18 | 561, 119, 209, 54, 67, 868, 415, 151, 186, 557 | Big push on Strings & Arrays |
+| Mar 18 | 561, 119, 209, 54, 67, 868, 415, 151, 186, 557, 189 | Completed Arrays! |
 | Mar 16 | 118, 66, 747, 724, 169, 42, 189, 31, 2, 237 | Arrays, LL cleanup           |
 | Mar 14 | 118, 66, 747, 724                            | Array Day                    |
 | Mar 13 | 31, 42, 2, 599, 387, 350, 219, 205, 136      | Arrays, LL & Hashing         |
@@ -73,7 +73,7 @@
 
 ---
 
-## 1️⃣ Arrays & Two Pointers (39 / 40)
+## 1️⃣ Arrays & Two Pointers (40 / 40)
 
 | #    | Problem                                     | Difficulty | Status                    | Pattern               |
 |------|---------------------------------------------|------------|---------------------------|-----------------------|
@@ -275,7 +275,7 @@
 
 ---
 
-## 8️⃣ Heap / Priority Queue (0 / 15)
+## 7️⃣ Heap / Priority Queue (0 / 15)
 
 | #    | Problem                                       | Difficulty | Status | Pattern           |
 |------|-----------------------------------------------|------------|--------|-------------------|
@@ -297,7 +297,7 @@
 
 ---
 
-## 9️⃣ Trees (1 / 25)
+## 8️⃣ Trees (1 / 25)
 
 | #    | Problem                                         | Difficulty | Status | Pattern                |
 |------|-------------------------------------------------|------------|--------|------------------------|
@@ -325,11 +325,11 @@
 | 572  | Subtree of Another Tree                         | Easy       | ⬜      | DFS                    |
 | 700  | Search in a Binary Search Tree                  | Easy       | ⬜      | BST Properties         |
 | 814  | Binary Tree Pruning                             | Medium     | ⬜      | DFS                    |
-| 1650 | Lowest Common Ancestor of Binary Tree III       | Medium     | ✅ [Solution](src/tree/LowestCommonAncestorIII.java) | Two Pointers |
+| 1650 | Lowest Common Ancestor of a Binary Tree III       | Medium     | ✅ [Solution](src/tree/LowestCommonAncestorIII.java) | Two Pointers |
 
 ---
 
-## 🔟 Backtracking (0 / 15)
+## 9️⃣ Backtracking (0 / 15)
 
 | #   | Problem                               | Difficulty | Status | Pattern             |
 |-----|---------------------------------------|------------|--------|---------------------|
@@ -351,7 +351,7 @@
 
 ---
 
-## 1️⃣1️⃣ Graphs (0 / 20)
+## 🔟 Graphs (0 / 20)
 
 | #    | Problem                                      | Difficulty | Status | Pattern             |
 |------|----------------------------------------------|------------|--------|---------------------|
@@ -379,7 +379,7 @@
 
 ---
 
-## 1️⃣2️⃣ Dynamic Programming (2 / 30)
+## 1️⃣1️⃣ Dynamic Programming (2 / 30)
 
 | #    | Problem                                                   | Difficulty | Status | Pattern         |
 |------|-----------------------------------------------------------|------------|--------|-----------------|
@@ -416,7 +416,7 @@
 
 ---
 
-## 1️⃣2️⃣ Bit Manipulation (2 / 10)
+## 1️⃣2️⃣ Bit Manipulation (4 / 12)
 
 | #    | Problem                             | Difficulty | Status | Pattern          |
 |------|-------------------------------------|------------|--------|------------------|
@@ -430,6 +430,8 @@
 | 461  | Hamming Distance                    | Easy       | ⬜      | XOR              |
 | 693  | Binary Number with Alternating Bits | Easy       | ⬜      | Bit Manipulation |
 | 1009 | Complement of Base 10 Integer       | Easy       | ✅ [Solution](src/bitmanipulation/ComplementBase10Integer.java) | Bit Mask |
+| 67   | Add Binary                          | Easy       | ✅ [Solution](src/strings/AddBinary.java) | Bit Manipulation |
+| 868  | Binary Gap                          | Easy       | ✅ [Solution](src/strings/BinaryGap.java) | Bit Manipulation |
 
 ---
 
