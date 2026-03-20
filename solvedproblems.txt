@@ -1,141 +1,162 @@
+Statistics
+====================
+Total Problems: 114
+
+Category Breakdown:
+- Arrays & arrays101: 40
+- Strings: 22
+- Linked List: 14
+- Two Pointers: 10
+- Stack: 7
+- Daily Challenges: 6
+- Hashing: 5
+- Sorting Algorithms: 3
+- Dynamic Programming: 2
+- Map & Set Design: 2
+- Sliding Window: 2
+- Binary Search: 1
+
+====================
+
 Solved Problems List
 
 **Arrays & arrays101**
-- BestTimeToBuyAndSellStock
-- CheckIfExists
-- CheckIfNAndItsDoubleExist
-- CircularArrayLoop
-- ContainsDuplicate
-- CountPairs
-- DuplicateZeros
-- EvenNoOfDigits
-- FindAllNumbersDisappearedInAnArray
-- FindDisappearedNumber
-- FindNumbersWithEvenNumberOfDigits
-- FindPivotIndex
+- PlusOne
+- RotateArray
 - RunningSum1d
-- HeightChecker
-- LargestNumberTwiceOthers
+- SpiralMatrix
+- ArrayPartition
+- FindPivotIndex
 - MajorityElement
-- MaxConsecutiveOnes
-- MergeSortedArray
-- MinChangesAlternatingBinaryString
-- MoveZeroes
-- MoveZeros
 - NextPermutation
 - PascalsTriangle
-- PlusOne
-- RemoveDuplicates
-- RemoveDuplicates2
-- RemoveDuplicatesFromSortedArrayII
-- RemoveElement
-- ReplaceElement
-- ReplaceElementsWithGreatestElementOnRightSide
+- CircularArrayLoop
+- ContainsDuplicate
+- PascalsTriangleII
+- TrappingRainWater
+- MinSizeSubArraySum
 - RichestCustomerWealth
-- RotateArray
+- TrappingRainWaterPrefix
+- LargestNumberTwiceOthers
+- BestTimeToBuyAndSellStock
 - SearchInRotatedSortedArray
 - SpecialPositionsInBinaryMatrix
-- SquaresOfASortedArray
+- MoveZeroes
+- CountPairs
+- CheckIfExists
+- HeightChecker
+- RemoveElement
+- DuplicateZeros
+- EvenNoOfDigits
+- ReplaceElement
 - SquaresOfSorted
+- MergeSortedArray
+- RemoveDuplicates
+- RemoveDuplicates2
+- MaxConsecutiveOnes
 - ThirdMaximumNumber
-- TrappingRainWater
-- TrappingRainWaterPrefix
 - ValidMountainArray
+- FindDisappearedNumber
+- SquaresOfASortedArray
+- CheckIfNAndItsDoubleExist
+- FindNumbersWithEvenNumberOfDigits
+- MinChangesAlternatingBinaryString
+- RemoveDuplicatesFromSortedArrayII
+- FindAllNumbersDisappearedInAnArray
+- ReplaceElementsWithGreatestElementOnRightSide
 
 **Binary Search**
 - SqrtX
 
 **Daily Challenges**
-- CheckOneSegment
-- ComplementBase10Integer
-- FindKthBit
-- FindUniqueBinaryString
 - MinFlips
+- FindKthBit
 - MinimumSwaps
+- CheckOneSegment
+- FindUniqueBinaryString
+- ComplementBase10Integer
 
 **Dynamic Programming**
 - FindAllPossibleStableArraysI
 - FindAllPossibleStableArraysII
 
 **Hashing**
+- MinimumIndexSum
 - ContainsDuplicatesII
 - FirstUniqueCharacter
 - IntersectionOfArrays
 - IntersectionOfArraysII
-- MinimumIndexSum
 
 **Linked List**
-- AddTwoNumbers
 - DeleteNode
-- DesignLinkedList
-- LinkedListCycle
-- LinkedListCycleII
-- LinkedListsIntersection
-- MaximumTwinSumOfLinkedList
-- MergeTwoSortedLists
 - MyLinkedList
+- AddTwoNumbers
+- LinkedListCycle
+- DesignLinkedList
+- SinglyLinkedList
+- LinkedListCycleII
+- ReverseLinkedList
+- MergeTwoSortedLists
 - PalindromeLinkedList
 - RemoveNthNodeFromEnd
-- ReverseLinkedList
-- SinglyLinkedList
+- LinkedListsIntersection
 - SplitCircularLinkedList
+- MaximumTwinSumOfLinkedList
 
 **Map & Set Design**
 - MyHashMap
 - MyHashSet
 
 **Sliding Window**
-- MaxSlidingWindow
 - SlidingWindow
-
-**Strings**
-- Anagram
-- FindIndexOfFirstOccurrence
-- IsomorphicStrings
-- JavaStringTokens
-- LongestSubstringWithoutRepeatingCharacters
-- MinChangesAlternatingBinaryString
-- Palindrome
-- PalindromeI
-- PalindromeII
-- PartitioningIntoMinDeciBinaryNumbers
-- ReverseString
-- ReverseWordsInString
-- ReverseWordsInStringII
-- ReverseWordsInStringIII
-- SmallestAndLargestSub
-- SplitString
-- ValidAnagram
-- ValidPalindrome
-- ValidWordAbbreviation
-
-**Two Pointers**
-- AppendCharacters
-- ContainerWithMostWater
-- FindTheDuplicateNumber
-- HappyNumber
-- LengthOfLoop
-- MiddleOfLinkedList
-- StrobogrammaticNumber
-- ThreeSum
-- TwoSum
-- TwoSumII
+- MaxSlidingWindow
 
 **Sorting Algorithms**
 - BubbleSort
 - SortColors
 - TwoColorSort
 
-**Patterns**
-- FloydTriangle
-- FloydTriangleMathematically
+**Stack**
+- MinStack
+- ArrayStack
+- ArrayListStack
+- LinkedListStack
+- ValidParenthesis
+- MinStackLinkedList
+- ValidParenthesisMap
 
-**Bit Manipulation**
-- SingleNumber
+**Strings**
+- Anagram
+- AddBinary
+- BinaryGap
+- AddStrings
+- Palindrome
+- PalindromeI
+- SplitString
+- PalindromeII
+- ValidAnagram
+- ReverseString
+- ValidPalindrome
+- JavaStringTokens
+- IsomorphicStrings
+- ReverseWordsInString
+- SmallestAndLargestSub
+- ValidWordAbbreviation
+- ReverseWordsInStringII
+- ReverseWordsInStringIII
+- FindIndexOfFirstOccurrence
+- MinChangesAlternatingBinaryString
+- PartitioningIntoMinDeciBinaryNumbers
+- LongestSubstringWithoutRepeatingCharacters
 
-**Root (Legacy / Standalone)**
-- FirstOccuranceInAString
-- MajorityElement
-- MaxProfit
-- PartitionDeciBinary
-- RotateArray
+**Two Pointers**
+- TwoSum
+- ThreeSum
+- TwoSumII
+- HappyNumber
+- LengthOfLoop
+- AppendCharacters
+- MiddleOfLinkedList
+- StrobogrammaticNumber
+- ContainerWithMostWater
+- FindTheDuplicateNumber

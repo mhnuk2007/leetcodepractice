@@ -1,4 +1,4 @@
-# Java DSA Roadmap – 266 Essential LeetCode Problems
+# Java DSA Roadmap – 278 Essential LeetCode Problems
 
 **Author:** Mohan Lal | **GitHub:** [mhnuk2007](https://github.com/mhnuk2007) | **LeetCode:** [mhnuk2007](https://leetcode.com/mhnuk2007) | **Language:** Java
 
@@ -12,21 +12,21 @@
 
 | Category               | Total | Completed | Progress              |
 |------------------------|-------|-----------|----------------------|
-| Arrays & Two Pointers  |  40   |    40     | ██████████ 100%      |
+| Arrays & Two Pointers  |  42   |    42     | ██████████ 100%      |
 | Sliding Window         |  16   |     3     | ██░░░░░░░░  19%      |
-| Strings                |  18   |    11     | ██████░░░░  61%      |
+| Strings                |  18   |    14     | ███████░░░  78%      |
 | HashMap / HashSet      |  22   |    10     | ████░░░░░░  45%      |
-| Binary Search          |  20   |     1     | ░░░░░░░░░░   5%      |
+| Binary Search          |  21   |     1     | ░░░░░░░░░░   5%      |
 | Linked List            |  21   |    12     | █████░░░░░  57%      |
-| Stack                  |  15   |     0     | ░░░░░░░░░░   0%      |
+| Stack                  |  15   |     2     | █░░░░░░░░░   13%      |
 | Heap / Priority Queue  |  15   |     0     | ░░░░░░░░░░   0%      |
 | Trees                  |  25   |     1     | ░░░░░░░░░░   4%      |
 | Backtracking           |  15   |     0     | ░░░░░░░░░░   0%      |
 | Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  30   |     2     | █░░░░░░░░░   7%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
-| Daily Challenges       |   5   |     0     | ░░░░░░░░░░   0%      |
-| **Total**              | **275** | **84** | **███░░░░░░░ 30.5%** |
+| Daily Challenges       |   5   |     4     | ████████░░  80%      |
+| **Total**              | **278** | **95** | **███░░░░░░░ 34.2%** |
 
 ---
 
@@ -34,8 +34,6 @@
 
 **Priority 1 — Stacks (Very Common in Interviews)**
 ```
-20.  Valid Parentheses          (Easy)
-155. Min Stack                  (Medium)
 739. Daily Temperatures         (Medium) ← Monotonic Stack
 496. Next Greater Element I     (Easy)   ← Monotonic Stack
 84.  Largest Rectangle in Hist. (Hard)   ← Monotonic Stack
@@ -63,7 +61,8 @@
 
 | Date   | Problems Solved                              | Notes                        |
 |--------|----------------------------------------------|------------------------------|
-| Mar 18 | 561, 119, 209, 54, 67, 868, 415, 151, 186, 557, 189 | Completed Arrays! |
+| Mar 19 | 20, 155                                      | Started Stacks!              |
+| Mar 18 | 561, 119, 209, 54, 67, 868, 415, 151, 186, 557 | Big push on Strings & Arrays |
 | Mar 16 | 118, 66, 747, 724, 169, 42, 189, 31, 2, 237 | Arrays, LL cleanup           |
 | Mar 14 | 118, 66, 747, 724                            | Array Day                    |
 | Mar 13 | 31, 42, 2, 599, 387, 350, 219, 205, 136      | Arrays, LL & Hashing         |
@@ -73,7 +72,7 @@
 
 ---
 
-## 1️⃣ Arrays & Two Pointers (40 / 40)
+## 1️⃣ Arrays & Two Pointers (42 / 42)
 
 | #    | Problem                                     | Difficulty | Status                    | Pattern               |
 |------|---------------------------------------------|------------|---------------------------|-----------------------|
@@ -110,9 +109,6 @@
 | 1051 | Height Checker                              | Easy       | ✅ [Solution](src/arrays101/HeightChecker.java) | Sorting |
 | 1089 | Duplicate Zeros                             | Easy       | ✅ [Solution](src/arrays101/DuplicateZeros.java) | Two Pointers |
 | 1295 | Find Numbers with Even Number of Digits     | Easy       | ✅ [Solution](src/arrays101/FindNumbersWithEvenNumberOfDigits.java) | Array Traversal |
-| 1299 | Replace Elements with Greatest on Right     | Easy       | ✅ [Solution](src/arrays101/ReplaceElementsWithGreatestElementOnRightSide.java) | Reverse Traversal |
-| 1346 | Check If N and Its Double Exist             | Easy       | ✅ [Solution](src/arrays101/CheckIfNAndItsDoubleExist.java) | Hashing |
-| 1480 | Running Sum of 1d Array                     | Easy       | ✅ [Solution](src/arrays/RunningSum1d.java) | Prefix Sum |
 | 1582 | Special Positions in a Binary Matrix        | Easy       | ✅ [Solution](src/arrays/SpecialPositionsInBinaryMatrix.java) | Matrix Traversal |
 | 1672 | Richest Customer Wealth                     | Easy       | ✅ [Solution](src/arrays/RichestCustomerWealth.java) | Matrix Traversal |
 | 2176 | Count Equal and Divisible Pairs in an Array | Easy       | ✅ [Solution](src/arrays/CountPairs.java) | Array Traversal |
@@ -143,7 +139,7 @@
 
 ---
 
-## 3️⃣ Strings (11 / 18)
+## 3️⃣ Strings (14 / 18)
 
 | #    | Problem                                               | Difficulty | Status | Pattern        |
 |------|-------------------------------------------------------|------------|--------|----------------|
@@ -253,16 +249,16 @@
 
 ---
 
-## 7️⃣ Stack (0 / 15)
+## 7️⃣ Stack (2 / 15)
 
 | #   | Problem                          | Difficulty | Status | Pattern         |
 |-----|----------------------------------|------------|--------|-----------------|
-| 20  | Valid Parentheses                | Easy       | ⬜      | Stack           |
+| 20  | Valid Parentheses                | Easy       | ✅ [Solution](src/stack/ValidParenthesis.java) | Stack           |
 | 71  | Simplify Path                    | Medium     | ⬜      | Stack           |
 | 84  | Largest Rectangle in Histogram   | Hard       | ⬜      | Monotonic Stack |
 | 85  | Maximal Rectangle                | Hard       | ⬜      | Monotonic Stack |
 | 150 | Evaluate Reverse Polish Notation | Medium     | ⬜      | Stack           |
-| 155 | Min Stack                        | Medium     | ⬜      | Stack           |
+| 155 | Min Stack                        | Medium     | ✅ [Solution](src/stack/MinStack.java) | Stack           |
 | 224 | Basic Calculator                 | Hard       | ⬜      | Stack           |
 | 225 | Implement Stack using Queues     | Easy       | ⬜      | Stack           |
 | 232 | Implement Queue using Stacks     | Easy       | ⬜      | Stack           |
@@ -275,7 +271,7 @@
 
 ---
 
-## 7️⃣ Heap / Priority Queue (0 / 15)
+## 8️⃣ Heap / Priority Queue (0 / 15)
 
 | #    | Problem                                       | Difficulty | Status | Pattern           |
 |------|-----------------------------------------------|------------|--------|-------------------|
@@ -297,7 +293,7 @@
 
 ---
 
-## 8️⃣ Trees (1 / 25)
+## 9️⃣ Trees (1 / 25)
 
 | #    | Problem                                         | Difficulty | Status | Pattern                |
 |------|-------------------------------------------------|------------|--------|------------------------|
@@ -329,7 +325,7 @@
 
 ---
 
-## 9️⃣ Backtracking (0 / 15)
+## 🔟 Backtracking (0 / 15)
 
 | #   | Problem                               | Difficulty | Status | Pattern             |
 |-----|---------------------------------------|------------|--------|---------------------|
@@ -351,7 +347,7 @@
 
 ---
 
-## 🔟 Graphs (0 / 20)
+## 1️⃣1️⃣ Graphs (0 / 21)
 
 | #    | Problem                                      | Difficulty | Status | Pattern             |
 |------|----------------------------------------------|------------|--------|---------------------|
@@ -379,7 +375,7 @@
 
 ---
 
-## 1️⃣1️⃣ Dynamic Programming (2 / 30)
+## 1️⃣2️⃣ Dynamic Programming (2 / 30)
 
 | #    | Problem                                                   | Difficulty | Status | Pattern         |
 |------|-----------------------------------------------------------|------------|--------|-----------------|
@@ -416,7 +412,7 @@
 
 ---
 
-## 1️⃣2️⃣ Bit Manipulation (4 / 12)
+## 1️⃣3️⃣ Bit Manipulation (4 / 12)
 
 | #    | Problem                             | Difficulty | Status | Pattern          |
 |------|-------------------------------------|------------|--------|------------------|
@@ -435,14 +431,14 @@
 
 ---
 
-## 🌟 Daily Challenges (0 / 5)
+## 🌟 Daily Challenges (4 / 5)
 
 | #    | Problem                                                  | Difficulty | Status | Pattern          |
 |------|----------------------------------------------------------|------------|--------|------------------|
-| 1318 | Minimum Flips to Make a OR b Equal to c                  | Medium     | ⬜      | Bit Manipulation |
-| 1545 | Find Kth Bit in Nth Binary String                        | Medium     | ⬜      | Recursion        |
-| 1784 | Check if Binary String Has at Most One Segment of Ones   | Easy       | ⬜      | String           |
-| 1980 | Find Unique Binary String                                | Medium     | ⬜      | Backtracking     |
+| 1318 | Minimum Flips to Make a OR b Equal to c                  | Medium     | ✅ [Solution](src/dailychallenges/MinFlips.java) | Bit Manipulation |
+| 1545 | Find Kth Bit in Nth Binary String                        | Medium     | ✅ [Solution](src/dailychallenges/FindKthBit.java) | Recursion        |
+| 1784 | Check if Binary String Has at Most One Segment of Ones   | Easy       | ✅ [Solution](src/dailychallenges/CheckOneSegment.java) | String           |
+| 1980 | Find Unique Binary String                                | Medium     | ✅ [Solution](src/dailychallenges/FindUniqueBinaryString.java) | Backtracking     |
 | 2193 | Minimum Number of Moves to Make Palindrome               | Hard       | ⬜      | Greedy           |
 
 ---
@@ -457,4 +453,4 @@
 
 ---
 
-*Last updated: March 18, 2026*
+*Last updated: March 19, 2026*
