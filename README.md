@@ -18,7 +18,7 @@
 | HashMap / HashSet      |  22   |    10     | ████░░░░░░  45%      |
 | Binary Search          |  21   |     1     | ░░░░░░░░░░   5%      |
 | Linked List            |  21   |    12     | █████░░░░░  57%      |
-| Stack                  |  15   |     3     | ██░░░░░░░░   20%      |
+| Stack                  |  15   |     4     | ███░░░░░░░   27%      |
 | Heap / Priority Queue  |  15   |     0     | ░░░░░░░░░░   0%      |
 | Trees                  |  25   |     1     | ░░░░░░░░░░   4%      |
 | Backtracking           |  15   |     0     | ░░░░░░░░░░   0%      |
@@ -26,7 +26,7 @@
 | Dynamic Programming    |  30   |     2     | █░░░░░░░░░   7%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   5   |     4     | ████████░░  80%      |
-| **Total**              | **278** | **96** | **███░░░░░░░ 34.5%** |
+| **Total**              | **278** | **97** | **███░░░░░░░ 34.9%** |
 
 ---
 
@@ -61,7 +61,7 @@
 
 | Date   | Problems Solved                              | Notes                        |
 |--------|----------------------------------------------|------------------------------|
-| Mar 20 | 739                                          | Monotonic Stack              |
+| Mar 20 | 739, 150                                     | Monotonic Stack              |
 | Mar 19 | 20, 155                                      | Started Stacks!              |
 | Mar 18 | 561, 119, 209, 54, 67, 868, 415, 151, 186, 557 | Big push on Strings & Arrays |
 | Mar 16 | 118, 66, 747, 724, 169, 42, 189, 31, 2, 237 | Arrays, LL cleanup           |
@@ -98,24 +98,14 @@
 | 287  | Find the Duplicate Number                   | Medium     | ✅ [Solution](src/twopointer/FindTheDuplicateNumber.java) | Floyd's Cycle |
 | 414  | Third Maximum Number                        | Easy       | ✅ [Solution](src/arrays101/ThirdMaximumNumber.java) | Tracking |
 | 485  | Max Consecutive Ones                        | Easy       | ✅ [Solution](src/arrays101/MaxConsecutiveOnes.java) | Array Traversal |
-| 561  | Array Partition                             | Easy       | ✅ [Solution](src/arrays/ArrayPartition.java) | Sorting |
 | 724  | Find Pivot Index                            | Easy       | ✅ [Solution](src/arrays/FindPivotIndex.java) | Prefix Sum |
 | 747  | Largest Number At Least Twice of Others     | Easy       | ✅ [Solution](src/arrays/LargestNumberTwiceOthers.java) | Array Traversal |
-| 80   | Remove Duplicates from Sorted Array II      | Medium     | ✅ [Solution](src/arrays101/RemoveDuplicatesFromSortedArrayII.java) | Two Pointers |
-| 167  | Two Sum II - Input Array Is Sorted          | Medium     | ✅ [Solution](src/twopointer/TwoSumII.java) | Two Pointers |
-| 202  | Happy Number                                | Easy       | ✅ [Solution](src/twopointer/HappyNumber.java) | Fast & Slow Pointers |
-| 246  | Strobogrammatic Number                      | Easy       | ✅ [Solution](src/twopointer/StrobogrammaticNumber.java) | Two Pointers |
-| 448  | Find All Numbers Disappeared in an Array    | Easy       | ✅ [Solution](src/arrays101/FindAllNumbersDisappearedInAnArray.java) | Array Traversal |
-| 457  | Circular Array Loop                         | Medium     | ✅ [Solution](src/arrays/CircularArrayLoop.java) | Fast & Slow Pointers |
-| 1051 | Height Checker                              | Easy       | ✅ [Solution](src/arrays101/HeightChecker.java) | Sorting |
-| 1089 | Duplicate Zeros                             | Easy       | ✅ [Solution](src/arrays101/DuplicateZeros.java) | Two Pointers |
-| 1295 | Find Numbers with Even Number of Digits     | Easy       | ✅ [Solution](src/arrays101/FindNumbersWithEvenNumberOfDigits.java) | Array Traversal |
+| 941  | Valid Mountain Array                        | Easy       | ✅ [Solution](src/arrays101/ValidMountainArray.java) | Array Traversal |
+| 977  | Squares of a Sorted Array                   | Easy       | ✅ [Solution](src/arrays101/SquaresOfASortedArray.java) | Two Pointers |
 | 1299 | Replace Elements with Greatest on Right     | Easy       | ✅ [Solution](src/arrays101/ReplaceElementsWithGreatestElementOnRightSide.java) | Reverse Traversal |
 | 1346 | Check If N and Its Double Exist             | Easy       | ✅ [Solution](src/arrays101/CheckIfNAndItsDoubleExist.java) | Hashing |
 | 1480 | Running Sum of 1d Array                     | Easy       | ✅ [Solution](src/arrays/RunningSum1d.java) | Prefix Sum |
-| 1582 | Special Positions in a Binary Matrix        | Easy       | ✅ [Solution](src/arrays/SpecialPositionsInBinaryMatrix.java) | Matrix Traversal |
 | 1672 | Richest Customer Wealth                     | Easy       | ✅ [Solution](src/arrays/RichestCustomerWealth.java) | Matrix Traversal |
-| 1758 | Minimum Changes to Make Alternating String  | Easy       | ✅ [Solution](src/strings/MinChangesAlternatingBinaryString.java) | String |
 | 2176 | Count Equal and Divisible Pairs in an Array | Easy       | ✅ [Solution](src/arrays/CountPairs.java) | Array Traversal |
 | 2486 | Append Characters to String to Make Subsequence | Medium | ✅ [Solution](src/twopointer/AppendCharacters.java) | Two Pointers |
 
@@ -254,7 +244,7 @@
 
 ---
 
-## 7️⃣ Stack (2 / 15)
+## 7️⃣ Stack (4 / 15)
 
 | #   | Problem                          | Difficulty | Status | Pattern         |
 |-----|----------------------------------|------------|--------|-----------------|
@@ -262,7 +252,7 @@
 | 71  | Simplify Path                    | Medium     | ⬜      | Stack           |
 | 84  | Largest Rectangle in Histogram   | Hard       | ⬜      | Monotonic Stack |
 | 85  | Maximal Rectangle                | Hard       | ⬜      | Monotonic Stack |
-| 150 | Evaluate Reverse Polish Notation | Medium     | ⬜      | Stack           |
+| 150 | Evaluate Reverse Polish Notation | Medium     | ✅ [Solution](src/stack/ReversePolishNotation.java) | Stack           |
 | 155 | Min Stack                        | Medium     | ✅ [Solution](src/stack/MinStack.java) | Stack           |
 | 224 | Basic Calculator                 | Hard       | ⬜      | Stack           |
 | 225 | Implement Stack using Queues     | Easy       | ⬜      | Stack           |
