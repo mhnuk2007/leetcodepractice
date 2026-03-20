@@ -1,13 +1,13 @@
 Statistics
 ====================
-Total Problems: 114
+Total Problems: 116
 
 Category Breakdown:
 - Arrays & arrays101: 40
 - Strings: 22
 - Linked List: 14
 - Two Pointers: 10
-- Stack: 7
+- Stack: 9
 - Daily Challenges: 6
 - Hashing: 5
 - Sorting Algorithms: 3
@@ -122,8 +122,10 @@ Solved Problems List
 - ArrayListStack
 - LinkedListStack
 - ValidParenthesis
+- DailyTemperatures
 - MinStackLinkedList
 - ValidParenthesisMap
+- ReversePolishNotation
 
 **Strings**
 - Anagram
