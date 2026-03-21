@@ -18,7 +18,7 @@
 | HashMap / HashSet      |  22   |    10     | ████░░░░░░  45%      |
 | Binary Search          |  21   |     1     | ░░░░░░░░░░   5%      |
 | Linked List            |  21   |    12     | █████░░░░░  57%      |
-| Stack                  |  15   |     4     | ███░░░░░░░   27%      |
+| Stack                  |  15   |     5     | ███░░░░░░░   33%      |
 | Heap / Priority Queue  |  15   |     0     | ░░░░░░░░░░   0%      |
 | Trees                  |  25   |     1     | ░░░░░░░░░░   4%      |
 | Backtracking           |  15   |     0     | ░░░░░░░░░░   0%      |
@@ -26,7 +26,7 @@
 | Dynamic Programming    |  30   |     2     | █░░░░░░░░░   7%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   5   |     4     | ████████░░  80%      |
-| **Total**              | **278** | **97** | **███░░░░░░░ 34.9%** |
+| **Total**              | **278** | **99** | **███░░░░░░░ 35.6%** |
 
 ---
 
@@ -34,7 +34,6 @@
 
 **Priority 1 — Stacks (Very Common in Interviews)**
 ```
-496. Next Greater Element I     (Easy)   ← Monotonic Stack
 84.  Largest Rectangle in Hist. (Hard)   ← Monotonic Stack
 853. Car Fleet                  (Medium) ← Monotonic Stack
 ```
@@ -61,7 +60,7 @@
 
 | Date   | Problems Solved                              | Notes                        |
 |--------|----------------------------------------------|------------------------------|
-| Mar 20 | 739, 150                                     | Monotonic Stack              |
+| Mar 20 | 739, 150, 496, 503                           | Monotonic Stack              |
 | Mar 19 | 20, 155                                      | Started Stacks!              |
 | Mar 18 | 561, 119, 209, 54, 67, 868, 415, 151, 186, 557 | Big push on Strings & Arrays |
 | Mar 16 | 118, 66, 747, 724, 169, 42, 189, 31, 2, 237 | Arrays, LL cleanup           |
@@ -244,7 +243,7 @@
 
 ---
 
-## 7️⃣ Stack (4 / 15)
+## 7️⃣ Stack (5 / 15)
 
 | #   | Problem                          | Difficulty | Status | Pattern         |
 |-----|----------------------------------|------------|--------|-----------------|
@@ -258,8 +257,8 @@
 | 225 | Implement Stack using Queues     | Easy       | ⬜      | Stack           |
 | 232 | Implement Queue using Stacks     | Easy       | ⬜      | Stack           |
 | 394 | Decode String                    | Medium     | ⬜      | Stack           |
-| 496 | Next Greater Element I           | Easy       | ⬜      | Monotonic Stack |
-| 503 | Next Greater Element II          | Medium     | ⬜      | Monotonic Stack |
+| 496 | Next Greater Element I           | Easy       | ✅ [Solution](src/stack/NextGreaterElement.java) | Monotonic Stack |
+| 503 | Next Greater Element II          | Medium     | ✅ [Solution](src/stack/NextGreaterElementII.java) | Monotonic Stack |
 | 739 | Daily Temperatures               | Medium     | ✅ [Solution](src/stack/DailyTemperatures.java) | Monotonic Stack |
 | 853 | Car Fleet                        | Medium     | ⬜      | Monotonic Stack |
 | 907 | Sum of Subarray Minimums         | Medium     | ⬜      | Monotonic Stack |
