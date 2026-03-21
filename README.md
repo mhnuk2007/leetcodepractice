@@ -377,8 +377,8 @@
 | 104  | Maximum Depth of Binary Tree                     | Easy       | ⬜      | DFS                    | 📅 Day 1      |
 | 100  | Same Tree                                        | Easy       | ⬜      | DFS / BFS              | 📅 Day 1      |
 | 226  | Invert Binary Tree                               | Easy       | ⬜      | DFS / BFS              | 📅 Day 1      |
-| 94   | Binary Tree Inorder Traversal                    | Easy       | ⬜      | DFS                    | 📅 Day 2      |
-| 144  | Binary Tree Preorder Traversal                   | Easy       | ⬜      | DFS                    | 📅 Day 2 ✨new |
+| 94   | Binary Tree Inorder Traversal                    | Easy       | ✅ [Solution](src/tree/BinaryTreeInorder.java)       | DFS                    | 📅 Day 2      |
+| 144  | Binary Tree Preorder Traversal                   | Easy       | ✅ [Solution](src/tree/BinaryTreePreorder.java)       | DFS                    | 📅 Day 2 ✨new |
 | 145  | Binary Tree Postorder Traversal                  | Easy       | ⬜      | DFS                    | 📅 Day 2 ✨new |
 | 102  | Binary Tree Level Order Traversal                | Medium     | ⬜      | BFS                    | 📅 Day 3      |
 | 199  | Binary Tree Right Side View                      | Medium     | ⬜      | BFS                    | 📅 Day 3      |
@@ -404,7 +404,7 @@
 | 450  | Delete Node in a BST                             | Medium     | ⬜      | BST Properties         |               |
 | 572  | Subtree of Another Tree                          | Easy       | ⬜      | DFS                    |               |
 | 814  | Binary Tree Pruning                              | Medium     | ⬜      | DFS                    |               |
-| 1650 | Lowest Common Ancestor of a Binary Tree III      | Medium     | ✅ [Solution](src/tree/LowestCommonAncestorIII.java) | Two Pointers |               |
+| 1650 | Lowest Common Ancestor of a Binary Tree III      | Medium     | ⬜      | Two Pointers           |               |
 
 ---
 
