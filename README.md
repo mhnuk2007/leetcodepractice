@@ -5,6 +5,8 @@
 > **Goal:** Master data structures and algorithms for software engineering interviews — 200+ problems solved in Java.
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
+>
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (131 total files).
 
 ---
 
@@ -18,45 +20,81 @@
 | HashMap / HashSet      |  23   |    10     | ████░░░░░░  43%      |
 | Binary Search          |  21   |     1     | ░░░░░░░░░░   5%      |
 | Linked List            |  23   |    12     | █████░░░░░  52%      |
-| Stack & Queue          |  25   |    10     | ████░░░░░░  40%      |
+| Stack & Queue          |  25   |    11     | ████░░░░░░  44%      |
 | Heap / Priority Queue  |  17   |     0     | ░░░░░░░░░░   0%      |
-| Trees                  |  28   |     1     | ░░░░░░░░░░   4%      |
+| Trees                  |  30   |     1     | ░░░░░░░░░░   3%      |
 | Backtracking           |  16   |     0     | ░░░░░░░░░░   0%      |
 | Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  33   |     2     | █░░░░░░░░░   6%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
-| Daily Challenges       |   5   |     4     | ████████░░  80%      |
-| **Total**              | **303** | **103** | **███░░░░░░░ 34%**  |
+| Daily Challenges       |   6   |     5     | ████████░░  83%      |
+| **Total**              | **307** | **105** | **███░░░░░░░ 34%**  |
+
+> 📌 Trees expanded to 30 — added LC 144 (Preorder Traversal) and LC 145 (Postorder Traversal) from the 15-day plan.
 
 ---
 
-## 📌 Current Focus & Recommended Next Problems
+## 🚀 15-Day Active Plan: Trees → Heap → Graphs
 
-**Priority 1 — Stack & Queue (continue momentum)**
-```
-84.  Largest Rectangle in Histogram  (Hard)   ← Monotonic Stack
-232. Implement Queue using Stacks    (Easy)
-225. Implement Stack using Queues    (Easy)
-394. Decode String                   (Medium) ← Stack
-853. Car Fleet                       (Medium) ← Monotonic Stack
-994. Rotting Oranges                 (Medium) ← BFS / Queue
+> ⚡ **Rules:** 3–4 problems/day max · Write Pattern + Time/Space · Dry run once · DFS before BFS
+
+### 🌳 Days 1–5 — Trees: Foundation
+
+| Day | Problems | Focus |
+|-----|----------|-------|
+| **Day 1** | 104 · 100 · 226 | DFS recursion · base case (`node == null`) |
+| **Day 2** | 94 · 144 · 145 | Inorder + Preorder + Postorder (recursive & iterative) |
+| **Day 3** | 102 · 199 | BFS · Queue · level-by-level processing |
+| **Day 4** | 110 · 543 | Height-based recursion · return height + compute answer |
+| **Day 5** | 700 · 98 | BST rules — **very important for interviews** |
+
+### 🌲 Days 6–10 — Trees: Intermediate
+
+| Day | Problems | Focus |
+|-----|----------|-------|
+| **Day 6** | 112 · 257 · 113 | DFS + backtracking · path problems |
+| **Day 7** | 235 · 236 | LCA — **very important for interviews** |
+| **Day 8** | 105 | Build tree (Preorder + Inorder) — hard but very valuable |
+| **Day 9** | 257 · 124 | Warm-up path → Max Path Sum (Hard) — don't skip |
+| **Day 10** | Review day | Re-solve 2 problems from memory · revise DFS · BFS · Path · Height |
+
+### 🧠 Days 11–12 — Heap
+
+| Day | Problems | Focus |
+|-----|----------|-------|
+| **Day 11** | 215 · 1046 | Min Heap vs Max Heap · PriorityQueue in Java |
+| **Day 12** | 347 · 295 | Top-K pattern · Two-Heap pattern (Find Median) |
+
+### 🌐 Days 13–15 — Graphs: Core
+
+| Day | Problems | Focus |
+|-----|----------|-------|
+| **Day 13** | 200 · 133 | Visited array · DFS on grid |
+| **Day 14** | 994 · 1091 | Multi-source BFS · shortest path |
+| **Day 15** | 207 · 210 | Topological sort — **very important for backend interviews** |
+
+### 🧱 Daily Template
+
+```java
+/**
+ * Problem: [LC Number] [Problem Name]
+ * Pattern:
+ * Time Complexity:
+ * Space Complexity:
+ *
+ * Key Idea:
+ *
+ * Similar Problems:
+ */
 ```
 
-**Priority 2 — Trees (core interview topic)**
-```
-104. Maximum Depth of Binary Tree    (Easy)   ← DFS
-226. Invert Binary Tree              (Easy)   ← DFS
-102. Binary Tree Level Order         (Medium) ← BFS
-543. Diameter of Binary Tree         (Easy)   ← DFS
-98.  Validate BST                    (Medium) ← DFS
-```
+### 📊 Expected Result After 15 Days
 
-**Priority 3 — Sliding Window (essential pattern)**
-```
-438. Find All Anagrams               (Medium)
-567. Permutation in String           (Medium)
-424. Longest Repeating Char...       (Medium)
-```
+| Category | Before | After  |
+|----------|--------|--------|
+| Trees    |  1     |  ~20+  |
+| Heap     |  0     |   ~4+  |
+| Graphs   |  0     |   ~6+  |
 
 ---
 
@@ -119,7 +157,7 @@
 | 1480 | Running Sum of 1d Array                         | Easy       | ✅ [Solution](src/arrays/RunningSum1d.java) | Prefix Sum |
 | 1582 | Special Positions in a Binary Matrix            | Easy       | ✅ [Solution](src/arrays/SpecialPositionsInBinaryMatrix.java) | Matrix Traversal |
 | 1672 | Richest Customer Wealth                         | Easy       | ✅ [Solution](src/arrays/RichestCustomerWealth.java) | Matrix Traversal |
-| 2176 | Count Equal and Divisible Pairs in an Array     | Easy       | ✅ [Solution](src/arrays/CountPairs.java) | Array Traversal |
+| 2176 | Count Equal and Divisible Pairs in an Array     | Easy       | ✅ [Solution](src/arrays101/CountPairs.java) | Array Traversal |
 | 2486 | Append Characters to String to Make Subsequence | Medium     | ✅ [Solution](src/twopointer/AppendCharacters.java) | Two Pointers |
 
 ---
@@ -149,7 +187,7 @@
 
 ## 3️⃣ Strings (14 / 21)
 
-> Added: 8 String to Integer (atoi), 14 Longest Common Prefix, 58 Length of Last Word — essential string fundamentals missing from interviews.
+> 📁 Additional practice files in repo (not LeetCode submissions): `Anagram`, `Palindrome`, `PalindromeI`, `SplitString`, `SmallestAndLargestSub`, `JavaStringTokens`
 
 | #    | Problem                                                  | Difficulty | Status | Pattern               |
 |------|----------------------------------------------------------|------------|--------|-----------------------|
@@ -166,7 +204,7 @@
 | 186  | Reverse Words in a String II                             | Medium     | ✅ [Solution](src/strings/ReverseWordsInStringII.java) | In-place / O(1) space |
 | 205  | Isomorphic Strings                                       | Easy       | ✅ [Solution](src/strings/IsomorphicStrings.java) | Hashing |
 | 242  | Valid Anagram                                            | Easy       | ✅ [Solution](src/strings/ValidAnagram.java) | Hashing |
-| 271  | Encode and Decode Strings                                | Medium     | ⬜      | String |
+| 271  | Encode and Decode Strings                                | Medium     | ⬜      | String                |
 | 344  | Reverse String                                           | Easy       | ✅ [Solution](src/strings/ReverseString.java) | Two Pointers |
 | 408  | Valid Word Abbreviation                                  | Easy       | ✅ [Solution](src/strings/ValidWordAbbreviation.java) | Two Pointers |
 | 415  | Add Strings                                              | Easy       | ✅ [Solution](src/strings/AddStrings.java) | String Math |
@@ -179,8 +217,6 @@
 ---
 
 ## 4️⃣ HashMap / HashSet (10 / 23)
-
-> Added: 380 Insert Delete GetRandom O(1) — essential design problem asked at every top company.
 
 | #    | Problem                               | Difficulty | Status | Pattern              |
 |------|---------------------------------------|------------|--------|----------------------|
@@ -240,7 +276,7 @@
 
 ## 6️⃣ Linked List (12 / 23)
 
-> Added: 83 Remove Duplicates from Sorted List, 24 Swap Nodes in Pairs — essential easy problems seen in every interview set.
+> 📁 Additional files in repo (practice/helpers): `MyLinkedList`, `SinglyLinkedList`, `SplitCircularLinkedList`, `ListNode`
 
 | #    | Problem                               | Difficulty | Status | Pattern              |
 |------|---------------------------------------|------------|--------|----------------------|
@@ -270,9 +306,9 @@
 
 ---
 
-## 7️⃣ Stack & Queue (10 / 25)
+## 7️⃣ Stack & Queue (11 / 25)
 
-> Covers both stack and queue patterns. BFS queue problems (102, 127, 286, 994, 1091) are cross-listed here and in their primary category.
+> 📁 Additional files in repo (implementations): `ArrayStack`, `ArrayListStack`, `LinkedListStack`, `ArrayQueue`, `ArrayListQueue`, `LinkedListQueue`, `MovingAverage`
 
 | #    | Problem                             | Difficulty | Status | Pattern                |
 |------|-------------------------------------|------------|--------|------------------------|
@@ -286,8 +322,8 @@
 | 155  | Min Stack                           | Medium     | ✅ [Solution](src/stack/MinStack.java) | Stack |
 | 207  | Course Schedule                     | Medium     | ⬜      | BFS / Topological Sort |
 | 224  | Basic Calculator                    | Hard       | ⬜      | Stack                  |
-| 225  | Implement Stack using Queues        | Easy       | ⬜      | Queue                  |
-| 232  | Implement Queue using Stacks        | Easy       | ⬜      | Stack                  |
+| 225  | Implement Stack using Queues        | Easy       | ✅ [Solution](src/queue/MyStackUsingQueue.java) | Queue |
+| 232  | Implement Queue using Stacks        | Easy       | ✅ [Solution](src/queue/MyQueueUsingStacks.java) | Stack |
 | 286  | Walls and Gates                     | Medium     | ⬜      | BFS / Queue            |
 | 394  | Decode String                       | Medium     | ⬜      | Stack                  |
 | 496  | Next Greater Element I              | Easy       | ✅ [Solution](src/stack/NextGreaterElement.java) | Monotonic Stack |
@@ -306,71 +342,73 @@
 
 ## 8️⃣ Heap / Priority Queue (0 / 17)
 
-> Added: 264 Ugly Number II, 502 IPO — essential heap problems covering number theory and greedy scheduling.
+> 📌 **15-Day Plan sequence:** Day 11 → 215, 1046 · Day 12 → 347, 295
 
-| #    | Problem                                       | Difficulty | Status | Pattern           |
-|------|-----------------------------------------------|------------|--------|-------------------|
-| 23   | Merge K Sorted Lists                          | Hard       | ⬜      | Heap              |
-| 215  | Kth Largest Element in an Array               | Medium     | ⬜      | Heap / QuickSelect |
-| 264  | Ugly Number II                                | Medium     | ⬜      | Heap / DP         |
-| 295  | Find Median from Data Stream                  | Hard       | ⬜      | Two Heaps         |
-| 347  | Top K Frequent Elements                       | Medium     | ⬜      | Heap + Hashing    |
-| 355  | Design Twitter                                | Medium     | ⬜      | Heap              |
-| 373  | Find K Pairs with Smallest Sums               | Medium     | ⬜      | Heap              |
-| 378  | Kth Smallest Element in a Sorted Matrix       | Medium     | ⬜      | Heap              |
-| 407  | Trapping Rain Water II                        | Hard       | ⬜      | Heap              |
-| 502  | IPO                                           | Hard       | ⬜      | Heap + Greedy     |
-| 621  | Task Scheduler                                | Medium     | ⬜      | Heap + Greedy     |
-| 630  | Course Schedule III                           | Hard       | ⬜      | Heap + Greedy     |
-| 632  | Smallest Range Covering Elements from K Lists | Hard       | ⬜      | Heap              |
-| 703  | Kth Largest Element in a Stream               | Easy       | ⬜      | Heap              |
-| 743  | Network Delay Time                            | Medium     | ⬜      | Heap + Dijkstra's |
-| 778  | Swim in Rising Water                          | Hard       | ⬜      | Heap              |
-| 1046 | Last Stone Weight                             | Easy       | ⬜      | Heap              |
+| #    | Problem                                       | Difficulty | Status | Pattern            |
+|------|-----------------------------------------------|------------|--------|--------------------|
+| 23   | Merge K Sorted Lists                          | Hard       | ⬜      | Heap               |
+| 215  | Kth Largest Element in an Array               | Medium     | ⬜      | Heap / QuickSelect · 📅 Day 11 |
+| 264  | Ugly Number II                                | Medium     | ⬜      | Heap / DP          |
+| 295  | Find Median from Data Stream                  | Hard       | ⬜      | Two Heaps · 📅 Day 12 |
+| 347  | Top K Frequent Elements                       | Medium     | ⬜      | Heap + Hashing · 📅 Day 12 |
+| 355  | Design Twitter                                | Medium     | ⬜      | Heap               |
+| 373  | Find K Pairs with Smallest Sums               | Medium     | ⬜      | Heap               |
+| 378  | Kth Smallest Element in a Sorted Matrix       | Medium     | ⬜      | Heap               |
+| 407  | Trapping Rain Water II                        | Hard       | ⬜      | Heap               |
+| 502  | IPO                                           | Hard       | ⬜      | Heap + Greedy      |
+| 621  | Task Scheduler                                | Medium     | ⬜      | Heap + Greedy      |
+| 630  | Course Schedule III                           | Hard       | ⬜      | Heap + Greedy      |
+| 632  | Smallest Range Covering Elements from K Lists | Hard       | ⬜      | Heap               |
+| 703  | Kth Largest Element in a Stream               | Easy       | ⬜      | Heap               |
+| 743  | Network Delay Time                            | Medium     | ⬜      | Heap + Dijkstra's  |
+| 778  | Swim in Rising Water                          | Hard       | ⬜      | Heap               |
+| 1046 | Last Stone Weight                             | Easy       | ⬜      | Heap · 📅 Day 11   |
 
 ---
 
-## 9️⃣ Trees (1 / 28)
+## 9️⃣ Trees (1 / 30)
 
-> Added: 79 Word Search (→ Backtracking), 113 Path Sum II, 116 Populating Next Right Pointers, 257 Binary Tree Paths — core DFS/BFS tree problems missing from every serious interview list.
+> 📌 **15-Day Plan sequence:** Days 1–10 follow the order below, grouped by day.
+>
+> 📁 Additional tree files in repo: `MyBinaryTree` (custom implementation), `BinaryTreePreorder` (practice)
 
-| #    | Problem                                          | Difficulty | Status | Pattern                |
-|------|--------------------------------------------------|------------|--------|------------------------|
-| 94   | Binary Tree Inorder Traversal                    | Easy       | ⬜      | DFS                    |
-| 98   | Validate Binary Search Tree                      | Medium     | ⬜      | DFS                    |
-| 100  | Same Tree                                        | Easy       | ⬜      | DFS / BFS              |
-| 101  | Symmetric Tree                                   | Easy       | ⬜      | DFS / BFS              |
-| 102  | Binary Tree Level Order Traversal                | Medium     | ⬜      | BFS                    |
-| 104  | Maximum Depth of Binary Tree                     | Easy       | ⬜      | DFS / BFS              |
-| 105  | Construct Binary Tree from Preorder and Inorder  | Medium     | ⬜      | Recursion              |
-| 106  | Construct Binary Tree from Inorder and Postorder | Medium     | ⬜      | Recursion              |
-| 110  | Balanced Binary Tree                             | Easy       | ⬜      | DFS                    |
-| 112  | Path Sum                                         | Easy       | ⬜      | DFS                    |
-| 113  | Path Sum II                                      | Medium     | ⬜      | DFS + Backtracking     |
-| 116  | Populating Next Right Pointers in Each Node      | Medium     | ⬜      | BFS / Pointer          |
-| 124  | Binary Tree Maximum Path Sum                     | Hard       | ⬜      | DFS                    |
-| 199  | Binary Tree Right Side View                      | Medium     | ⬜      | BFS                    |
-| 226  | Invert Binary Tree                               | Easy       | ⬜      | DFS / BFS              |
-| 230  | Kth Smallest Element in a BST                    | Medium     | ⬜      | DFS                    |
-| 235  | Lowest Common Ancestor of a BST                  | Medium     | ⬜      | BST Properties         |
-| 236  | Lowest Common Ancestor of a Binary Tree          | Medium     | ⬜      | DFS                    |
-| 257  | Binary Tree Paths                                | Easy       | ⬜      | DFS + Backtracking     |
-| 297  | Serialize and Deserialize Binary Tree            | Hard       | ⬜      | DFS / BFS              |
-| 337  | House Robber III                                 | Medium     | ⬜      | DP on Trees            |
-| 404  | Sum of Left Leaves                               | Easy       | ⬜      | DFS                    |
-| 437  | Path Sum III                                     | Medium     | ⬜      | DFS + Prefix Sum       |
-| 450  | Delete Node in a BST                             | Medium     | ⬜      | BST Properties         |
-| 543  | Diameter of Binary Tree                          | Easy       | ⬜      | DFS                    |
-| 572  | Subtree of Another Tree                          | Easy       | ⬜      | DFS                    |
-| 700  | Search in a Binary Search Tree                   | Easy       | ⬜      | BST Properties         |
-| 814  | Binary Tree Pruning                              | Medium     | ⬜      | DFS                    |
-| 1650 | Lowest Common Ancestor of a Binary Tree III      | Medium     | ✅ [Solution](src/tree/LowestCommonAncestorIII.java) | Two Pointers |
+| #    | Problem                                          | Difficulty | Status | Pattern                | 15-Day Plan   |
+|------|--------------------------------------------------|------------|--------|------------------------|---------------|
+| 104  | Maximum Depth of Binary Tree                     | Easy       | ⬜      | DFS                    | 📅 Day 1      |
+| 100  | Same Tree                                        | Easy       | ⬜      | DFS / BFS              | 📅 Day 1      |
+| 226  | Invert Binary Tree                               | Easy       | ⬜      | DFS / BFS              | 📅 Day 1      |
+| 94   | Binary Tree Inorder Traversal                    | Easy       | ⬜      | DFS                    | 📅 Day 2      |
+| 144  | Binary Tree Preorder Traversal                   | Easy       | ⬜      | DFS                    | 📅 Day 2 ✨new |
+| 145  | Binary Tree Postorder Traversal                  | Easy       | ⬜      | DFS                    | 📅 Day 2 ✨new |
+| 102  | Binary Tree Level Order Traversal                | Medium     | ⬜      | BFS                    | 📅 Day 3      |
+| 199  | Binary Tree Right Side View                      | Medium     | ⬜      | BFS                    | 📅 Day 3      |
+| 110  | Balanced Binary Tree                             | Easy       | ⬜      | DFS                    | 📅 Day 4      |
+| 543  | Diameter of Binary Tree                          | Easy       | ⬜      | DFS                    | 📅 Day 4      |
+| 700  | Search in a Binary Search Tree                   | Easy       | ⬜      | BST Properties         | 📅 Day 5      |
+| 98   | Validate Binary Search Tree                      | Medium     | ⬜      | DFS                    | 📅 Day 5      |
+| 112  | Path Sum                                         | Easy       | ⬜      | DFS                    | 📅 Day 6      |
+| 257  | Binary Tree Paths                                | Easy       | ⬜      | DFS + Backtracking     | 📅 Day 6      |
+| 113  | Path Sum II                                      | Medium     | ⬜      | DFS + Backtracking     | 📅 Day 6      |
+| 235  | Lowest Common Ancestor of a BST                  | Medium     | ⬜      | BST Properties         | 📅 Day 7      |
+| 236  | Lowest Common Ancestor of a Binary Tree          | Medium     | ⬜      | DFS                    | 📅 Day 7      |
+| 105  | Construct Binary Tree from Preorder and Inorder  | Medium     | ⬜      | Recursion              | 📅 Day 8      |
+| 124  | Binary Tree Maximum Path Sum                     | Hard       | ⬜      | DFS                    | 📅 Day 9      |
+| 101  | Symmetric Tree                                   | Easy       | ⬜      | DFS / BFS              |               |
+| 106  | Construct Binary Tree from Inorder and Postorder | Medium     | ⬜      | Recursion              |               |
+| 116  | Populating Next Right Pointers in Each Node      | Medium     | ⬜      | BFS / Pointer          |               |
+| 230  | Kth Smallest Element in a BST                    | Medium     | ⬜      | DFS                    |               |
+| 297  | Serialize and Deserialize Binary Tree            | Hard       | ⬜      | DFS / BFS              |               |
+| 337  | House Robber III                                 | Medium     | ⬜      | DP on Trees            |               |
+| 404  | Sum of Left Leaves                               | Easy       | ⬜      | DFS                    |               |
+| 437  | Path Sum III                                     | Medium     | ⬜      | DFS + Prefix Sum       |               |
+| 450  | Delete Node in a BST                             | Medium     | ⬜      | BST Properties         |               |
+| 572  | Subtree of Another Tree                          | Easy       | ⬜      | DFS                    |               |
+| 814  | Binary Tree Pruning                              | Medium     | ⬜      | DFS                    |               |
+| 1650 | Lowest Common Ancestor of a Binary Tree III      | Medium     | ✅ [Solution](src/tree/LowestCommonAncestorIII.java) | Two Pointers |               |
 
 ---
 
 ## 🔟 Backtracking (0 / 16)
-
-> Added: 79 Word Search — the single most frequently asked backtracking problem in interviews.
 
 | #   | Problem                               | Difficulty | Status | Pattern             |
 |-----|---------------------------------------|------------|--------|---------------------|
@@ -395,35 +433,36 @@
 
 ## 1️⃣1️⃣ Graphs (0 / 21)
 
-| #    | Problem                                      | Difficulty | Status | Pattern             |
-|------|----------------------------------------------|------------|--------|---------------------|
-| 133  | Clone Graph                                  | Medium     | ⬜      | DFS / BFS           |
-| 200  | Number of Islands                            | Medium     | ⬜      | DFS / BFS           |
-| 207  | Course Schedule                              | Medium     | ⬜      | Topological Sort    |
-| 208  | Implement Trie (Prefix Tree)                 | Medium     | ⬜      | Trie                |
-| 210  | Course Schedule II                           | Medium     | ⬜      | Topological Sort    |
-| 261  | Graph Valid Tree                             | Medium     | ⬜      | Union Find / DFS    |
-| 269  | Alien Dictionary                             | Hard       | ⬜      | Topological Sort    |
-| 286  | Walls and Gates                              | Medium     | ⬜      | BFS                 |
-| 323  | Number of Connected Components               | Medium     | ⬜      | Union Find / DFS    |
-| 329  | Longest Increasing Path in a Matrix          | Hard       | ⬜      | DFS + Memoization   |
-| 417  | Pacific Atlantic Water Flow                  | Medium     | ⬜      | DFS / BFS           |
-| 547  | Number of Provinces                          | Medium     | ⬜      | Union Find / DFS    |
-| 684  | Redundant Connection                         | Medium     | ⬜      | Union Find          |
-| 695  | Max Area of Island                           | Medium     | ⬜      | DFS / BFS           |
-| 721  | Accounts Merge                               | Medium     | ⬜      | Union Find / DFS    |
-| 743  | Network Delay Time                           | Medium     | ⬜      | Dijkstra's          |
-| 787  | Cheapest Flights Within K Stops              | Medium     | ⬜      | Bellman-Ford        |
-| 802  | Find Eventual Safe States                    | Medium     | ⬜      | DFS                 |
-| 827  | Making A Large Island                        | Hard       | ⬜      | DFS                 |
-| 1091 | Shortest Path in Binary Matrix               | Medium     | ⬜      | BFS                 |
-| 1584 | Min Cost to Connect All Points               | Medium     | ⬜      | MST (Prim's)        |
+> 📌 **15-Day Plan sequence:** Day 13 → 200, 133 · Day 14 → 994, 1091 · Day 15 → 207, 210
+
+| #    | Problem                                      | Difficulty | Status | Pattern             | 15-Day Plan   |
+|------|----------------------------------------------|------------|--------|---------------------|---------------|
+| 200  | Number of Islands                            | Medium     | ⬜      | DFS / BFS           | 📅 Day 13     |
+| 133  | Clone Graph                                  | Medium     | ⬜      | DFS / BFS           | 📅 Day 13     |
+| 994  | Rotting Oranges                              | Medium     | ⬜      | BFS (multi-source)  | 📅 Day 14     |
+| 1091 | Shortest Path in Binary Matrix               | Medium     | ⬜      | BFS                 | 📅 Day 14     |
+| 207  | Course Schedule                              | Medium     | ⬜      | Topological Sort    | 📅 Day 15     |
+| 210  | Course Schedule II                           | Medium     | ⬜      | Topological Sort    | 📅 Day 15     |
+| 208  | Implement Trie (Prefix Tree)                 | Medium     | ⬜      | Trie                |               |
+| 261  | Graph Valid Tree                             | Medium     | ⬜      | Union Find / DFS    |               |
+| 269  | Alien Dictionary                             | Hard       | ⬜      | Topological Sort    |               |
+| 286  | Walls and Gates                              | Medium     | ⬜      | BFS                 |               |
+| 323  | Number of Connected Components               | Medium     | ⬜      | Union Find / DFS    |               |
+| 329  | Longest Increasing Path in a Matrix          | Hard       | ⬜      | DFS + Memoization   |               |
+| 417  | Pacific Atlantic Water Flow                  | Medium     | ⬜      | DFS / BFS           |               |
+| 547  | Number of Provinces                          | Medium     | ⬜      | Union Find / DFS    |               |
+| 684  | Redundant Connection                         | Medium     | ⬜      | Union Find          |               |
+| 695  | Max Area of Island                           | Medium     | ⬜      | DFS / BFS           |               |
+| 721  | Accounts Merge                               | Medium     | ⬜      | Union Find / DFS    |               |
+| 743  | Network Delay Time                           | Medium     | ⬜      | Dijkstra's          |               |
+| 787  | Cheapest Flights Within K Stops              | Medium     | ⬜      | Bellman-Ford        |               |
+| 802  | Find Eventual Safe States                    | Medium     | ⬜      | DFS                 |               |
+| 827  | Making A Large Island                        | Hard       | ⬜      | DFS                 |               |
+| 1584 | Min Cost to Connect All Points               | Medium     | ⬜      | MST (Prim's)        |               |
 
 ---
 
 ## 1️⃣2️⃣ Dynamic Programming (2 / 33)
-
-> Added: 5 Longest Palindromic Substring, 53 Maximum Subarray (Kadane's), 123 Best Time to Buy/Sell Stock III — three of the most asked DP problems in FAANG interviews.
 
 | #    | Problem                                                   | Difficulty | Status | Pattern              |
 |------|-----------------------------------------------------------|------------|--------|----------------------|
@@ -482,7 +521,7 @@
 
 ---
 
-## 🌟 Daily Challenges (4 / 5)
+## 🌟 Daily Challenges (5 / 6)
 
 | #    | Problem                                                  | Difficulty | Status | Pattern          |
 |------|----------------------------------------------------------|------------|--------|------------------|
@@ -491,25 +530,47 @@
 | 1784 | Check if Binary String Has at Most One Segment of Ones   | Easy       | ✅ [Solution](src/dailychallenges/CheckOneSegment.java) | String           |
 | 1980 | Find Unique Binary String                                | Medium     | ✅ [Solution](src/dailychallenges/FindUniqueBinaryString.java) | Backtracking     |
 | 2193 | Minimum Number of Moves to Make Palindrome               | Hard       | ⬜      | Greedy           |
+| —    | Minimum Swaps to Group All 1's Together                  | Medium     | ✅ [Solution](src/dailychallenges/MinimumSwaps.java) | Sliding Window   |
 
 ---
 
-## 📁 Project Structure Notes
+## 📁 Project Structure
 
-> **Packages to create** — these folders do not yet exist in `src/` and will be needed as you solve problems in these categories:
-> - `src/bitmanipulation/` — for LC 190, 191, 231, 268, 338, 371, 461, 693
-> - `src/tree/` — for all Trees problems (LC 94, 98, 100 etc.)
-> - `src/graph/` — for all Graphs problems (LC 133, 200, 207 etc.)
-> - `src/backtracking/` — for all Backtracking problems (LC 17, 22, 39 etc.)
-> - `src/heap/` — for all Heap problems (LC 23, 215, 295 etc.)
+```
+src/
+├── arrays/              ← Core array problems
+├── arrays101/           ← LeetCode arrays101 explore card
+├── binarysearch/        ← Binary search problems
+├── dailychallenges/     ← Daily challenge solutions
+├── dp/                  ← Dynamic programming
+├── hashing/             ← HashMap/HashSet problems
+├── linkedlist/          ← Linked list problems
+├── map/designhashmap/   ← LC 706 Design HashMap
+├── patterns/            ← Pattern practice (Floyd's triangle etc.)
+├── queue/               ← Queue problems + implementations
+├── set/designhashset/   ← LC 705 Design HashSet
+├── slidingwindow/       ← Sliding window problems
+├── sortalgrithms/       ← Sorting implementations  ⚠️ typo in folder name
+├── stack/               ← Stack problems + implementations
+├── strings/             ← String problems
+├── tree/                ← Tree problems
+└── twopointer/          ← Two pointer problems
+```
+
+> **⚠️ Typo to fix:** `src/sortalgrithms/` → rename to `src/sortalgorithms/`
 >
-> **Files in wrong location** — these exist but are not in the expected package:
-> - `src/sortalgrithms/SortColors.java` — note the typo in folder name (`sortalgrithms` vs `sortalgorithms`)
-> - `src/dailychallenges/ComplementBase10Integer.java` — should move to `src/bitmanipulation/` eventually
-> - `src/set/SingleNumber.java` — should move to `src/bitmanipulation/` eventually
+> **📦 Packages to create as you progress:**
+> - `src/bitmanipulation/` — LC 190, 191, 231, 268, 338, 371, 461, 693
+> - `src/graph/`           — all Graphs problems
+> - `src/backtracking/`    — all Backtracking problems
+> - `src/heap/`            — all Heap problems
 >
-> **Files solved today not yet committed:**
-> - `src/stack/SimplifyPath.java` — LC 71
+> **📁 Files to relocate eventually:**
+> - `src/dailychallenges/ComplementBase10Integer.java` → `src/bitmanipulation/`
+> - `src/set/SingleNumber.java`                        → `src/bitmanipulation/`
+> - `src/strings/BinaryGap.java`                       → `src/bitmanipulation/`
+> - `src/strings/AddBinary.java`                       → `src/bitmanipulation/`
+> - `src/strings/MinChangesAlternatingBinaryString.java` — duplicate also in `src/arrays101/`
 
 ---
 

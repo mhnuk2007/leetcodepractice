@@ -1,176 +1,215 @@
+====================
+LeetCode Practice — Solved Problems
+Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
+Last Updated: March 21, 2026
+====================
+
 Statistics
 ====================
-Total Problems: 122
+Total Files: 131
 
 Category Breakdown:
-- Arrays & arrays101: 43
-- Strings: 22
-- Linked List: 14
-- Two Pointers: 10
-- Stack: 12
-- Daily Challenges: 6
-- Hashing: 5
-- Sorting Algorithms: 3
-- Dynamic Programming: 2
-- Map & Set Design: 2
-- Queue: 2
-- Sliding Window: 2
-- Bit Manipulation: 1
-- Binary Search: 1
-
+- Arrays & arrays101 : 43
+- Strings            : 22
+- Linked List        : 14
+- Stack              : 11
+- Two Pointers       : 10
+- Queue              :  9
+- Daily Challenges   :  6
+- Hashing            :  5
+- Sorting Algorithms :  3
+- Dynamic Programming:  2
+- Map & Set Design   :  2
+- Sliding Window     :  2
+- Tree               :  2
+- Bit Manipulation   :  1
+- Binary Search      :  1
 ====================
 
 Solved Problems List
+====================
 
-**Arrays & arrays101** (43)
-- PlusOne
-- RotateArray
-- RunningSum1d
-- SpiralMatrix
-- ArrayPartition
-- FindPivotIndex
-- MajorityElement
-- NextPermutation
-- PascalsTriangle
-- CircularArrayLoop
-- ContainsDuplicate
-- PascalsTriangleII
-- TrappingRainWater
-- TrappingRainWaterPrefix
-- MinSizeSubArraySum
-- RichestCustomerWealth
-- LargestNumberTwiceOthers
-- BestTimeToBuyAndSellStock
-- SearchInRotatedSortedArray
-- SpecialPositionsInBinaryMatrix
-- MoveZeroes
-- CountPairs
-- CheckIfExists
-- HeightChecker
-- RemoveElement
-- DuplicateZeros
-- EvenNoOfDigits
-- ReplaceElement
-- SquaresOfSorted
-- SquaresOfASortedArray
-- MergeSortedArray
-- RemoveDuplicates
-- RemoveDuplicates2
-- MaxConsecutiveOnes
-- ThirdMaximumNumber
-- ValidMountainArray
-- FindDisappearedNumber
-- CheckIfNAndItsDoubleExist
-- FindNumbersWithEvenNumberOfDigits
-- MinChangesAlternatingBinaryString
-- RemoveDuplicatesFromSortedArrayII
-- FindAllNumbersDisappearedInAnArray
-- ReplaceElementsWithGreatestElementOnRightSide
+Arrays & arrays101 (43)
+------------------------
+  1. PlusOne
+  2. RotateArray
+  3. RunningSum1d
+  4. SpiralMatrix
+  5. ArrayPartition
+  6. FindPivotIndex
+  7. MajorityElement
+  8. NextPermutation
+  9. PascalsTriangle
+ 10. CircularArrayLoop
+ 11. ContainsDuplicate
+ 12. PascalsTriangleII
+ 13. TrappingRainWater
+ 14. TrappingRainWaterPrefix
+ 15. MinSizeSubArraySum
+ 16. RichestCustomerWealth
+ 17. LargestNumberTwiceOthers
+ 18. BestTimeToBuyAndSellStock
+ 19. SearchInRotatedSortedArray
+ 20. SpecialPositionsInBinaryMatrix
+ 21. MoveZeroes
+ 22. CountPairs
+ 23. CheckIfExists
+ 24. HeightChecker
+ 25. RemoveElement
+ 26. DuplicateZeros
+ 27. EvenNoOfDigits
+ 28. ReplaceElement
+ 29. SquaresOfSorted
+ 30. SquaresOfASortedArray
+ 31. MergeSortedArray
+ 32. RemoveDuplicates
+ 33. RemoveDuplicates2
+ 34. MaxConsecutiveOnes
+ 35. ThirdMaximumNumber
+ 36. ValidMountainArray
+ 37. FindDisappearedNumber
+ 38. CheckIfNAndItsDoubleExist
+ 39. FindNumbersWithEvenNumberOfDigits
+ 40. MinChangesAlternatingBinaryString
+ 41. RemoveDuplicatesFromSortedArrayII
+ 42. FindAllNumbersDisappearedInAnArray
+ 43. ReplaceElementsWithGreatestElementOnRightSide
 
-**Binary Search** (1)
-- SqrtX
+Binary Search (1)
+-----------------
+  1. SqrtX
 
-**Bit Manipulation** (1)
-- SingleNumber
+Bit Manipulation (1)
+--------------------
+  1. SingleNumber
 
-**Daily Challenges** (6)
-- MinFlips
-- FindKthBit
-- MinimumSwaps
-- CheckOneSegment
-- FindUniqueBinaryString
-- ComplementBase10Integer
+Daily Challenges (6)
+--------------------
+  1. MinFlips
+  2. FindKthBit
+  3. MinimumSwaps
+  4. CheckOneSegment
+  5. FindUniqueBinaryString
+  6. ComplementBase10Integer
 
-**Dynamic Programming** (2)
-- FindAllPossibleStableArraysI
-- FindAllPossibleStableArraysII
+Dynamic Programming (2)
+-----------------------
+  1. FindAllPossibleStableArraysI
+  2. FindAllPossibleStableArraysII
 
-**Hashing** (5)
-- MinimumIndexSum
-- ContainsDuplicatesII
-- FirstUniqueCharacter
-- IntersectionOfArrays
-- IntersectionOfArraysII
+Hashing (5)
+-----------
+  1. MinimumIndexSum
+  2. ContainsDuplicatesII
+  3. FirstUniqueCharacter
+  4. IntersectionOfArrays
+  5. IntersectionOfArraysII
 
-**Linked List** (14)
-- DeleteNode
-- MyLinkedList
-- AddTwoNumbers
-- LinkedListCycle
-- DesignLinkedList
-- SinglyLinkedList
-- LinkedListCycleII
-- ReverseLinkedList
-- MergeTwoSortedLists
-- PalindromeLinkedList
-- RemoveNthNodeFromEnd
-- LinkedListsIntersection
-- SplitCircularLinkedList
-- MaximumTwinSumOfLinkedList
+Linked List (14)
+----------------
+  1. DeleteNode
+  2. MyLinkedList
+  3. AddTwoNumbers
+  4. LinkedListCycle
+  5. DesignLinkedList
+  6. SinglyLinkedList
+  7. LinkedListCycleII
+  8. ReverseLinkedList
+  9. MergeTwoSortedLists
+ 10. PalindromeLinkedList
+ 11. RemoveNthNodeFromEnd
+ 12. LinkedListsIntersection
+ 13. SplitCircularLinkedList
+ 14. MaximumTwinSumOfLinkedList
 
-**Map & Set Design** (2)
-- MyHashMap
-- MyHashSet
+Map & Set Design (2)
+--------------------
+  1. MyHashMap
+  2. MyHashSet
 
-**Queue** (2)
-- ArrayQueue
-- MyCircularQueue
+Queue (9)
+---------
+  1. ArrayQueue
+  2. MovingAverage
+  3. ArrayListQueue
+  4. LinkedListQueue
+  5. MyCircularQueue
+  6. MyStackUsingQueue
+  7. MyQueueUsingStacks
+  8. MyCircularQueueArrayList
+  9. MyCircularQueueLinkedList
 
-**Sliding Window** (2)
-- SlidingWindow
-- MaxSlidingWindow
+Sliding Window (2)
+------------------
+  1. SlidingWindow
+  2. MaxSlidingWindow
 
-**Sorting Algorithms** (3)
-- BubbleSort
-- SortColors
-- TwoColorSort
+Sorting Algorithms (3)
+----------------------
+  1. BubbleSort
+  2. SortColors
+  3. TwoColorSort
 
-**Stack** (12)
-- MinStack
-- MinStackLinkedList
-- ArrayStack
-- ArrayListStack
-- LinkedListStack
-- ValidParenthesis
-- ValidParenthesisMap
-- DailyTemperatures
-- ReversePolishNotation
-- NextGreaterElement
-- NextGreaterElementII
-- SimplifyPath
+Stack (11)
+----------
+  1. MinStack
+  2. MinStackLinkedList
+  3. ArrayStack
+  4. ArrayListStack
+  5. LinkedListStack
+  6. ValidParenthesis
+  7. ValidParenthesisMap
+  8. DailyTemperatures
+  9. ReversePolishNotation
+ 10. NextGreaterElement
+ 11. NextGreaterElementII
 
-**Strings** (22)
-- Anagram
-- AddBinary
-- BinaryGap
-- AddStrings
-- Palindrome
-- PalindromeI
-- SplitString
-- PalindromeII
-- ValidAnagram
-- ReverseString
-- ValidPalindrome
-- JavaStringTokens
-- IsomorphicStrings
-- ReverseWordsInString
-- SmallestAndLargestSub
-- ValidWordAbbreviation
-- ReverseWordsInStringII
-- ReverseWordsInStringIII
-- FindIndexOfFirstOccurrence
-- MinChangesAlternatingBinaryString
-- PartitioningIntoMinDeciBinaryNumbers
-- LongestSubstringWithoutRepeatingCharacters
+Strings (22)
+------------
+  1. Anagram
+  2. AddBinary
+  3. BinaryGap
+  4. AddStrings
+  5. Palindrome
+  6. PalindromeI
+  7. SplitString
+  8. PalindromeII
+  9. ValidAnagram
+ 10. ReverseString
+ 11. ValidPalindrome
+ 12. JavaStringTokens
+ 13. IsomorphicStrings
+ 14. ReverseWordsInString
+ 15. SmallestAndLargestSub
+ 16. ValidWordAbbreviation
+ 17. ReverseWordsInStringII
+ 18. ReverseWordsInStringIII
+ 19. FindIndexOfFirstOccurrence
+ 20. MinChangesAlternatingBinaryString
+ 21. PartitioningIntoMinDeciBinaryNumbers
+ 22. LongestSubstringWithoutRepeatingCharacters
 
-**Two Pointers** (10)
-- TwoSum
-- ThreeSum
-- TwoSumII
-- HappyNumber
-- LengthOfLoop
-- AppendCharacters
-- MiddleOfLinkedList
-- StrobogrammaticNumber
-- ContainerWithMostWater
-- FindTheDuplicateNumber
+Tree (2)
+--------
+  1. MyBinaryTree
+  2. BinaryTreePreorder
+
+Two Pointers (10)
+-----------------
+  1. TwoSum
+  2. ThreeSum
+  3. TwoSumII
+  4. HappyNumber
+  5. LengthOfLoop
+  6. AppendCharacters
+  7. MiddleOfLinkedList
+  8. StrobogrammaticNumber
+  9. ContainerWithMostWater
+ 10. FindTheDuplicateNumber
+
+====================
+Note: Count includes practice files, design implementations,
+      helper classes, and alternate approaches — not just
+      LeetCode submissions. LeetCode-specific solved count
+      is tracked separately in the DSA Roadmap README.
+====================
