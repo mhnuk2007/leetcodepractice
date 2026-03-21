@@ -27,12 +27,12 @@ import java.util.Deque;
  * Time Complexity : push O(1), pop O(1) amortized, peek O(1) amortized
  * Space Complexity: O(n)
  */
-public class MyStackQueue {
+public class MyStackUsingQueue {
 
     private final Deque<Integer> inbox;  // push always goes here
     private final Deque<Integer> outbox; // pop and peek always come from here
 
-    public MyStackQueue() {
+    public MyStackUsingQueue() {
         this.inbox  = new ArrayDeque<>();
         this.outbox = new ArrayDeque<>();
     }
@@ -72,7 +72,7 @@ public class MyStackQueue {
 
         // Test 1: LeetCode standard example
         System.out.println("=== Test 1: LeetCode standard ===");
-        MyStackQueue q = new MyStackQueue();
+        MyStackUsingQueue q = new MyStackUsingQueue();
         q.push(1);
         q.push(2);
         System.out.println("Peek: " + q.peek()); // 1 — oldest element
@@ -81,7 +81,7 @@ public class MyStackQueue {
 
         // Test 2: FIFO order preserved across mixed push/pop
         System.out.println("\n=== Test 2: FIFO order ===");
-        MyStackQueue q2 = new MyStackQueue();
+        MyStackUsingQueue q2 = new MyStackUsingQueue();
         q2.push(10);
         q2.push(20);
         q2.push(30);
@@ -93,7 +93,7 @@ public class MyStackQueue {
 
         // Test 3: Transfer happens only once per batch
         System.out.println("\n=== Test 3: Lazy transfer ===");
-        MyStackQueue q3 = new MyStackQueue();
+        MyStackUsingQueue q3 = new MyStackUsingQueue();
         q3.push(1);
         q3.push(2);
         q3.push(3);
@@ -105,7 +105,7 @@ public class MyStackQueue {
 
         // Test 4: Interleaved push during outbox drain
         System.out.println("\n=== Test 4: Interleaved push ===");
-        MyStackQueue q4 = new MyStackQueue();
+        MyStackUsingQueue q4 = new MyStackUsingQueue();
         q4.push(1);
         q4.push(2);
         System.out.println("Pop: " + q4.pop()); // 1 — triggers transfer, outbox: [2]
@@ -117,7 +117,7 @@ public class MyStackQueue {
 
         // Test 5: Empty check
         System.out.println("\n=== Test 5: Empty ===");
-        MyStackQueue q5 = new MyStackQueue();
+        MyStackUsingQueue q5 = new MyStackUsingQueue();
         System.out.println("Empty: " + q5.empty()); // true
         q5.push(5);
         System.out.println("Empty: " + q5.empty()); // false
