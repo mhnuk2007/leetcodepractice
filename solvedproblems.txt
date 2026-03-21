@@ -1,26 +1,28 @@
 Statistics
 ====================
-Total Problems: 116
+Total Problems: 122
 
 Category Breakdown:
-- Arrays & arrays101: 40
+- Arrays & arrays101: 43
 - Strings: 22
 - Linked List: 14
 - Two Pointers: 10
-- Stack: 9
+- Stack: 12
 - Daily Challenges: 6
 - Hashing: 5
 - Sorting Algorithms: 3
 - Dynamic Programming: 2
 - Map & Set Design: 2
+- Queue: 2
 - Sliding Window: 2
+- Bit Manipulation: 1
 - Binary Search: 1
 
 ====================
 
 Solved Problems List
 
-**Arrays & arrays101**
+**Arrays & arrays101** (43)
 - PlusOne
 - RotateArray
 - RunningSum1d
@@ -34,9 +36,9 @@ Solved Problems List
 - ContainsDuplicate
 - PascalsTriangleII
 - TrappingRainWater
+- TrappingRainWaterPrefix
 - MinSizeSubArraySum
 - RichestCustomerWealth
-- TrappingRainWaterPrefix
 - LargestNumberTwiceOthers
 - BestTimeToBuyAndSellStock
 - SearchInRotatedSortedArray
@@ -50,6 +52,7 @@ Solved Problems List
 - EvenNoOfDigits
 - ReplaceElement
 - SquaresOfSorted
+- SquaresOfASortedArray
 - MergeSortedArray
 - RemoveDuplicates
 - RemoveDuplicates2
@@ -57,7 +60,6 @@ Solved Problems List
 - ThirdMaximumNumber
 - ValidMountainArray
 - FindDisappearedNumber
-- SquaresOfASortedArray
 - CheckIfNAndItsDoubleExist
 - FindNumbersWithEvenNumberOfDigits
 - MinChangesAlternatingBinaryString
@@ -65,10 +67,13 @@ Solved Problems List
 - FindAllNumbersDisappearedInAnArray
 - ReplaceElementsWithGreatestElementOnRightSide
 
-**Binary Search**
+**Binary Search** (1)
 - SqrtX
 
-**Daily Challenges**
+**Bit Manipulation** (1)
+- SingleNumber
+
+**Daily Challenges** (6)
 - MinFlips
 - FindKthBit
 - MinimumSwaps
@@ -76,18 +81,18 @@ Solved Problems List
 - FindUniqueBinaryString
 - ComplementBase10Integer
 
-**Dynamic Programming**
+**Dynamic Programming** (2)
 - FindAllPossibleStableArraysI
 - FindAllPossibleStableArraysII
 
-**Hashing**
+**Hashing** (5)
 - MinimumIndexSum
 - ContainsDuplicatesII
 - FirstUniqueCharacter
 - IntersectionOfArrays
 - IntersectionOfArraysII
 
-**Linked List**
+**Linked List** (14)
 - DeleteNode
 - MyLinkedList
 - AddTwoNumbers
@@ -103,31 +108,38 @@ Solved Problems List
 - SplitCircularLinkedList
 - MaximumTwinSumOfLinkedList
 
-**Map & Set Design**
+**Map & Set Design** (2)
 - MyHashMap
 - MyHashSet
 
-**Sliding Window**
+**Queue** (2)
+- ArrayQueue
+- MyCircularQueue
+
+**Sliding Window** (2)
 - SlidingWindow
 - MaxSlidingWindow
 
-**Sorting Algorithms**
+**Sorting Algorithms** (3)
 - BubbleSort
 - SortColors
 - TwoColorSort
 
-**Stack**
+**Stack** (12)
 - MinStack
+- MinStackLinkedList
 - ArrayStack
 - ArrayListStack
 - LinkedListStack
 - ValidParenthesis
-- DailyTemperatures
-- MinStackLinkedList
 - ValidParenthesisMap
+- DailyTemperatures
 - ReversePolishNotation
+- NextGreaterElement
+- NextGreaterElementII
+- SimplifyPath
 
-**Strings**
+**Strings** (22)
 - Anagram
 - AddBinary
 - BinaryGap
@@ -151,7 +163,7 @@ Solved Problems List
 - PartitioningIntoMinDeciBinaryNumbers
 - LongestSubstringWithoutRepeatingCharacters
 
-**Two Pointers**
+**Two Pointers** (10)
 - TwoSum
 - ThreeSum
 - TwoSumII
