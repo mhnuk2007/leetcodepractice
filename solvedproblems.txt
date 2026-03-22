@@ -1,17 +1,17 @@
 ====================
 LeetCode Practice — Solved Problems
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: March 21, 2026
+Last Updated: March 22, 2026
 ====================
 
 Statistics
 ====================
-Total Files: 131
+Total Files: 149
 
 Category Breakdown:
-- Arrays & arrays101 : 43
+- Arrays & arrays101 : 44
 - Strings            : 22
-- Linked List        : 14
+- Linked List        : 16
 - Stack              : 11
 - Two Pointers       : 10
 - Queue              :  9
@@ -20,8 +20,9 @@ Category Breakdown:
 - Sorting Algorithms :  3
 - Dynamic Programming:  2
 - Map & Set Design   :  2
+- Misc / Root & Patterns: 9
 - Sliding Window     :  2
-- Tree               :  2
+- Tree               :  6
 - Bit Manipulation   :  1
 - Binary Search      :  1
 ====================
@@ -29,7 +30,7 @@ Category Breakdown:
 Solved Problems List
 ====================
 
-Arrays & arrays101 (43)
+Arrays & arrays101 (44)
 ------------------------
   1. PlusOne
   2. RotateArray
@@ -74,6 +75,7 @@ Arrays & arrays101 (43)
  41. RemoveDuplicatesFromSortedArrayII
  42. FindAllNumbersDisappearedInAnArray
  43. ReplaceElementsWithGreatestElementOnRightSide
+ 44. MoveZeros
 
 Binary Search (1)
 -----------------
@@ -105,7 +107,7 @@ Hashing (5)
   4. IntersectionOfArrays
   5. IntersectionOfArraysII
 
-Linked List (14)
+Linked List (16)
 ----------------
   1. DeleteNode
   2. MyLinkedList
@@ -121,11 +123,25 @@ Linked List (14)
  12. LinkedListsIntersection
  13. SplitCircularLinkedList
  14. MaximumTwinSumOfLinkedList
+ 15. ListNode
+ 16. Main
 
 Map & Set Design (2)
 --------------------
   1. MyHashMap
   2. MyHashSet
+
+Misc / Root & Patterns (9)
+--------------------------
+  1. FirstOccuranceInAString
+  2. Main
+  3. MajorityElement
+  4. MaxProfit
+  5. PartitionDeciBinary
+  6. RotateArray
+  7. Solution
+  8. FloydTriangle
+  9. FloydTriangleMathematically
 
 Queue (9)
 ---------
@@ -189,10 +205,14 @@ Strings (22)
  21. PartitioningIntoMinDeciBinaryNumbers
  22. LongestSubstringWithoutRepeatingCharacters
 
-Tree (2)
+Tree (6)
 --------
   1. MyBinaryTree
-  2. BinaryTreePreorder
+  2. BinaryTreeInorder
+  3. BinaryTreePreorder
+  4. CountNodes
+  5. LevelOrderTraversal
+  6. MaxDepth
 
 Two Pointers (10)
 -----------------

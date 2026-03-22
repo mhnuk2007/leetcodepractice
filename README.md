@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (131 total files).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (149 total Java files under `src`).
 
 ---
 
@@ -22,13 +22,13 @@
 | Linked List            |  23   |    12     | █████░░░░░  52%      |
 | Stack & Queue          |  25   |    11     | ████░░░░░░  44%      |
 | Heap / Priority Queue  |  17   |     0     | ░░░░░░░░░░   0%      |
-| Trees                  |  30   |     1     | ░░░░░░░░░░   3%      |
+| Trees                  |  30   |     4     | █░░░░░░░░░  13%      |
 | Backtracking           |  16   |     0     | ░░░░░░░░░░   0%      |
 | Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  33   |     2     | █░░░░░░░░░   6%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **307** | **105** | **███░░░░░░░ 34%**  |
+| **Total**              | **306** | **108** | **████░░░░░░ 35%**  |
 
 > 📌 Trees expanded to 30 — added LC 144 (Preorder Traversal) and LC 145 (Postorder Traversal) from the 15-day plan.
 
@@ -92,7 +92,7 @@
 
 | Category | Before | After  |
 |----------|--------|--------|
-| Trees    |  1     |  ~20+  |
+| Trees    |  4     |  ~20+  |
 | Heap     |  0     |   ~4+  |
 | Graphs   |  0     |   ~6+  |
 
@@ -102,7 +102,7 @@
 
 | Date   | Problems Solved                                        | Notes                          |
 |--------|--------------------------------------------------------|--------------------------------|
-| Mar 21 | 71, 155 (4 approaches), 622, queue implementations     | Stack & Queue deep dive        |
+| Mar 21 | 155 (4 approaches), 622, queue implementations         | Stack & Queue deep dive        |
 | Mar 20 | 739, 150, 496, 503, 622                                | Stack & Queue                  |
 | Mar 19 | 20, 155                                                | Started Stacks!                |
 | Mar 18 | 561, 119, 209, 54, 67, 868, 415, 151, 186, 557         | Big push on Strings & Arrays   |
@@ -313,10 +313,10 @@
 | #    | Problem                             | Difficulty | Status | Pattern                |
 |------|-------------------------------------|------------|--------|------------------------|
 | 20   | Valid Parentheses                   | Easy       | ✅ [Solution](src/stack/ValidParenthesis.java) | Stack |
-| 71   | Simplify Path                       | Medium     | ✅ [Solution](src/stack/SimplifyPath.java) | Stack |
+| 71   | Simplify Path                       | Medium     | ⬜      | Stack |
 | 84   | Largest Rectangle in Histogram      | Hard       | ⬜      | Monotonic Stack        |
 | 85   | Maximal Rectangle                   | Hard       | ⬜      | Monotonic Stack        |
-| 102  | Binary Tree Level Order Traversal   | Medium     | ⬜      | BFS / Queue            |
+| 102  | Binary Tree Level Order Traversal   | Medium     | ✅ [Solution](src/tree/LevelOrderTraversal.java) | BFS / Queue            |
 | 127  | Word Ladder                         | Hard       | ⬜      | BFS / Queue            |
 | 150  | Evaluate Reverse Polish Notation    | Medium     | ✅ [Solution](src/stack/ReversePolishNotation.java) | Stack |
 | 155  | Min Stack                           | Medium     | ✅ [Solution](src/stack/MinStack.java) | Stack |
@@ -366,21 +366,21 @@
 
 ---
 
-## 9️⃣ Trees (1 / 30)
+## 9️⃣ Trees (4 / 30)
 
 > 📌 **15-Day Plan sequence:** Days 1–10 follow the order below, grouped by day.
 >
-> 📁 Additional tree files in repo: `MyBinaryTree` (custom implementation), `BinaryTreePreorder` (practice)
+> 📁 Additional tree files in repo: `MyBinaryTree` (custom implementation) and `CountNodes` (currently tracked in `solvedproblems.txt`, but not yet part of this curated roadmap table)
 
 | #    | Problem                                          | Difficulty | Status | Pattern                | 15-Day Plan   |
 |------|--------------------------------------------------|------------|--------|------------------------|---------------|
-| 104  | Maximum Depth of Binary Tree                     | Easy       | ⬜      | DFS                    | 📅 Day 1      |
+| 104  | Maximum Depth of Binary Tree                     | Easy       | ✅ [Solution](src/tree/MaxDepth.java) | DFS                    | 📅 Day 1      |
 | 100  | Same Tree                                        | Easy       | ⬜      | DFS / BFS              | 📅 Day 1      |
 | 226  | Invert Binary Tree                               | Easy       | ⬜      | DFS / BFS              | 📅 Day 1      |
 | 94   | Binary Tree Inorder Traversal                    | Easy       | ✅ [Solution](src/tree/BinaryTreeInorder.java)       | DFS                    | 📅 Day 2      |
 | 144  | Binary Tree Preorder Traversal                   | Easy       | ✅ [Solution](src/tree/BinaryTreePreorder.java)       | DFS                    | 📅 Day 2 ✨new |
 | 145  | Binary Tree Postorder Traversal                  | Easy       | ⬜      | DFS                    | 📅 Day 2 ✨new |
-| 102  | Binary Tree Level Order Traversal                | Medium     | ⬜      | BFS                    | 📅 Day 3      |
+| 102  | Binary Tree Level Order Traversal                | Medium     | ✅ [Solution](src/tree/LevelOrderTraversal.java) | BFS                    | 📅 Day 3      |
 | 199  | Binary Tree Right Side View                      | Medium     | ⬜      | BFS                    | 📅 Day 3      |
 | 110  | Balanced Binary Tree                             | Easy       | ⬜      | DFS                    | 📅 Day 4      |
 | 543  | Diameter of Binary Tree                          | Easy       | ⬜      | DFS                    | 📅 Day 4      |
@@ -594,4 +594,4 @@ src/
 
 ---
 
-*Last updated: March 21, 2026*
+*Last updated: March 22, 2026*
