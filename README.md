@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (149 total Java files under `src`).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (153 total Java files under `src`).
 
 ---
 
@@ -22,13 +22,13 @@
 | Linked List            |  23   |    12     | █████░░░░░  52%      |
 | Stack & Queue          |  25   |    11     | ████░░░░░░  44%      |
 | Heap / Priority Queue  |  17   |     0     | ░░░░░░░░░░   0%      |
-| Trees                  |  30   |     4     | █░░░░░░░░░  13%      |
+| Trees                  |  30   |     8     | ███░░░░░░░  27%      |
 | Backtracking           |  16   |     0     | ░░░░░░░░░░   0%      |
 | Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  33   |     2     | █░░░░░░░░░   6%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **306** | **108** | **████░░░░░░ 35%**  |
+| **Total**              | **306** | **112** | **████░░░░░░ 37%**  |
 
 > 📌 Trees expanded to 30 — added LC 144 (Preorder Traversal) and LC 145 (Postorder Traversal) from the 15-day plan.
 
@@ -92,7 +92,7 @@
 
 | Category | Before | After  |
 |----------|--------|--------|
-| Trees    |  4     |  ~20+  |
+| Trees    |  8     |  ~20+  |
 | Heap     |  0     |   ~4+  |
 | Graphs   |  0     |   ~6+  |
 
@@ -366,7 +366,7 @@
 
 ---
 
-## 9️⃣ Trees (4 / 30)
+## 9️⃣ Trees (8 / 30)
 
 > 📌 **15-Day Plan sequence:** Days 1–10 follow the order below, grouped by day.
 >
@@ -375,13 +375,13 @@
 | #    | Problem                                          | Difficulty | Status | Pattern                | 15-Day Plan   |
 |------|--------------------------------------------------|------------|--------|------------------------|---------------|
 | 104  | Maximum Depth of Binary Tree                     | Easy       | ✅ [Solution](src/tree/MaxDepth.java) | DFS                    | 📅 Day 1      |
-| 100  | Same Tree                                        | Easy       | ⬜      | DFS / BFS              | 📅 Day 1      |
-| 226  | Invert Binary Tree                               | Easy       | ⬜      | DFS / BFS              | 📅 Day 1      |
+| 100  | Same Tree                                        | Easy       | ✅ [Solution](src/tree/SameTree.java) | DFS / BFS              | 📅 Day 1      |
+| 226  | Invert Binary Tree                               | Easy       | ✅ [Solution](src/tree/InvertBinaryTree.java) | DFS / BFS              | 📅 Day 1      |
 | 94   | Binary Tree Inorder Traversal                    | Easy       | ✅ [Solution](src/tree/BinaryTreeInorder.java)       | DFS                    | 📅 Day 2      |
 | 144  | Binary Tree Preorder Traversal                   | Easy       | ✅ [Solution](src/tree/BinaryTreePreorder.java)       | DFS                    | 📅 Day 2 ✨new |
-| 145  | Binary Tree Postorder Traversal                  | Easy       | ⬜      | DFS                    | 📅 Day 2 ✨new |
+| 145  | Binary Tree Postorder Traversal                  | Easy       | ✅ [Solution](src/tree/BinaryTreePostorder.java) | DFS                    | 📅 Day 2 ✨new |
 | 102  | Binary Tree Level Order Traversal                | Medium     | ✅ [Solution](src/tree/LevelOrderTraversal.java) | BFS                    | 📅 Day 3      |
-| 199  | Binary Tree Right Side View                      | Medium     | ⬜      | BFS                    | 📅 Day 3      |
+| 199  | Binary Tree Right Side View                      | Medium     | ✅ [Solution](src/tree/RightSideView.java) | BFS                    | 📅 Day 3      |
 | 110  | Balanced Binary Tree                             | Easy       | ⬜      | DFS                    | 📅 Day 4      |
 | 543  | Diameter of Binary Tree                          | Easy       | ⬜      | DFS                    | 📅 Day 4      |
 | 700  | Search in a Binary Search Tree                   | Easy       | ⬜      | BST Properties         | 📅 Day 5      |
@@ -594,4 +594,4 @@ src/
 
 ---
 
-*Last updated: March 22, 2026*
+*Last updated: March 23, 2026*

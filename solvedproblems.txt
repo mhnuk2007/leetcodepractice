@@ -1,12 +1,12 @@
 ====================
 LeetCode Practice — Solved Problems
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: March 22, 2026
+Last Updated: March 23, 2026
 ====================
 
 Statistics
 ====================
-Total Files: 149
+Total Files: 153
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -22,7 +22,7 @@ Category Breakdown:
 - Map & Set Design   :  2
 - Misc / Root & Patterns: 9
 - Sliding Window     :  2
-- Tree               :  6
+- Tree               : 10
 - Bit Manipulation   :  1
 - Binary Search      :  1
 ====================
@@ -205,14 +205,18 @@ Strings (22)
  21. PartitioningIntoMinDeciBinaryNumbers
  22. LongestSubstringWithoutRepeatingCharacters
 
-Tree (6)
+Tree (10)
 --------
-  1. MyBinaryTree
-  2. BinaryTreeInorder
+  1. BinaryTreeInorder
+  2. BinaryTreePostorder
   3. BinaryTreePreorder
   4. CountNodes
-  5. LevelOrderTraversal
-  6. MaxDepth
+  5. InvertBinaryTree
+  6. LevelOrderTraversal
+  7. MaxDepth
+  8. MyBinaryTree
+  9. RightSideView
+ 10. SameTree
 
 Two Pointers (10)
 -----------------
