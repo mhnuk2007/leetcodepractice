@@ -6,7 +6,7 @@ Last Updated: March 23, 2026
 
 Statistics
 ====================
-Total Files: 153
+Total Files: 156
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -24,7 +24,7 @@ Category Breakdown:
 - Sliding Window     :  2
 - Tree               : 10
 - Bit Manipulation   :  1
-- Binary Search      :  1
+- Binary Search      :  4
 ====================
 
 Solved Problems List
@@ -77,9 +77,12 @@ Arrays & arrays101 (44)
  43. ReplaceElementsWithGreatestElementOnRightSide
  44. MoveZeros
 
-Binary Search (1)
+Binary Search (4)
 -----------------
-  1. SqrtX
+  1. BinarySearch
+  2. FirstAndLastPosition
+  3. SearchInsert
+  4. SqrtX
 
 Bit Manipulation (1)
 --------------------

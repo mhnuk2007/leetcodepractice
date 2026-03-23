@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (153 total Java files under `src`).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (156 total Java files under `src`).
 
 ---
 
@@ -18,7 +18,7 @@
 | Sliding Window         |  16   |     3     | ██░░░░░░░░  19%      |
 | Strings                |  21   |    14     | ██████░░░░  67%      |
 | HashMap / HashSet      |  23   |    10     | ████░░░░░░  43%      |
-| Binary Search          |  21   |     1     | ░░░░░░░░░░   5%      |
+| Binary Search          |  21   |     4     | ██░░░░░░░░  19%      |
 | Linked List            |  23   |    12     | █████░░░░░  52%      |
 | Stack & Queue          |  25   |    11     | ████░░░░░░  44%      |
 | Heap / Priority Queue  |  17   |     0     | ░░░░░░░░░░   0%      |
@@ -28,7 +28,7 @@
 | Dynamic Programming    |  33   |     2     | █░░░░░░░░░   6%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **306** | **112** | **████░░░░░░ 37%**  |
+| **Total**              | **306** | **115** | **████░░░░░░ 38%**  |
 
 > 📌 Trees expanded to 30 — added LC 144 (Preorder Traversal) and LC 145 (Postorder Traversal) from the 15-day plan.
 
@@ -246,12 +246,12 @@
 
 ---
 
-## 5️⃣ Binary Search (1 / 21)
+## 5️⃣ Binary Search (4 / 21)
 
 | #    | Problem                                                | Difficulty | Status | Pattern                 |
 |------|--------------------------------------------------------|------------|--------|-------------------------|
-| 34   | Find First and Last Position of Element in Sorted Array | Medium    | ⬜      | Binary Search           |
-| 35   | Search Insert Position                                 | Easy       | ⬜      | Binary Search           |
+| 34   | Find First and Last Position of Element in Sorted Array | Medium    | ✅ [Solution](src/binarysearch/FirstAndLastPosition.java) | Binary Search           |
+| 35   | Search Insert Position                                 | Easy       | ✅ [Solution](src/binarysearch/SearchInsert.java) | Binary Search           |
 | 69   | Sqrt(x)                                                | Easy       | ✅ [Solution](src/binarysearch/SqrtX.java) | Binary Search |
 | 81   | Search in Rotated Sorted Array II                      | Medium     | ⬜      | Binary Search           |
 | 153  | Find Minimum in Rotated Sorted Array                   | Medium     | ⬜      | Binary Search           |
@@ -259,7 +259,7 @@
 | 278  | First Bad Version                                      | Easy       | ⬜      | Binary Search           |
 | 374  | Guess Number Higher or Lower                           | Easy       | ⬜      | Binary Search           |
 | 410  | Split Array Largest Sum                                | Hard       | ⬜      | Binary Search on Answer |
-| 704  | Binary Search                                          | Easy       | ⬜      | Binary Search           |
+| 704  | Binary Search                                          | Easy       | ✅ [Solution](src/binarysearch/BinarySearch.java) | Binary Search           |
 | 875  | Koko Eating Bananas                                    | Medium     | ⬜      | Binary Search on Answer |
 | 1011 | Capacity To Ship Packages Within D Days                | Medium     | ⬜      | Binary Search on Answer |
 | 1283 | Find the Smallest Divisor Given a Threshold            | Medium     | ⬜      | Binary Search on Answer |
