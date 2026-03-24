@@ -1,8 +1,8 @@
-# Java DSA Roadmap – 300 Essential LeetCode Problems
+# Java DSA Roadmap – 308 Essential LeetCode Problems
 
 **Author:** Mohan Lal | **GitHub:** [mhnuk2007](https://github.com/mhnuk2007) | **LeetCode:** [mhnuk2007](https://leetcode.com/mhnuk2007) | **Language:** Java
 
-> **Goal:** Master data structures and algorithms for software engineering interviews — 200+ problems solved in Java.
+> **Goal:** Master data structures and algorithms for software engineering interviews — 300+ problems solved in Java.
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
@@ -18,19 +18,19 @@
 | Sliding Window         |  16   |     3     | ██░░░░░░░░  19%      |
 | Strings                |  21   |    14     | ██████░░░░  67%      |
 | HashMap / HashSet      |  23   |    10     | ████░░░░░░  43%      |
-| Binary Search          |  21   |     8     | ████░░░░░░  38%      |
+| Binary Search          |  22   |     9     | ████░░░░░░  41%      |
 | Linked List            |  23   |    12     | █████░░░░░  52%      |
 | Stack & Queue          |  25   |    11     | ████░░░░░░  44%      |
 | Heap / Priority Queue  |  17   |     0     | ░░░░░░░░░░   0%      |
-| Trees                  |  30   |     8     | ███░░░░░░░  27%      |
+| Trees                  |  31   |     9     | ███░░░░░░░  29%      |
 | Backtracking           |  16   |     0     | ░░░░░░░░░░   0%      |
 | Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  33   |     2     | █░░░░░░░░░   6%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **306** | **119** | **████░░░░░░ 39%**  |
+| **Total**              | **308** | **121** | **████░░░░░░ 39%**  |
 
-> 📌 Trees expanded to 30 — added LC 144 (Preorder Traversal) and LC 145 (Postorder Traversal) from the 15-day plan.
+> 📌 Trees expanded to 31 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 
 ---
 
@@ -92,7 +92,7 @@
 
 | Category | Before | After  |
 |----------|--------|--------|
-| Trees    |  8     |  ~20+  |
+| Trees    |  9     |  ~20+  |
 | Heap     |  0     |   ~4+  |
 | Graphs   |  0     |   ~6+  |
 
@@ -246,10 +246,11 @@
 
 ---
 
-## 5️⃣ Binary Search (8 / 21)
+## 5️⃣ Binary Search (9 / 22)
 
 | #    | Problem                                                | Difficulty | Status | Pattern                 |
 |------|--------------------------------------------------------|------------|--------|-------------------------|
+| 33   | Search in Rotated Sorted Array                        | Medium    | ✅ [Solution](src/binarysearch/SearchRotatedSortedArray.java) | Binary Search           |
 | 34   | Find First and Last Position of Element in Sorted Array | Medium    | ✅ [Solution](src/binarysearch/FirstAndLastPosition.java) | Binary Search           |
 | 35   | Search Insert Position                                 | Easy       | ✅ [Solution](src/binarysearch/SearchInsert.java) | Binary Search           |
 | 69   | Sqrt(x)                                                | Easy       | ✅ [Solution](src/binarysearch/SqrtX.java) | Binary Search |
@@ -366,11 +367,11 @@
 
 ---
 
-## 9️⃣ Trees (8 / 30)
+## 9️⃣ Trees (9 / 31)
 
 > 📌 **15-Day Plan sequence:** Days 1–10 follow the order below, grouped by day.
 >
-> 📁 Additional tree files in repo: `MyBinaryTree` (custom implementation) and `CountNodes` (currently tracked in `solvedproblems.txt`, but not yet part of this curated roadmap table)
+> 📁 Additional tree files in repo: `MyBinaryTree` (custom implementation)
 
 | #    | Problem                                          | Difficulty | Status | Pattern                | 15-Day Plan   |
 |------|--------------------------------------------------|------------|--------|------------------------|---------------|
@@ -396,6 +397,7 @@
 | 101  | Symmetric Tree                                   | Easy       | ⬜      | DFS / BFS              |               |
 | 106  | Construct Binary Tree from Inorder and Postorder | Medium     | ⬜      | Recursion              |               |
 | 116  | Populating Next Right Pointers in Each Node      | Medium     | ⬜      | BFS / Pointer          |               |
+| 222  | Count Complete Tree Nodes                        | Medium     | ✅ [Solution](src/tree/CountNodes.java) | DFS                    |               |
 | 230  | Kth Smallest Element in a BST                    | Medium     | ⬜      | DFS                    |               |
 | 297  | Serialize and Deserialize Binary Tree            | Hard       | ⬜      | DFS / BFS              |               |
 | 337  | House Robber III                                 | Medium     | ⬜      | DP on Trees            |               |

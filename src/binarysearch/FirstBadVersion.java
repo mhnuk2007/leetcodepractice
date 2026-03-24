@@ -70,28 +70,49 @@ class Solution1 extends VersionControl {
         return left;
     }
 
+    public int firstBadVersion2(int n){
+        int left = 1, right = n, fbvIdx = -1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (isBadVersion(mid)) {
+                fbvIdx = mid;
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return fbvIdx;
+    }
+
     // ── Test Cases ──────────────────────────────────────────────────────────
     public static void main(String[] args) {
 
         // Test 1: Standard case
         System.out.println("=== Test 1: n=5, firstBad=4 ===");
         System.out.println(new Solution1(4).firstBadVersion(5)); // 4
+        System.out.println(new Solution1(4).firstBadVersion2(5)); // 4
 
         // Test 2: First version is bad
         System.out.println("\n=== Test 2: n=5, firstBad=1 ===");
         System.out.println(new Solution1(1).firstBadVersion(5)); // 1
+        System.out.println(new Solution1(1).firstBadVersion2(5)); // 1
 
         // Test 3: Last version is bad
         System.out.println("\n=== Test 3: n=5, firstBad=5 ===");
         System.out.println(new Solution1(5).firstBadVersion(5)); // 5
+        System.out.println(new Solution1(5).firstBadVersion2(5)); // 5
 
         // Test 4: Single element
         System.out.println("\n=== Test 4: n=1, firstBad=1 ===");
         System.out.println(new Solution1(1).firstBadVersion(1)); // 1
+        System.out.println(new Solution1(1).firstBadVersion2(1)); // 1
 
         // Test 5: Large n (checks overflow safety)
         System.out.println("\n=== Test 5: n=2147483647, firstBad=1702766719 ===");
         System.out.println(new Solution1(1702766719)
                 .firstBadVersion(2147483647)); // 1702766719
+        System.out.println(new Solution1(1702766719)
+                .firstBadVersion2(2147483647)); // 1702766719
+
     }
 }
