@@ -1,7 +1,7 @@
 package binarysearch;
 
 /**
- * LC 704 — Binary Search
+ * LeetCode 704 — Binary Search
  * <p>
  * Problem: Given a sorted array of distinct integers and a target,
  * return the index of target. Return -1 if not found.
