@@ -1,12 +1,12 @@
 ====================
 LeetCode Practice — Solved Problems
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: March 23, 2026
+Last Updated: March 24, 2026
 ====================
 
 Statistics
 ====================
-Total Files: 156
+Total Files: 161
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -24,7 +24,7 @@ Category Breakdown:
 - Sliding Window     :  2
 - Tree               : 10
 - Bit Manipulation   :  1
-- Binary Search      :  4
+- Binary Search      :  9
 ====================
 
 Solved Problems List
@@ -77,12 +77,17 @@ Arrays & arrays101 (44)
  43. ReplaceElementsWithGreatestElementOnRightSide
  44. MoveZeros
 
-Binary Search (4)
+Binary Search (9)
 -----------------
   1. BinarySearch
-  2. FirstAndLastPosition
-  3. SearchInsert
-  4. SqrtX
+  2. FindMinRotatedArray
+  3. FirstAndLastPosition
+  4. FirstBadVersion
+  5. GuessNumber
+  6. SearchInsert
+  7. SearchRotatedSortedArray
+  8. SearchRotatedSortedArrayII
+  9. SqrtX
 
 Bit Manipulation (1)
 --------------------
