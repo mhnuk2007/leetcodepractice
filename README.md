@@ -1,4 +1,4 @@
-# Java DSA Roadmap – 309 Essential LeetCode Problems
+# Java DSA Roadmap – 310 Essential LeetCode Problems
 
 **Author:** Mohan Lal | **GitHub:** [mhnuk2007](https://github.com/mhnuk2007) | **LeetCode:** [mhnuk2007](https://leetcode.com/mhnuk2007) | **Language:** Java
 
@@ -14,23 +14,23 @@
 
 | Category               | Total | Completed | Progress              |
 |------------------------|-------|-----------|----------------------|
-| Arrays & Two Pointers  |  42   |    42     | ██████████ 100%      |
+| Arrays & Two Pointers  |  40   |    40     | ██████████ 100%      |
 | Sliding Window         |  16   |     3     | ██░░░░░░░░  19%      |
-| Strings                |  21   |    14     | ██████░░░░  67%      |
+| Strings                |  22   |    14     | ██████░░░░  64%      |
 | HashMap / HashSet      |  23   |    10     | ████░░░░░░  43%      |
 | Binary Search          |  23   |    11     | █████░░░░░  48%      |
 | Linked List            |  23   |    12     | █████░░░░░  52%      |
-| Stack & Queue          |  25   |    11     | ████░░░░░░  44%      |
+| Stack & Queue          |  25   |    10     | ████░░░░░░  40%      |
 | Heap / Priority Queue  |  17   |     0     | ░░░░░░░░░░   0%      |
-| Trees                  |  31   |     9     | ███░░░░░░░  29%      |
+| Trees                  |  32   |     9     | ███░░░░░░░  28%      |
 | Backtracking           |  16   |     0     | ░░░░░░░░░░   0%      |
-| Graphs                 |  21   |     0     | ░░░░░░░░░░   0%      |
+| Graphs                 |  22   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  33   |     2     | █░░░░░░░░░   6%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **309** | **123** | **████░░░░░░ 40%**  |
+| **Total**              | **310** | **120** | **████░░░░░░ 39%**  |
 
-> 📌 Trees expanded to 31 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
+> 📌 Trees expanded to 32 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 
 ---
 
@@ -115,7 +115,7 @@
 
 ---
 
-## 1️⃣ Arrays & Two Pointers (42 / 42)
+## 1️⃣ Arrays & Two Pointers (40 / 40)
 
 | #    | Problem                                         | Difficulty | Status | Pattern               |
 |------|-------------------------------------------------|------------|--------|-----------------------|
@@ -185,7 +185,7 @@
 
 ---
 
-## 3️⃣ Strings (14 / 21)
+## 3️⃣ Strings (14 / 22)
 
 > 📁 Additional practice files in repo (not LeetCode submissions): `Anagram`, `Palindrome`, `PalindromeI`, `SplitString`, `SmallestAndLargestSub`, `JavaStringTokens`
 
@@ -308,7 +308,7 @@
 
 ---
 
-## 7️⃣ Stack & Queue (11 / 25)
+## 7️⃣ Stack & Queue (10 / 25)
 
 > 📁 Additional files in repo (implementations): `ArrayStack`, `ArrayListStack`, `LinkedListStack`, `ArrayQueue`, `ArrayListQueue`, `LinkedListQueue`, `MovingAverage`
 
@@ -368,7 +368,7 @@
 
 ---
 
-## 9️⃣ Trees (9 / 31)
+## 9️⃣ Trees (9 / 32)
 
 > 📌 **15-Day Plan sequence:** Days 1–10 follow the order below, grouped by day.
 >
@@ -434,7 +434,7 @@
 
 ---
 
-## 1️⃣1️⃣ Graphs (0 / 21)
+## 1️⃣1️⃣ Graphs (0 / 22)
 
 > 📌 **15-Day Plan sequence:** Day 13 → 200, 133 · Day 14 → 994, 1091 · Day 15 → 207, 210
 
