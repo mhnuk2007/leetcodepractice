@@ -1,89 +1,235 @@
 package recursion;
 
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Recursion fundamentals: paired iterative and recursive implementations
+ * for common number and digit problems.
+ */
 public class RecursionSimulation {
+
     public static void main(String[] args) {
+        // Print ascending / descending
         printAsc(5);
         System.out.println();
         printDesc(5);
         System.out.println();
-        System.out.println(fact(6));
 
-        System.out.println(sumToN(10));
+        // Factorial
+        System.out.println("Factorial 6: " + fact(6));
 
-        System.out.println(sumOfDigits(123));
+        // Sum 1..N
+        System.out.println("Sum 1..10: " + sumToN(10));
 
-        System.out.println(prodOfDigits(2234));
-        int n = 12345;
+        // Digit operations
+        System.out.println("Sum of digits 123: " + sumOfDigits(123));
+        System.out.println("Product of digits 2234: " + prodOfDigits(2234));
 
-        System.out.println("Reverse recursive: 12345 is " + reverseNum(n));
-        System.out.println("Reverse Iterative: 12345 is " + reverseNumIter(12345));
-        System.out.println("Is palindrome: " + isPalindrome(1234321));
-        System.out.println("Is palindrome: " + isPalindrome(12343));
+        // Reverse number
+        System.out.println("Reverse recursive  12345: " + reverseNum(12345));
+        System.out.println("Reverse iterative  12345: " + reverseNumIter(12345));
+
+        // Palindrome check
+        System.out.println("Is palindrome 1234321: " + isPalindrome(1234321));
+        System.out.println("Is palindrome 12343:   " + isPalindrome(12343));
+
+        // Count zeros
+        System.out.println("Count zeros iterative  1002304050: " + countZeros(1002304050));
+        System.out.println("Count zeros recursive  1002304050: " + countZeroRecursion(1002304050));
+
+        // Number of steps to reduce to zero
+        System.out.println("Number of steps iterative  14: " + numberOfSteps(14));
+        System.out.println("Number of steps recursive  14: " + numberOfStepsRec(14));
+
+        System.out.println("Is {1,2,3,4,5} sorted? " +isSorted(new int[]{1,2,3,4,5}, 0));
+        System.out.println("Is {1,2,6,4,3} sorted? " +isSorted(new int[]{1,2,6,4,3}, 0));
+
+        System.out.println("Index of 4 in {1,2,3,4,5} is: " +linearSearch(new int[]{1,2,3,4,5}, 4, 0));
+        System.out.println("Index of 5 in {1,2,3,4,5} is: " +linearSearch(new int[]{1,2,3,4,5}, 5, 0));
+        System.out.println("Index of 6 in {1,2,3,4,5} is: " +linearSearch(new int[]{1,2,3,4,5}, 6, 0));
+
+        System.out.println("Index of 4 in {1,2,3,4,5} is: " +binarySearch(new int[]{1,2,3,4,5}, 4));
+        System.out.println("Index of 5 in {1,2,3,4,5} is: " +binarySearch(new int[]{1,2,3,4,5}, 5));
+        System.out.println("Index of 6 in {1,2,3,4,5} is: " +binarySearch(new int[]{1,2,3,4,5}, 6));
+
+        List<Integer> result = new ArrayList<>();
+        searchAllInstances(new int[]{4,4,3,4,5}, 4, 0, result);
+        System.out.println("Indices of 4 in {4,4,3,4,5} are: " + result);
+
+
+
     }
 
+    // -------------------------------------------------------------------------
+    // Print
+    // -------------------------------------------------------------------------
+
+    /** Prints 1 2 3 ... n (ascending). */
     private static void printAsc(int n) {
         if (n <= 0) return;
         printAsc(n - 1);
         System.out.print(n + " ");
     }
 
-
+    /** Prints n ... 2 1 (descending). */
     private static void printDesc(int n) {
         if (n <= 0) return;
         System.out.print(n + " ");
         printDesc(n - 1);
     }
 
+    // -------------------------------------------------------------------------
+    // Factorial
+    // -------------------------------------------------------------------------
+
+    /** Returns n! recursively. */
     private static int fact(int n) {
         if (n <= 1) return 1;
         return n * fact(n - 1);
     }
 
+    // -------------------------------------------------------------------------
+    // Sum 1..N
+    // -------------------------------------------------------------------------
+
+    /** Returns 1 + 2 + ... + n recursively. Assumes n >= 1. */
     private static int sumToN(int n) {
-        if (n <= 1) return 1;
+        if (n <= 0) return 0;
+        if (n == 1) return 1;
         return n + sumToN(n - 1);
     }
 
+    // -------------------------------------------------------------------------
+    // Digit operations
+    // -------------------------------------------------------------------------
+
+    /** Returns the sum of digits of n. */
     private static int sumOfDigits(int n) {
         if (n < 10) return n;
         return (n % 10) + sumOfDigits(n / 10);
     }
 
+    /** Returns the product of digits of n. */
     private static int prodOfDigits(int n) {
         if (n < 10) return n;
         return (n % 10) * prodOfDigits(n / 10);
     }
 
+    // -------------------------------------------------------------------------
+    // Reverse number
+    // -------------------------------------------------------------------------
+
+    /** Returns the digit-reversal of n, iteratively. */
     private static int reverseNumIter(int n) {
         int res = 0;
         while (n > 0) {
             res = res * 10 + n % 10;
-            n = n / 10;
+            n /= 10;
         }
         return res;
     }
 
+    /** Returns the digit-reversal of n, recursively. */
     private static int reverseNum(int n) {
         return reverseHelper(n, 0);
     }
 
-    private static int reverseHelper(int n, int i) {
-        if (n == 0) return i;
-        return reverseHelper(n / 10, i * 10 + n % 10);
+    /** Accumulator helper: acc holds the reversed number built so far. */
+    private static int reverseHelper(int n, int acc) {
+        if (n == 0) return acc;
+        return reverseHelper(n / 10, acc * 10 + n % 10);
     }
 
+    // -------------------------------------------------------------------------
+    // Palindrome
+    // -------------------------------------------------------------------------
+
+    /** Returns true if n reads the same forwards and backwards. */
     private static boolean isPalindrome(int n) {
-        int sum = 0, digit = 0, original = n;
-        while (n > 0) {
+        return reverseNum(n) == n;
+    }
 
-            digit = n % 10;
-            sum = 10 * sum + digit;
-            n = n / 10;
+    // -------------------------------------------------------------------------
+    // Count zeros
+    // -------------------------------------------------------------------------
 
+    /** Returns the count of zero digits in n, iteratively. */
+    private static int countZeros(int n) {
+        int count = 0;
+        do {
+            if (n % 10 == 0) count++;
+            n /= 10;
+        } while (n > 0);
+        return count;
+    }
+
+    /** Returns the count of zero digits in n, recursively. */
+    private static int countZeroRecursion(int n) {
+        return countHelper(n, 0);
+    }
+
+    /** Accumulator helper: checks current digit, recurses on remaining digits. */
+    private static int countHelper(int n, int count) {
+        if (n % 10 == 0) count++;
+        if (n < 10) return count;
+        return countHelper(n / 10, count);
+    }
+
+    // -------------------------------------------------------------------------
+    // Number of steps to reach zero
+    // (even -> divide by 2, odd -> subtract 1)
+    // -------------------------------------------------------------------------
+
+    /** Returns the number of steps to reduce num to zero, iteratively. */
+    public static int numberOfSteps(int num) {
+        int steps = 0;
+        while (num > 0) {
+            num = (num % 2 == 0) ? num / 2 : num - 1;
+            steps++;
         }
-        System.out.println(sum);
-        if (sum == original) return true;
-        return false;
+        return steps;
+    }
 
+    /** Returns the number of steps to reduce num to zero, recursively. */
+    public static int numberOfStepsRec(int num) {
+        return numberOfStepsHelper(num, 0);
+    }
+
+    /** Accumulator helper: steps holds the count built so far. */
+    private static int numberOfStepsHelper(int num, int steps) {
+        if (num == 0) return steps;
+        if (num % 2 == 0) return numberOfStepsHelper(num / 2, steps + 1);
+        return numberOfStepsHelper(num - 1, steps + 1);
+    }
+
+    private static boolean isSorted(int[] nums, int index){
+        if (index == nums.length - 1) return true;
+        return (nums[index] < nums[index + 1]) && isSorted(nums, index + 1);
+    }
+
+    private static int linearSearch(int[] nums, int target, int index){
+        if (index == nums.length) return -1;
+        if (nums[index] == target) return index;
+        return linearSearch(nums, target, index + 1);
+    }
+
+    private static int binarySearch(int[] nums, int target) {
+        int start = 0, end = nums.length - 1;
+        return binarySearchHelper(nums, target, start, end);
+    }
+
+    private static int binarySearchHelper(int[] nums, int target, int start, int end) {
+        if (start > end) return -1;
+        int mid = start + (end - start) / 2;
+        if (nums[mid] == target) return mid;
+        if (nums[mid] > target) return binarySearchHelper(nums, target, start, mid - 1);
+        return binarySearchHelper(nums, target, mid + 1, end);
+    }
+
+    private static void searchAllInstances(int[] nums, int target, int index, List<Integer> result){
+        if (index == nums.length) return;
+        if (nums[index] == target) result.add(index);
+        searchAllInstances(nums, target, index + 1, result);
     }
 }

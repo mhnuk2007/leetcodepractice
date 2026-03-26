@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (163 total Java files under `src`).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (166 total Java files under `src`).
 
 ---
 
@@ -551,6 +551,7 @@ src/
 ├── map/designhashmap/   ← LC 706 Design HashMap
 ├── patterns/            ← Pattern practice (Floyd's triangle etc.)
 ├── queue/               ← Queue problems + implementations
+├── recursion/           ← Recursion fundamentals + simulations
 ├── set/designhashset/   ← LC 705 Design HashSet
 ├── slidingwindow/       ← Sliding window problems
 ├── sortalgrithms/       ← Sorting implementations  ⚠️ typo in folder name
@@ -597,4 +598,4 @@ src/
 
 ---
 
-*Last updated: March 25, 2026*
+*Last updated: March 27, 2026*
