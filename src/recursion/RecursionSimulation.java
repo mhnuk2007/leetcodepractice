@@ -42,23 +42,30 @@ public class RecursionSimulation {
         System.out.println("Number of steps iterative  14: " + numberOfSteps(14));
         System.out.println("Number of steps recursive  14: " + numberOfStepsRec(14));
 
-        System.out.println("Is {1,2,3,4,5} sorted? " +isSorted(new int[]{1,2,3,4,5}, 0));
-        System.out.println("Is {1,2,6,4,3} sorted? " +isSorted(new int[]{1,2,6,4,3}, 0));
+        // Sorted check
+        System.out.println("Is {1,2,3,4,5} sorted? " + isSorted(new int[]{1, 2, 3, 4, 5}, 0));
+        System.out.println("Is {1,2,6,4,3} sorted? " + isSorted(new int[]{1, 2, 6, 4, 3}, 0));
 
-        System.out.println("Index of 4 in {1,2,3,4,5} is: " +linearSearch(new int[]{1,2,3,4,5}, 4, 0));
-        System.out.println("Index of 5 in {1,2,3,4,5} is: " +linearSearch(new int[]{1,2,3,4,5}, 5, 0));
-        System.out.println("Index of 6 in {1,2,3,4,5} is: " +linearSearch(new int[]{1,2,3,4,5}, 6, 0));
+        // Linear search
+        System.out.println("Index of 4 in {1,2,3,4,5} is: " + linearSearch(new int[]{1, 2, 3, 4, 5}, 4, 0));
+        System.out.println("Index of 5 in {1,2,3,4,5} is: " + linearSearch(new int[]{1, 2, 3, 4, 5}, 5, 0));
+        System.out.println("Index of 6 in {1,2,3,4,5} is: " + linearSearch(new int[]{1, 2, 3, 4, 5}, 6, 0));
 
-        System.out.println("Index of 4 in {1,2,3,4,5} is: " +binarySearch(new int[]{1,2,3,4,5}, 4));
-        System.out.println("Index of 5 in {1,2,3,4,5} is: " +binarySearch(new int[]{1,2,3,4,5}, 5));
-        System.out.println("Index of 6 in {1,2,3,4,5} is: " +binarySearch(new int[]{1,2,3,4,5}, 6));
+        // Binary search
+        System.out.println("Index of 4 in {1,2,3,4,5} is: " + binarySearch(new int[]{1, 2, 3, 4, 5}, 4));
+        System.out.println("Index of 5 in {1,2,3,4,5} is: " + binarySearch(new int[]{1, 2, 3, 4, 5}, 5));
+        System.out.println("Index of 6 in {1,2,3,4,5} is: " + binarySearch(new int[]{1, 2, 3, 4, 5}, 6));
 
+        // Search all instances
         List<Integer> result = new ArrayList<>();
-        searchAllInstances(new int[]{4,4,3,4,5}, 4, 0, result);
+        searchAllInstances(new int[]{4, 4, 3, 4, 5}, 4, 0, result);
         System.out.println("Indices of 4 in {4,4,3,4,5} are: " + result);
+        System.out.println("Indices of 4 in {4,4,3,4,5} are: " + searchAllInstances2(new int[]{4, 4, 3, 4, 5}, 4, 0));
 
-
-
+        // Search in rotated sorted array (LC 33)
+        System.out.println("Search 0 in {4,5,6,7,0,1,2}: " + search(new int[]{4, 5, 6, 7, 0, 1, 2}, 0));
+        System.out.println("Search 4 in {4,5,6,7,0,1,2}: " + search(new int[]{4, 5, 6, 7, 0, 1, 2}, 4));
+        System.out.println("Search 3 in {4,5,6,7,0,1,2}: " + search(new int[]{4, 5, 6, 7, 0, 1, 2}, 3));
     }
 
     // -------------------------------------------------------------------------
@@ -203,22 +210,32 @@ public class RecursionSimulation {
         return numberOfStepsHelper(num - 1, steps + 1);
     }
 
-    private static boolean isSorted(int[] nums, int index){
+    // -------------------------------------------------------------------------
+    // Array: sorted check, linear search, binary search
+    // -------------------------------------------------------------------------
+
+    /**
+     * Returns true if nums is sorted in non-decreasing order.
+     * Uses <= to allow equal adjacent elements.
+     */
+    private static boolean isSorted(int[] nums, int index) {
         if (index == nums.length - 1) return true;
-        return (nums[index] < nums[index + 1]) && isSorted(nums, index + 1);
+        return nums[index] <= nums[index + 1] && isSorted(nums, index + 1);
     }
 
-    private static int linearSearch(int[] nums, int target, int index){
+    /** Returns the index of target in nums, or -1 if not found. Linear search. */
+    private static int linearSearch(int[] nums, int target, int index) {
         if (index == nums.length) return -1;
         if (nums[index] == target) return index;
         return linearSearch(nums, target, index + 1);
     }
 
+    /** Returns the index of target in a sorted nums, or -1 if not found. Binary search. */
     private static int binarySearch(int[] nums, int target) {
-        int start = 0, end = nums.length - 1;
-        return binarySearchHelper(nums, target, start, end);
+        return binarySearchHelper(nums, target, 0, nums.length - 1);
     }
 
+    /** Recursive binary search helper. */
     private static int binarySearchHelper(int[] nums, int target, int start, int end) {
         if (start > end) return -1;
         int mid = start + (end - start) / 2;
@@ -227,9 +244,67 @@ public class RecursionSimulation {
         return binarySearchHelper(nums, target, mid + 1, end);
     }
 
-    private static void searchAllInstances(int[] nums, int target, int index, List<Integer> result){
+    // -------------------------------------------------------------------------
+    // Search all instances
+    // -------------------------------------------------------------------------
+
+    /**
+     * Side-effect style: appends all indices where target appears in nums
+     * into the provided result list.
+     */
+    private static void searchAllInstances(int[] nums, int target, int index, List<Integer> result) {
         if (index == nums.length) return;
         if (nums[index] == target) result.add(index);
         searchAllInstances(nums, target, index + 1, result);
+    }
+
+    /**
+     * Return style: returns a new list of all indices where target appears in nums.
+     * Note: allocates a new List at each frame — O(n) extra lists.
+     */
+    private static List<Integer> searchAllInstances2(int[] nums, int target, int index) {
+        List<Integer> result = new ArrayList<>();
+        if (index == nums.length) return result;
+        if (nums[index] == target) result.add(index);
+        result.addAll(searchAllInstances2(nums, target, index + 1));
+        return result;
+    }
+
+    // -------------------------------------------------------------------------
+    // Search in rotated sorted array (LC 33)
+    // -------------------------------------------------------------------------
+
+    /**
+     * Returns the index of target in a rotated sorted array, or -1 if not found.
+     * Time: O(log n)
+     */
+    public static int search(int[] nums, int target) {
+        return searchHelper(nums, target, 0, nums.length - 1);
+    }
+
+    /**
+     * Recursive binary search on a rotated sorted array.
+     * At each step, one half is guaranteed to be sorted — check target
+     * membership in that half to decide which side to recurse into.
+     */
+    private static int searchHelper(int[] nums, int target, int left, int right) {
+        if (left > right) return -1;
+        int mid = left + (right - left) / 2;
+        if (nums[mid] == target) return mid;
+
+        // Left half is sorted
+        if (nums[left] <= nums[mid]) {
+            if (nums[left] <= target && target < nums[mid])
+                return searchHelper(nums, target, left, mid - 1);
+            else
+                return searchHelper(nums, target, mid + 1, right);
+        }
+        // Right half is sorted
+        else {
+            if (nums[mid] < target && target <= nums[right])
+                return searchHelper(nums, target, mid + 1, right);
+            else
+                return searchHelper(nums, target, left, mid - 1);
+        }
     }
 }
