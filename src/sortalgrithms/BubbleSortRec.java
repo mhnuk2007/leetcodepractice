@@ -51,7 +51,7 @@ public class BubbleSortRec {
     private static void bubbleSort2(int[] b, int row, int col) {
         if (row == 0) return;
         if (col < row) {
-            if (b[col] > b[col + 1]) swap(b, row, col);
+            if (b[col] > b[col + 1]) swap(b, col, col + 1);
             bubbleSort2(b, row, col + 1);
         } else {
             bubbleSort2(b, row - 1, 0);
