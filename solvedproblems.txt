@@ -1,12 +1,12 @@
 ====================
 LeetCode Practice — Solved Problems
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: March 27, 2026
+Last Updated: March 30, 2026
 ====================
 
 Statistics
 ====================
-Total Files: 166
+Total Files: 179
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -17,11 +17,11 @@ Category Breakdown:
 - Queue              :  9
 - Daily Challenges   :  6
 - Hashing            :  5
-- Sorting Algorithms :  3
+- Sorting Algorithms : 11
 - Dynamic Programming:  2
 - Map & Set Design   :  2
 - Misc / Root & Patterns: 9
-- Recursion          :  3
+- Recursion          :  8
 - Sliding Window     :  2
 - Tree               : 10
 - Bit Manipulation   :  1
@@ -154,11 +154,16 @@ Misc / Root & Patterns (9)
   8. FloydTriangle
   9. FloydTriangleMathematically
 
-Recursion (3)
+Recursion (8)
 -------------
-  1. RecursionIntro
-  2. RecursionIntro2
-  3. RecursionSimulation
+  1. NQueens
+  2. Permutations
+  3. RecursionIntro
+  4. RecursionIntro2
+  5. RecursionSimulation
+  6. StringPermutations
+  7. Subsets
+  8. SubsetsII
 
 Queue (9)
 ---------
@@ -177,11 +182,19 @@ Sliding Window (2)
   1. SlidingWindow
   2. MaxSlidingWindow
 
-Sorting Algorithms (3)
-----------------------
+Sorting Algorithms (11)
+-----------------------
   1. BubbleSort
-  2. SortColors
-  3. TwoColorSort
+  2. BubbleSortRec
+  3. InsertionSort
+  4. InsertionSortRec
+  5. MergeSort
+  6. MergeSortRec
+  7. PatternsViaRecursion
+  8. SelectionSort
+  9. SelectionSortRec
+ 10. SortColors
+ 11. TwoColorSort
 
 Stack (11)
 ----------

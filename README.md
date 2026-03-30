@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (166 total Java files under `src`).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (179 total Java files under `src`).
 
 ---
 
@@ -23,12 +23,12 @@
 | Stack & Queue          |  25   |    10     | ████░░░░░░  40%      |
 | Heap / Priority Queue  |  17   |     0     | ░░░░░░░░░░   0%      |
 | Trees                  |  32   |     9     | ███░░░░░░░  28%      |
-| Backtracking           |  16   |     0     | ░░░░░░░░░░   0%      |
+| Backtracking           |  16   |     4     | ██░░░░░░░░  25%      |
 | Graphs                 |  22   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  33   |     2     | █░░░░░░░░░   6%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **310** | **120** | **████░░░░░░ 39%**  |
+| **Total**              | **310** | **124** | **████░░░░░░ 40%**  |
 
 > 📌 Trees expanded to 32 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 
@@ -411,7 +411,9 @@
 
 ---
 
-## 🔟 Backtracking (0 / 16)
+## 🔟 Backtracking (4 / 16)
+
+> 📁 Current backtracking solutions live in `src/recursion/` while a dedicated `src/backtracking/` package is still pending.
 
 | #   | Problem                               | Difficulty | Status | Pattern             |
 |-----|---------------------------------------|------------|--------|---------------------|
@@ -419,14 +421,14 @@
 | 22  | Generate Parentheses                  | Medium     | ⬜      | Backtracking        |
 | 39  | Combination Sum                       | Medium     | ⬜      | Backtracking        |
 | 40  | Combination Sum II                    | Medium     | ⬜      | Backtracking        |
-| 46  | Permutations                          | Medium     | ⬜      | Backtracking        |
+| 46  | Permutations                          | Medium     | ✅ [Solution](src/recursion/Permutations.java) | Backtracking        |
 | 47  | Permutations II                       | Medium     | ⬜      | Backtracking        |
-| 51  | N-Queens                              | Hard       | ⬜      | Backtracking        |
+| 51  | N-Queens                              | Hard       | ✅ [Solution](src/recursion/NQueens.java) | Backtracking        |
 | 52  | N-Queens II                           | Hard       | ⬜      | Backtracking        |
 | 77  | Combinations                          | Medium     | ⬜      | Backtracking        |
-| 78  | Subsets                               | Medium     | ⬜      | Backtracking        |
+| 78  | Subsets                               | Medium     | ✅ [Solution](src/recursion/Subsets.java) | Backtracking        |
 | 79  | Word Search                           | Medium     | ⬜      | Backtracking + DFS  |
-| 90  | Subsets II                            | Medium     | ⬜      | Backtracking        |
+| 90  | Subsets II                            | Medium     | ✅ [Solution](src/recursion/SubsetsII.java) | Backtracking        |
 | 131 | Palindrome Partitioning               | Medium     | ⬜      | Backtracking        |
 | 212 | Word Search II                        | Hard       | ⬜      | Backtracking + Trie |
 | 216 | Combination Sum III                   | Medium     | ⬜      | Backtracking        |
@@ -533,7 +535,7 @@
 | 1784 | Check if Binary String Has at Most One Segment of Ones   | Easy       | ✅ [Solution](src/dailychallenges/CheckOneSegment.java) | String           |
 | 1980 | Find Unique Binary String                                | Medium     | ✅ [Solution](src/dailychallenges/FindUniqueBinaryString.java) | Backtracking     |
 | 2193 | Minimum Number of Moves to Make Palindrome               | Hard       | ⬜      | Greedy           |
-| —    | Minimum Swaps to Group All 1's Together                  | Medium     | ✅ [Solution](src/dailychallenges/MinimumSwaps.java) | Sliding Window   |
+| 1536 | Minimum Swaps to Arrange a Binary Grid                   | Medium     | ✅ [Solution](src/dailychallenges/MinimumSwaps.java) | Greedy / Simulation |
 
 ---
 
@@ -551,10 +553,10 @@ src/
 ├── map/designhashmap/   ← LC 706 Design HashMap
 ├── patterns/            ← Pattern practice (Floyd's triangle etc.)
 ├── queue/               ← Queue problems + implementations
-├── recursion/           ← Recursion fundamentals + simulations
+├── recursion/           ← Recursion fundamentals + backtracking practice
 ├── set/designhashset/   ← LC 705 Design HashSet
 ├── slidingwindow/       ← Sliding window problems
-├── sortalgrithms/       ← Sorting implementations  ⚠️ typo in folder name
+├── sortalgrithms/       ← Sorting implementations + recursive variants  ⚠️ typo in folder name
 ├── stack/               ← Stack problems + implementations
 ├── strings/             ← String problems
 ├── tree/                ← Tree problems
@@ -598,4 +600,4 @@ src/
 
 ---
 
-*Last updated: March 27, 2026*
+*Last updated: March 30, 2026*
