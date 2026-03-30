@@ -64,13 +64,11 @@ public class NQueens {
         }
         placeQueens(board, 0, n, result);
         return result;
-
     }
 
     private static void placeQueens(char[][] board, int row, int n, List<List<String>> result) {
         if (row == n) {
-            result.add(boardToString(board));
-            return;
+            result.add(construct(board));
         }
         for (int col = 0; col < n; col++) {
             if (isSafe(board, row, col, n)) {
@@ -78,7 +76,6 @@ public class NQueens {
                 placeQueens(board, row + 1, n, result);
                 board[row][col] = '.';
             }
-
         }
     }
 
@@ -89,15 +86,15 @@ public class NQueens {
         for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--)
             if (board[i][j] == 'Q') return false;
 
-        for (int i = row - 1, j = col + 1; i >= 0 && j < n; i--, j++)
+        for (int i = row - 1, j = col + 1; i >= 0 && j < n ; i--, j++)
             if (board[i][j] == 'Q') return false;
+
         return true;
     }
 
-
-    private static List<String> boardToString(char[][] board) {
+    private static List<String> construct(char[][] board) {
         List<String> current = new ArrayList<>();
-        for (char[] row : board) current.add(new String(row));
+        for(char[] row : board) current.add(new String(row));
         return current;
     }
 }
