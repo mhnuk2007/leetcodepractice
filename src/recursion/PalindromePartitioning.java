@@ -11,9 +11,9 @@ import java.util.List;
  *   is a palindrome. Return all possible palindrome partitioning.
  *
  * Approach: Backtracking with prefix expansion
- *   At each step, try all prefixes s.substring(0, i) for i = 1..length.
+ *   At each step, try all prefixes s.substring(0, i+1) for i = 0..length-1.
  *   If the prefix is a palindrome, add it to current partition and recurse
- *   on the remaining string s.substring(i). Backtrack by removing last added.
+ *   on the remaining string s.substring(i+1). Backtrack by removing last added.
  *   Base case: empty string → record current partition.
  *
  * Example:
@@ -57,11 +57,11 @@ public class PalindromePartitioning {
             result.add(new ArrayList<>(partitions));                       // valid partition found
             return;
         }
-        for (int i = 1; i <= s.length(); i++) {
-            String sub = s.substring(0, i);                               // try prefix of length i
+        for (int i = 0; i < s.length(); i++) {
+            String sub = s.substring(0, i + 1);                           // try prefix of length i+1
             if (isPalindrome(sub)) {
                 partitions.add(sub);                                       // include palindrome prefix
-                getAllPartitions(s.substring(i), partitions, result);      // recurse on remainder
+                getAllPartitions(s.substring(i + 1), partitions, result);  // recurse on remainder
                 partitions.remove(partitions.size() - 1);                 // backtrack
             }
         }
@@ -69,6 +69,7 @@ public class PalindromePartitioning {
 
     private static boolean isPalindrome(String s) {
         int n = s.length();
+        if (n <= 1) return true;                                           // empty or single char
         for (int i = 0; i < n / 2; i++)
             if (s.charAt(i) != s.charAt(n - i - 1)) return false;         // mismatch found
         return true;
