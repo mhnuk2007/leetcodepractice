@@ -1,12 +1,12 @@
 ====================
 LeetCode Practice — Solved Problems
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: March 31, 2026
+Last Updated: April 4, 2026
 ====================
 
 Statistics
 ====================
-Total Files: 181
+Total Files: 186
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -21,7 +21,7 @@ Category Breakdown:
 - Dynamic Programming:  2
 - Map & Set Design   :  2
 - Misc / Root & Patterns: 9
-- Recursion          : 10
+- Recursion          : 15
 - Sliding Window     :  2
 - Tree               : 10
 - Bit Manipulation   :  1
@@ -154,18 +154,23 @@ Misc / Root & Patterns (9)
   8. FloydTriangle
   9. FloydTriangleMathematically
 
-Recursion (10)
+Recursion (15)
 --------------
   1. CombinationSum
   2. NQueens
-  3. Permutations
-  4. RecursionIntro
-  5. RecursionIntro2
-  6. RecursionSimulation
-  7. StringPermutations
-  8. Subsets
-  9. SubsetsII
- 10. SudokuSolver
+  3. PalindromePartitioning
+  4. Permutations
+  5. RecursionIntro
+  6. RecursionIntro2
+  7. RecursionSimulation
+  8. ReverseLinkedList
+  9. ReverseString
+ 10. StringPermutations
+ 11. Subsets
+ 12. SubsetsII
+ 13. SudokuSolver
+ 14. SumOfNNums
+ 15. SwapNodesInPairs
 
 Queue (9)
 ---------

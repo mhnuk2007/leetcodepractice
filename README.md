@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (181 total Java files under `src`).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (186 total Java files under `src`).
 
 ---
 
@@ -23,12 +23,12 @@
 | Stack & Queue          |  25   |    10     | ████░░░░░░  40%      |
 | Heap / Priority Queue  |  17   |     0     | ░░░░░░░░░░   0%      |
 | Trees                  |  32   |     9     | ███░░░░░░░  28%      |
-| Backtracking           |  16   |     5     | ███░░░░░░░  31%      |
+| Backtracking           |  16   |     6     | ████░░░░░░  38%      |
 | Graphs                 |  22   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  33   |     2     | █░░░░░░░░░   6%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **310** | **125** | **████░░░░░░ 40%**  |
+| **Total**              | **310** | **126** | **████░░░░░░ 41%**  |
 
 > 📌 Trees expanded to 32 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 
@@ -66,7 +66,7 @@
 |-----|----------|-------|
 | **Day 11** | 22 · 78 (re-solve) | Backtracking template · choose → explore → undo |
 | **Day 12** | 39 (re-solve) · 40 | Reuse vs no-reuse branches |
-| **Day 13** | 79 · 131 (stretch) | Grid backtracking · path partitioning |
+| **Day 13** | 79 · 131 (re-solve) | Grid backtracking · path partitioning |
 | **Day 14** | 70 · 198 | 1D DP basics · state definition |
 | **Day 15** | 213 · 53 | Circular DP vs Kadane |
 | **Day 16** | 322 · 518 | Unbounded knapsack intuition |
@@ -81,7 +81,7 @@
 |-----|----------|-------|
 | **Day 21** | 200 · 215 · 347 · 295 (try) | Graph + Heap mixed set |
 | **Day 22** | 198 · 424 · 567 · 300 (try) | DP + Sliding Window mixed set |
-| **Day 23** | 98 · 39 (re-solve) · 79 · 131 (try) | Tree + Backtracking mixed set |
+| **Day 23** | 98 · 39 (re-solve) · 79 · 131 (re-solve) | Tree + Backtracking mixed set |
 | **Day 24** | 207 · 322 · 139 · 210 | Graph + DP decision-making |
 | **Day 25** | 703 · 110 · 438 · 994 | Timed mixed practice |
 | **Day 26** | 2 problems in 45 min | No help · no notes · review after |
@@ -119,7 +119,7 @@
 | Graphs   |  0     | ~6+   |
 | DP       |  2     | ~10+  |
 | Sliding Window | 3 | ~7+   |
-| Backtracking | 5 | ~9+   |
+| Backtracking | 6 | ~9+   |
 
 ---
 
@@ -127,6 +127,7 @@
 
 | Date   | Problems Solved                                        | Notes                          |
 |--------|--------------------------------------------------------|--------------------------------|
+| Apr 4  | 131, Sudoku solver, recursion re-solves (24, 206, 344) | Backtracking + recursion expansion |
 | Mar 21 | 155 (4 approaches), 622, queue implementations         | Stack & Queue deep dive        |
 | Mar 20 | 739, 150, 496, 503, 622                                | Stack & Queue                  |
 | Mar 19 | 20, 155                                                | Started Stacks!                |
@@ -436,9 +437,9 @@
 
 ---
 
-## 🔟 Backtracking (5 / 16)
+## 🔟 Backtracking (6 / 16)
 
-> 📁 Current backtracking solutions live in `src/recursion/` while a dedicated `src/backtracking/` package is still pending.
+> 📁 Current backtracking solutions live in `src/recursion/`, alongside recursion-only practice and re-solve drills, while a dedicated `src/backtracking/` package is still pending.
 
 | #   | Problem                               | Difficulty | Status | Pattern             |
 |-----|---------------------------------------|------------|--------|---------------------|
@@ -454,7 +455,7 @@
 | 78  | Subsets                               | Medium     | ✅ [Solution](src/recursion/Subsets.java) | Backtracking        |
 | 79  | Word Search                           | Medium     | ⬜      | Backtracking + DFS  |
 | 90  | Subsets II                            | Medium     | ✅ [Solution](src/recursion/SubsetsII.java) | Backtracking        |
-| 131 | Palindrome Partitioning               | Medium     | ⬜      | Backtracking        |
+| 131 | Palindrome Partitioning               | Medium     | ✅ [Solution](src/recursion/PalindromePartitioning.java) | Backtracking        |
 | 212 | Word Search II                        | Hard       | ⬜      | Backtracking + Trie |
 | 216 | Combination Sum III                   | Medium     | ⬜      | Backtracking        |
 | 491 | Non-decreasing Subsequences           | Medium     | ⬜      | Backtracking        |
@@ -578,7 +579,7 @@ src/
 ├── map/designhashmap/   ← LC 706 Design HashMap
 ├── patterns/            ← Pattern practice (Floyd's triangle etc.)
 ├── queue/               ← Queue problems + implementations
-├── recursion/           ← Recursion fundamentals + backtracking practice
+├── recursion/           ← Recursion fundamentals + backtracking + recursion re-solves
 ├── set/designhashset/   ← LC 705 Design HashSet
 ├── slidingwindow/       ← Sliding window problems
 ├── sortalgrithms/       ← Sorting implementations + recursive variants  ⚠️ typo in folder name
@@ -625,4 +626,4 @@ src/
 
 ---
 
-*Last updated: March 31, 2026*
+*Last updated: April 4, 2026*
