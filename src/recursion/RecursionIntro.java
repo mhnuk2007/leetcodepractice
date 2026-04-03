@@ -71,7 +71,7 @@ public class RecursionIntro {
      * Intentionally naive — binary recursion to study call-tree structure.
      */
     static int fib(int n) {
-        if (n <= 1) return 0;
+        if (n <= 1) return n;
         return fib(n - 1) + fib(n - 2);
     }
 
