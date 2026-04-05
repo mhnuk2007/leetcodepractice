@@ -1,97 +1,91 @@
 package linkedlist;
 
 /**
- * LeetCode 21: Merge Two Sorted Lists
- * <p>
- * You are given the heads of two sorted linked lists, list1 and list2.
- * <p>
- * Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
- * <p>
- * Return the head of the merged linked list.
- * <p>
- * Example 1:
- * Input: list1 = [1,2,4], list2 = [1,3,4]
- * Output: [1,1,2,3,4,4]
- * <p>
- * Example 2:
- * Input: list1 = [], list2 = []
- * Output: []
- * <p>
- * Example 3:
- * Input: list1 = [], list2 = [0]
- * Output: [0]
+ * LeetCode 21 - Merge Two Sorted Lists
+ *
+ * Problem:
+ *   Given the heads of two sorted linked lists, merge them into one sorted
+ *   linked list by splicing together the nodes. Return the head of the merged list.
+ *
+ * Approach 1: Iterative (dummy head)
+ *   Use a dummy node to build the result. Compare list1 and list2 heads,
+ *   append the smaller node to result, advance that pointer. Attach
+ *   the remaining non-null list at the end.
+ *
+ * Approach 2: Recursive
+ *   If list1.val <= list2.val, list1 is next node — recurse on list1.next and list2.
+ *   Otherwise list2 is next node — recurse on list1 and list2.next.
+ *   Base case: either list is null → return the other.
+ *
+ * Example:
+ *   list1 = [1,2,4], list2 = [1,3,4] → [1,1,2,3,4,4]
+ *   list1 = [],      list2 = [0]     → [0]
+ *
+ * Time  : O(m+n) — each node visited once
+ * Space : O(1)   — iterative; O(m+n) — recursive call stack
  */
 public class MergeTwoSortedLists {
 
-    /**
-     * Merges two sorted linked lists into a single sorted linked list.
-     *
-     * @param list1 The head of the first sorted linked list.
-     * @param list2 The head of the second sorted linked list.
-     * @return The head of the newly merged sorted linked list.
-     */
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        // TODO: Implement the solution here.
-        // Hint: A common approach is to use a dummy node to build the new list.
-        // You can solve this either iteratively or recursively.
-        return null;
-    }
-
     public static void main(String[] args) {
-        MergeTwoSortedLists solution = new MergeTwoSortedLists();
+        // Test 1: standard case
+        System.out.println("Test 1 iterative:");
+        printList(mergeTwoLists(createList(1, 2, 4), createList(1, 3, 4)));
+        // Expected: 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> null
 
-        // Test Case 1
-        ListNode list1a = createList(new int[]{1, 2, 4});
-        ListNode list1b = createList(new int[]{1, 3, 4});
-        System.out.println("Test Case 1:");
-        System.out.print("  List 1: ");
-        printList(list1a);
-        System.out.print("  List 2: ");
-        printList(list1b);
-        ListNode merged1 = solution.mergeTwoLists(list1a, list1b);
-        System.out.print("  Merged: ");
-        printList(merged1); // Expected: 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> null
-        System.out.println("--------------------");
+        // Test 2: both empty
+        System.out.println("Test 2 both empty:");
+        printList(mergeTwoLists(null, null));
+        // Expected: null
 
-        // Test Case 2
-        ListNode list2a = createList(new int[]{});
-        ListNode list2b = createList(new int[]{});
-        System.out.println("Test Case 2 (Both empty):");
-        ListNode merged2 = solution.mergeTwoLists(list2a, list2b);
-        System.out.print("  Merged: ");
-        printList(merged2); // Expected: null
-        System.out.println("--------------------");
+        // Test 3: one empty
+        System.out.println("Test 3 one empty:");
+        printList(mergeTwoLists(null, createList(0)));
+        // Expected: 0 -> null
 
-        // Test Case 3
-        ListNode list3a = createList(new int[]{});
-        ListNode list3b = createList(new int[]{0});
-        System.out.println("Test Case 3 (First empty):");
-        ListNode merged3 = solution.mergeTwoLists(list3a, list3b);
-        System.out.print("  Merged: ");
-        printList(merged3); // Expected: 0 -> null
+        // Test 4: recursive standard case
+        System.out.println("Test 4 recursive:");
+        printList(mergeTwoListsRec(createList(1, 2, 4), createList(1, 3, 4)));
+        // Expected: 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> null
     }
 
-    // Helper method to create a linked list from an array
-    private static ListNode createList(int[] arr) {
-        if (arr == null || arr.length == 0) {
-            return null;
-        }
+    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode(0);
-        ListNode current = dummy;
-        for (int val : arr) {
-            current.next = new ListNode(val);
-            current = current.next;
+        ListNode curr  = dummy;
+        while (list1 != null && list2 != null) {
+            if (list1.val <= list2.val) {
+                curr.next = list1;                                         // take from list1
+                list1     = list1.next;
+            } else {
+                curr.next = list2;                                         // take from list2
+                list2     = list2.next;
+            }
+            curr = curr.next;
         }
+        curr.next = (list1 != null) ? list1 : list2;                      // attach remainder
         return dummy.next;
     }
 
-    // Helper method to print a linked list from a given node
-    private static void printList(ListNode node) {
-        ListNode current = node;
-        while (current != null) {
-            System.out.print(current.val + " -> ");
-            current = current.next;
+    public static ListNode mergeTwoListsRec(ListNode list1, ListNode list2) {
+        if (list1 == null) return list2;                                   // base case
+        if (list2 == null) return list1;                                   // base case
+        if (list1.val <= list2.val) {
+            list1.next = mergeTwoListsRec(list1.next, list2);             // list1 is smaller
+            return list1;
+        } else {
+            list2.next = mergeTwoListsRec(list1, list2.next);             // list2 is smaller
+            return list2;
         }
+    }
+
+    private static ListNode createList(int... vals) {
+        ListNode dummy = new ListNode(0);
+        ListNode curr  = dummy;
+        for (int val : vals) { curr.next = new ListNode(val); curr = curr.next; }
+        return dummy.next;
+    }
+
+    private static void printList(ListNode head) {
+        while (head != null) { System.out.print(head.val + " -> "); head = head.next; }
         System.out.println("null");
     }
 }
