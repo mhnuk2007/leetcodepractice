@@ -1,73 +1,79 @@
-package recursion;
+package arrays;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * LeetCode 70 - Climbing Stairs
+ * LeetCode 119 - Pascal's Triangle II
  *
  * Problem:
- *   You are climbing a staircase with n steps. Each time you can climb
- *   either 1 or 2 steps. Return the number of distinct ways to reach the top.
+ *   Given an integer rowIndex, return the rowIndex-th (0-indexed) row
+ *   of Pascal's triangle.
  *
- * Approach 1: Pure recursion
- *   At each step, choose to take 1 or 2 steps.
- *   Ways(n) = Ways(n-1) + Ways(n-2)
- *   Base case: n == 0 → 1 way (reached top), n < 0 → 0 ways (overstepped)
- *   Recomputes same subproblems repeatedly — O(2^n).
+ * Approach 1: Iterative binomial coefficient
+ *   C(n, i) = C(n, i-1) * (n-i+1) / i
+ *   Compute each element from the previous in a single pass.
  *
- * Approach 2: Memoization (top-down DP)
- *   Cache results in a HashMap to avoid recomputation.
- *   Each subproblem computed exactly once — O(n).
+ * Approach 2: Recursive Pascal's identity with memoization
+ *   C(n, k) = C(n-1, k-1) + C(n-1, k)
+ *   Base case: col == 0 or col == row → return 1
+ *   Cache results in Integer[][] to avoid recomputation.
  *
  * Example:
- *   n = 5 → 8 ways
- *   n = 3 → [1,1,1], [1,2], [2,1] = 3 ways
+ *   rowIndex = 4 → [1, 4, 6, 4, 1]
+ *   rowIndex = 5 → [1, 5, 10, 10, 5, 1]
  *
- * Note: Ways(n) follows the Fibonacci sequence — same recurrence relation.
- *
- * Time  : O(2^n) — pure recursion; O(n) — memoized
- * Space : O(n)   — recursion depth; O(n) — memo map
+ * Time  : O(n)  — iterative; O(n²) — recursive with memoization
+ * Space : O(n)  — iterative; O(n²) — memo array
  */
-public class ClimbingStairs {
+public class PascalsTriangleII {
 
     public static void main(String[] args) {
-        // Test 1: standard case
-        System.out.println("climbStairs(5):     " + climbStairs(5));
-        // Expected: 8
+        // Test 1: zero index
+        System.out.println("Row 0 iterative: " + getRow(0));
+        // Expected: [1]
 
-        System.out.println("climbStairsMemo(5): " + climbStairsMemo(5));
-        // Expected: 8
+        // Test 2: single pair
+        System.out.println("Row 1 iterative: " + getRow(1));
+        // Expected: [1, 1]
 
-        // Test 2: base case
-        System.out.println("climbStairs(1):     " + climbStairs(1));
-        // Expected: 1
+        // Test 3: standard case
+        System.out.println("Row 4 iterative: " + getRow(4));
+        // Expected: [1, 4, 6, 4, 1]
 
-        // Test 3: two steps
-        System.out.println("climbStairs(2):     " + climbStairs(2));
-        // Expected: 2
+        // Test 4: standard case
+        System.out.println("Row 5 iterative: " + getRow(5));
+        // Expected: [1, 5, 10, 10, 5, 1]
 
-        // Test 4: three steps
-        System.out.println("climbStairs(3):     " + climbStairs(3));
-        // Expected: 3
+        // Test 5: recursive with memoization
+        System.out.println("Row 5 recursive: " + getRowRec(5));
+        // Expected: [1, 5, 10, 10, 5, 1]
     }
 
-    public static int climbStairs(int n) {
-        if (n < 0) return 0;                                               // overstepped
-        if (n == 0) return 1;                                              // reached top
-        return climbStairs(n - 1) + climbStairs(n - 2);                   // take 1 or 2 steps
+    public static List<Integer> getRow(int rowIndex) {
+        List<Integer> result = new ArrayList<>(rowIndex + 1);
+        long value = 1;
+        for (int i = 0; i <= rowIndex; i++) {
+            result.add((int) value);
+            value = value * (rowIndex - i) / (i + 1);                     // next binomial coefficient
+        }
+        return result;
     }
 
-    public static int climbStairsMemo(int n) {
-        return helper(n, new HashMap<>());
+    public static List<Integer> getRowRec(int rowIndex) {
+        Integer[][] memo = new Integer[rowIndex + 1][rowIndex + 1];
+        List<Integer> result = new ArrayList<>();
+        for (int col = 0; col <= rowIndex; col++) {
+            result.add(combination(rowIndex, col, memo));                  // compute each element
+        }
+        return result;
     }
 
-    private static int helper(int n, Map<Integer, Integer> map) {
-        if (n < 0) return 0;                                               // overstepped
-        if (n == 0) return 1;                                              // reached top
-        if (map.containsKey(n)) return map.get(n);                        // cache hit
-        int res = helper(n - 1, map) + helper(n - 2, map);               // take 1 or 2 steps
-        map.put(n, res);                                                   // cache result
-        return res;
+    private static int combination(int row, int col, Integer[][] memo) {
+        if (col == 0 || col == row) return 1;                             // edges always 1
+        if (memo[row][col] != null) return memo[row][col];                // cache hit
+        memo[row][col] = combination(row - 1, col - 1, memo)
+                + combination(row - 1, col, memo);                 // Pascal's identity
+        return memo[row][col];                                             // cache and return
     }
 }
