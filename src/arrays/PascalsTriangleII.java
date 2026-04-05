@@ -1,9 +1,7 @@
 package arrays;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * LeetCode 119 - Pascal's Triangle II
@@ -19,14 +17,14 @@ import java.util.Map;
  * Approach 2: Recursive Pascal's identity with memoization
  *   C(n, k) = C(n-1, k-1) + C(n-1, k)
  *   Base case: col == 0 or col == row → return 1
- *   Cache results by "row,col" key to avoid recomputation.
+ *   Cache results in Integer[][] to avoid recomputation.
  *
  * Example:
  *   rowIndex = 4 → [1, 4, 6, 4, 1]
  *   rowIndex = 5 → [1, 5, 10, 10, 5, 1]
  *
- * Time  : O(n)   — iterative; O(n²) — recursive with memoization
- * Space : O(n)   — iterative; O(n²) — memo map
+ * Time  : O(n)  — iterative; O(n²) — recursive with memoization
+ * Space : O(n)  — iterative; O(n²) — memo array
  */
 public class PascalsTriangleII {
 
@@ -54,30 +52,28 @@ public class PascalsTriangleII {
 
     public static List<Integer> getRow(int rowIndex) {
         List<Integer> result = new ArrayList<>(rowIndex + 1);
-        long k = 1;
+        long value = 1;
         for (int i = 0; i <= rowIndex; i++) {
-            result.add((int) k);
-            k = k * (rowIndex - i) / (i + 1);                             // next binomial coefficient
+            result.add((int) value);
+            value = value * (rowIndex - i) / (i + 1);                     // next binomial coefficient
         }
         return result;
     }
 
     public static List<Integer> getRowRec(int rowIndex) {
-        Map<String, Integer> memo = new HashMap<>();                        // shared across all cols
-        List<Integer> result = new ArrayList<>(rowIndex + 1);
+        Integer[][] memo = new Integer[rowIndex + 1][rowIndex + 1];
+        List<Integer> result = new ArrayList<>();
         for (int col = 0; col <= rowIndex; col++) {
-            result.add(getRowHelper(rowIndex, col, memo));
+            result.add(combination(rowIndex, col, memo));                  // compute each element
         }
         return result;
     }
 
-    private static int getRowHelper(int row, int col, Map<String, Integer> memo) {
+    private static int combination(int row, int col, Integer[][] memo) {
         if (col == 0 || col == row) return 1;                             // edges always 1
-        String key = row + "," + col;
-        if (memo.containsKey(key)) return memo.get(key);                  // cache hit
-        int result = getRowHelper(row - 1, col - 1, memo)
-                + getRowHelper(row - 1, col, memo);                    // Pascal's identity
-        memo.put(key, result);                                             // cache result
-        return result;
+        if (memo[row][col] != null) return memo[row][col];                // cache hit
+        memo[row][col] = combination(row - 1, col - 1, memo)
+                + combination(row - 1, col, memo);                 // Pascal's identity
+        return memo[row][col];                                             // cache and return
     }
 }
