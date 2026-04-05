@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (186 total Java files under `src`).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (191 total Java files under `src`).
 
 ---
 
@@ -19,16 +19,16 @@
 | Strings                |  22   |    14     | ██████░░░░  64%      |
 | HashMap / HashSet      |  23   |    10     | ████░░░░░░  43%      |
 | Binary Search          |  23   |    11     | █████░░░░░  48%      |
-| Linked List            |  23   |    12     | █████░░░░░  52%      |
+| Linked List            |  23   |    13     | ██████░░░░  57%      |
 | Stack & Queue          |  25   |    10     | ████░░░░░░  40%      |
 | Heap / Priority Queue  |  17   |     0     | ░░░░░░░░░░   0%      |
-| Trees                  |  32   |     9     | ███░░░░░░░  28%      |
+| Trees                  |  32   |    10     | ███░░░░░░░  31%      |
 | Backtracking           |  16   |     6     | ████░░░░░░  38%      |
 | Graphs                 |  22   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  33   |     2     | █░░░░░░░░░   6%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **310** | **126** | **████░░░░░░ 41%**  |
+| **Total**              | **310** | **128** | **████░░░░░░ 41%**  |
 
 > 📌 Trees expanded to 32 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 
@@ -50,7 +50,7 @@
 | Day | Problems | Focus |
 |-----|----------|-------|
 | **Day 1** | 110 · 543 · 104 (re-solve) | Height-based recursion · returning values cleanly |
-| **Day 2** | 98 · 700 · 235 | BST rules · search space pruning |
+| **Day 2** | 98 · 700 (re-solve) · 235 | BST rules · search space pruning |
 | **Day 3** | 236 · 112 · 113 | DFS + backtracking on trees |
 | **Day 4** | 215 · 1046 · PriorityQueue drill | Min heap vs max heap · Java comparator fluency |
 | **Day 5** | 347 · 703 · 295 (stretch) | Top-K pattern · stream heap · two-heaps pattern |
@@ -127,6 +127,7 @@
 
 | Date   | Problems Solved                                        | Notes                          |
 |--------|--------------------------------------------------------|--------------------------------|
+| Apr 5  | 24, 21, 50, 119, 206, 700, 779                         | Recursion re-solves + BST search |
 | Apr 4  | 131, Sudoku solver, recursion re-solves (24, 206, 344) | Backtracking + recursion expansion |
 | Mar 21 | 155 (4 approaches), 622, queue implementations         | Stack & Queue deep dive        |
 | Mar 20 | 739, 150, 496, 503, 622                                | Stack & Queue                  |
@@ -302,7 +303,7 @@
 
 ---
 
-## 6️⃣ Linked List (12 / 23)
+## 6️⃣ Linked List (13 / 23)
 
 > 📁 Additional files in repo (practice/helpers): `MyLinkedList`, `SinglyLinkedList`, `SplitCircularLinkedList`, `ListNode`
 
@@ -311,7 +312,7 @@
 | 2    | Add Two Numbers                       | Medium     | ✅ [Solution](src/linkedlist/AddTwoNumbers.java) | Linked List Math |
 | 19   | Remove Nth Node From End of List      | Medium     | ✅ [Solution](src/linkedlist/RemoveNthNodeFromEnd.java) | Two Pointers |
 | 21   | Merge Two Sorted Lists                | Easy       | ✅ [Solution](src/linkedlist/MergeTwoSortedLists.java) | Two Pointers |
-| 24   | Swap Nodes in Pairs                   | Medium     | ⬜      | Pointer Manipulation |
+| 24   | Swap Nodes in Pairs                   | Medium     | ✅ [Solution](src/recursion/SwapNodesInPairs.java) | Pointer Manipulation / Recursion |
 | 61   | Rotate List                           | Medium     | ⬜      | Two Pointers         |
 | 82   | Remove Duplicates from Sorted List II | Medium     | ⬜      | Two Pointers         |
 | 83   | Remove Duplicates from Sorted List    | Easy       | ⬜      | Pointer Manipulation |
@@ -394,7 +395,7 @@
 
 ---
 
-## 9️⃣ Trees (9 / 32)
+## 9️⃣ Trees (10 / 32)
 
 > 📌 **30-Day roadmap focus:** Days 1–3 cover 104 (re-solve), 110, 543, 98, 700, 235, 236, 112, 113.
 >
@@ -412,7 +413,7 @@
 | 199  | Binary Tree Right Side View                      | Medium     | ✅ [Solution](src/tree/RightSideView.java) | BFS                    |                |
 | 110  | Balanced Binary Tree                             | Easy       | ⬜      | DFS                    | Day 1          |
 | 543  | Diameter of Binary Tree                          | Easy       | ⬜      | DFS                    | Day 1          |
-| 700  | Search in a Binary Search Tree                   | Easy       | ⬜      | BST Properties         | Day 2          |
+| 700  | Search in a Binary Search Tree                   | Easy       | ✅ [Solution](src/recursion/SearchInBST.java) | BST Properties / Recursion | Day 2 re-solve |
 | 98   | Validate Binary Search Tree                      | Medium     | ⬜      | DFS                    | Day 2          |
 | 112  | Path Sum                                         | Easy       | ⬜      | DFS                    | Day 3          |
 | 257  | Binary Tree Paths                                | Easy       | ⬜      | DFS + Backtracking     |                |
@@ -626,4 +627,4 @@ src/
 
 ---
 
-*Last updated: April 4, 2026*
+*Last updated: April 5, 2026*
