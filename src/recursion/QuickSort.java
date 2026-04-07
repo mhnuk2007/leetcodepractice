@@ -1,18 +1,23 @@
 package recursion;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
- * Quick Sort
+ * Quick Sort (Randomized)
  *
  * Problem:
  *   Sort an array of integers in ascending order using the Quick Sort algorithm.
  *
  * Approach: Partition-based recursion (Lomuto partition scheme)
- *   Choose the last element as pivot.
+ *   Choose a random element as pivot by swapping it with the last element.
  *   Partition: move all elements less than pivot to the left, greater to the right.
  *   Pivot lands at its correct sorted position.
  *   Recursively sort left and right subarrays.
+ *
+ * Why randomized pivot?
+ *   Fixed pivot (always last) degrades to O(n²) on sorted/reverse-sorted arrays.
+ *   Random pivot reduces the chance of worst case — expected O(n log n).
  *
  * Trace: arr = [7, 2, 1, 6, 3, 0, 8, 4], pivot = 4, i = -1
  *   j=0  7 > 4  no action              [7, 2, 1, 6, 3, 0, 8, 4]
@@ -47,7 +52,7 @@ import java.util.Arrays;
  *     j=0  6 < 7  i=0, swap(0,0)      [6, 8, 7]
  *     j=1  8 > 7  no action            [6, 8, 7]
  *     exit → swap(i+1,high)=swap(1,2) [6, 7, 8]
- *                                           ↑ pivot placed
+ *                                         ↑ pivot placed
  *     LEFT  [6] → single element → done
  *     RIGHT [8] → single element → done
  *
@@ -55,7 +60,7 @@ import java.util.Arrays;
  *
  *   FINAL: [0,1,2,3] + [4] + [6,7,8] = [0,1,2,3,4,6,7,8] ✓
  *
- * Time  : O(n log n) average — O(n²) worst case (already sorted array)
+ * Time  : O(n log n) average — O(n²) worst case (unlucky random pivots)
  * Space : O(log n)   average — O(n) worst case (recursion depth)
  */
 public class QuickSort {
@@ -100,8 +105,12 @@ public class QuickSort {
         }
     }
 
+    private static final Random rand = new Random();
+
     public static int partition(int[] arr, int low, int high) {
-        int pivot = arr[high];                                             // last element as pivot
+        int randomIndex = low + rand.nextInt(high - low + 1);      // random index in [low, high]
+        swap(arr, randomIndex, high);                                      // move random pivot to end
+        int pivot = arr[high];                                             // treat last as pivot
         int i = low - 1;
         for (int j = low; j < high; j++) {
             if (arr[j] < pivot) {
