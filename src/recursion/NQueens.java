@@ -11,15 +11,17 @@ import java.util.List;
  * Return all distinct solutions as a list of boards, each represented as
  * a list of strings ('Q' = queen, '.' = empty).
  * <p>
- * Approach: Backtracking row by row
+ * Approach: Backtracking row by row with O(1) conflict checks
  * Place exactly one queen per row. For each column in the current row,
- * check if placing is safe (no conflict in column or either diagonal),
- * recurse to the next row, then backtrack by removing the queen.
+ * check if placing is safe using three boolean arrays instead of board scans,
+ * recurse to the next row, then backtrack by resetting all three arrays.
  * <p>
- * isSafe checks:
- * - Column      : scan entire column upward
- * - Left diagonal  : scan up-left  (row--, col--)
- * - Right diagonal : scan up-right (row--, col++)
+ * Conflict detection (all O(1)):
+ * - cols[col]        : true if any queen occupies this column
+ * - diags1[row-col+n-1] : true if any queen occupies this left diagonal (\)
+ *                         all cells on the same '\' diagonal share row - col
+ * - diags2[row+col]     : true if any queen occupies this right diagonal (/)
+ *                         all cells on the same '/' diagonal share row + col
  * No row check needed — exactly one queen placed per row by design.
  * <p>
  * Example:
@@ -30,9 +32,8 @@ import java.util.List;
  * "..Q."]     ".Q.."]
  * <p>
  * Time  : O(n!) — at most n choices in row 0, n-1 in row 1, and so on
- * Space : O(n²) — board storage, O(n) recursion depth
- */
-public class NQueens {
+ * Space : O(n²) — board storage; O(n) for the three boolean arrays; O(n) recursion depth
+ */public class NQueens {
 
     public static void main(String[] args) {
         // Test 1: standard case
@@ -54,47 +55,48 @@ public class NQueens {
         // Expected: 10 solutions
     }
 
-    private static List<List<String>> solveNQueens(int n) {
+    public static List<List<String>> solveNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
         char[][] board = new char[n][n];
+        boolean[] cols = new boolean[n];
+        boolean[] diags1 = new boolean[2 * n - 1];
+        boolean[] diags2 = new boolean[2 * n - 1];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 board[i][j] = '.';
             }
         }
-        placeQueens(board, 0, n, result);
+        placeQueens(board, 0, n, cols, diags1, diags2, result);
         return result;
     }
 
-    private static void placeQueens(char[][] board, int row, int n, List<List<String>> result) {
+    private static void placeQueens(
+            char[][] board,
+            int row, int n,
+            boolean[] cols,
+            boolean[] diags1,
+            boolean[] diags2,
+            List<List<String>> result) {
         if (row == n) {
-            result.add(construct(board));
+            result.add(boardToString(board));
+            return;
         }
         for (int col = 0; col < n; col++) {
-            if (isSafe(board, row, col, n)) {
-                board[row][col] = 'Q';
-                placeQueens(board, row + 1, n, result);
-                board[row][col] = '.';
-            }
+            int d1 = row - col + n - 1;
+            int d2 = row + col;
+            if (cols[col] || diags1[d1] || diags2[d2]) continue;
+            cols[col] = diags1[d1] = diags2[d2] = true;
+            board[row][col] = 'Q';
+            placeQueens(board, row + 1, n, cols, diags1, diags2, result);
+            board[row][col] = '.';
+            cols[col] = diags1[d1] = diags2[d2] = false;
         }
     }
 
-    private static boolean isSafe(char[][] board, int row, int col, int n) {
-        for (int i = 0; i < row; i++)
-            if (board[i][col] == 'Q') return false;
-
-        for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--)
-            if (board[i][j] == 'Q') return false;
-
-        for (int i = row - 1, j = col + 1; i >= 0 && j < n ; i--, j++)
-            if (board[i][j] == 'Q') return false;
-
-        return true;
+    private static List<String> boardToString(char[][] board) {
+        List<String> result = new ArrayList<>();
+        for (char[] row : board) result.add(new String(row));
+        return result;
     }
 
-    private static List<String> construct(char[][] board) {
-        List<String> current = new ArrayList<>();
-        for(char[] row : board) current.add(new String(row));
-        return current;
-    }
 }
