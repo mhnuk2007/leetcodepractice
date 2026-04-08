@@ -11,31 +11,28 @@ public class GenerateParenthesis {
 
     public static List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
 
-        helper(result, "", n);
+        backtrack(result, sb, 0, 0, n);
 
         return result;
     }
 
-    static void helper(List<String> result, String s, int n) {
-        if (s.length() == n * 2) {
-            if (isValid(s))
-                result.add(s);
+    static void backtrack(List<String> result, StringBuilder sb, int open, int close, int n) {
+        if (sb.length() == n * 2) {
+            result.add(sb.toString());
             return;
         }
 
-        helper(result, s + "(", n);
-        helper(result, s + ")", n);
-    }
-
-    static boolean isValid(String s) {
-        int count = 0;
-        for (char c : s.toCharArray()) {
-            if (c == '(') count++;
-            else count--;
-
-            if (count < 0) return false;
+        if (open < n){
+            sb.append("(");
+            backtrack(result, sb, open + 1, close, n);
+            sb.deleteCharAt(sb.length() - 1);
+                }
+        if (close < open){
+            sb.append(")");
+            backtrack(result, sb, open, close + 1, n);
+            sb.deleteCharAt(sb.length() - 1);
         }
-        return count == 0;
     }
 }
