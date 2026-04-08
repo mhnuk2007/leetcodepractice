@@ -1,12 +1,12 @@
 ====================
 LeetCode Practice — Solved Problems
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: April 8, 2026
+Last Updated: April 9, 2026
 ====================
 
 Statistics
 ====================
-Total Files: 197
+Total Files: 199
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -21,7 +21,7 @@ Category Breakdown:
 - Dynamic Programming:  2
 - Map & Set Design   :  2
 - Misc / Root & Patterns: 9
-- Recursion          : 26
+- Recursion          : 28
 - Sliding Window     :  2
 - Tree               : 10
 - Bit Manipulation   :  1
@@ -154,34 +154,36 @@ Misc / Root & Patterns (9)
   8. FloydTriangle
   9. FloydTriangleMathematically
 
-Recursion (26)
+Recursion (28)
 --------------
   1. ClimbingStairs
   2. CombinationSum
   3. Combinations
   4. FibonacciNumber
-  5. KthSymbolInGrammar
-  6. NQueens
-  7. NQueensII
-  8. PalindromePartitioning
-  9. Permutations
- 10. PowXN
- 11. QuickSort
- 12. RecursionIntro
- 13. RecursionIntro2
- 14. RecursionSimulation
- 15. ReverseLinkedList
- 16. ReverseString
- 17. SearchA2DMatrixII
- 18. SearchInBST
- 19. StringPermutations
- 20. Subsets
- 21. SubsetsII
- 22. SudokuSolver
- 23. SudokuSolver2
- 24. SumOfNNums
- 25. SwapNodesInPairs
- 26. ValidateBST
+  5. GenerateParenthesis
+  6. KthSymbolInGrammar
+  7. LetterCombinations
+  8. NQueens
+  9. NQueensII
+ 10. PalindromePartitioning
+ 11. Permutations
+ 12. PowXN
+ 13. QuickSort
+ 14. RecursionIntro
+ 15. RecursionIntro2
+ 16. RecursionSimulation
+ 17. ReverseLinkedList
+ 18. ReverseString
+ 19. SearchA2DMatrixII
+ 20. SearchInBST
+ 21. StringPermutations
+ 22. Subsets
+ 23. SubsetsII
+ 24. SudokuSolver
+ 25. SudokuSolver2
+ 26. SumOfNNums
+ 27. SwapNodesInPairs
+ 28. ValidateBST
 
 Queue (9)
 ---------

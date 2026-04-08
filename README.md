@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (197 total Java files under `src`).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (199 total Java files under `src`).
 
 ---
 
@@ -23,12 +23,12 @@
 | Stack & Queue          |  25   |    10     | ████░░░░░░  40%      |
 | Heap / Priority Queue  |  17   |     0     | ░░░░░░░░░░   0%      |
 | Trees                  |  32   |    11     | ███░░░░░░░  34%      |
-| Backtracking           |  16   |     8     | █████░░░░░  50%      |
+| Backtracking           |  16   |    10     | ██████░░░░  63%      |
 | Graphs                 |  22   |     0     | ░░░░░░░░░░   0%      |
-| Dynamic Programming    |  33   |     2     | █░░░░░░░░░   6%      |
+| Dynamic Programming    |  33   |     3     | █░░░░░░░░░   9%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **310** | **131** | **████░░░░░░ 42%**  |
+| **Total**              | **310** | **134** | **████░░░░░░ 43%**  |
 
 > 📌 Trees expanded to 32 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 
@@ -64,10 +64,10 @@
 
 | Day | Problems | Focus |
 |-----|----------|-------|
-| **Day 11** | 22 · 78 (re-solve) | Backtracking template · choose → explore → undo |
+| **Day 11** | 22 (re-solve) · 78 (re-solve) | Backtracking template · choose → explore → undo |
 | **Day 12** | 39 (re-solve) · 40 | Reuse vs no-reuse branches |
 | **Day 13** | 79 · 131 (re-solve) | Grid backtracking · path partitioning |
-| **Day 14** | 70 · 198 | 1D DP basics · state definition |
+| **Day 14** | 70 (re-solve) · 198 | 1D DP basics · state definition |
 | **Day 15** | 213 · 53 | Circular DP vs Kadane |
 | **Day 16** | 322 · 518 | Unbounded knapsack intuition |
 | **Day 17** | 300 · LIS binary-search optimization | DP to optimized pattern jump |
@@ -117,9 +117,9 @@
 |----------|--------|-------|
 | Heap     |  0     | ~5+   |
 | Graphs   |  0     | ~6+   |
-| DP       |  2     | ~10+  |
+| DP       |  3     | ~10+  |
 | Sliding Window | 3 | ~7+   |
-| Backtracking | 6 | ~9+   |
+| Backtracking | 10 | ~11+ |
 
 ---
 
@@ -127,8 +127,9 @@
 
 | Date   | Problems Solved                                        | Notes                          |
 |--------|--------------------------------------------------------|--------------------------------|
+| Apr 9  | 17, 22                                                 | Backtracking push before switching focus |
 | Apr 8  | 52, 77, 98                                             | Backtracking + BST expansion   |
-| Apr 5  | 24, 21, 50, 119, 206, 700, 779                         | Recursion re-solves + BST search |
+| Apr 5  | 24, 21, 50, 70, 119, 206, 700, 779                     | Recursion re-solves + BST search |
 | Apr 4  | 131, Sudoku solver, recursion re-solves (24, 206, 344) | Backtracking + recursion expansion |
 | Mar 21 | 155 (4 approaches), 622, queue implementations         | Stack & Queue deep dive        |
 | Mar 20 | 739, 150, 496, 503, 622                                | Stack & Queue                  |
@@ -439,14 +440,14 @@
 
 ---
 
-## 🔟 Backtracking (8 / 16)
+## 🔟 Backtracking (10 / 16)
 
 > 📁 Current backtracking solutions live in `src/recursion/`, alongside recursion-only practice and re-solve drills, while a dedicated `src/backtracking/` package is still pending.
 
 | #   | Problem                               | Difficulty | Status | Pattern             |
 |-----|---------------------------------------|------------|--------|---------------------|
-| 17  | Letter Combinations of a Phone Number | Medium     | ⬜      | Backtracking        |
-| 22  | Generate Parentheses                  | Medium     | ⬜      | Backtracking        |
+| 17  | Letter Combinations of a Phone Number | Medium     | ✅ [Solution](src/recursion/LetterCombinations.java) | Backtracking        |
+| 22  | Generate Parentheses                  | Medium     | ✅ [Solution](src/recursion/GenerateParenthesis.java) | Backtracking        |
 | 39  | Combination Sum                       | Medium     | ✅ [Solution](src/recursion/CombinationSum.java) | Backtracking        |
 | 40  | Combination Sum II                    | Medium     | ⬜      | Backtracking        |
 | 46  | Permutations                          | Medium     | ✅ [Solution](src/recursion/Permutations.java) | Backtracking        |
@@ -495,7 +496,7 @@
 
 ---
 
-## 1️⃣2️⃣ Dynamic Programming (2 / 33)
+## 1️⃣2️⃣ Dynamic Programming (3 / 33)
 
 | #    | Problem                                                   | Difficulty | Status | Pattern              |
 |------|-----------------------------------------------------------|------------|--------|----------------------|
@@ -504,7 +505,7 @@
 | 62   | Unique Paths                                              | Medium     | ⬜      | DP                   |
 | 63   | Unique Paths II                                           | Medium     | ⬜      | DP                   |
 | 64   | Minimum Path Sum                                          | Medium     | ⬜      | DP                   |
-| 70   | Climbing Stairs                                           | Easy       | ⬜      | DP                   |
+| 70   | Climbing Stairs                                           | Easy       | ✅ [Solution](src/recursion/ClimbingStairs.java) | DP / Recursion      |
 | 72   | Edit Distance                                             | Medium     | ⬜      | DP                   |
 | 91   | Decode Ways                                               | Medium     | ⬜      | DP                   |
 | 123  | Best Time to Buy and Sell Stock III                       | Hard       | ⬜      | DP                   |
@@ -628,4 +629,4 @@ src/
 
 ---
 
-*Last updated: April 8, 2026*
+*Last updated: April 9, 2026*
