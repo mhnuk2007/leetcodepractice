@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (191 total Java files under `src`).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (197 total Java files under `src`).
 
 ---
 
@@ -22,13 +22,13 @@
 | Linked List            |  23   |    13     | ██████░░░░  57%      |
 | Stack & Queue          |  25   |    10     | ████░░░░░░  40%      |
 | Heap / Priority Queue  |  17   |     0     | ░░░░░░░░░░   0%      |
-| Trees                  |  32   |    10     | ███░░░░░░░  31%      |
-| Backtracking           |  16   |     6     | ████░░░░░░  38%      |
+| Trees                  |  32   |    11     | ███░░░░░░░  34%      |
+| Backtracking           |  16   |     8     | █████░░░░░  50%      |
 | Graphs                 |  22   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  33   |     2     | █░░░░░░░░░   6%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **310** | **128** | **████░░░░░░ 41%**  |
+| **Total**              | **310** | **131** | **████░░░░░░ 42%**  |
 
 > 📌 Trees expanded to 32 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 
@@ -50,7 +50,7 @@
 | Day | Problems | Focus |
 |-----|----------|-------|
 | **Day 1** | 110 · 543 · 104 (re-solve) | Height-based recursion · returning values cleanly |
-| **Day 2** | 98 · 700 (re-solve) · 235 | BST rules · search space pruning |
+| **Day 2** | 98 (re-solve) · 700 (re-solve) · 235 | BST rules · search space pruning |
 | **Day 3** | 236 · 112 · 113 | DFS + backtracking on trees |
 | **Day 4** | 215 · 1046 · PriorityQueue drill | Min heap vs max heap · Java comparator fluency |
 | **Day 5** | 347 · 703 · 295 (stretch) | Top-K pattern · stream heap · two-heaps pattern |
@@ -127,6 +127,7 @@
 
 | Date   | Problems Solved                                        | Notes                          |
 |--------|--------------------------------------------------------|--------------------------------|
+| Apr 8  | 52, 77, 98                                             | Backtracking + BST expansion   |
 | Apr 5  | 24, 21, 50, 119, 206, 700, 779                         | Recursion re-solves + BST search |
 | Apr 4  | 131, Sudoku solver, recursion re-solves (24, 206, 344) | Backtracking + recursion expansion |
 | Mar 21 | 155 (4 approaches), 622, queue implementations         | Stack & Queue deep dive        |
@@ -395,7 +396,7 @@
 
 ---
 
-## 9️⃣ Trees (10 / 32)
+## 9️⃣ Trees (11 / 32)
 
 > 📌 **30-Day roadmap focus:** Days 1–3 cover 104 (re-solve), 110, 543, 98, 700, 235, 236, 112, 113.
 >
@@ -414,7 +415,7 @@
 | 110  | Balanced Binary Tree                             | Easy       | ⬜      | DFS                    | Day 1          |
 | 543  | Diameter of Binary Tree                          | Easy       | ⬜      | DFS                    | Day 1          |
 | 700  | Search in a Binary Search Tree                   | Easy       | ✅ [Solution](src/recursion/SearchInBST.java) | BST Properties / Recursion | Day 2 re-solve |
-| 98   | Validate Binary Search Tree                      | Medium     | ⬜      | DFS                    | Day 2          |
+| 98   | Validate Binary Search Tree                      | Medium     | ✅ [Solution](src/recursion/ValidateBST.java) | DFS / Recursion        | Day 2 re-solve |
 | 112  | Path Sum                                         | Easy       | ⬜      | DFS                    | Day 3          |
 | 257  | Binary Tree Paths                                | Easy       | ⬜      | DFS + Backtracking     |                |
 | 113  | Path Sum II                                      | Medium     | ⬜      | DFS + Backtracking     | Day 3          |
@@ -438,7 +439,7 @@
 
 ---
 
-## 🔟 Backtracking (6 / 16)
+## 🔟 Backtracking (8 / 16)
 
 > 📁 Current backtracking solutions live in `src/recursion/`, alongside recursion-only practice and re-solve drills, while a dedicated `src/backtracking/` package is still pending.
 
@@ -451,8 +452,8 @@
 | 46  | Permutations                          | Medium     | ✅ [Solution](src/recursion/Permutations.java) | Backtracking        |
 | 47  | Permutations II                       | Medium     | ⬜      | Backtracking        |
 | 51  | N-Queens                              | Hard       | ✅ [Solution](src/recursion/NQueens.java) | Backtracking        |
-| 52  | N-Queens II                           | Hard       | ⬜      | Backtracking        |
-| 77  | Combinations                          | Medium     | ⬜      | Backtracking        |
+| 52  | N-Queens II                           | Hard       | ✅ [Solution](src/recursion/NQueensII.java) | Backtracking        |
+| 77  | Combinations                          | Medium     | ✅ [Solution](src/recursion/Combinations.java) | Backtracking        |
 | 78  | Subsets                               | Medium     | ✅ [Solution](src/recursion/Subsets.java) | Backtracking        |
 | 79  | Word Search                           | Medium     | ⬜      | Backtracking + DFS  |
 | 90  | Subsets II                            | Medium     | ✅ [Solution](src/recursion/SubsetsII.java) | Backtracking        |
@@ -627,4 +628,4 @@ src/
 
 ---
 
-*Last updated: April 5, 2026*
+*Last updated: April 8, 2026*
