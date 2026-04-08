@@ -1,12 +1,14 @@
 package tree;
 
+import java.util.*;
+
 /**
  * LeetCode 100 — Same Tree
  *
  * Problem: Given the roots of two binary trees p and q, return true if
  * they are structurally identical and all node values are equal.
  *
- * Approach: Bottom-up recursion.
+ * Approach 1: Bottom-up recursion.
  *   Base case 1: both null        → true  (identical empty subtrees)
  *   Base case 2: one null, one not → false (structure mismatch)
  *   Base case 3: values differ    → false (value mismatch)
@@ -15,6 +17,10 @@ package tree;
  * Time Complexity : O(n) — visits every node once
  * Space Complexity: O(h) — recursion stack depth equals tree height
  *                   O(log n) balanced, O(n) skewed
+ *
+ * Approach 2: Iterative using an explicit stack
+ *   Push pairs of corresponding nodes. On each pop, compare the pair.
+ *   Null-null pairs are valid (continue). Any mismatch returns false.
  */
 public class SameTree {
 
@@ -37,6 +43,27 @@ public class SameTree {
         if (p == null || q == null) return false;  // one null — structure mismatch
         if (p.val != q.val)         return false;  // value mismatch
         return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+    }
+
+    public static boolean isSameTreeIter(TreeNode p, TreeNode q) {
+
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(p);
+        stack.push(q);
+        while (!stack.isEmpty()) {
+            TreeNode node2 = stack.pop();
+            TreeNode node1 = stack.pop();
+            if (node1 == null && node2 == null) continue;
+            if (node1 == null || node2 == null || node1.val != node2.val) return false;
+
+            stack.push(node1.left);
+            stack.push(node2.left);
+            stack.push(node1.right);
+            stack.push(node2.right);
+
+        }
+        return true;
+
     }
 
     public static void main(String[] args) {
@@ -82,5 +109,12 @@ public class SameTree {
         // Test 7: Single node — different value
         System.out.println("\n=== Test 7: Single node different ===");
         System.out.println(isSameTree(new TreeNode(1), new TreeNode(2))); // false
+
+        System.out.println("\n=== Iterative Tests ===");
+        System.out.println(isSameTreeIter(p1, q1));                        // true
+        System.out.println(isSameTreeIter(p2, q2));                        // false
+        System.out.println(isSameTreeIter(p3, q3));                        // false
+        System.out.println(isSameTreeIter(null, null));                     // true
+        System.out.println(isSameTreeIter(new TreeNode(1), null));          // false
     }
 }
