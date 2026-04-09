@@ -8,24 +8,33 @@ package linkedlist;
  */
 public class ListNode {
 
-    int val;        // value stored in node
-    ListNode next;  // reference to next node
+    public int val;        // value stored in node
+    public ListNode next;  // reference to next node
 
     // Default constructor
-    ListNode() {
+    public ListNode() {
         this.val = 0;
         this.next = null;
     }
 
     // Constructor with value
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
         this.next = null;
     }
 
     // Constructor with value and next node reference
-    ListNode(int val, ListNode next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
+    }
+
+    public static void print(ListNode head){
+        ListNode current = head;
+        while (current != null) {
+            System.out.print(current.val + " ");
+            current = current.next;
+        }
+        System.out.println();
     }
 }
