@@ -6,7 +6,7 @@ Last Updated: April 9, 2026
 
 Statistics
 ====================
-Total Files: 199
+Total Files: 203
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -17,6 +17,7 @@ Category Breakdown:
 - Queue              :  9
 - Daily Challenges   :  6
 - Hashing            :  5
+- Heap               :  4
 - Sorting Algorithms : 11
 - Dynamic Programming:  2
 - Map & Set Design   :  2
@@ -117,6 +118,13 @@ Hashing (5)
   3. FirstUniqueCharacter
   4. IntersectionOfArrays
   5. IntersectionOfArraysII
+
+Heap (4)
+--------
+  1. Main
+  2. MaxHeap
+  3. MinHeap
+  4. TopKFrequentElements
 
 Linked List (16)
 ----------------
