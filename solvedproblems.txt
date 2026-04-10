@@ -6,7 +6,7 @@ Last Updated: April 10, 2026
 
 Statistics
 ====================
-Total Files: 205
+Total Files: 207
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -17,7 +17,7 @@ Category Breakdown:
 - Queue              :  9
 - Daily Challenges   :  6
 - Hashing            :  5
-- Heap               :  6
+- Heap               :  8
 - Sorting Algorithms : 11
 - Dynamic Programming:  2
 - Map & Set Design   :  2
@@ -119,7 +119,7 @@ Hashing (5)
   4. IntersectionOfArrays
   5. IntersectionOfArraysII
 
-Heap (6)
+Heap (8)
 --------
   1. Main
   2. MaxHeap
@@ -127,6 +127,8 @@ Heap (6)
   4. TopKFrequentElements
   5. KthLargestElement
   6. MergeKSortedLists
+  7. MedianFromDataStream
+  8. MedianFromDataStreamOptimal
 
 Linked List (16)
 ----------------
