@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (203 total Java files under `src`).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (205 total Java files under `src`).
 
 ---
 
@@ -21,14 +21,14 @@
 | Binary Search          |  23   |    11     | █████░░░░░  48%      |
 | Linked List            |  23   |    13     | ██████░░░░  57%      |
 | Stack & Queue          |  25   |    10     | ████░░░░░░  40%      |
-| Heap / Priority Queue  |  17   |     1     | █░░░░░░░░░   6%      |
+| Heap / Priority Queue  |  17   |     3     | ██░░░░░░░░  18%      |
 | Trees                  |  32   |    11     | ███░░░░░░░  34%      |
 | Backtracking           |  16   |    10     | ██████░░░░  63%      |
 | Graphs                 |  22   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  33   |     3     | █░░░░░░░░░   9%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **310** | **135** | **████░░░░░░ 43%**  |
+| **Total**              | **310** | **137** | **████░░░░░░ 44%**  |
 
 > 📌 Trees expanded to 32 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 
@@ -127,6 +127,7 @@
 
 | Date   | Problems Solved                                        | Notes                          |
 |--------|--------------------------------------------------------|--------------------------------|
+| Apr 10 | 23, 215                                                | Heap deep dive |
 | Apr 9  | 17, 22, 347                                            | Backtracking push before switching focus |
 | Apr 8  | 52, 77, 98                                             | Backtracking + BST expansion   |
 | Apr 5  | 24, 21, 50, 70, 119, 206, 700, 779                     | Recursion re-solves + BST search |
@@ -371,14 +372,14 @@
 
 ---
 
-## 8️⃣ Heap / Priority Queue (1 / 17)
+## 8️⃣ Heap / Priority Queue (3 / 17)
 
 > 📌 **30-Day roadmap focus:** Day 4 → 215, 1046 · Day 5 → 347, 703, 295
 
 | #    | Problem                                       | Difficulty | Status | Pattern            |
 |------|-----------------------------------------------|------------|--------|--------------------|
-| 23   | Merge K Sorted Lists                          | Hard       | ⬜      | Heap               |
-| 215  | Kth Largest Element in an Array               | Medium     | ⬜      | Heap / QuickSelect · Day 4 |
+| 23   | Merge K Sorted Lists                          | Hard       | ✅ [Solution](src/heap/MergeKSortedLists.java) | Heap               |
+| 215  | Kth Largest Element in an Array               | Medium     | ✅ [Solution](src/heap/KthLargestElement.java) | Heap / QuickSelect · Day 4 |
 | 264  | Ugly Number II                                | Medium     | ⬜      | Heap / DP          |
 | 295  | Find Median from Data Stream                  | Hard       | ⬜      | Two Heaps · Day 5 |
 | 347  | Top K Frequent Elements                       | Medium     | ✅ [Solution](src/heap/TopKFrequentElements.java) | Heap + Hashing · Day 5 |
@@ -629,4 +630,4 @@ src/
 
 ---
 
-*Last updated: April 9, 2026*
+*Last updated: April 10, 2026*

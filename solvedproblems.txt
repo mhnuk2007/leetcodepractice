@@ -1,12 +1,12 @@
 ====================
 LeetCode Practice — Solved Problems
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: April 9, 2026
+Last Updated: April 10, 2026
 ====================
 
 Statistics
 ====================
-Total Files: 203
+Total Files: 205
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -17,7 +17,7 @@ Category Breakdown:
 - Queue              :  9
 - Daily Challenges   :  6
 - Hashing            :  5
-- Heap               :  4
+- Heap               :  6
 - Sorting Algorithms : 11
 - Dynamic Programming:  2
 - Map & Set Design   :  2
@@ -119,12 +119,14 @@ Hashing (5)
   4. IntersectionOfArrays
   5. IntersectionOfArraysII
 
-Heap (4)
+Heap (6)
 --------
   1. Main
   2. MaxHeap
   3. MinHeap
   4. TopKFrequentElements
+  5. KthLargestElement
+  6. MergeKSortedLists
 
 Linked List (16)
 ----------------
