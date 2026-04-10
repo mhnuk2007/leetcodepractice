@@ -10,20 +10,25 @@ import java.util.PriorityQueue;
  * element in the array. Note that it is the kth largest in sorted order,
  * not the kth distinct element.
  * <p>
- * Approach: Min-heap of size k
+ * Approach 1: Min-heap of size k — always insert
  * Stream through the array maintaining a min-heap of exactly k elements.
- * Whenever the heap exceeds k, evict the smallest. After all elements are
- * processed, the kth largest sits at the top of the heap.
+ * Unconditionally insert every element, then evict the smallest if the heap
+ * exceeds k. After all elements are processed, the kth largest sits at the top.
+ * <p>
+ * Approach 2: Min-heap of size k — conditional insert
+ * Same heap invariant, but skip the insert entirely when the incoming element
+ * is smaller than or equal to the current heap minimum. Avoids two heap
+ * operations per skipped element, giving a better best case in practice.
  * <p>
  * Example:
  * nums = [3,2,1,5,6,4], k = 2
  * <p>
  * offer 3 → heap: [3]
  * offer 2 → heap: [2,3]
- * offer 1 → heap: [1,2,3] → poll → [2,3]   1 evicted
+ * offer 1 → 1 <= peek(2), skip
  * offer 5 → heap: [2,3,5] → poll → [3,5]   2 evicted
  * offer 6 → heap: [3,5,6] → poll → [5,6]   3 evicted
- * offer 4 → heap: [4,5,6] → poll → [5,6]   4 evicted
+ * offer 4 → 4 <= peek(5), skip
  * <p>
  * peek → 5 (2nd largest) ✅
  * <p>
@@ -37,58 +42,83 @@ public class KthLargestElement {
         // Expected: 5 (2nd largest in [1,2,3,4,5,6])
         int[] nums1 = {3, 2, 1, 5, 6, 4};
         int k1 = 2;
-        System.out.println("Test 1: " + ordinal(k1) + " largest → " + findKthLargest(nums1, k1));
+        System.out.println("Test 1: " + ordinal(k1) + " largest → " + findKthLargestV1(nums1, k1)
+                + " | " + findKthLargestV2(nums1, k1));
 
         // Test 2: k = 1 (largest element)
         // Expected: 6
         int[] nums2 = {3, 2, 1, 5, 6, 4};
         int k2 = 1;
-        System.out.println("Test 2: " + ordinal(k2) + " largest → " + findKthLargest(nums2, k2));
+        System.out.println("Test 2: " + ordinal(k2) + " largest → " + findKthLargestV1(nums2, k2)
+                + " | " + findKthLargestV2(nums2, k2));
 
         // Test 3: k = length (smallest element)
         // Expected: 1
         int[] nums3 = {3, 2, 1, 5, 6, 4};
         int k3 = 6;
-        System.out.println("Test 3: " + ordinal(k3) + " largest → " + findKthLargest(nums3, k3));
+        System.out.println("Test 3: " + ordinal(k3) + " largest → " + findKthLargestV1(nums3, k3)
+                + " | " + findKthLargestV2(nums3, k3));
 
         // Test 4: duplicates present
         // Expected: 4
         int[] nums4 = {3, 2, 3, 1, 2, 4, 5, 5, 6};
         int k4 = 4;
-        System.out.println("Test 4: " + ordinal(k4) + " largest → " + findKthLargest(nums4, k4));
+        System.out.println("Test 4: " + ordinal(k4) + " largest → " + findKthLargestV1(nums4, k4)
+                + " | " + findKthLargestV2(nums4, k4));
 
         // Test 5: all elements identical
         // Expected: 2
         int[] nums5 = {2, 2, 2, 2};
         int k5 = 3;
-        System.out.println("Test 5: " + ordinal(k5) + " largest → " + findKthLargest(nums5, k5));
+        System.out.println("Test 5: " + ordinal(k5) + " largest → " + findKthLargestV1(nums5, k5)
+                + " | " + findKthLargestV2(nums5, k5));
 
         // Test 6: negative numbers
         // Expected: -2
         int[] nums6 = {-1, -2, -3, -4, -5};
         int k6 = 2;
-        System.out.println("Test 6: " + ordinal(k6) + " largest → " + findKthLargest(nums6, k6));
+        System.out.println("Test 6: " + ordinal(k6) + " largest → " + findKthLargestV1(nums6, k6)
+                + " | " + findKthLargestV2(nums6, k6));
 
         // Test 7: single element
         // Expected: 1
         int[] nums7 = {1};
         int k7 = 1;
-        System.out.println("Test 7: " + ordinal(k7) + " largest → " + findKthLargest(nums7, k7));
+        System.out.println("Test 7: " + ordinal(k7) + " largest → " + findKthLargestV1(nums7, k7)
+                + " | " + findKthLargestV2(nums7, k7));
     }
 
     /**
-     * Returns the kth largest element in the array.
+     * Approach 1: Unconditional insert — always offer, evict if heap exceeds k.
      *
      * @param nums input array of integers
      * @param k    rank of the largest element to find
      * @return the kth largest element
      */
-    private static int findKthLargest(int[] nums, int k) {
+    private static int findKthLargestV1(int[] nums, int k) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         for (int num : nums) {
             pq.offer(num);
-            if (pq.size() > k) {
+            if (pq.size() > k) pq.poll();
+        }
+        return pq.peek();
+    }
+
+    /**
+     * Approach 2: Conditional insert — skip insert if num cannot enter top k.
+     * Avoids two heap operations per skipped element; better best case in practice.
+     *
+     * @param nums input array of integers
+     * @param k    rank of the largest element to find
+     * @return the kth largest element
+     */
+    private static int findKthLargestV2(int[] nums, int k) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        for (int num : nums) {
+            if (pq.size() < k) pq.offer(num);
+            else if (num > pq.peek()) {
                 pq.poll();
+                pq.offer(num);
             }
         }
         return pq.peek();
