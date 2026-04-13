@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (209 total Java files under `src`).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (213 total Java files under `src`).
 
 ---
 
@@ -21,14 +21,14 @@
 | Binary Search          |  23   |    11     | █████░░░░░  48%      |
 | Linked List            |  23   |    13     | ██████░░░░  57%      |
 | Stack & Queue          |  25   |    10     | ████░░░░░░  40%      |
-| Heap / Priority Queue  |  17   |     6     | ███░░░░░░░  35%      |
+| Heap / Priority Queue  |  17   |     8     | ████░░░░░░  47%      |
 | Trees                  |  32   |    11     | ███░░░░░░░  34%      |
 | Backtracking           |  16   |    10     | ██████░░░░  63%      |
 | Graphs                 |  22   |     0     | ░░░░░░░░░░   0%      |
 | Dynamic Programming    |  33   |     3     | █░░░░░░░░░   9%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **310** | **140** | **████░░░░░░ 45%**  |
+| **Total**              | **310** | **142** | **████░░░░░░ 46%**  |
 
 > 📌 Trees expanded to 32 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 
@@ -127,6 +127,7 @@
 
 | Date   | Problems Solved                                        | Notes                          |
 |--------|--------------------------------------------------------|--------------------------------|
+| Apr 13 | 264, 355, 1492                                         | Heap deep dive |
 | Apr 12 | 1046, 1337                                             | Heap deep dive |
 | Apr 10 | 23, 215, 295                                           | Heap deep dive |
 | Apr 9  | 17, 22, 347                                            | Backtracking push before switching focus |
@@ -373,7 +374,7 @@
 
 ---
 
-## 8️⃣ Heap / Priority Queue (6 / 17)
+## 8️⃣ Heap / Priority Queue (8 / 17)
 
 > 📌 **30-Day roadmap focus:** Day 4 → 215, 1046 · Day 5 → 347, 703, 295
 
@@ -381,10 +382,10 @@
 |------|-----------------------------------------------|------------|--------|--------------------|
 | 23   | Merge K Sorted Lists                          | Hard       | ✅ [Solution](src/heap/MergeKSortedLists.java) | Heap               |
 | 215  | Kth Largest Element in an Array               | Medium     | ✅ [Solution](src/heap/KthLargestElement.java) | Heap / QuickSelect · Day 4 |
-| 264  | Ugly Number II                                | Medium     | ⬜      | Heap / DP          |
+| 264  | Ugly Number II                                | Medium     | ✅ [Solution](src/heap/UglyNumberII.java) | Heap / DP          |
 | 295  | Find Median from Data Stream                  | Hard       | ✅ [Solution](src/heap/MedianFromDataStreamOptimal.java) | Two Heaps · Day 5 |
 | 347  | Top K Frequent Elements                       | Medium     | ✅ [Solution](src/heap/TopKFrequentElements.java) | Heap + Hashing · Day 5 |
-| 355  | Design Twitter                                | Medium     | ⬜      | Heap               |
+| 355  | Design Twitter                                | Medium     | ✅ [Solution](src/heap/Twitter.java) | Heap               |
 | 373  | Find K Pairs with Smallest Sums               | Medium     | ⬜      | Heap               |
 | 378  | Kth Smallest Element in a Sorted Matrix       | Medium     | ⬜      | Heap               |
 | 407  | Trapping Rain Water II                        | Hard       | ⬜      | Heap               |
@@ -397,6 +398,7 @@
 | 778  | Swim in Rising Water                          | Hard       | ⬜      | Heap               |
 | 1046 | Last Stone Weight                             | Easy       | ✅ [Solution](src/heap/LastStoneWeight.java) | Heap · Day 4       |
 | 1337 | The K Weakest Rows in a Matrix                | Easy       | ✅ [Solution](src/heap/KWeakestRows.java) | Heap + Binary Search |
+| 1492 | The Kth Factor of N                           | Medium     | ✅ [Solution](src/heap/KthFactorOfN.java) | Math + Heap |
 
 ---
 
@@ -632,4 +634,4 @@ src/
 
 ---
 
-*Last updated: April 12, 2026*
+*Last updated: April 13, 2026*
