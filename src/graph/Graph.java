@@ -3,30 +3,32 @@ package graph;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
+import java.util.List;
 import java.util.Queue;
 
 /**
- * Graph — Adjacency List Representation
- *
- * <p>Represents a directed graph using an array of {@link ArrayList}s where
- * each index corresponds to a vertex and holds all outgoing edges from it.
+ * Adjacency-list representation of a directed graph.
  *
  * <p><b>Structure:</b>
  * <pre>
- * graph[0] → [(0→2)]
- * graph[1] → [(1→2), (1→3)]
- * graph[2] → [(2→0), (2→1), (2→3)]
- * graph[3] → [(3→1), (3→2)]
+ * vertex 0 → [2]
+ * vertex 1 → [2, 3]
+ * vertex 2 → [0, 1, 3]
+ * vertex 3 → [1, 2]
  * </pre>
  *
  * <p><b>Complexity:</b>
  * <ul>
  *   <li>Space: O(V + E) — one list per vertex, one entry per edge</li>
- *   <li>Add edge: O(1)</li>
- *   <li>Get neighbours: O(degree(v))</li>
+ *   <li>{@link #addEdge(int, int)}: O(1)</li>
+ *   <li>{@link #neighbours(int)}: O(degree(v))</li>
  * </ul>
  */
 public class Graph {
+
+    // -----------------------------------------------------------------------
+    // Edge
+    // -----------------------------------------------------------------------
 
     /**
      * Represents a directed edge from {@code src} to {@code dest}.
@@ -34,10 +36,10 @@ public class Graph {
     static class Edge {
 
         /** Source vertex of this edge. */
-        int src;
+        final int src;
 
         /** Destination vertex of this edge. */
-        int dest;
+        final int dest;
 
         /**
          * Constructs a directed edge.
@@ -49,66 +51,75 @@ public class Graph {
             this.src  = src;
             this.dest = dest;
         }
-    }
 
-    /**
-     * Initialises each index of the graph array with an empty {@link ArrayList}.
-     *
-     * @param graph adjacency list array to initialise; length = number of vertices
-     */
-    public static void createGraph(ArrayList<Edge>[] graph) {
-        for (int i = 0; i < graph.length; i++) {
-            graph[i] = new ArrayList<>();
+        @Override
+        public String toString() {
+            return src + " → " + dest;
         }
     }
 
-    public static void main(String[] args) {
-        int v = 4;
-        ArrayList<Edge>[] graph = new ArrayList[v];
-        createGraph(graph);
+    // -----------------------------------------------------------------------
+    // Fields
+    // -----------------------------------------------------------------------
 
-        graph[0].add(new Edge(0, 2));
-        graph[1].add(new Edge(1, 2));
-        graph[1].add(new Edge(1, 3));
-        graph[2].add(new Edge(2, 0));
-        graph[2].add(new Edge(2, 1));
-        graph[2].add(new Edge(2, 3));
-        graph[3].add(new Edge(3, 1));
-        graph[3].add(new Edge(3, 2));
+    /** Number of vertices in this graph. */
+    private final int v;
 
-        System.out.println("=== Adjacency list ===");
-        printGraph(graph, v);
-
-        System.out.println("\n=== BFS from vertex 0 ===");
-        bfs(graph, v, 0);
-
-        System.out.println("\n=== DFS from vertex 0 (recursive) ===");
-        boolean[] visited = new boolean[v];
-        dfs(graph, 0, visited);
-        System.out.println();
-
-        System.out.println("\n=== DFS from vertex 0 (iterative) ===");
-        dfsIterative(graph, v, 0);
-    }
+    /** Adjacency list — index is the source vertex. */
+    private final List<List<Edge>> adj;
 
     // -----------------------------------------------------------------------
-    // Print
+    // Constructor
     // -----------------------------------------------------------------------
 
     /**
-     * Prints all adjacency lists in src → [dest, dest, ...] format.
+     * Constructs an empty directed graph with {@code v} vertices and no edges.
      *
-     * @param graph adjacency list array
-     * @param v     number of vertices
+     * @param v number of vertices; must be positive
+     * @throws IllegalArgumentException if {@code v} is not positive
      */
-    public static void printGraph(ArrayList<Edge>[] graph, int v) {
+    public Graph(int v) {
+        if (v <= 0) throw new IllegalArgumentException("Vertex count must be positive, got: " + v);
+        this.v   = v;
+        this.adj = new ArrayList<>(v);
         for (int i = 0; i < v; i++) {
-            System.out.print(i + " → ");
-            for (Edge e : graph[i]) {
-                System.out.print(e.dest + " ");
-            }
-            System.out.println();
+            adj.add(new ArrayList<>());
         }
+    }
+
+    // -----------------------------------------------------------------------
+    // Graph construction
+    // -----------------------------------------------------------------------
+
+    /**
+     * Adds a directed edge from {@code src} to {@code dest}.
+     *
+     * @param src  source vertex
+     * @param dest destination vertex
+     * @return this graph, for call chaining
+     * @throws IllegalArgumentException if either vertex is out of range
+     */
+    public Graph addEdge(int src, int dest) {
+        validateVertex(src);
+        validateVertex(dest);
+        adj.get(src).add(new Edge(src, dest));
+        return this;
+    }
+
+    /**
+     * Returns an unmodifiable view of all edges leaving {@code vertex}.
+     *
+     * @param vertex source vertex
+     * @return list of outgoing edges
+     */
+    public List<Edge> neighbours(int vertex) {
+        validateVertex(vertex);
+        return java.util.Collections.unmodifiableList(adj.get(vertex));
+    }
+
+    /** @return number of vertices in this graph */
+    public int vertexCount() {
+        return v;
     }
 
     // -----------------------------------------------------------------------
@@ -117,110 +128,240 @@ public class Graph {
 
     /**
      * Breadth-first traversal from {@code start}.
-     * Visits vertices level by level using a queue.
-     * Guarantees shortest path (in hops) in an unweighted graph.
+     *
+     * <p>Visits vertices level by level. Guarantees shortest path (in hops)
+     * in an unweighted graph.
      *
      * <p><b>Trace (start=0):</b>
      * <pre>
      * queue=[0]       visited=[T,F,F,F]
-     * poll 0 → enqueue 2                   queue=[2]
-     * poll 2 → enqueue 1,3 (0 visited)     queue=[1,3]
-     * poll 1 → 2 visited, 3 visited        queue=[3]
-     * poll 3 → 1 visited, 2 visited        queue=[]
+     * poll 0 → enqueue 2                    queue=[2]
+     * poll 2 → enqueue 1,3 (0 visited)      queue=[1,3]
+     * poll 1 → 2,3 already visited          queue=[3]
+     * poll 3 → 1,2 already visited          queue=[]
      * order: 0 2 1 3
      * </pre>
      *
-     * @param graph adjacency list array
-     * @param v     number of vertices
      * @param start source vertex
+     * @return vertices in BFS visit order
      */
-    public static void bfs(ArrayList<Edge>[] graph, int v, int start) {
+    public List<Integer> bfs(int start) {
+        validateVertex(start);
         boolean[] visited = new boolean[v];
+        List<Integer> result = new ArrayList<>();
         Queue<Integer> queue = new ArrayDeque<>();
-        queue.offer(start);
+
         visited[start] = true;
+        queue.offer(start);
+
         while (!queue.isEmpty()) {
             int node = queue.poll();
-            System.out.print(node + " ");
-            for (Edge e : graph[node]) {
+            result.add(node);
+
+            for (Edge e : adj.get(node)) {
                 if (!visited[e.dest]) {
                     visited[e.dest] = true;
                     queue.offer(e.dest);
                 }
             }
         }
-        System.out.println();
+        return result;
+    }
+
+    /**
+     * Breadth-first traversal over all vertices, including disconnected components.
+     *
+     * @return vertices in BFS visit order across all components
+     */
+    public List<Integer> bfsAll() {
+        boolean[] visited = new boolean[v];
+        List<Integer> result = new ArrayList<>();
+        Queue<Integer> queue = new ArrayDeque<>();
+
+        for (int i = 0; i < v; i++) {
+            if (!visited[i]) {
+                visited[i] = true;
+                queue.offer(i);
+
+                while (!queue.isEmpty()) {
+                    int node = queue.poll();
+                    result.add(node);
+
+                    for (Edge e : adj.get(node)) {
+                        if (!visited[e.dest]) {
+                            visited[e.dest] = true;
+                            queue.offer(e.dest);
+                        }
+                    }
+                }
+            }
+        }
+        return result;
     }
 
     // -----------------------------------------------------------------------
-    // DFS recursive
+    // DFS
     // -----------------------------------------------------------------------
 
     /**
-     * Depth-first traversal — recursive.
-     * Goes as deep as possible along each branch before backtracking.
+     * Depth-first traversal from {@code start} — recursive.
+     *
+     * <p>Goes as deep as possible along each branch before backtracking.
      *
      * <p><b>Trace (start=0):</b>
      * <pre>
-     * dfs(0) → print 0 → dfs(2)
-     *   dfs(2) → print 2 → 0 visited, dfs(1)
-     *     dfs(1) → print 1 → 2 visited, dfs(3)
-     *       dfs(3) → print 3 → 1 visited, 2 visited
+     * dfs(0) → visit 0 → dfs(2)
+     *   dfs(2) → visit 2 → 0 visited → dfs(1)
+     *     dfs(1) → visit 1 → 2 visited → dfs(3)
+     *       dfs(3) → visit 3 → 1,2 visited
      * order: 0 2 1 3
      * </pre>
      *
-     * @param graph   adjacency list array
-     * @param node    current vertex
-     * @param visited visited array shared across recursive calls
+     * @param start source vertex
+     * @return vertices in DFS visit order
      */
-    public static void dfs(ArrayList<Edge>[] graph, int node, boolean[] visited) {
-        visited[node] = true;
-        System.out.print(node + " ");
-        for (Edge e : graph[node]) {
-            if (!visited[e.dest]) {
-                dfs(graph, e.dest, visited);
-            }
-        }
+    public List<Integer> dfs(int start) {
+        validateVertex(start);
+        boolean[] visited = new boolean[v];
+        List<Integer> result = new ArrayList<>();
+        dfsRecursive(start, visited, result);
+        return result;
     }
 
-    // -----------------------------------------------------------------------
-    // DFS iterative
-    // -----------------------------------------------------------------------
-
     /**
-     * Depth-first traversal — iterative using an explicit stack.
-     * Equivalent to recursive DFS; avoids stack overflow on deep graphs.
+     * Depth-first traversal from {@code start} — iterative using an explicit stack.
      *
-     * <p><b>Note:</b> iterative DFS may produce a different visit order than
-     * recursive DFS — both are valid depth-first traversals.
+     * <p>Avoids stack overflow on very deep graphs. May produce a different
+     * visit order than recursive DFS — both are valid depth-first traversals.
      *
      * <p><b>Trace (start=0):</b>
      * <pre>
      * stack=[0]
-     * pop 0 → print 0 → push 2                  stack=[2]
-     * pop 2 → print 2 → push 1,3 (0 visited)    stack=[1,3]
-     * pop 3 → print 3 → 1,2 visited             stack=[1]
-     * pop 1 → print 1 → 2,3 visited             stack=[]
+     * pop 0 → visit 0 → push 2               stack=[2]
+     * pop 2 → visit 2 → push 1,3             stack=[1,3]
+     * pop 3 → visit 3 → 1,2 visited          stack=[1]
+     * pop 1 → visit 1 → 2,3 visited          stack=[]
      * order: 0 2 3 1
      * </pre>
      *
-     * @param graph adjacency list array
-     * @param v     number of vertices
      * @param start source vertex
+     * @return vertices in DFS visit order
      */
-    public static void dfsIterative(ArrayList<Edge>[] graph, int v, int start) {
+    public List<Integer> dfsIterative(int start) {
+        validateVertex(start);
         boolean[] visited = new boolean[v];
+        List<Integer> result = new ArrayList<>();
         Deque<Integer> stack = new ArrayDeque<>();
+
         stack.push(start);
+
         while (!stack.isEmpty()) {
             int node = stack.pop();
             if (visited[node]) continue;
             visited[node] = true;
-            System.out.print(node + " ");
-            for (Edge e : graph[node]) {
-                if (!visited[e.dest]) stack.push(e.dest);
+            result.add(node);
+
+            for (Edge e : adj.get(node)) {
+                if (!visited[e.dest]) {
+                    stack.push(e.dest);
+                }
             }
         }
-        System.out.println();
+        return result;
+    }
+
+    /**
+     * Depth-first traversal over all vertices, including disconnected components.
+     *
+     * @return vertices in DFS visit order across all components
+     */
+    public List<Integer> dfsAll() {
+        boolean[] visited = new boolean[v];
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i < v; i++) {
+            if (!visited[i]) {
+                dfsRecursive(i, visited, result);
+            }
+        }
+        return result;
+    }
+
+    // -----------------------------------------------------------------------
+    // Print
+    // -----------------------------------------------------------------------
+
+    /**
+     * Prints all adjacency lists in {@code vertex → [dest, dest, ...]} format.
+     */
+    public void printGraph() {
+        for (int i = 0; i < v; i++) {
+            System.out.print(i + " → ");
+            for (Edge e : adj.get(i)) {
+                System.out.print(e.dest + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // -----------------------------------------------------------------------
+    // Private helpers
+    // -----------------------------------------------------------------------
+
+    private void dfsRecursive(int node, boolean[] visited, List<Integer> result) {
+        visited[node] = true;
+        result.add(node);
+        for (Edge e : adj.get(node)) {
+            if (!visited[e.dest]) {
+                dfsRecursive(e.dest, visited, result);
+            }
+        }
+    }
+
+    private void validateVertex(int vertex) {
+        if (vertex < 0 || vertex >= v) {
+            throw new IllegalArgumentException(
+                    "Vertex " + vertex + " out of range [0, " + (v - 1) + "]");
+        }
+    }
+
+    // -----------------------------------------------------------------------
+    // Main
+    // -----------------------------------------------------------------------
+
+    public static void main(String[] args) {
+        Graph graph = new Graph(4)
+                .addEdge(0, 2)
+                .addEdge(1, 2)
+                .addEdge(1, 3)
+                .addEdge(2, 0)
+                .addEdge(2, 1)
+                .addEdge(2, 3)
+                .addEdge(3, 1)
+                .addEdge(3, 2);
+
+        System.out.println("=== Adjacency list ===");
+        graph.printGraph();
+
+        System.out.println("\n=== BFS from vertex 0 ===");
+        System.out.println(graph.bfs(0));
+
+        System.out.println("\n=== DFS from vertex 0 (recursive) ===");
+        System.out.println(graph.dfs(0));
+
+        System.out.println("\n=== DFS from vertex 0 (iterative) ===");
+        System.out.println(graph.dfsIterative(0));
+
+        // Disconnected graph
+        Graph disconnected = new Graph(5)
+                .addEdge(0, 1)
+                .addEdge(1, 0)
+                .addEdge(3, 4)
+                .addEdge(4, 3);
+
+        System.out.println("\n=== Disconnected — BFS all components ===");
+        System.out.println(disconnected.bfsAll());
+
+        System.out.println("\n=== Disconnected — DFS all components ===");
+        System.out.println(disconnected.dfsAll());
     }
 }
