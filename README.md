@@ -24,11 +24,11 @@
 | Heap / Priority Queue  |  17   |     8     | ████░░░░░░  47%      |
 | Trees                  |  32   |    11     | ███░░░░░░░  34%      |
 | Backtracking           |  16   |    10     | ██████░░░░  63%      |
-| Graphs                 |  23   |     2     | ██░░░░░░░░  9%       |
+| Graphs                 |  23   |     4     | ██░░░░░░░░  17%      |
 | Dynamic Programming    |  33   |     3     | █░░░░░░░░░   9%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **311** | **144** | **████░░░░░░ 46%**  |
+| **Total**              | **311** | **146** | **████░░░░░░ 47%**  |
 
 > 📌 Trees expanded to 32 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 
@@ -470,18 +470,18 @@
 
 ---
 
-## 1️⃣1️⃣ Graphs (2 / 23)
+## 1️⃣1️⃣ Graphs (4 / 23)
 
 > 📌 **30-Day roadmap focus:** Day 6 → 200, 695 · Day 7 → 994, 1091 · Day 8 → 207, 210
 
 | #    | Problem                                      | Difficulty | Status | Pattern             | 30-Day Roadmap |
 |------|----------------------------------------------|------------|--------|---------------------|----------------|
-| 200  | Number of Islands                            | Medium     | ⬜      | DFS / BFS           | Day 6          |
+| 200  | Number of Islands                            | Medium     | ✅ [Solution](src/graph/NumberOfIslands.java) | DFS / BFS           | Day 6          |
 | 133  | Clone Graph                                  | Medium     | ⬜      | DFS / BFS           |                |
 | 797  | All Paths From Source to Target              | Medium     | ✅ [Solution](src/graph/AllPathsSourceTarget.java) | DFS / Backtracking |                |
 | 994  | Rotting Oranges                              | Medium     | ✅ [Solution](src/graph/RottingOranges.java) | BFS (multi-source)  | Day 7          |
 | 1091 | Shortest Path in Binary Matrix               | Medium     | ⬜      | BFS                 | Day 7          |
-| 207  | Course Schedule                              | Medium     | ⬜      | Topological Sort    | Day 8          |
+| 207  | Course Schedule                              | Medium     | ✅ [Solution](src/graph/CourseSchedule.java) | Topological Sort    | Day 8          |
 | 210  | Course Schedule II                           | Medium     | ⬜      | Topological Sort    | Day 8          |
 | 208  | Implement Trie (Prefix Tree)                 | Medium     | ⬜      | Trie                |                |
 | 261  | Graph Valid Tree                             | Medium     | ⬜      | Union Find / DFS    |                |
@@ -635,4 +635,4 @@ src/
 
 ---
 
-*Last updated: April 15, 2026*
+*Last updated: April 18, 2026*

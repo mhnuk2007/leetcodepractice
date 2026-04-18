@@ -1,12 +1,12 @@
 ====================
 LeetCode Practice — Solved Problems
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: April 15, 2026
+Last Updated: April 18, 2026
 ====================
 
 Statistics
 ====================
-Total Files: 215
+Total Files: 229
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -18,7 +18,7 @@ Category Breakdown:
 - Daily Challenges   :  6
 - Hashing            :  5
 - Heap               : 13
-- Graph              :  2
+- Graph              : 16
 - Sorting Algorithms : 11
 - Dynamic Programming:  2
 - Map & Set Design   :  2
@@ -220,10 +220,24 @@ Sliding Window (2)
   1. SlidingWindow
   2. MaxSlidingWindow
 
-Graph (2)
+Graph (16)
 ---------
-  1. AllPathsSourceTarget
-  2. RottingOranges
+  1. AdjacencyMatrix
+  2. AllPaths
+  3. AllPathsSourceTarget
+  4. BFSTraversalInGraph
+  5. CourseSchedule
+  6. CourseScheduleCycleDetection
+  7. CourseScheduleOptimal
+  8. CycleDetectionDirectedGraph
+  9. CycleDetectionUndirectedGraph
+ 10. DFSTraversalInGraph
+ 11. Graph
+ 12. NumberOfIslands
+ 13. RottingOranges
+ 14. TopologicalSortingBFS
+ 15. TopologicalSortingDFS
+ 16. WeightedGraph
 
 Sorting Algorithms (11)
 -----------------------
