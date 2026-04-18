@@ -25,7 +25,7 @@ dsa-java
     linkedlist
     patterns
     slidingwindow
-    sortalgrithms
+    sortalgorithms
     twopointer
 ```
 

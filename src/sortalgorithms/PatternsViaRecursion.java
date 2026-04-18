@@ -1,4 +1,4 @@
-package sortalgrithms;
+package sortalgorithms;
 
 public class PatternsViaRecursion {
     public static void main(String[] args) {
