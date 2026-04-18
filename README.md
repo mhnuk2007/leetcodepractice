@@ -1,12 +1,50 @@
-# Java DSA Roadmap – 325 Essential LeetCode Problems
+# Java DSA Roadmap: 325+ LeetCode Problems & Solutions for Coding Interviews
 
-**Author:** Mohan Lal | **GitHub:** [mhnuk2007](https://github.com/mhnuk2007) | **LeetCode:** [mhnuk2007](https://leetcode.com/mhnuk2007) | **Language:** Java
+A complete **Java DSA roadmap** covering 325 essential **LeetCode problems** for mastering data structures and algorithms.
 
-> **Goal:** Master data structures and algorithms for software engineering interviews — 300+ problems solved in Java.
->
-> *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
->
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (232 total Java files under `src`).
+This repository is designed for **coding interview preparation**, featuring structured problem sets, pattern-based learning (arrays, graphs, DP, trees), and clean **Java solutions**.
+
+Perfect for:
+- Software engineering interview prep (FAANG, Big Tech)
+- Mastering problem-solving patterns in Java (Spring Boot developers)
+- Comprehensive algorithm practice from beginner to advanced
+
+Includes:
+- **325+ LeetCode problems** with optimized Java implementations
+- **Pattern-based roadmaps** (Graph, DP, Sliding Window, Heap, etc.)
+- **30-day structured interview plan** for high-impact revision
+- **Real-time progress tracking** across all major DSA categories
+
+**Author:** Mohan Lal | **GitHub:** [mhnuk2007](https://github.com/mhnuk2007) | **LeetCode:** [mhnuk2007](https://leetcode.com/u/mhnuk2007) | **Language:** Java
+
+🔎 **Keywords:** Java DSA, Data Structures and Algorithms in Java, LeetCode Java Solutions, Coding Interview Preparation, Algorithms Practice Java, Java Backend Interview Preparation, Problem Solving in Java, DSA Roadmap, Data Structures Java, Coding Interview Java
+
+---
+
+## Table of Contents
+
+- [📊 Progress Tracker](#-progress-tracker)
+- [🚀 30-Day Interview-Ready Roadmap](#-30-day-interview-ready-roadmap)
+- [📅 Daily Progress](#-daily-progress)
+- [🤝 Contributing](#-contributing)
+- [📄 License & Disclaimer](#-license--disclaimer)
+- [1️⃣ Arrays & Two Pointers](#1️⃣-arrays--two-pointers-40--40)
+- [2️⃣ Sliding Window](#2️⃣-sliding-window-3--16)
+- [3️⃣ Strings](#3️⃣-strings-14--22)
+- [4️⃣ HashMap / HashSet](#4️⃣-hashmap--hashset-11--23)
+- [5️⃣ Binary Search](#5️⃣-binary-search-11--23)
+- [6️⃣ Linked List](#6️⃣-linked-list-13--23)
+- [7️⃣ Stack & Queue](#7️⃣-stack--queue-10--25)
+- [8️⃣ Heap / Priority Queue](#8️⃣-heap--priority-queue-8--19)
+- [9️⃣ Trees](#9️⃣-trees-11--32)
+- [🔟 Backtracking](#-backtracking-11--17)
+- [1️⃣1️⃣ Graphs](#1️⃣1️⃣-graphs-6--24)
+- [1️⃣2️⃣ Dynamic Programming](#1️⃣2️⃣-dynamic-programming-3--33)
+- [1️⃣3️⃣ Greedy](#1️⃣3️⃣-greedy-2--8)
+- [1️⃣4️⃣ Trie](#1️⃣4️⃣-trie-0--3)
+- [1️⃣5️⃣ System Design / LLD](#1️⃣5️⃣-system-design--lld-0--3)
+- [1️⃣6️⃣ Bit Manipulation](#1️⃣6️⃣-bit-manipulation-4--12)
+- [🌟 Daily Challenges](#-daily-challenges-5--6)
 
 ---
 
@@ -161,6 +199,34 @@ Track every problem you solve in these buckets. Re-solve without notes on the ta
 | Mar 12 | 136, 706, 705, 1009, 69, 2486, 33                      | Very productive day!           |
 | Mar 11 | 3130, 2130, 21                                         | DP and Linked Lists            |
 | Mar 10 | 234, 287, 206, 3129, 19                                | Heavy on Linked Lists          |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can help:
+
+- **Add Solutions**: Implement unsolved problems following the existing code style
+- **Improve Code**: Optimize existing solutions or add better explanations
+- **Fix Bugs**: Report and fix any issues in the code
+- **Documentation**: Improve comments, README, or add new sections
+
+Please:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request with a clear description
+
+## 📄 License & Disclaimer
+
+This repository contains solutions to LeetCode problems for educational purposes. All problem statements and test cases are property of LeetCode. Please respect their terms of service.
+
+The code in this repository is provided as-is for learning purposes. Use at your own risk.
+
+---
+
+*Last updated: April 19, 2026*
 
 ---
 
@@ -464,8 +530,6 @@ Track every problem you solve in these buckets. Re-solve without notes on the ta
 
 ## 🔟 Backtracking (11 / 17)
 
-> 📁 Current backtracking solutions live in `src/recursion/`, alongside recursion-only practice and re-solve drills, while a dedicated `src/backtracking/` package is still pending.
-
 | #   | Problem                               | Difficulty | Status | Pattern             |
 |-----|---------------------------------------|------------|--------|---------------------|
 | 17  | Letter Combinations of a Phone Number | Medium     | ✅ [Solution](src/recursion/LetterCombinations.java) | Backtracking        |
@@ -489,8 +553,6 @@ Track every problem you solve in these buckets. Re-solve without notes on the ta
 ---
 
 ## 1️⃣1️⃣ Graphs (6 / 24)
-
-> 📌 **30-Day roadmap focus:** Day 6 → 200, 695 · Day 7 → 994, 1091 · Day 8 → 207, 210
 
 | #    | Problem                                      | Difficulty | Status | Pattern                    | 30-Day Roadmap |
 |------|----------------------------------------------|------------|--------|----------------------------|----------------|
@@ -666,28 +728,12 @@ src/
 ├── recursion/           ← Recursion fundamentals + backtracking + recursion re-solves
 ├── set/designhashset/   ← LC 705 Design HashSet
 ├── slidingwindow/       ← Sliding window problems
-├── sortalgorithms/       ← Sorting implementations + recursive variants  ⚠️ typo in folder name
+├── sortalgorithms/      ← Sorting implementations + recursive variants
 ├── stack/               ← Stack problems + implementations
 ├── strings/             ← String problems
 ├── tree/                ← Tree problems
 └── twopointer/          ← Two pointer problems
 ```
-
-> **⚠️ Typo to fix:** `src/sortalgorithms/` → rename to `src/sortalgorithms/`
->
-> **📦 Packages to create as you progress:**
-> - `src/bitmanipulation/` — LC 190, 191, 231, 268, 338, 371, 461, 693
-> - `src/backtracking/`    — all Backtracking problems
-> - `src/trie/`            — LC 208, 211, 212
-> - `src/greedy/`          — LC 45, 55, 134, 435, 452
-> - `src/systemdesign/`    — LC 146, 460, 588
->
-> **📁 Files to relocate eventually:**
-> - `src/dailychallenges/ComplementBase10Integer.java` → `src/bitmanipulation/`
-> - `src/set/SingleNumber.java`                        → `src/bitmanipulation/`
-> - `src/strings/BinaryGap.java`                       → `src/bitmanipulation/`
-> - `src/strings/AddBinary.java`                       → `src/bitmanipulation/`
-> - `src/strings/MinChangesAlternatingBinaryString.java` — duplicate also in `src/arrays101/`
 
 ---
 
