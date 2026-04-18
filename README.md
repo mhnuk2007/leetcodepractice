@@ -1,4 +1,4 @@
-# Java DSA Roadmap – 310 Essential LeetCode Problems
+# Java DSA Roadmap – 311 Essential LeetCode Problems
 
 **Author:** Mohan Lal | **GitHub:** [mhnuk2007](https://github.com/mhnuk2007) | **LeetCode:** [mhnuk2007](https://leetcode.com/mhnuk2007) | **Language:** Java
 
@@ -6,7 +6,7 @@
 >
 > *Note: Some problems appear in multiple sections because they combine several core patterns (e.g., HashMap + Heap).*
 >
-> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (213 total Java files under `src`).
+> 📁 Full file inventory: see [solvedproblems.txt](solvedproblems.txt) — includes practice files, alternate approaches, and design implementations (232 total Java files under `src`).
 
 ---
 
@@ -24,11 +24,11 @@
 | Heap / Priority Queue  |  17   |     8     | ████░░░░░░  47%      |
 | Trees                  |  32   |    11     | ███░░░░░░░  34%      |
 | Backtracking           |  16   |    10     | ██████░░░░  63%      |
-| Graphs                 |  23   |     4     | ██░░░░░░░░  17%      |
+| Graphs                 |  23   |     5     | ██░░░░░░░░  22%      |
 | Dynamic Programming    |  33   |     3     | █░░░░░░░░░   9%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **311** | **146** | **████░░░░░░ 47%**  |
+| **Total**              | **311** | **147** | **████░░░░░░ 47%**  |
 
 > 📌 Trees expanded to 32 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 
@@ -482,7 +482,7 @@
 | 994  | Rotting Oranges                              | Medium     | ✅ [Solution](src/graph/RottingOranges.java) | BFS (multi-source)  | Day 7          |
 | 1091 | Shortest Path in Binary Matrix               | Medium     | ⬜      | BFS                 | Day 7          |
 | 207  | Course Schedule                              | Medium     | ✅ [Solution](src/graph/CourseSchedule.java) | Topological Sort    | Day 8          |
-| 210  | Course Schedule II                           | Medium     | ⬜      | Topological Sort    | Day 8          |
+| 210  | Course Schedule II                           | Medium     | ✅ [Solution](src/graph/CourseScheduleIIDfs.java) | Topological Sort    | Day 8          |
 | 208  | Implement Trie (Prefix Tree)                 | Medium     | ⬜      | Trie                |                |
 | 261  | Graph Valid Tree                             | Medium     | ⬜      | Union Find / DFS    |                |
 | 269  | Alien Dictionary                             | Hard       | ⬜      | Topological Sort    |                |

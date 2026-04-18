@@ -6,7 +6,7 @@ Last Updated: April 18, 2026
 
 Statistics
 ====================
-Total Files: 229
+Total Files: 232
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -18,7 +18,7 @@ Category Breakdown:
 - Daily Challenges   :  6
 - Hashing            :  5
 - Heap               : 13
-- Graph              : 16
+- Graph              : 19
 - Sorting Algorithms : 11
 - Dynamic Programming:  2
 - Map & Set Design   :  2
@@ -220,7 +220,7 @@ Sliding Window (2)
   1. SlidingWindow
   2. MaxSlidingWindow
 
-Graph (16)
+Graph (19)
 ---------
   1. AdjacencyMatrix
   2. AllPaths
@@ -229,15 +229,18 @@ Graph (16)
   5. CourseSchedule
   6. CourseScheduleCycleDetection
   7. CourseScheduleOptimal
-  8. CycleDetectionDirectedGraph
-  9. CycleDetectionUndirectedGraph
- 10. DFSTraversalInGraph
- 11. Graph
- 12. NumberOfIslands
- 13. RottingOranges
- 14. TopologicalSortingBFS
- 15. TopologicalSortingDFS
- 16. WeightedGraph
+  8. CourseScheduleDFSOptimal
+  9. CourseScheduleIIBfs
+ 10. CourseScheduleIIDfs
+ 11. CycleDetectionDirectedGraph
+ 12. CycleDetectionUndirectedGraph
+ 13. DFSTraversalInGraph
+ 14. Graph
+ 15. NumberOfIslands
+ 16. RottingOranges
+ 17. TopologicalSortingBFS
+ 18. TopologicalSortingDFS
+ 19. WeightedGraph
 
 Sorting Algorithms (11)
 -----------------------
