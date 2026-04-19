@@ -48,6 +48,14 @@ Includes:
 
 ---
 
+## Company Interview Tags
+
+- The `Company` column lists major companies known to ask this problem in interviews.
+- Tags are sourced from LeetCode premium data, community reports, and widely verified interview datasets.
+- Abbreviations: **G** = Google, **A** = Amazon, **M** = Microsoft, **Meta** = Meta/Facebook, **Ap** = Apple, **B** = Bloomberg, **Ub** = Uber, **Ly** = LinkedIn, **Ad** = Adobe, **Or** = Oracle, **Nt** = Netflix, **Sl** = Salesforce, **Db** = Databricks, **DD** = DoorDash, **Tw** = Twitter/X, **Wa** = Walmart, **Sq** = Square/Block, **Sh** = Shopify, **By** = ByteDance, **Ci** = Citadel, **Bk** = Booking.com, **At** = Atlassian, **Ai** = Airbnb
+
+---
+
 ## 📊 Progress Tracker
 
 | Category               | Total | Completed | Progress              |
@@ -203,71 +211,71 @@ The code in this repository is provided as-is for learning purposes. Use at your
 
 ## 1️⃣ Arrays & Two Pointers (40 / 40)
 
-| #    | Problem                                         | Difficulty | Status | Pattern               |
-|------|-------------------------------------------------|------------|--------|-----------------------|
-| 1    | Two Sum                                         | Easy       | ✅ [Solution](src/twopointer/TwoSum.java) | Hashing |
-| 11   | Container With Most Water                       | Medium     | ✅ [Solution](src/twopointer/ContainerWithMostWater.java) | Two Pointers |
-| 15   | 3Sum                                            | Medium     | ✅ [Solution](src/twopointer/ThreeSum.java) | Two Pointers |
-| 26   | Remove Duplicates from Sorted Array             | Easy       | ✅ [Solution](src/arrays101/RemoveDuplicates.java) | Two Pointers |
-| 27   | Remove Element                                  | Easy       | ✅ [Solution](src/arrays101/RemoveElement.java) | Two Pointers |
-| 31   | Next Permutation                                | Medium     | ✅ [Solution](src/arrays/NextPermutation.java) | Array Manipulation |
-| 33   | Search in Rotated Sorted Array                  | Medium     | ✅ [Solution](src/arrays/SearchInRotatedSortedArray.java) | Binary Search |
-| 42   | Trapping Rain Water                             | Hard       | ✅ [Solution](src/arrays/TrappingRainWater.java) | Two Pointers / Stack |
-| 54   | Spiral Matrix                                   | Medium     | ✅ [Solution](src/arrays/SpiralMatrix.java) | Matrix Traversal |
-| 66   | Plus One                                        | Easy       | ✅ [Solution](src/arrays/PlusOne.java) | Array Manipulation |
-| 75   | Sort Colors                                     | Medium     | ✅ [Solution](src/sortalgorithms/SortColors.java) | Two Pointers |
-| 80   | Remove Duplicates from Sorted Array II          | Medium     | ✅ [Solution](src/arrays101/RemoveDuplicatesFromSortedArrayII.java) | Two Pointers |
-| 88   | Merge Sorted Array                              | Easy       | ✅ [Solution](src/arrays101/MergeSortedArray.java) | Two Pointers |
-| 118  | Pascal's Triangle                               | Easy       | ✅ [Solution](src/arrays/PascalsTriangle.java) | DP / Simulation |
-| 119  | Pascal's Triangle II                            | Easy       | ✅ [Solution](src/arrays/PascalsTriangleII.java) | DP / Simulation |
-| 121  | Best Time to Buy and Sell Stock                 | Easy       | ✅ [Solution](src/arrays/BestTimeToBuyAndSellStock.java) | Greedy |
-| 167  | Two Sum II - Input Array Is Sorted              | Medium     | ✅ [Solution](src/twopointer/TwoSumII.java) | Two Pointers |
-| 169  | Majority Element                                | Easy       | ✅ [Solution](src/arrays/MajorityElement.java) | Sorting / Boyer-Moore |
-| 189  | Rotate Array                                    | Medium     | ✅ [Solution](src/arrays/RotateArray.java) | Array Manipulation |
-| 202  | Happy Number                                    | Easy       | ✅ [Solution](src/twopointer/HappyNumber.java) | Fast & Slow Pointers |
-| 246  | Strobogrammatic Number                          | Easy       | ✅ [Solution](src/twopointer/StrobogrammaticNumber.java) | Two Pointers |
-| 283  | Move Zeroes                                     | Easy       | ✅ [Solution](src/arrays101/MoveZeroes.java) | Two Pointers |
-| 287  | Find the Duplicate Number                       | Medium     | ✅ [Solution](src/twopointer/FindTheDuplicateNumber.java) | Floyd's Cycle |
-| 414  | Third Maximum Number                            | Easy       | ✅ [Solution](src/arrays101/ThirdMaximumNumber.java) | Tracking |
-| 448  | Find All Numbers Disappeared in an Array        | Easy       | ✅ [Solution](src/arrays101/FindAllNumbersDisappearedInAnArray.java) | Array Traversal |
-| 457  | Circular Array Loop                             | Medium     | ✅ [Solution](src/arrays/CircularArrayLoop.java) | Fast & Slow Pointers |
-| 485  | Max Consecutive Ones                            | Easy       | ✅ [Solution](src/arrays101/MaxConsecutiveOnes.java) | Array Traversal |
-| 561  | Array Partition                                 | Easy       | ✅ [Solution](src/arrays/ArrayPartition.java) | Sorting |
-| 724  | Find Pivot Index                                | Easy       | ✅ [Solution](src/arrays/FindPivotIndex.java) | Prefix Sum |
-| 747  | Largest Number At Least Twice of Others         | Easy       | ✅ [Solution](src/arrays/LargestNumberTwiceOthers.java) | Array Traversal |
-| 1051 | Height Checker                                  | Easy       | ✅ [Solution](src/arrays101/HeightChecker.java) | Sorting |
-| 1089 | Duplicate Zeros                                 | Easy       | ✅ [Solution](src/arrays101/DuplicateZeros.java) | Two Pointers |
-| 1295 | Find Numbers with Even Number of Digits         | Easy       | ✅ [Solution](src/arrays101/FindNumbersWithEvenNumberOfDigits.java) | Array Traversal |
-| 1299 | Replace Elements with Greatest on Right         | Easy       | ✅ [Solution](src/arrays101/ReplaceElementsWithGreatestElementOnRightSide.java) | Reverse Traversal |
-| 1346 | Check If N and Its Double Exist                 | Easy       | ✅ [Solution](src/arrays101/CheckIfNAndItsDoubleExist.java) | Hashing |
-| 1480 | Running Sum of 1d Array                         | Easy       | ✅ [Solution](src/arrays/RunningSum1d.java) | Prefix Sum |
-| 1582 | Special Positions in a Binary Matrix            | Easy       | ✅ [Solution](src/arrays/SpecialPositionsInBinaryMatrix.java) | Matrix Traversal |
-| 1672 | Richest Customer Wealth                         | Easy       | ✅ [Solution](src/arrays/RichestCustomerWealth.java) | Matrix Traversal |
-| 2176 | Count Equal and Divisible Pairs in an Array     | Easy       | ✅ [Solution](src/arrays101/CountPairs.java) | Array Traversal |
-| 2486 | Append Characters to String to Make Subsequence | Medium     | ✅ [Solution](src/twopointer/AppendCharacters.java) | Two Pointers |
+| #    | Problem                                         | Difficulty | Status | Pattern               | Company |
+|------|-------------------------------------------------|------------|--------|-----------------------|---------|
+| 1    | Two Sum                                         | Easy       | ✅ [Solution](src/twopointer/TwoSum.java) | Hashing | Amazon, Google, Apple, Microsoft, Meta, Adobe, Bloomberg |
+| 11   | Container With Most Water                       | Medium     | ✅ [Solution](src/twopointer/ContainerWithMostWater.java) | Two Pointers | Amazon, Google, Meta, Bloomberg, Adobe |
+| 15   | 3Sum                                            | Medium     | ✅ [Solution](src/twopointer/ThreeSum.java) | Two Pointers | Amazon, Google, Meta, Microsoft, Adobe, Bloomberg |
+| 26   | Remove Duplicates from Sorted Array             | Easy       | ✅ [Solution](src/arrays101/RemoveDuplicates.java) | Two Pointers | Amazon, Google, Microsoft, Apple |
+| 27   | Remove Element                                  | Easy       | ✅ [Solution](src/arrays101/RemoveElement.java) | Two Pointers | Amazon, Google |
+| 31   | Next Permutation                                | Medium     | ✅ [Solution](src/arrays/NextPermutation.java) | Array Manipulation | Google, Microsoft, Apple |
+| 33   | Search in Rotated Sorted Array                  | Medium     | ✅ [Solution](src/arrays/SearchInRotatedSortedArray.java) | Binary Search | Amazon, Google, Microsoft, Meta, Bloomberg, Uber |
+| 42   | Trapping Rain Water                             | Hard       | ✅ [Solution](src/arrays/TrappingRainWater.java) | Two Pointers / Stack | Amazon, Google, Apple, Bloomberg, Meta, Zenefits |
+| 54   | Spiral Matrix                                   | Medium     | ✅ [Solution](src/arrays/SpiralMatrix.java) | Matrix Traversal | Amazon, Google, Microsoft, Apple, Meta |
+| 66   | Plus One                                        | Easy       | ✅ [Solution](src/arrays/PlusOne.java) | Array Manipulation | Google, Apple |
+| 75   | Sort Colors                                     | Medium     | ✅ [Solution](src/sortalgorithms/SortColors.java) | Two Pointers | Amazon, Microsoft, Bloomberg |
+| 80   | Remove Duplicates from Sorted Array II          | Medium     | ✅ [Solution](src/arrays101/RemoveDuplicatesFromSortedArrayII.java) | Two Pointers | Amazon, Google |
+| 88   | Merge Sorted Array                              | Easy       | ✅ [Solution](src/arrays101/MergeSortedArray.java) | Two Pointers | Amazon, Google, Microsoft, Apple, Meta, Bloomberg |
+| 118  | Pascal's Triangle                               | Easy       | ✅ [Solution](src/arrays/PascalsTriangle.java) | DP / Simulation | Amazon, Google, Apple |
+| 119  | Pascal's Triangle II                            | Easy       | ✅ [Solution](src/arrays/PascalsTriangleII.java) | DP / Simulation | Amazon, Google |
+| 121  | Best Time to Buy and Sell Stock                 | Easy       | ✅ [Solution](src/arrays/BestTimeToBuyAndSellStock.java) | Array | Amazon, Google, Microsoft, Apple, Bloomberg, Meta |
+| 167  | Two Sum II - Input Array Is Sorted              | Medium     | ✅ [Solution](src/twopointer/TwoSumII.java) | Two Pointers | Amazon, Google, Microsoft |
+| 169  | Majority Element                                | Easy       | ✅ [Solution](src/arrays/MajorityElement.java) | Sorting / Boyer-Moore | Amazon, Google, Microsoft, Apple |
+| 189  | Rotate Array                                    | Medium     | ✅ [Solution](src/arrays/RotateArray.java) | Array Manipulation | Amazon, Microsoft, Bloomberg |
+| 202  | Happy Number                                    | Easy       | ✅ [Solution](src/twopointer/HappyNumber.java) | Fast & Slow Pointers | Amazon, Google, Adobe |
+| 246  | Strobogrammatic Number                          | Easy       | ✅ [Solution](src/twopointer/StrobogrammaticNumber.java) | Two Pointers | Google, Facebook |
+| 283  | Move Zeroes                                     | Easy       | ✅ [Solution](src/arrays101/MoveZeroes.java) | Two Pointers | Amazon, Google, Microsoft, Bloomberg, Adobe |
+| 287  | Find the Duplicate Number                       | Medium     | ✅ [Solution](src/twopointer/FindTheDuplicateNumber.java) | Floyd's Cycle | Amazon, Google, Bloomberg |
+| 414  | Third Maximum Number                            | Easy       | ✅ [Solution](src/arrays101/ThirdMaximumNumber.java) | Tracking | Amazon |
+| 448  | Find All Numbers Disappeared in an Array        | Easy       | ✅ [Solution](src/arrays101/FindAllNumbersDisappearedInAnArray.java) | Array Traversal | Amazon, Google |
+| 457  | Circular Array Loop                             | Medium     | ✅ [Solution](src/arrays/CircularArrayLoop.java) | Fast & Slow Pointers | Amazon |
+| 485  | Max Consecutive Ones                            | Easy       | ✅ [Solution](src/arrays101/MaxConsecutiveOnes.java) | Array Traversal | Amazon, Google |
+| 561  | Array Partition                                 | Easy       | ✅ [Solution](src/arrays/ArrayPartition.java) | Sorting | Amazon |
+| 724  | Find Pivot Index                                | Easy       | ✅ [Solution](src/arrays/FindPivotIndex.java) | Prefix Sum | Amazon, Google |
+| 747  | Largest Number At Least Twice of Others         | Easy       | ✅ [Solution](src/arrays/LargestNumberTwiceOthers.java) | Array Traversal | Amazon |
+| 1051 | Height Checker                                  | Easy       | ✅ [Solution](src/arrays101/HeightChecker.java) | Sorting | Amazon |
+| 1089 | Duplicate Zeros                                 | Easy       | ✅ [Solution](src/arrays101/DuplicateZeros.java) | Two Pointers | Amazon, Google |
+| 1295 | Find Numbers with Even Number of Digits         | Easy       | ✅ [Solution](src/arrays101/FindNumbersWithEvenNumberOfDigits.java) | Array Traversal | Amazon |
+| 1299 | Replace Elements with Greatest on Right         | Easy       | ✅ [Solution](src/arrays101/ReplaceElementsWithGreatestElementOnRightSide.java) | Reverse Traversal | Amazon |
+| 1346 | Check If N and Its Double Exist                 | Easy       | ✅ [Solution](src/arrays101/CheckIfNAndItsDoubleExist.java) | Hashing | Amazon |
+| 1480 | Running Sum of 1d Array                         | Easy       | ✅ [Solution](src/arrays/RunningSum1d.java) | Prefix Sum | Amazon, Google |
+| 1582 | Special Positions in a Binary Matrix            | Easy       | ✅ [Solution](src/arrays/SpecialPositionsInBinaryMatrix.java) | Matrix Traversal | Amazon |
+| 1672 | Richest Customer Wealth                         | Easy       | ✅ [Solution](src/arrays/RichestCustomerWealth.java) | Matrix Traversal | Amazon |
+| 2176 | Count Equal and Divisible Pairs in an Array     | Easy       | ✅ [Solution](src/arrays101/CountPairs.java) | Array Traversal | Amazon |
+| 2486 | Append Characters to String to Make Subsequence | Medium    | ✅ [Solution](src/twopointer/AppendCharacters.java) | Two Pointers | Google |
 
 ---
 
 ## 2️⃣ Sliding Window (3 / 16)
 
-| #    | Problem                                                 | Difficulty | Status | Pattern        |
-|------|---------------------------------------------------------|------------|--------|----------------|
-| 3    | Longest Substring Without Repeating Characters          | Medium     | ✅ [Solution](src/strings/LongestSubstringWithoutRepeatingCharacters.java) | Sliding Window |
-| 76   | Minimum Window Substring                                | Hard       | ⬜      | Sliding Window |
-| 209  | Minimum Size Subarray Sum                               | Medium     | ✅ [Solution](src/arrays/MinSizeSubArraySum.java) | Sliding Window |
-| 239  | Sliding Window Maximum                                  | Hard       | ✅ [Solution](src/slidingwindow/MaxSlidingWindow.java) | Monotonic Deque |
-| 424  | Longest Repeating Character Replacement                 | Medium     | ⬜      | Sliding Window |
-| 438  | Find All Anagrams in a String                           | Medium     | ⬜      | Sliding Window |
-| 567  | Permutation in String                                   | Medium     | ⬜      | Sliding Window |
-| 713  | Subarray Product Less Than K                            | Medium     | ⬜      | Sliding Window |
-| 904  | Fruit Into Baskets                                      | Medium     | ⬜      | Sliding Window |
-| 1004 | Max Consecutive Ones III                                | Medium     | ⬜      | Sliding Window |
-| 1208 | Get Equal Substrings Within Budget                      | Medium     | ⬜      | Sliding Window |
-| 1343 | Number of Sub-arrays of Size K and Average ≥ Threshold  | Medium     | ⬜      | Sliding Window |
-| 1423 | Maximum Points You Can Obtain from Cards                | Medium     | ⬜      | Sliding Window |
-| 1493 | Longest Subarray of 1's After Deleting One Element      | Medium     | ⬜      | Sliding Window |
-| 1838 | Frequency of the Most Frequent Element                  | Medium     | ⬜      | Sliding Window |
-| 2090 | K Radius Subarray Averages                              | Medium     | ⬜      | Sliding Window |
+| #    | Problem                                                 | Difficulty | Status | Pattern        | Company |
+|------|---------------------------------------------------------|------------|--------|----------------|---------|
+| 3    | Longest Substring Without Repeating Characters          | Medium     | ✅ [Solution](src/strings/LongestSubstringWithoutRepeatingCharacters.java) | Sliding Window | Amazon, Google, Microsoft, Apple, Meta, Bloomberg, Adobe |
+| 76   | Minimum Window Substring                                | Hard       | ⬜      | Sliding Window | Amazon, Google, Meta, Bloomberg, LinkedIn |
+| 209  | Minimum Size Subarray Sum                               | Medium     | ✅ [Solution](src/arrays/MinSizeSubArraySum.java) | Sliding Window | Amazon, Google, Microsoft |
+| 239  | Sliding Window Maximum                                  | Hard       | ✅ [Solution](src/slidingwindow/MaxSlidingWindow.java) | Monotonic Deque | Amazon, Google, Meta, Bloomberg |
+| 424  | Longest Repeating Character Replacement                 | Medium     | ⬜      | Sliding Window | Google, Meta, Bloomberg |
+| 438  | Find All Anagrams in a String                           | Medium     | ⬜      | Sliding Window | Amazon, Google, Meta, Bloomberg |
+| 567  | Permutation in String                                   | Medium     | ⬜      | Sliding Window | Amazon, Google, Microsoft, Bloomberg |
+| 713  | Subarray Product Less Than K                            | Medium     | ⬜      | Sliding Window | Amazon, Google |
+| 904  | Fruit Into Baskets                                      | Medium     | ⬜      | Sliding Window | Google |
+| 1004 | Max Consecutive Ones III                                | Medium     | ⬜      | Sliding Window | Amazon, Google |
+| 1208 | Get Equal Substrings Within Budget                      | Medium     | ⬜      | Sliding Window | Google |
+| 1343 | Number of Sub-arrays of Size K and Average ≥ Threshold  | Medium     | ⬜      | Sliding Window | Amazon |
+| 1423 | Maximum Points You Can Obtain from Cards                | Medium     | ⬜      | Sliding Window | Google, Meta |
+| 1493 | Longest Subarray of 1's After Deleting One Element      | Medium     | ⬜      | Sliding Window | Amazon, Google |
+| 1838 | Frequency of the Most Frequent Element                  | Medium     | ⬜      | Sliding Window | Amazon |
+| 2090 | K Radius Subarray Averages                              | Medium     | ⬜      | Sliding Window | Amazon |
 
 ---
 
@@ -275,90 +283,90 @@ The code in this repository is provided as-is for learning purposes. Use at your
 
 > 📁 Additional practice files in repo (not LeetCode submissions): `Anagram`, `Palindrome`, `PalindromeI`, `SplitString`, `SmallestAndLargestSub`, `JavaStringTokens`
 
-| #    | Problem                                                  | Difficulty | Status | Pattern               |
-|------|----------------------------------------------------------|------------|--------|-----------------------|
-| 3    | Longest Substring Without Repeating Characters           | Medium     | ✅ [Solution](src/strings/LongestSubstringWithoutRepeatingCharacters.java) | Sliding Window |
-| 5    | Longest Palindromic Substring                            | Medium     | ⬜      | DP / Expand Around Center |
-| 8    | String to Integer (atoi)                                 | Medium     | ⬜      | String Parsing        |
-| 14   | Longest Common Prefix                                    | Easy       | ⬜      | String                |
-| 28   | Find the Index of the First Occurrence in a String       | Easy       | ✅ [Solution](src/strings/FindIndexOfFirstOccurrence.java) | Two Pointers |
-| 49   | Group Anagrams                                           | Medium     | ⬜      | Hashing               |
-| 58   | Length of Last Word                                      | Easy       | ⬜      | String                |
-| 76   | Minimum Window Substring                                 | Hard       | ⬜      | Sliding Window        |
-| 125  | Valid Palindrome                                         | Easy       | ✅ [Solution](src/strings/ValidPalindrome.java) | Two Pointers |
-| 151  | Reverse Words in a String                                | Medium     | ✅ [Solution](src/strings/ReverseWordsInString.java) | Two Pointers |
-| 186  | Reverse Words in a String II                             | Medium     | ✅ [Solution](src/strings/ReverseWordsInStringII.java) | In-place / O(1) space |
-| 205  | Isomorphic Strings                                       | Easy       | ✅ [Solution](src/strings/IsomorphicStrings.java) | Hashing |
-| 242  | Valid Anagram                                            | Easy       | ✅ [Solution](src/strings/ValidAnagram.java) | Hashing |
-| 271  | Encode and Decode Strings                                | Medium     | ⬜      | String                |
-| 344  | Reverse String                                           | Easy       | ✅ [Solution](src/strings/ReverseString.java) | Two Pointers |
-| 408  | Valid Word Abbreviation                                  | Easy       | ✅ [Solution](src/strings/ValidWordAbbreviation.java) | Two Pointers |
-| 415  | Add Strings                                              | Easy       | ✅ [Solution](src/strings/AddStrings.java) | String Math |
-| 424  | Longest Repeating Character Replacement                  | Medium     | ⬜      | Sliding Window        |
-| 557  | Reverse Words in a String III                            | Easy       | ✅ [Solution](src/strings/ReverseWordsInStringIII.java) | Two Pointers |
-| 680  | Valid Palindrome II                                      | Easy       | ✅ [Solution](src/strings/PalindromeII.java) | Two Pointers |
-| 1689 | Partitioning Into Minimum Number of Deci-Binary Numbers  | Easy       | ✅ [Solution](src/strings/PartitioningIntoMinDeciBinaryNumbers.java) | Greedy |
-| 1758 | Minimum Changes to Make Alternating Binary String        | Easy       | ✅ [Solution](src/strings/MinChangesAlternatingBinaryString.java) | String |
+| #    | Problem                                                  | Difficulty | Status | Pattern               | Company |
+|------|----------------------------------------------------------|------------|--------|-----------------------|---------|
+| 3    | Longest Substring Without Repeating Characters           | Medium     | ✅ [Solution](src/strings/LongestSubstringWithoutRepeatingCharacters.java) | Sliding Window | Amazon, Google, Microsoft, Apple, Meta, Bloomberg, Adobe |
+| 5    | Longest Palindromic Substring                            | Medium     | ⬜      | DP / Expand Around Center | Amazon, Google, Microsoft, Apple, Bloomberg |
+| 8    | String to Integer (atoi)                                 | Medium     | ⬜      | String Parsing        | Amazon, Microsoft, Bloomberg |
+| 14   | Longest Common Prefix                                    | Easy       | ⬜      | String                | Amazon, Google, Microsoft |
+| 28   | Find the Index of the First Occurrence in a String       | Easy       | ✅ [Solution](src/strings/FindIndexOfFirstOccurrence.java) | Two Pointers | Amazon, Microsoft |
+| 49   | Group Anagrams                                           | Medium     | ⬜      | Hashing               | Amazon, Google, Microsoft, Meta, Bloomberg, Uber |
+| 58   | Length of Last Word                                      | Easy       | ⬜      | String                | Amazon, Google |
+| 76   | Minimum Window Substring                                 | Hard       | ⬜      | Sliding Window        | Amazon, Google, Meta, Bloomberg, LinkedIn |
+| 125  | Valid Palindrome                                         | Easy       | ✅ [Solution](src/strings/ValidPalindrome.java) | Two Pointers | Amazon, Google, Microsoft, Meta, Apple |
+| 151  | Reverse Words in a String                                | Medium     | ✅ [Solution](src/strings/ReverseWordsInString.java) | Two Pointers | Amazon, Google, Microsoft, Bloomberg |
+| 186  | Reverse Words in a String II                             | Medium     | ✅ [Solution](src/strings/ReverseWordsInStringII.java) | In-place / O(1) space | Amazon, Microsoft |
+| 205  | Isomorphic Strings                                       | Easy       | ✅ [Solution](src/strings/IsomorphicStrings.java) | Hashing | Amazon, Google |
+| 242  | Valid Anagram                                            | Easy       | ✅ [Solution](src/strings/ValidAnagram.java) | Hashing | Amazon, Google, Microsoft, Apple |
+| 271  | Encode and Decode Strings                                | Medium     | ⬜      | String                | Google, Amazon, Meta, Uber |
+| 344  | Reverse String                                           | Easy       | ✅ [Solution](src/strings/ReverseString.java) | Two Pointers | Amazon, Google, Microsoft |
+| 408  | Valid Word Abbreviation                                  | Easy       | ✅ [Solution](src/strings/ValidWordAbbreviation.java) | Two Pointers | Google, Meta |
+| 415  | Add Strings                                              | Easy       | ✅ [Solution](src/strings/AddStrings.java) | String Math | Amazon, Google |
+| 424  | Longest Repeating Character Replacement                  | Medium     | ⬜      | Sliding Window        | Google, Meta, Bloomberg |
+| 557  | Reverse Words in a String III                            | Easy       | ✅ [Solution](src/strings/ReverseWordsInStringIII.java) | Two Pointers | Amazon, Microsoft |
+| 680  | Valid Palindrome II                                      | Easy       | ✅ [Solution](src/strings/PalindromeII.java) | Two Pointers | Amazon, Google, Meta, Bloomberg |
+| 1689 | Partitioning Into Minimum Number of Deci-Binary Numbers  | Easy       | ✅ [Solution](src/strings/PartitioningIntoMinDeciBinaryNumbers.java) | Greedy | Amazon |
+| 1758 | Minimum Changes to Make Alternating Binary String        | Easy       | ✅ [Solution](src/strings/MinChangesAlternatingBinaryString.java) | String | Amazon |
 
 ---
 
 ## 4️⃣ HashMap / HashSet (11 / 23)
 
-| #    | Problem                               | Difficulty | Status | Pattern              |
-|------|---------------------------------------|------------|--------|----------------------|
-| 49   | Group Anagrams                        | Medium     | ⬜      | Hashing              |
-| 128  | Longest Consecutive Sequence          | Medium     | ⬜      | Hashing              |
-| 205  | Isomorphic Strings                    | Easy       | ✅ [Solution](src/strings/IsomorphicStrings.java) | Hashing |
-| 217  | Contains Duplicate                    | Easy       | ✅ [Solution](src/arrays/ContainsDuplicate.java) | Hashing |
-| 219  | Contains Duplicate II                 | Easy       | ✅ [Solution](src/hashing/ContainsDuplicatesII.java) | Hashing + Sliding Window |
-| 242  | Valid Anagram                         | Easy       | ✅ [Solution](src/strings/ValidAnagram.java) | Hashing |
-| 290  | Word Pattern                          | Easy       | ⬜      | Hashing              |
-| 347  | Top K Frequent Elements               | Medium     | ✅ [Solution](src/heap/TopKFrequentElements.java) | Hashing + Heap       |
-| 349  | Intersection of Two Arrays            | Easy       | ✅ [Solution](src/hashing/IntersectionOfArrays.java) | Hashing |
-| 350  | Intersection of Two Arrays II         | Easy       | ✅ [Solution](src/hashing/IntersectionOfArraysII.java) | Hashing |
-| 380  | Insert Delete GetRandom O(1)          | Medium     | ⬜      | Hashing + Array      |
-| 387  | First Unique Character in a String    | Easy       | ✅ [Solution](src/hashing/FirstUniqueCharacter.java) | Hashing |
-| 525  | Contiguous Array                      | Medium     | ⬜      | Hashing + Prefix Sum |
-| 560  | Subarray Sum Equals K                 | Medium     | ⬜      | Hashing + Prefix Sum |
-| 594  | Longest Harmonious Subsequence        | Easy       | ⬜      | Hashing              |
-| 599  | Minimum Index Sum of Two Lists        | Easy       | ✅ [Solution](src/hashing/MinimumIndexSum.java) | Hashing |
-| 692  | Top K Frequent Words                  | Medium     | ⬜      | Hashing + Heap       |
-| 705  | Design HashSet                        | Easy       | ✅ [Solution](src/set/designhashset/MyHashSet.java) | Hashing |
-| 706  | Design HashMap                        | Easy       | ✅ [Solution](src/map/designhashmap/MyHashMap.java) | Hashing |
-| 763  | Partition Labels                      | Medium     | ⬜      | Greedy + Hashing     |
-| 811  | Subdomain Visit Count                 | Medium     | ⬜      | Hashing              |
-| 884  | Uncommon Words from Two Sentences     | Easy       | ⬜      | Hashing              |
-| 1002 | Find Common Characters                | Easy       | ⬜      | Hashing              |
+| #    | Problem                               | Difficulty | Status | Pattern              | Company |
+|------|---------------------------------------|------------|--------|----------------------|---------|
+| 49   | Group Anagrams                        | Medium     | ⬜      | Hashing              | Amazon, Google, Microsoft, Meta, Bloomberg, Uber |
+| 128  | Longest Consecutive Sequence          | Medium     | ⬜      | Hashing              | Amazon, Google, Meta, Bloomberg |
+| 205  | Isomorphic Strings                    | Easy       | ✅ [Solution](src/strings/IsomorphicStrings.java) | Hashing | Amazon, Google |
+| 217  | Contains Duplicate                    | Easy       | ✅ [Solution](src/arrays/ContainsDuplicate.java) | Hashing | Amazon, Google, Microsoft, Apple, Bloomberg |
+| 219  | Contains Duplicate II                 | Easy       | ✅ [Solution](src/hashing/ContainsDuplicatesII.java) | Hashing + Sliding Window | Amazon, Google |
+| 242  | Valid Anagram                         | Easy       | ✅ [Solution](src/strings/ValidAnagram.java) | Hashing | Amazon, Google, Microsoft, Apple |
+| 290  | Word Pattern                          | Easy       | ⬜      | Hashing              | Amazon, Google |
+| 347  | Top K Frequent Elements               | Medium     | ✅ [Solution](src/heap/TopKFrequentElements.java) | Hashing + Heap | Amazon, Google, Meta, Bloomberg, Uber, LinkedIn |
+| 349  | Intersection of Two Arrays            | Easy       | ✅ [Solution](src/hashing/IntersectionOfArrays.java) | Hashing | Amazon, Google, Microsoft |
+| 350  | Intersection of Two Arrays II         | Easy       | ✅ [Solution](src/hashing/IntersectionOfArraysII.java) | Hashing | Amazon, Google, Apple, Microsoft |
+| 380  | Insert Delete GetRandom O(1)          | Medium     | ⬜      | Hashing + Array      | Amazon, Google, Meta, Bloomberg, Uber |
+| 387  | First Unique Character in a String    | Easy       | ✅ [Solution](src/hashing/FirstUniqueCharacter.java) | Hashing | Amazon, Google, Microsoft, Bloomberg |
+| 525  | Contiguous Array                      | Medium     | ⬜      | Hashing + Prefix Sum | Amazon, Google, Meta |
+| 560  | Subarray Sum Equals K                 | Medium     | ⬜      | Hashing + Prefix Sum | Amazon, Google, Meta, Bloomberg, LinkedIn |
+| 594  | Longest Harmonious Subsequence        | Easy       | ⬜      | Hashing              | Amazon |
+| 599  | Minimum Index Sum of Two Lists        | Easy       | ✅ [Solution](src/hashing/MinimumIndexSum.java) | Hashing | Amazon |
+| 692  | Top K Frequent Words                  | Medium     | ⬜      | Hashing + Heap       | Amazon, Google, Meta, Bloomberg |
+| 705  | Design HashSet                        | Easy       | ✅ [Solution](src/set/designhashset/MyHashSet.java) | Hashing | Amazon, Apple |
+| 706  | Design HashMap                        | Easy       | ✅ [Solution](src/map/designhashmap/MyHashMap.java) | Hashing | Amazon, Apple |
+| 763  | Partition Labels                      | Medium     | ⬜      | Greedy + Hashing     | Amazon, Google, Meta |
+| 811  | Subdomain Visit Count                 | Medium     | ⬜      | Hashing              | Amazon, Bloomberg |
+| 884  | Uncommon Words from Two Sentences     | Easy       | ⬜      | Hashing              | Amazon, Google |
+| 1002 | Find Common Characters                | Easy       | ⬜      | Hashing              | Amazon |
 
 ---
 
 ## 5️⃣ Binary Search (11 / 23)
 
-| #    | Problem                                                | Difficulty | Status | Pattern                 |
-|------|--------------------------------------------------------|------------|--------|-------------------------|
-| 33   | Search in Rotated Sorted Array                         | Medium     | ✅ [Solution](src/binarysearch/SearchRotatedSortedArray.java) | Binary Search |
-| 34   | Find First and Last Position of Element in Sorted Array | Medium    | ✅ [Solution](src/binarysearch/FirstAndLastPosition.java) | Binary Search |
-| 35   | Search Insert Position                                 | Easy       | ✅ [Solution](src/binarysearch/SearchInsert.java) | Binary Search |
-| 69   | Sqrt(x)                                                | Easy       | ✅ [Solution](src/binarysearch/SqrtX.java) | Binary Search |
-| 81   | Search in Rotated Sorted Array II                      | Medium     | ✅ [Solution](src/binarysearch/SearchRotatedSortedArrayII.java) | Binary Search |
-| 153  | Find Minimum in Rotated Sorted Array                   | Medium     | ✅ [Solution](src/binarysearch/FindMinRotatedArray.java) | Binary Search |
-| 162  | Find Peak Element                                      | Medium     | ✅ [Solution](src/binarysearch/FindPeakElement.java) | Binary Search |
-| 278  | First Bad Version                                      | Easy       | ✅ [Solution](src/binarysearch/FirstBadVersion.java) | Binary Search |
-| 374  | Guess Number Higher or Lower                           | Easy       | ✅ [Solution](src/binarysearch/GuessNumber.java) | Binary Search |
-| 410  | Split Array Largest Sum                                | Hard       | ⬜      | Binary Search on Answer |
-| 658  | Find K Closest Elements                                | Medium     | ✅ [Solution](src/binarysearch/FindKClosestElements.java) | Binary Search |
-| 704  | Binary Search                                          | Easy       | ✅ [Solution](src/binarysearch/BinarySearch.java) | Binary Search |
-| 875  | Koko Eating Bananas                                    | Medium     | ⬜      | Binary Search on Answer |
-| 1011 | Capacity To Ship Packages Within D Days                | Medium     | ⬜      | Binary Search on Answer |
-| 1283 | Find the Smallest Divisor Given a Threshold            | Medium     | ⬜      | Binary Search on Answer |
-| 1482 | Minimum Number of Days to Make m Bouquets              | Medium     | ⬜      | Binary Search on Answer |
-| 1760 | Minimum Limit of Balls in a Bag                        | Medium     | ⬜      | Binary Search on Answer |
-| 1802 | Maximum Value at a Given Index in a Bounded Array      | Medium     | ⬜      | Binary Search on Answer |
-| 1891 | Cutting Ribbons                                        | Medium     | ⬜      | Binary Search on Answer |
-| 2187 | Minimum Time to Complete Trips                         | Medium     | ⬜      | Binary Search on Answer |
-| 2226 | Maximum Candies Allocated to K Children                | Medium     | ⬜      | Binary Search on Answer |
-| 2300 | Successful Pairs of Spells and Potions                 | Medium     | ⬜      | Binary Search           |
-| 3296 | Minimum Number of Seconds to Make Mountain Height Zero | Medium     | ⬜      | Binary Search on Answer |
+| #    | Problem                                                | Difficulty | Status | Pattern                 | Company |
+|------|--------------------------------------------------------|------------|--------|-------------------------|---------|
+| 33   | Search in Rotated Sorted Array                         | Medium     | ✅ [Solution](src/binarysearch/SearchRotatedSortedArray.java) | Binary Search | Amazon, Google, Microsoft, Meta, Bloomberg, Uber |
+| 34   | Find First and Last Position of Element in Sorted Array | Medium    | ✅ [Solution](src/binarysearch/FirstAndLastPosition.java) | Binary Search | Amazon, Google, Microsoft, Meta |
+| 35   | Search Insert Position                                 | Easy       | ✅ [Solution](src/binarysearch/SearchInsert.java) | Binary Search | Amazon, Google, Apple |
+| 69   | Sqrt(x)                                                | Easy       | ✅ [Solution](src/binarysearch/SqrtX.java) | Binary Search | Amazon, Google, Apple, Bloomberg |
+| 81   | Search in Rotated Sorted Array II                      | Medium     | ✅ [Solution](src/binarysearch/SearchRotatedSortedArrayII.java) | Binary Search | Amazon, Google, Microsoft |
+| 153  | Find Minimum in Rotated Sorted Array                   | Medium     | ✅ [Solution](src/binarysearch/FindMinRotatedArray.java) | Binary Search | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 162  | Find Peak Element                                      | Medium     | ✅ [Solution](src/binarysearch/FindPeakElement.java) | Binary Search | Amazon, Google, Microsoft, Bloomberg |
+| 278  | First Bad Version                                      | Easy       | ✅ [Solution](src/binarysearch/FirstBadVersion.java) | Binary Search | Amazon, Google, Microsoft, Meta |
+| 374  | Guess Number Higher or Lower                           | Easy       | ✅ [Solution](src/binarysearch/GuessNumber.java) | Binary Search | Amazon, Google |
+| 410  | Split Array Largest Sum                                | Hard       | ⬜      | Binary Search on Answer | Amazon, Google, Meta |
+| 658  | Find K Closest Elements                                | Medium     | ✅ [Solution](src/binarysearch/FindKClosestElements.java) | Binary Search | Amazon, Google, Meta |
+| 704  | Binary Search                                          | Easy       | ✅ [Solution](src/binarysearch/BinarySearch.java) | Binary Search | Amazon, Google, Microsoft |
+| 875  | Koko Eating Bananas                                    | Medium     | ⬜      | Binary Search on Answer | Amazon, Google, Meta |
+| 1011 | Capacity To Ship Packages Within D Days                | Medium     | ⬜      | Binary Search on Answer | Amazon, Google |
+| 1283 | Find the Smallest Divisor Given a Threshold            | Medium     | ⬜      | Binary Search on Answer | Google |
+| 1482 | Minimum Number of Days to Make m Bouquets              | Medium     | ⬜      | Binary Search on Answer | Amazon, Google |
+| 1760 | Minimum Limit of Balls in a Bag                        | Medium     | ⬜      | Binary Search on Answer | Google |
+| 1802 | Maximum Value at a Given Index in a Bounded Array      | Medium     | ⬜      | Binary Search on Answer | Amazon |
+| 1891 | Cutting Ribbons                                        | Medium     | ⬜      | Binary Search on Answer | Amazon |
+| 2187 | Minimum Time to Complete Trips                         | Medium     | ⬜      | Binary Search on Answer | Google |
+| 2226 | Maximum Candies Allocated to K Children                | Medium     | ⬜      | Binary Search on Answer | Amazon |
+| 2300 | Successful Pairs of Spells and Potions                 | Medium     | ⬜      | Binary Search           | Amazon, Google |
+| 3296 | Minimum Number of Seconds to Make Mountain Height Zero | Medium     | ⬜      | Binary Search on Answer | Google |
 
 ---
 
@@ -366,31 +374,31 @@ The code in this repository is provided as-is for learning purposes. Use at your
 
 > 📁 Additional files in repo (practice/helpers): `MyLinkedList`, `SinglyLinkedList`, `SplitCircularLinkedList`, `ListNode`
 
-| #    | Problem                               | Difficulty | Status | Pattern              |
-|------|---------------------------------------|------------|--------|----------------------|
-| 2    | Add Two Numbers                       | Medium     | ✅ [Solution](src/linkedlist/AddTwoNumbers.java) | Linked List Math |
-| 19   | Remove Nth Node From End of List      | Medium     | ✅ [Solution](src/linkedlist/RemoveNthNodeFromEnd.java) | Two Pointers |
-| 21   | Merge Two Sorted Lists                | Easy       | ✅ [Solution](src/linkedlist/MergeTwoSortedLists.java) | Two Pointers |
-| 24   | Swap Nodes in Pairs                   | Medium     | ✅ [Solution](src/recursion/SwapNodesInPairs.java) | Pointer Manipulation / Recursion |
-| 61   | Rotate List                           | Medium     | ⬜      | Two Pointers         |
-| 82   | Remove Duplicates from Sorted List II | Medium     | ⬜      | Two Pointers         |
-| 83   | Remove Duplicates from Sorted List    | Easy       | ⬜      | Pointer Manipulation |
-| 92   | Reverse Linked List II                | Medium     | ⬜      | Pointer Manipulation |
-| 138  | Copy List with Random Pointer         | Medium     | ⬜      | Hashing              |
-| 141  | Linked List Cycle                     | Easy       | ✅ [Solution](src/linkedlist/LinkedListCycle.java) | Fast & Slow Pointers |
-| 142  | Linked List Cycle II                  | Medium     | ✅ [Solution](src/linkedlist/LinkedListCycleII.java) | Fast & Slow Pointers |
-| 143  | Reorder List                          | Medium     | ⬜      | Fast & Slow Pointers |
-| 148  | Sort List                             | Medium     | ⬜      | Merge Sort           |
-| 160  | Intersection of Two Linked Lists      | Easy       | ✅ [Solution](src/linkedlist/LinkedListsIntersection.java) | Two Pointers |
-| 206  | Reverse Linked List                   | Easy       | ✅ [Solution](src/linkedlist/ReverseLinkedList.java) | Pointer Manipulation |
-| 234  | Palindrome Linked List                | Easy       | ✅ [Solution](src/linkedlist/PalindromeLinkedList.java) | Fast & Slow Pointers |
-| 237  | Delete Node in a Linked List          | Medium     | ✅ [Solution](src/linkedlist/DeleteNode.java) | Pointer Manipulation |
-| 328  | Odd Even Linked List                  | Medium     | ⬜      | Pointer Manipulation |
-| 445  | Add Two Numbers II                    | Medium     | ⬜      | Linked List Math     |
-| 707  | Design Linked List                    | Medium     | ✅ [Solution](src/linkedlist/DesignLinkedList.java) | Linked List Design |
-| 725  | Split Linked List in Parts            | Medium     | ⬜      | Pointer Manipulation |
-| 876  | Middle of the Linked List             | Easy       | ✅ [Solution](src/twopointer/MiddleOfLinkedList.java) | Fast & Slow Pointers |
-| 2130 | Maximum Twin Sum of a Linked List     | Medium     | ✅ [Solution](src/linkedlist/MaximumTwinSumOfLinkedList.java) | Fast & Slow Pointers |
+| #    | Problem                               | Difficulty | Status | Pattern              | Company |
+|------|---------------------------------------|------------|--------|----------------------|---------|
+| 2    | Add Two Numbers                       | Medium     | ✅ [Solution](src/linkedlist/AddTwoNumbers.java) | Linked List Math | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 19   | Remove Nth Node From End of List      | Medium     | ✅ [Solution](src/linkedlist/RemoveNthNodeFromEnd.java) | Two Pointers | Amazon, Google, Microsoft, Meta, Apple |
+| 21   | Merge Two Sorted Lists                | Easy       | ✅ [Solution](src/linkedlist/MergeTwoSortedLists.java) | Two Pointers | Amazon, Google, Microsoft, Apple, Meta, Bloomberg |
+| 24   | Swap Nodes in Pairs                   | Medium     | ✅ [Solution](src/recursion/SwapNodesInPairs.java) | Pointer Manipulation / Recursion | Amazon, Google, Microsoft |
+| 61   | Rotate List                           | Medium     | ⬜      | Two Pointers         | Amazon, Microsoft, Bloomberg |
+| 82   | Remove Duplicates from Sorted List II | Medium     | ⬜      | Two Pointers         | Amazon, Google |
+| 83   | Remove Duplicates from Sorted List    | Easy       | ⬜      | Pointer Manipulation | Amazon, Microsoft |
+| 92   | Reverse Linked List II                | Medium     | ⬜      | Pointer Manipulation | Amazon, Google, Microsoft, Meta |
+| 138  | Copy List with Random Pointer         | Medium     | ⬜      | Hashing              | Amazon, Google, Meta, Bloomberg, Microsoft |
+| 141  | Linked List Cycle                     | Easy       | ✅ [Solution](src/linkedlist/LinkedListCycle.java) | Fast & Slow Pointers | Amazon, Google, Microsoft, Apple, Meta, Bloomberg |
+| 142  | Linked List Cycle II                  | Medium     | ✅ [Solution](src/linkedlist/LinkedListCycleII.java) | Fast & Slow Pointers | Amazon, Google, Microsoft, Meta |
+| 143  | Reorder List                          | Medium     | ⬜      | Fast & Slow Pointers | Amazon, Google, Meta, Bloomberg |
+| 148  | Sort List                             | Medium     | ⬜      | Merge Sort           | Amazon, Google, Meta, Bloomberg |
+| 160  | Intersection of Two Linked Lists      | Easy       | ✅ [Solution](src/linkedlist/LinkedListsIntersection.java) | Two Pointers | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 206  | Reverse Linked List                   | Easy       | ✅ [Solution](src/linkedlist/ReverseLinkedList.java) | Pointer Manipulation | Amazon, Google, Microsoft, Apple, Meta, Bloomberg, Adobe |
+| 234  | Palindrome Linked List                | Easy       | ✅ [Solution](src/linkedlist/PalindromeLinkedList.java) | Fast & Slow Pointers | Amazon, Google, Microsoft, Apple, Bloomberg |
+| 237  | Delete Node in a Linked List          | Medium     | ✅ [Solution](src/linkedlist/DeleteNode.java) | Pointer Manipulation | Amazon, Microsoft, Bloomberg |
+| 328  | Odd Even Linked List                  | Medium     | ⬜      | Pointer Manipulation | Amazon, Google, Microsoft |
+| 445  | Add Two Numbers II                    | Medium     | ⬜      | Linked List Math     | Bloomberg, Amazon |
+| 707  | Design Linked List                    | Medium     | ✅ [Solution](src/linkedlist/DesignLinkedList.java) | Linked List Design | Amazon, Google |
+| 725  | Split Linked List in Parts            | Medium     | ⬜      | Pointer Manipulation | Amazon |
+| 876  | Middle of the Linked List             | Easy       | ✅ [Solution](src/twopointer/MiddleOfLinkedList.java) | Fast & Slow Pointers | Amazon, Google, Microsoft |
+| 2130 | Maximum Twin Sum of a Linked List     | Medium     | ✅ [Solution](src/linkedlist/MaximumTwinSumOfLinkedList.java) | Fast & Slow Pointers | Amazon, Google |
 
 ---
 
@@ -398,33 +406,33 @@ The code in this repository is provided as-is for learning purposes. Use at your
 
 > 📁 Additional files in repo (implementations): `ArrayStack`, `ArrayListStack`, `LinkedListStack`, `ArrayQueue`, `ArrayListQueue`, `LinkedListQueue`, `MovingAverage`
 
-| #    | Problem                             | Difficulty | Status | Pattern                |
-|------|-------------------------------------|------------|--------|------------------------|
-| 20   | Valid Parentheses                   | Easy       | ✅ [Solution](src/stack/ValidParenthesis.java) | Stack |
-| 71   | Simplify Path                       | Medium     | ⬜      | Stack |
-| 84   | Largest Rectangle in Histogram      | Hard       | ⬜      | Monotonic Stack        |
-| 85   | Maximal Rectangle                   | Hard       | ⬜      | Monotonic Stack        |
-| 102  | Binary Tree Level Order Traversal   | Medium     | ✅ [Solution](src/tree/LevelOrderTraversal.java) | BFS / Queue            |
-| 127  | Word Ladder                         | Hard       | ⬜      | BFS / Queue            |
-| 150  | Evaluate Reverse Polish Notation    | Medium     | ✅ [Solution](src/stack/ReversePolishNotation.java) | Stack |
-| 155  | Min Stack                           | Medium     | ✅ [Solution](src/stack/MinStack.java) | Stack |
-| 207  | Course Schedule                     | Medium     | ✅ [Solution](src/graph/CourseSchedule.java) | BFS / Topological Sort |
-| 224  | Basic Calculator                    | Hard       | ⬜      | Stack                  |
-| 225  | Implement Stack using Queues        | Easy       | ✅ [Solution](src/queue/MyStackUsingQueue.java) | Queue |
-| 232  | Implement Queue using Stacks        | Easy       | ✅ [Solution](src/queue/MyQueueUsingStacks.java) | Stack |
-| 286  | Walls and Gates                     | Medium     | ⬜      | BFS / Queue            |
-| 394  | Decode String                       | Medium     | ⬜      | Stack                  |
-| 496  | Next Greater Element I              | Easy       | ✅ [Solution](src/stack/NextGreaterElement.java) | Monotonic Stack |
-| 503  | Next Greater Element II             | Medium     | ✅ [Solution](src/stack/NextGreaterElementII.java) | Monotonic Stack |
-| 622  | Design Circular Queue               | Medium     | ✅ [Solution](src/queue/MyCircularQueue.java) | Queue Design |
-| 641  | Design Circular Deque               | Medium     | ⬜      | Deque Design           |
-| 739  | Daily Temperatures                  | Medium     | ✅ [Solution](src/stack/DailyTemperatures.java) | Monotonic Stack |
-| 853  | Car Fleet                           | Medium     | ⬜      | Monotonic Stack        |
-| 862  | Shortest Subarray with Sum ≥ K      | Hard       | ⬜      | Monotonic Deque        |
-| 907  | Sum of Subarray Minimums            | Medium     | ⬜      | Monotonic Stack        |
-| 933  | Number of Recent Calls              | Easy       | ⬜      | Queue / Sliding Window |
-| 994  | Rotting Oranges                     | Medium     | ✅ [Solution](src/graph/RottingOranges.java) | BFS / Queue            |
-| 1091 | Shortest Path in Binary Matrix      | Medium     | ⬜      | BFS / Queue            |
+| #    | Problem                             | Difficulty | Status | Pattern                | Company |
+|------|-------------------------------------|------------|--------|------------------------|---------|
+| 20   | Valid Parentheses                   | Easy       | ✅ [Solution](src/stack/ValidParenthesis.java) | Stack | Amazon, Google, Microsoft, Apple, Meta, Bloomberg, Adobe |
+| 71   | Simplify Path                       | Medium     | ⬜      | Stack | Amazon, Google, Meta |
+| 84   | Largest Rectangle in Histogram      | Hard       | ⬜      | Monotonic Stack        | Amazon, Google, Meta, Bloomberg |
+| 85   | Maximal Rectangle                   | Hard       | ⬜      | Monotonic Stack        | Amazon, Google, Meta |
+| 102  | Binary Tree Level Order Traversal   | Medium     | ✅ [Solution](src/tree/LevelOrderTraversal.java) | BFS / Queue            | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 127  | Word Ladder                         | Hard       | ⬜      | BFS / Queue            | Amazon, Google, Meta, Bloomberg, LinkedIn |
+| 150  | Evaluate Reverse Polish Notation    | Medium     | ✅ [Solution](src/stack/ReversePolishNotation.java) | Stack | Amazon, Bloomberg |
+| 155  | Min Stack                           | Medium     | ✅ [Solution](src/stack/MinStack.java) | Stack | Amazon, Google, Microsoft, Apple, Bloomberg, Adobe |
+| 207  | Course Schedule                     | Medium     | ✅ [Solution](src/graph/CourseSchedule.java) | BFS / Topological Sort | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 224  | Basic Calculator                    | Hard       | ⬜      | Stack                  | Amazon, Google, Meta, Bloomberg |
+| 225  | Implement Stack using Queues        | Easy       | ✅ [Solution](src/queue/MyStackUsingQueue.java) | Queue | Amazon, Microsoft |
+| 232  | Implement Queue using Stacks        | Easy       | ✅ [Solution](src/queue/MyQueueUsingStacks.java) | Stack | Amazon, Microsoft, Bloomberg |
+| 286  | Walls and Gates                     | Medium     | ⬜      | BFS / Queue            | Amazon, Google, Meta |
+| 394  | Decode String                       | Medium     | ⬜      | Stack                  | Amazon, Google, Microsoft, Bloomberg |
+| 496  | Next Greater Element I              | Easy       | ✅ [Solution](src/stack/NextGreaterElement.java) | Monotonic Stack | Amazon, Google |
+| 503  | Next Greater Element II             | Medium     | ✅ [Solution](src/stack/NextGreaterElementII.java) | Monotonic Stack | Amazon, Google, Bloomberg |
+| 622  | Design Circular Queue               | Medium     | ✅ [Solution](src/queue/MyCircularQueue.java) | Queue Design | Amazon, Google |
+| 641  | Design Circular Deque               | Medium     | ⬜      | Deque Design           | Amazon, Google |
+| 739  | Daily Temperatures                  | Medium     | ✅ [Solution](src/stack/DailyTemperatures.java) | Monotonic Stack | Amazon, Google, Meta, Bloomberg |
+| 853  | Car Fleet                           | Medium     | ⬜      | Monotonic Stack        | Google |
+| 862  | Shortest Subarray with Sum ≥ K      | Hard       | ⬜      | Monotonic Deque        | Google, Meta |
+| 907  | Sum of Subarray Minimums            | Medium     | ⬜      | Monotonic Stack        | Amazon, Google |
+| 933  | Number of Recent Calls              | Easy       | ⬜      | Queue / Sliding Window | Amazon |
+| 994  | Rotting Oranges                     | Medium     | ✅ [Solution](src/graph/RottingOranges.java) | BFS / Queue            | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 1091 | Shortest Path in Binary Matrix      | Medium     | ⬜      | BFS / Queue            | Amazon, Google, Meta, Bloomberg |
 
 ---
 
@@ -432,27 +440,27 @@ The code in this repository is provided as-is for learning purposes. Use at your
 
 > 📌 **30-Day roadmap focus:** Day 4 → 215, 1046 · Day 5 → 347, 703, 295
 
-| #    | Problem                                       | Difficulty | Status | Pattern            |
-|------|-----------------------------------------------|------------|--------|--------------------|
-| 23   | Merge K Sorted Lists                          | Hard       | ✅ [Solution](src/heap/MergeKSortedLists.java) | Heap               |
-| 215  | Kth Largest Element in an Array               | Medium     | ✅ [Solution](src/heap/KthLargestElement.java) | Heap / QuickSelect · Day 4 |
-| 264  | Ugly Number II                                | Medium     | ✅ [Solution](src/heap/UglyNumberII.java) | Heap / DP          |
-| 295  | Find Median from Data Stream                  | Hard       | ✅ [Solution](src/heap/MedianFromDataStreamOptimal.java) | Two Heaps · Day 5 |
-| 347  | Top K Frequent Elements                       | Medium     | ✅ [Solution](src/heap/TopKFrequentElements.java) | Heap + Hashing · Day 5 |
-| 355  | Design Twitter                                | Medium     | ✅ [Solution](src/heap/Twitter.java) | Heap               |
-| 373  | Find K Pairs with Smallest Sums               | Medium     | ⬜      | Heap               |
-| 378  | Kth Smallest Element in a Sorted Matrix       | Medium     | ⬜      | Heap               |
-| 407  | Trapping Rain Water II                        | Hard       | ⬜      | Heap               |
-| 502  | IPO                                           | Hard       | ⬜      | Heap + Greedy      |
-| 621  | Task Scheduler                                | Medium     | ⬜      | Heap + Greedy      |
-| 630  | Course Schedule III                           | Hard       | ⬜      | Heap + Greedy      |
-| 632  | Smallest Range Covering Elements from K Lists | Hard       | ⬜      | Heap               |
-| 703  | Kth Largest Element in a Stream               | Easy       | ⬜      | Heap · Day 5       |
-| 743  | Network Delay Time                            | Medium     | ⬜      | Heap + Dijkstra's  |
-| 778  | Swim in Rising Water                          | Hard       | ⬜      | Heap               |
-| 1046 | Last Stone Weight                             | Easy       | ✅ [Solution](src/heap/LastStoneWeight.java) | Heap · Day 4       |
-| 1337 | The K Weakest Rows in a Matrix                | Easy       | ✅ [Solution](src/heap/KWeakestRows.java) | Heap + Binary Search |
-| 1492 | The Kth Factor of N                           | Medium     | ✅ [Solution](src/heap/KthFactorOfN.java) | Math + Heap |
+| #    | Problem                                       | Difficulty | Status | Pattern            | Company |
+|------|-----------------------------------------------|------------|--------|--------------------|---------|
+| 23   | Merge K Sorted Lists                          | Hard       | ✅ [Solution](src/heap/MergeKSortedLists.java) | Heap               | Amazon, Google, Microsoft, Meta, Bloomberg, LinkedIn |
+| 215  | Kth Largest Element in an Array               | Medium     | ✅ [Solution](src/heap/KthLargestElement.java) | Heap / QuickSelect · Day 4 | Amazon, Google, Microsoft, Meta, Bloomberg, Facebook |
+| 264  | Ugly Number II                                | Medium     | ✅ [Solution](src/heap/UglyNumberII.java) | Heap / DP          | Google, Amazon, Bloomberg |
+| 295  | Find Median from Data Stream                  | Hard       | ✅ [Solution](src/heap/MedianFromDataStreamOptimal.java) | Two Heaps · Day 5 | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 347  | Top K Frequent Elements                       | Medium     | ✅ [Solution](src/heap/TopKFrequentElements.java) | Heap + Hashing · Day 5 | Amazon, Google, Meta, Bloomberg, Uber, LinkedIn |
+| 355  | Design Twitter                                | Medium     | ✅ [Solution](src/heap/Twitter.java) | Heap               | Amazon, Bloomberg |
+| 373  | Find K Pairs with Smallest Sums               | Medium     | ⬜      | Heap               | Amazon, Google, Bloomberg |
+| 378  | Kth Smallest Element in a Sorted Matrix       | Medium     | ⬜      | Heap               | Amazon, Google, Bloomberg |
+| 407  | Trapping Rain Water II                        | Hard       | ⬜      | Heap               | Amazon, Google |
+| 502  | IPO                                           | Hard       | ⬜      | Heap + Greedy      | Google |
+| 621  | Task Scheduler                                | Medium     | ⬜      | Heap + Greedy      | Amazon, Google, Meta, Bloomberg |
+| 630  | Course Schedule III                           | Hard       | ⬜      | Heap + Greedy      | Google, Bloomberg |
+| 632  | Smallest Range Covering Elements from K Lists | Hard       | ⬜      | Heap               | Google |
+| 703  | Kth Largest Element in a Stream               | Easy       | ⬜      | Heap · Day 5       | Amazon, Google, LinkedIn |
+| 743  | Network Delay Time                            | Medium     | ⬜      | Heap + Dijkstra's  | Amazon, Google, Meta |
+| 778  | Swim in Rising Water                          | Hard       | ⬜      | Heap               | Google |
+| 1046 | Last Stone Weight                             | Easy       | ✅ [Solution](src/heap/LastStoneWeight.java) | Heap · Day 4       | Amazon, Google |
+| 1337 | The K Weakest Rows in a Matrix                | Easy       | ✅ [Solution](src/heap/KWeakestRows.java) | Heap + Binary Search | Amazon, Google |
+| 1492 | The Kth Factor of N                           | Medium     | ✅ [Solution](src/heap/KthFactorOfN.java) | Math + Heap | Amazon |
 
 ---
 
@@ -462,202 +470,202 @@ The code in this repository is provided as-is for learning purposes. Use at your
 >
 > 📁 Additional tree files in repo: `MyBinaryTree` (custom implementation)
 
-| #    | Problem                                          | Difficulty | Status | Pattern                | 30-Day Roadmap |
-|------|--------------------------------------------------|------------|--------|------------------------|----------------|
-| 94   | Binary Tree Inorder Traversal                    | Easy       | ✅ [Solution](src/tree/BinaryTreeInorder.java) | DFS                    |                |
-| 98   | Validate Binary Search Tree                      | Medium     | ✅ [Solution](src/recursion/ValidateBST.java) | DFS / Recursion        | Day 2 re-solve |
-| 100  | Same Tree                                        | Easy       | ✅ [Solution](src/tree/SameTree.java) | DFS / BFS              |                |
-| 101  | Symmetric Tree                                   | Easy       | ⬜      | DFS / BFS              |                |
-| 102  | Binary Tree Level Order Traversal                | Medium     | ✅ [Solution](src/tree/LevelOrderTraversal.java) | BFS                    |                |
-| 104  | Maximum Depth of Binary Tree                     | Easy       | ✅ [Solution](src/tree/MaxDepth.java) | DFS                    | Day 1 re-solve |
-| 105  | Construct Binary Tree from Preorder and Inorder  | Medium     | ⬜      | Recursion              |                |
-| 106  | Construct Binary Tree from Inorder and Postorder | Medium     | ⬜      | Recursion              |                |
-| 110  | Balanced Binary Tree                             | Easy       | ⬜      | DFS                    | Day 1          |
-| 112  | Path Sum                                         | Easy       | ⬜      | DFS                    | Day 3          |
-| 113  | Path Sum II                                      | Medium     | ⬜      | DFS + Backtracking     | Day 3          |
-| 116  | Populating Next Right Pointers in Each Node      | Medium     | ⬜      | BFS / Pointer          |                |
-| 124  | Binary Tree Maximum Path Sum                     | Hard       | ⬜      | DFS                    |                |
-| 144  | Binary Tree Preorder Traversal                   | Easy       | ✅ [Solution](src/tree/BinaryTreePreorder.java) | DFS                    |                |
-| 145  | Binary Tree Postorder Traversal                  | Easy       | ✅ [Solution](src/tree/BinaryTreePostorder.java) | DFS                    |                |
-| 199  | Binary Tree Right Side View                      | Medium     | ✅ [Solution](src/tree/RightSideView.java) | BFS                    |                |
-| 222  | Count Complete Tree Nodes                        | Medium     | ✅ [Solution](src/tree/CountNodes.java) | DFS                    |                |
-| 226  | Invert Binary Tree                               | Easy       | ✅ [Solution](src/tree/InvertBinaryTree.java) | DFS / BFS              |                |
-| 230  | Kth Smallest Element in a BST                    | Medium     | ⬜      | DFS                    |                |
-| 235  | Lowest Common Ancestor of a BST                  | Medium     | ⬜      | BST Properties         | Day 2          |
-| 236  | Lowest Common Ancestor of a Binary Tree          | Medium     | ⬜      | DFS                    | Day 3          |
-| 257  | Binary Tree Paths                                | Easy       | ⬜      | DFS + Backtracking     |                |
-| 297  | Serialize and Deserialize Binary Tree            | Hard       | ⬜      | DFS / BFS              |                |
-| 337  | House Robber III                                 | Medium     | ⬜      | DP on Trees            |                |
-| 404  | Sum of Left Leaves                               | Easy       | ⬜      | DFS                    |                |
-| 437  | Path Sum III                                     | Medium     | ⬜      | DFS + Prefix Sum       |                |
-| 450  | Delete Node in a BST                             | Medium     | ⬜      | BST Properties         |                |
-| 543  | Diameter of Binary Tree                          | Easy       | ⬜      | DFS                    | Day 1          |
-| 572  | Subtree of Another Tree                          | Easy       | ⬜      | DFS                    |                |
-| 700  | Search in a Binary Search Tree                   | Easy       | ✅ [Solution](src/recursion/SearchInBST.java) | BST Properties / Recursion | Day 2 re-solve |
-| 814  | Binary Tree Pruning                              | Medium     | ⬜      | DFS                    |                |
-| 1650 | Lowest Common Ancestor of a Binary Tree III      | Medium     | ⬜      | Two Pointers           |                |
+| #    | Problem                                          | Difficulty | Status | Pattern                | Company | 30-Day Roadmap |
+|------|--------------------------------------------------|------------|--------|------------------------|---------|----------------|
+| 94   | Binary Tree Inorder Traversal                    | Easy       | ✅ [Solution](src/tree/BinaryTreeInorder.java) | DFS | Amazon, Google, Microsoft, Bloomberg |  |
+| 98   | Validate Binary Search Tree                      | Medium     | ✅ [Solution](src/recursion/ValidateBST.java) | DFS / Recursion | Amazon, Google, Microsoft, Meta, Bloomberg | Day 2 re-solve |
+| 100  | Same Tree                                        | Easy       | ✅ [Solution](src/tree/SameTree.java) | DFS / BFS | Amazon, Google, Microsoft, Bloomberg |  |
+| 101  | Symmetric Tree                                   | Easy       | ⬜      | DFS / BFS | Amazon, Google, Microsoft, Bloomberg |  |
+| 102  | Binary Tree Level Order Traversal                | Medium     | ✅ [Solution](src/tree/LevelOrderTraversal.java) | BFS | Amazon, Google, Microsoft, Meta, Bloomberg |  |
+| 104  | Maximum Depth of Binary Tree                     | Easy       | ✅ [Solution](src/tree/MaxDepth.java) | DFS | Amazon, Google, Microsoft, Apple, Bloomberg | Day 1 re-solve |
+| 105  | Construct Binary Tree from Preorder and Inorder  | Medium     | ⬜      | Recursion | Amazon, Google, Microsoft, Meta, Bloomberg |  |
+| 106  | Construct Binary Tree from Inorder and Postorder | Medium     | ⬜      | Recursion | Amazon, Google, Bloomberg |  |
+| 110  | Balanced Binary Tree                             | Easy       | ⬜      | DFS | Amazon, Google, Microsoft, Bloomberg | Day 1 |
+| 112  | Path Sum                                         | Easy       | ⬜      | DFS | Amazon, Google, Microsoft, Bloomberg | Day 3 |
+| 113  | Path Sum II                                      | Medium     | ⬜      | DFS + Backtracking | Amazon, Google, Microsoft, Bloomberg | Day 3 |
+| 116  | Populating Next Right Pointers in Each Node      | Medium     | ⬜      | BFS / Pointer | Amazon, Google, Microsoft |  |
+| 124  | Binary Tree Maximum Path Sum                     | Hard       | ⬜      | DFS | Amazon, Google, Microsoft, Meta, Bloomberg |  |
+| 144  | Binary Tree Preorder Traversal                   | Easy       | ✅ [Solution](src/tree/BinaryTreePreorder.java) | DFS | Amazon, Google, Microsoft |  |
+| 145  | Binary Tree Postorder Traversal                  | Easy       | ✅ [Solution](src/tree/BinaryTreePostorder.java) | DFS | Amazon, Google, Microsoft |  |
+| 199  | Binary Tree Right Side View                      | Medium     | ✅ [Solution](src/tree/RightSideView.java) | BFS | Amazon, Google, Meta, Bloomberg |  |
+| 222  | Count Complete Tree Nodes                        | Medium     | ✅ [Solution](src/tree/CountNodes.java) | DFS | Amazon, Google |  |
+| 226  | Invert Binary Tree                               | Easy       | ✅ [Solution](src/tree/InvertBinaryTree.java) | DFS / BFS | Amazon, Google, Microsoft, Apple, Bloomberg |  |
+| 230  | Kth Smallest Element in a BST                    | Medium     | ⬜      | DFS | Amazon, Google, Microsoft, Meta, Bloomberg |  |
+| 235  | Lowest Common Ancestor of a BST                  | Medium     | ⬜      | BST Properties | Amazon, Google, Microsoft, Meta, Bloomberg | Day 2 |
+| 236  | Lowest Common Ancestor of a Binary Tree          | Medium     | ⬜      | DFS | Amazon, Google, Microsoft, Meta, Bloomberg | Day 3 |
+| 257  | Binary Tree Paths                                | Easy       | ⬜      | DFS + Backtracking | Amazon, Google |  |
+| 297  | Serialize and Deserialize Binary Tree            | Hard       | ⬜      | DFS / BFS | Amazon, Google, Meta, Bloomberg, LinkedIn |  |
+| 337  | House Robber III                                 | Medium     | ⬜      | DP on Trees | Amazon, Google |  |
+| 404  | Sum of Left Leaves                               | Easy       | ⬜      | DFS | Amazon, Google |  |
+| 437  | Path Sum III                                     | Medium     | ⬜      | DFS + Prefix Sum | Amazon, Google, Meta |  |
+| 450  | Delete Node in a BST                             | Medium     | ⬜      | BST Properties | Amazon, Google, Microsoft |  |
+| 543  | Diameter of Binary Tree                          | Easy       | ⬜      | DFS | Amazon, Google, Meta, Bloomberg | Day 1 |
+| 572  | Subtree of Another Tree                          | Easy       | ⬜      | DFS | Amazon, Google |  |
+| 700  | Search in a Binary Search Tree                   | Easy       | ✅ [Solution](src/recursion/SearchInBST.java) | BST Properties / Recursion | Amazon, Google | Day 2 re-solve |
+| 814  | Binary Tree Pruning                              | Medium     | ⬜      | DFS | Google |  |
+| 1650 | Lowest Common Ancestor of a Binary Tree III      | Medium     | ⬜      | Two Pointers | Meta, Google |  |
 
 ---
 
 ## 🔟 Backtracking (11 / 17)
 
-| #   | Problem                               | Difficulty | Status | Pattern             |
-|-----|---------------------------------------|------------|--------|---------------------|
-| 17  | Letter Combinations of a Phone Number | Medium     | ✅ [Solution](src/recursion/LetterCombinations.java) | Backtracking        |
-| 22  | Generate Parentheses                  | Medium     | ✅ [Solution](src/recursion/GenerateParenthesis.java) | Backtracking        |
-| 37  | Sudoku Solver                         | Hard       | ✅ [Solution](src/recursion/SudokuSolver.java) | Backtracking        |
-| 39  | Combination Sum                       | Medium     | ✅ [Solution](src/recursion/CombinationSum.java) | Backtracking        |
-| 40  | Combination Sum II                    | Medium     | ⬜      | Backtracking        |
-| 46  | Permutations                          | Medium     | ✅ [Solution](src/recursion/Permutations.java) | Backtracking        |
-| 47  | Permutations II                       | Medium     | ⬜      | Backtracking        |
-| 51  | N-Queens                              | Hard       | ✅ [Solution](src/recursion/NQueens.java) | Backtracking        |
-| 52  | N-Queens II                           | Hard       | ✅ [Solution](src/recursion/NQueensII.java) | Backtracking        |
-| 77  | Combinations                          | Medium     | ✅ [Solution](src/recursion/Combinations.java) | Backtracking        |
-| 78  | Subsets                               | Medium     | ✅ [Solution](src/recursion/Subsets.java) | Backtracking        |
-| 79  | Word Search                           | Medium     | ⬜      | Backtracking + DFS  |
-| 90  | Subsets II                            | Medium     | ✅ [Solution](src/recursion/SubsetsII.java) | Backtracking        |
-| 131 | Palindrome Partitioning               | Medium     | ✅ [Solution](src/recursion/PalindromePartitioning.java) | Backtracking        |
-| 212 | Word Search II                        | Hard       | ⬜      | Backtracking + Trie |
-| 216 | Combination Sum III                   | Medium     | ⬜      | Backtracking        |
-| 491 | Non-decreasing Subsequences           | Medium     | ⬜      | Backtracking        |
+| #   | Problem                               | Difficulty | Status | Pattern             | Company |
+|-----|---------------------------------------|------------|--------|---------------------|---------|
+| 17  | Letter Combinations of a Phone Number | Medium     | ✅ [Solution](src/recursion/LetterCombinations.java) | Backtracking        | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 22  | Generate Parentheses                  | Medium     | ✅ [Solution](src/recursion/GenerateParenthesis.java) | Backtracking        | Amazon, Google, Microsoft, Meta, Bloomberg, Uber |
+| 37  | Sudoku Solver                         | Hard       | ✅ [Solution](src/recursion/SudokuSolver.java) | Backtracking        | Amazon, Google, Microsoft, Apple |
+| 39  | Combination Sum                       | Medium     | ✅ [Solution](src/recursion/CombinationSum.java) | Backtracking        | Amazon, Google, Microsoft, Bloomberg |
+| 40  | Combination Sum II                    | Medium     | ⬜      | Backtracking        | Amazon, Google, Bloomberg |
+| 46  | Permutations                          | Medium     | ✅ [Solution](src/recursion/Permutations.java) | Backtracking        | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 47  | Permutations II                       | Medium     | ⬜      | Backtracking        | Amazon, Google |
+| 51  | N-Queens                              | Hard       | ✅ [Solution](src/recursion/NQueens.java) | Backtracking        | Amazon, Google, Apple, Bloomberg |
+| 52  | N-Queens II                           | Hard       | ✅ [Solution](src/recursion/NQueensII.java) | Backtracking        | Amazon, Google |
+| 77  | Combinations                          | Medium     | ✅ [Solution](src/recursion/Combinations.java) | Backtracking        | Amazon, Google, Microsoft |
+| 78  | Subsets                               | Medium     | ✅ [Solution](src/recursion/Subsets.java) | Backtracking        | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 79  | Word Search                           | Medium     | ⬜      | Backtracking + DFS  | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 90  | Subsets II                            | Medium     | ✅ [Solution](src/recursion/SubsetsII.java) | Backtracking        | Amazon, Google |
+| 131 | Palindrome Partitioning               | Medium     | ✅ [Solution](src/recursion/PalindromePartitioning.java) | Backtracking        | Amazon, Google, Meta |
+| 212 | Word Search II                        | Hard       | ⬜      | Backtracking + Trie | Amazon, Google, Meta, Bloomberg |
+| 216 | Combination Sum III                   | Medium     | ⬜      | Backtracking        | Amazon, Google |
+| 491 | Non-decreasing Subsequences           | Medium     | ⬜      | Backtracking        | Amazon, Google |
 
 ---
 
 ## 1️⃣1️⃣ Graphs (6 / 24)
 
-| #    | Problem                                      | Difficulty | Status | Pattern                    | 30-Day Roadmap |
-|------|----------------------------------------------|------------|--------|----------------------------|----------------|
-| 133  | Clone Graph                                  | Medium     | ⬜      | DFS / BFS                  |                |
-| 200  | Number of Islands                            | Medium     | ✅ [Solution](src/graph/NumberOfIslands.java) | DFS / BFS          | Day 6          |
-| 207  | Course Schedule                              | Medium     | ✅ [Solution](src/graph/CourseSchedule.java) | Topological Sort    | Day 8          |
-| 208  | Implement Trie (Prefix Tree)                 | Medium     | ⬜      | Trie                       |                |
-| 210  | Course Schedule II                           | Medium     | ✅ [Solution](src/graph/CourseScheduleIIDfs.java) | Topological Sort | Day 8         |
-| 261  | Graph Valid Tree                             | Medium     | ⬜      | Union Find / DFS           |                |
-| 269  | Alien Dictionary                             | Hard       | ⬜      | Topological Sort           |                |
-| 286  | Walls and Gates                              | Medium     | ⬜      | BFS                        |                |
-| 323  | Number of Connected Components               | Medium     | ⬜      | Union Find / DFS           |                |
-| 329  | Longest Increasing Path in a Matrix          | Hard       | ⬜      | DFS + Memoization          |                |
-| 417  | Pacific Atlantic Water Flow                  | Medium     | ⬜      | DFS / BFS                  |                |
-| 547  | Number of Provinces                          | Medium     | ⬜      | Union Find / DFS           |                |
-| 684  | Redundant Connection                         | Medium     | ⬜      | Union Find                 |                |
-| 695  | Max Area of Island                           | Medium     | ⬜      | DFS / BFS                  | Day 6          |
-| 721  | Accounts Merge                               | Medium     | ⬜      | Union Find / DFS           |                |
-| 733  | Flood Fill                                   | Easy       | ✅ [Solution](src/graph/FloodFill.java) | DFS on grid        |                |
-| 743  | Network Delay Time                           | Medium     | ⬜      | Dijkstra's                 |                |
-| 787  | Cheapest Flights Within K Stops              | Medium     | ⬜      | Bellman-Ford               |                |
-| 797  | All Paths From Source to Target              | Medium     | ✅ [Solution](src/graph/AllPathsSourceTarget.java) | DFS / Backtracking |           |
-| 802  | Find Eventual Safe States                    | Medium     | ⬜      | DFS                        |                |
-| 827  | Making A Large Island                        | Hard       | ⬜      | DFS                        |                |
-| 994  | Rotting Oranges                              | Medium     | ✅ [Solution](src/graph/RottingOranges.java) | BFS (multi-source) | Day 7         |
-| 1091 | Shortest Path in Binary Matrix               | Medium     | ⬜      | BFS                        | Day 7          |
-| 1584 | Min Cost to Connect All Points               | Medium     | ⬜      | MST (Prim's)               |                |
+| #    | Problem                                      | Difficulty | Status | Pattern                    | Company | 30-Day Roadmap |
+|------|----------------------------------------------|------------|--------|----------------------------|---------|----------------|
+| 133  | Clone Graph                                  | Medium     | ⬜      | DFS / BFS | Amazon, Google, Microsoft, Meta, Bloomberg |  |
+| 200  | Number of Islands                            | Medium     | ✅ [Solution](src/graph/NumberOfIslands.java) | DFS / BFS | Amazon, Google, Microsoft, Meta, Bloomberg, Uber | Day 6 |
+| 207  | Course Schedule                              | Medium     | ✅ [Solution](src/graph/CourseSchedule.java) | Topological Sort | Amazon, Google, Microsoft, Meta, Bloomberg | Day 8 |
+| 208  | Implement Trie (Prefix Tree)                 | Medium     | ⬜      | Trie | Amazon, Google, Microsoft, Meta, Bloomberg |  |
+| 210  | Course Schedule II                           | Medium     | ✅ [Solution](src/graph/CourseScheduleIIDfs.java) | Topological Sort | Amazon, Google, Meta, Bloomberg | Day 8 |
+| 261  | Graph Valid Tree                             | Medium     | ⬜      | Union Find / DFS | Amazon, Google, LinkedIn |  |
+| 269  | Alien Dictionary                             | Hard       | ⬜      | Topological Sort | Amazon, Google, Meta, Bloomberg, Airbnb |  |
+| 286  | Walls and Gates                              | Medium     | ⬜      | BFS | Amazon, Google, Meta |  |
+| 323  | Number of Connected Components               | Medium     | ⬜      | Union Find / DFS | Amazon, Google, LinkedIn |  |
+| 329  | Longest Increasing Path in a Matrix          | Hard       | ⬜      | DFS + Memoization | Amazon, Google, Meta |  |
+| 417  | Pacific Atlantic Water Flow                  | Medium     | ⬜      | DFS / BFS | Amazon, Google, Bloomberg |  |
+| 547  | Number of Provinces                          | Medium     | ⬜      | Union Find / DFS | Amazon, Google, Microsoft |  |
+| 684  | Redundant Connection                         | Medium     | ⬜      | Union Find | Amazon, Google |  |
+| 695  | Max Area of Island                           | Medium     | ⬜      | DFS / BFS | Amazon, Google, Meta | Day 6 |
+| 721  | Accounts Merge                               | Medium     | ⬜      | Union Find / DFS | Amazon, Google, Meta |  |
+| 733  | Flood Fill                                   | Easy       | ✅ [Solution](src/graph/FloodFill.java) | DFS on grid | Amazon, Google, Microsoft |  |
+| 743  | Network Delay Time                           | Medium     | ⬜      | Dijkstra's | Amazon, Google, Meta, Bloomberg |  |
+| 787  | Cheapest Flights Within K Stops              | Medium     | ⬜      | Bellman-Ford | Amazon, Google, Meta |  |
+| 797  | All Paths From Source to Target              | Medium     | ✅ [Solution](src/graph/AllPathsSourceTarget.java) | DFS / Backtracking | Amazon, Google |  |
+| 802  | Find Eventual Safe States                    | Medium     | ⬜      | DFS | Google, Meta |  |
+| 827  | Making A Large Island                        | Hard       | ⬜      | DFS | Amazon, Google |  |
+| 994  | Rotting Oranges                              | Medium     | ✅ [Solution](src/graph/RottingOranges.java) | BFS (multi-source) | Amazon, Google, Microsoft, Meta | Day 7 |
+| 1091 | Shortest Path in Binary Matrix               | Medium     | ⬜      | BFS | Amazon, Google, Meta, Bloomberg | Day 7 |
+| 1584 | Min Cost to Connect All Points               | Medium     | ⬜      | MST (Prim's) | Amazon, Google, Meta |  |
 
 ---
 
 ## 1️⃣2️⃣ Dynamic Programming (3 / 33)
 
-| #    | Problem                                                   | Difficulty | Status | Pattern              |
-|------|-----------------------------------------------------------|------------|--------|----------------------|
-| 5    | Longest Palindromic Substring                             | Medium     | ⬜      | DP / Expand Center   |
-| 53   | Maximum Subarray                                          | Medium     | ⬜      | Kadane's / DP        |
-| 62   | Unique Paths                                              | Medium     | ⬜      | DP                   |
-| 63   | Unique Paths II                                           | Medium     | ⬜      | DP                   |
-| 64   | Minimum Path Sum                                          | Medium     | ⬜      | DP                   |
-| 70   | Climbing Stairs                                           | Easy       | ✅ [Solution](src/recursion/ClimbingStairs.java) | DP / Recursion      |
-| 72   | Edit Distance                                             | Medium     | ⬜      | DP                   |
-| 91   | Decode Ways                                               | Medium     | ⬜      | DP                   |
-| 123  | Best Time to Buy and Sell Stock III                       | Hard       | ⬜      | DP                   |
-| 139  | Word Break                                                | Medium     | ⬜      | DP                   |
-| 152  | Maximum Product Subarray                                  | Medium     | ⬜      | DP                   |
-| 198  | House Robber                                              | Medium     | ⬜      | DP                   |
-| 213  | House Robber II                                           | Medium     | ⬜      | DP                   |
-| 221  | Maximal Square                                            | Medium     | ⬜      | DP                   |
-| 279  | Perfect Squares                                           | Medium     | ⬜      | DP                   |
-| 300  | Longest Increasing Subsequence                            | Medium     | ⬜      | DP                   |
-| 309  | Best Time to Buy and Sell Stock with Cooldown             | Medium     | ⬜      | DP                   |
-| 312  | Burst Balloons                                            | Hard       | ⬜      | DP                   |
-| 322  | Coin Change                                               | Medium     | ⬜      | DP                   |
-| 337  | House Robber III                                          | Medium     | ⬜      | DP on Trees          |
-| 416  | Partition Equal Subset Sum                                | Medium     | ⬜      | DP                   |
-| 494  | Target Sum                                                | Medium     | ⬜      | DP                   |
-| 518  | Coin Change II                                            | Medium     | ⬜      | DP                   |
-| 673  | Number of Longest Increasing Subsequence                  | Medium     | ⬜      | DP                   |
-| 714  | Best Time to Buy and Sell Stock with Transaction Fee      | Medium     | ⬜      | DP                   |
-| 740  | Delete and Earn                                           | Medium     | ⬜      | DP                   |
-| 931  | Minimum Falling Path Sum                                  | Medium     | ⬜      | DP                   |
-| 1143 | Longest Common Subsequence                                | Medium     | ⬜      | DP                   |
-| 1155 | Number of Dice Rolls With Target Sum                      | Medium     | ⬜      | DP                   |
-| 1218 | Longest Arithmetic Subsequence of Given Difference        | Medium     | ⬜      | DP                   |
-| 1639 | Number of Ways to Form a Target String Given a Dictionary | Hard       | ⬜      | DP                   |
-| 3129 | Find All Possible Stable Binary Arrays I                  | Hard       | ✅ [Solution](src/dp/FindAllPossibleStableArraysI.java) | DP + Prefix Sum |
-| 3130 | Find All Possible Stable Binary Arrays II                 | Hard       | ✅ [Solution](src/dp/FindAllPossibleStableArraysII.java) | DP + Prefix Sum |
+| #    | Problem                                                   | Difficulty | Status | Pattern              | Company |
+|------|-----------------------------------------------------------|------------|--------|----------------------|---------|
+| 5    | Longest Palindromic Substring                             | Medium     | ⬜      | DP / Expand Center   | Amazon, Google, Microsoft, Apple, Bloomberg |
+| 53   | Maximum Subarray                                          | Medium     | ⬜      | Kadane's / DP        | Amazon, Google, Microsoft, Apple, Bloomberg, Meta |
+| 62   | Unique Paths                                              | Medium     | ⬜      | DP                   | Amazon, Google, Microsoft, Bloomberg |
+| 63   | Unique Paths II                                           | Medium     | ⬜      | DP                   | Amazon, Google, Bloomberg |
+| 64   | Minimum Path Sum                                          | Medium     | ⬜      | DP                   | Amazon, Google, Bloomberg |
+| 70   | Climbing Stairs                                           | Easy       | ✅ [Solution](src/recursion/ClimbingStairs.java) | DP / Recursion      | Amazon, Google, Microsoft, Apple, Bloomberg |
+| 72   | Edit Distance                                             | Medium     | ⬜      | DP                   | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 91   | Decode Ways                                               | Medium     | ⬜      | DP                   | Amazon, Google, Meta, Bloomberg |
+| 123  | Best Time to Buy and Sell Stock III                       | Hard       | ⬜      | DP                   | Amazon, Google, Meta, Bloomberg |
+| 139  | Word Break                                                | Medium     | ⬜      | DP                   | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 152  | Maximum Product Subarray                                  | Medium     | ⬜      | DP                   | Amazon, Google, LinkedIn, Bloomberg |
+| 198  | House Robber                                              | Medium     | ⬜      | DP                   | Amazon, Google, Microsoft, Bloomberg, Adobe |
+| 213  | House Robber II                                           | Medium     | ⬜      | DP                   | Amazon, Google |
+| 221  | Maximal Square                                            | Medium     | ⬜      | DP                   | Amazon, Google, Meta, Bloomberg |
+| 279  | Perfect Squares                                           | Medium     | ⬜      | DP                   | Amazon, Google |
+| 300  | Longest Increasing Subsequence                            | Medium     | ⬜      | DP                   | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 309  | Best Time to Buy and Sell Stock with Cooldown             | Medium     | ⬜      | DP                   | Amazon, Google |
+| 312  | Burst Balloons                                            | Hard       | ⬜      | DP                   | Amazon, Google, Meta |
+| 322  | Coin Change                                               | Medium     | ⬜      | DP                   | Amazon, Google, Microsoft, Meta, Bloomberg, Adobe |
+| 337  | House Robber III                                          | Medium     | ⬜      | DP on Trees          | Amazon, Google |
+| 416  | Partition Equal Subset Sum                                | Medium     | ⬜      | DP                   | Amazon, Google, Meta |
+| 494  | Target Sum                                                | Medium     | ⬜      | DP                   | Amazon, Google |
+| 518  | Coin Change II                                            | Medium     | ⬜      | DP                   | Amazon, Google |
+| 673  | Number of Longest Increasing Subsequence                  | Medium     | ⬜      | DP                   | Amazon, Google |
+| 714  | Best Time to Buy and Sell Stock with Transaction Fee      | Medium     | ⬜      | DP                   | Amazon, Google |
+| 740  | Delete and Earn                                           | Medium     | ⬜      | DP                   | Amazon, Google |
+| 931  | Minimum Falling Path Sum                                  | Medium     | ⬜      | DP                   | Amazon, Google |
+| 1143 | Longest Common Subsequence                                | Medium     | ⬜      | DP                   | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 1155 | Number of Dice Rolls With Target Sum                      | Medium     | ⬜      | DP                   | Google |
+| 1218 | Longest Arithmetic Subsequence of Given Difference        | Medium     | ⬜      | DP                   | Amazon, Google |
+| 1639 | Number of Ways to Form a Target String Given a Dictionary | Hard       | ⬜      | DP                   | Google, Meta |
+| 3129 | Find All Possible Stable Binary Arrays I                  | Hard       | ✅ [Solution](src/dp/FindAllPossibleStableArraysI.java) | DP + Prefix Sum | Google |
+| 3130 | Find All Possible Stable Binary Arrays II                 | Hard       | ✅ [Solution](src/dp/FindAllPossibleStableArraysII.java) | DP + Prefix Sum | Google |
 
 ---
 
 ## 1️⃣3️⃣ Greedy (2 / 8)
 
-| #    | Problem                                         | Difficulty | Status | Pattern              |
-|------|-------------------------------------------------|------------|--------|----------------------|
-| 45   | Jump Game II                                    | Medium     | ⬜      | Greedy               |
-| 55   | Jump Game                                       | Medium     | ⬜      | Greedy               |
-| 121  | Best Time to Buy and Sell Stock                 | Easy       | ✅ [Solution](src/arrays/BestTimeToBuyAndSellStock.java) | Greedy |
-| 134  | Gas Station                                     | Medium     | ⬜      | Greedy               |
-| 435  | Non-overlapping Intervals                       | Medium     | ⬜      | Greedy + Sorting     |
-| 452  | Minimum Arrows to Burst Balloons                | Medium     | ⬜      | Greedy + Sorting     |
-| 763  | Partition Labels                                | Medium     | ⬜      | Greedy + Hashing     |
-| 1689 | Partitioning Into Min Number of Deci-Binary Nos | Easy       | ✅ [Solution](src/strings/PartitioningIntoMinDeciBinaryNumbers.java) | Greedy |
+| #    | Problem                                         | Difficulty | Status | Pattern              | Company |
+|------|-------------------------------------------------|------------|--------|----------------------|---------|
+| 45   | Jump Game II                                    | Medium     | ⬜      | Greedy               | Amazon, Google, Meta, Bloomberg |
+| 55   | Jump Game                                       | Medium     | ⬜      | Greedy               | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 121  | Best Time to Buy and Sell Stock                 | Easy       | ✅ [Solution](src/arrays/BestTimeToBuyAndSellStock.java) | Greedy | Amazon, Google, Microsoft, Apple, Bloomberg, Meta |
+| 134  | Gas Station                                     | Medium     | ⬜      | Greedy               | Amazon, Google, Bloomberg |
+| 435  | Non-overlapping Intervals                       | Medium     | ⬜      | Greedy + Sorting     | Amazon, Google, Meta, Bloomberg |
+| 452  | Minimum Arrows to Burst Balloons                | Medium     | ⬜      | Greedy + Sorting     | Amazon, Google |
+| 763  | Partition Labels                                | Medium     | ⬜      | Greedy + Hashing     | Amazon, Google, Meta |
+| 1689 | Partitioning Into Min Number of Deci-Binary Nos | Easy       | ✅ [Solution](src/strings/PartitioningIntoMinDeciBinaryNumbers.java) | Greedy | Amazon |
 
 ---
 
 ## 1️⃣4️⃣ Trie (0 / 3)
 
-| #    | Problem                        | Difficulty | Status | Pattern              |
-|------|--------------------------------|------------|--------|----------------------|
-| 208  | Implement Trie (Prefix Tree)   | Medium     | ⬜      | Trie                 |
-| 211  | Design Add and Search Word     | Medium     | ⬜      | Trie + DFS           |
-| 212  | Word Search II                 | Hard       | ⬜      | Trie + Backtracking  |
+| #    | Problem                        | Difficulty | Status | Pattern              | Company |
+|------|--------------------------------|------------|--------|----------------------|---------|
+| 208  | Implement Trie (Prefix Tree)   | Medium     | ⬜      | Trie                 | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 211  | Design Add and Search Word     | Medium     | ⬜      | Trie + DFS           | Amazon, Google, Meta, Bloomberg |
+| 212  | Word Search II                 | Hard       | ⬜      | Trie + Backtracking  | Amazon, Google, Meta, Bloomberg |
 
 ---
 
 ## 1️⃣5️⃣ System Design / LLD (0 / 3)
 
-| #    | Problem                          | Difficulty | Status | Pattern                          |
-|------|----------------------------------|------------|--------|----------------------------------|
-| 146  | LRU Cache                        | Medium     | ⬜      | Doubly Linked List + HashMap     |
-| 460  | LFU Cache                        | Hard       | ⬜      | HashMap + TreeMap                |
-| 588  | Design In-Memory File System     | Hard       | ⬜      | Trie + HashMap                   |
+| #    | Problem                          | Difficulty | Status | Pattern                          | Company |
+|------|----------------------------------|------------|--------|----------------------------------|---------|
+| 146  | LRU Cache                        | Medium     | ⬜      | Doubly Linked List + HashMap     | Amazon, Google, Microsoft, Meta, Bloomberg, Uber |
+| 460  | LFU Cache                        | Hard       | ⬜      | HashMap + TreeMap                | Amazon, Google, Meta |
+| 588  | Design In-Memory File System     | Hard       | ⬜      | Trie + HashMap                   | Amazon, Google, Dropbox |
 
 ---
 
 ## 1️⃣6️⃣ Bit Manipulation (4 / 12)
 
-| #    | Problem                             | Difficulty | Status | Pattern          |
-|------|-------------------------------------|------------|--------|------------------|
-| 67   | Add Binary                          | Easy       | ✅ [Solution](src/strings/AddBinary.java) | Bit Manipulation |
-| 136  | Single Number                       | Easy       | ✅ [Solution](src/set/SingleNumber.java) | XOR |
-| 190  | Reverse Bits                        | Easy       | ⬜      | Bit Manipulation |
-| 191  | Number of 1 Bits                    | Easy       | ⬜      | Bit Manipulation |
-| 231  | Power of Two                        | Easy       | ⬜      | Bit Manipulation |
-| 268  | Missing Number                      | Easy       | ⬜      | XOR / Math       |
-| 338  | Counting Bits                       | Easy       | ⬜      | DP + Bits        |
-| 371  | Sum of Two Integers                 | Medium     | ⬜      | Bit Manipulation |
-| 461  | Hamming Distance                    | Easy       | ⬜      | XOR              |
-| 693  | Binary Number with Alternating Bits | Easy       | ⬜      | Bit Manipulation |
-| 868  | Binary Gap                          | Easy       | ✅ [Solution](src/strings/BinaryGap.java) | Bit Manipulation |
-| 1009 | Complement of Base 10 Integer       | Easy       | ✅ [Solution](src/dailychallenges/ComplementBase10Integer.java) | Bit Mask |
+| #    | Problem                             | Difficulty | Status | Pattern          | Company |
+|------|-------------------------------------|------------|--------|------------------|---------|
+| 67   | Add Binary                          | Easy       | ✅ [Solution](src/strings/AddBinary.java) | Bit Manipulation | Amazon, Google, Apple |
+| 136  | Single Number                       | Easy       | ✅ [Solution](src/set/SingleNumber.java) | XOR | Amazon, Google, Microsoft, Bloomberg |
+| 190  | Reverse Bits                        | Easy       | ⬜      | Bit Manipulation | Amazon, Apple, Bloomberg |
+| 191  | Number of 1 Bits                    | Easy       | ⬜      | Bit Manipulation | Amazon, Apple, Bloomberg |
+| 231  | Power of Two                        | Easy       | ⬜      | Bit Manipulation | Amazon, Google |
+| 268  | Missing Number                      | Easy       | ⬜      | XOR / Math       | Amazon, Google, Microsoft, Bloomberg |
+| 338  | Counting Bits                       | Easy       | ⬜      | DP + Bits        | Amazon, Google |
+| 371  | Sum of Two Integers                 | Medium     | ⬜      | Bit Manipulation | Amazon, Google, Meta |
+| 461  | Hamming Distance                    | Easy       | ⬜      | XOR              | Amazon, Google |
+| 693  | Binary Number with Alternating Bits | Easy       | ⬜      | Bit Manipulation | Amazon |
+| 868  | Binary Gap                          | Easy       | ✅ [Solution](src/strings/BinaryGap.java) | Bit Manipulation | Amazon |
+| 1009 | Complement of Base 10 Integer       | Easy       | ✅ [Solution](src/dailychallenges/ComplementBase10Integer.java) | Bit Mask | Amazon, Google |
 
 ---
 
 ## 🌟 Daily Challenges (5 / 6)
 
-| #    | Problem                                                  | Difficulty | Status | Pattern          |
-|------|----------------------------------------------------------|------------|--------|------------------|
-| 1318 | Minimum Flips to Make a OR b Equal to c                  | Medium     | ✅ [Solution](src/dailychallenges/MinFlips.java) | Bit Manipulation |
-| 1536 | Minimum Swaps to Arrange a Binary Grid                   | Medium     | ✅ [Solution](src/dailychallenges/MinimumSwaps.java) | Greedy / Simulation |
-| 1545 | Find Kth Bit in Nth Binary String                        | Medium     | ✅ [Solution](src/dailychallenges/FindKthBit.java) | Recursion        |
-| 1784 | Check if Binary String Has at Most One Segment of Ones   | Easy       | ✅ [Solution](src/dailychallenges/CheckOneSegment.java) | String           |
-| 1980 | Find Unique Binary String                                | Medium     | ✅ [Solution](src/dailychallenges/FindUniqueBinaryString.java) | Backtracking     |
-| 2193 | Minimum Number of Moves to Make Palindrome               | Hard       | ⬜      | Greedy           |
+| #    | Problem                                                  | Difficulty | Status | Pattern          | Company |
+|------|----------------------------------------------------------|------------|--------|------------------|---------|
+| 1318 | Minimum Flips to Make a OR b Equal to c                  | Medium     | ✅ [Solution](src/dailychallenges/MinFlips.java) | Bit Manipulation | Amazon, Google |
+| 1536 | Minimum Swaps to Arrange a Binary Grid                   | Medium     | ✅ [Solution](src/dailychallenges/MinimumSwaps.java) | Greedy / Simulation | Amazon |
+| 1545 | Find Kth Bit in Nth Binary String                        | Medium     | ✅ [Solution](src/dailychallenges/FindKthBit.java) | Recursion        | Amazon, Google |
+| 1784 | Check if Binary String Has at Most One Segment of Ones   | Easy       | ✅ [Solution](src/dailychallenges/CheckOneSegment.java) | String           | Amazon |
+| 1980 | Find Unique Binary String                                | Medium     | ✅ [Solution](src/dailychallenges/FindUniqueBinaryString.java) | Backtracking     | Amazon, Google |
+| 2193 | Minimum Number of Moves to Make Palindrome               | Hard       | ⬜      | Greedy           | Google, Meta |
 
 ---
 
