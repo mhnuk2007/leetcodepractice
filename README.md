@@ -150,31 +150,6 @@ Track every problem you solve in these buckets. Re-solve without notes on the ta
 | Day+7  | 1 week later   | Pattern solidification |
 | Day+21 | 3 weeks later  | Long-term retention before interview |
 
-### 🧱 Daily Template
-
-```java
-/**
- * Problem: [LC Number] [Problem Name]
- * Pattern:
- * Time Complexity:
- * Space Complexity:
- *
- * Key Idea:
- *
- * Similar Problems:
- */
-```
-
-### 📈 Expected Result After 30 Days
-
-| Category | Before | After |
-|----------|--------|-------|
-| Heap     |  8     | ~12+  |
-| Graphs   |  6     | ~10+  |
-| DP       |  3     | ~10+  |
-| Sliding Window | 3 | ~7+  |
-| Backtracking | 11 | ~13+ |
-
 ---
 
 ## 📅 Daily Progress
@@ -223,10 +198,6 @@ Please:
 This repository contains solutions to LeetCode problems for educational purposes. All problem statements and test cases are property of LeetCode. Please respect their terms of service.
 
 The code in this repository is provided as-is for learning purposes. Use at your own risk.
-
----
-
-*Last updated: April 19, 2026*
 
 ---
 
