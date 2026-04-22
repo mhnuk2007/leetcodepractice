@@ -70,14 +70,14 @@ Includes:
 | Heap / Priority Queue  |  19   |     8     | ████░░░░░░  42%      |
 | Trees                  |  32   |    11     | ███░░░░░░░  34%      |
 | Backtracking           |  17   |    11     | ██████░░░░  65%      |
-| Graphs                 |  24   |     6     | ██░░░░░░░░  25%      |
+| Graphs                 |  24   |    12    | █████░░░░░  50%      |
 | Dynamic Programming    |  33   |     3     | █░░░░░░░░░   9%      |
 | Greedy                 |   8   |     2     | ██░░░░░░░░  25%      |
 | Trie                   |   3   |     0     | ░░░░░░░░░░   0%      |
 | System Design / LLD    |   3   |     0     | ░░░░░░░░░░   0%      |
 | Bit Manipulation       |  12   |     4     | ███░░░░░░░  33%      |
 | Daily Challenges       |   6   |     5     | ████████░░  83%      |
-| **Total**              | **325** | **152** | **████░░░░░░ 47%**  |
+| **Total**              | **325** | **158** | **████░░░░░░ 49%**  |
 
 > 📌 Trees expanded to 32 — added LC 144 (Preorder Traversal), LC 145 (Postorder Traversal), and LC 222 (Count Complete Tree Nodes) to the tracked roadmap.
 > 📌 New sections added: Greedy, Trie, System Design / LLD — based on gap analysis.
@@ -531,34 +531,34 @@ The code in this repository is provided as-is for learning purposes. Use at your
 
 ---
 
-## 1️⃣1️⃣ Graphs (6 / 24)
+## 1️⃣1️⃣ Graphs (12 / 24)
 
 | #    | Problem                                      | Difficulty | Status | Pattern                    | Company | 30-Day Roadmap |
 |------|----------------------------------------------|------------|--------|----------------------------|---------|----------------|
-| 133  | Clone Graph                                  | Medium     | ⬜      | DFS / BFS | Amazon, Google, Microsoft, Meta, Bloomberg |  |
+| 133  | Clone Graph                                  | Medium     | ✅ [Solution](src/graph/CloneGraph.java) | DFS / BFS | Amazon, Google, Microsoft, Meta, Bloomberg |  |
 | 200  | Number of Islands                            | Medium     | ✅ [Solution](src/graph/NumberOfIslands.java) | DFS / BFS | Amazon, Google, Microsoft, Meta, Bloomberg, Uber | Day 6 |
 | 207  | Course Schedule                              | Medium     | ✅ [Solution](src/graph/CourseSchedule.java) | Topological Sort | Amazon, Google, Microsoft, Meta, Bloomberg | Day 8 |
 | 208  | Implement Trie (Prefix Tree)                 | Medium     | ⬜      | Trie | Amazon, Google, Microsoft, Meta, Bloomberg |  |
 | 210  | Course Schedule II                           | Medium     | ✅ [Solution](src/graph/CourseScheduleIIDfs.java) | Topological Sort | Amazon, Google, Meta, Bloomberg | Day 8 |
-| 261  | Graph Valid Tree                             | Medium     | ⬜      | Union Find / DFS | Amazon, Google, LinkedIn |  |
+| 261  | Graph Valid Tree                             | Medium     | ✅ [Solution](src/graph/CycleDetectionUndirectedGraph.java) | Union Find / DFS | Amazon, Google, LinkedIn |  |
 | 269  | Alien Dictionary                             | Hard       | ⬜      | Topological Sort | Amazon, Google, Meta, Bloomberg, Airbnb |  |
 | 286  | Walls and Gates                              | Medium     | ⬜      | BFS | Amazon, Google, Meta |  |
 | 323  | Number of Connected Components               | Medium     | ⬜      | Union Find / DFS | Amazon, Google, LinkedIn |  |
 | 329  | Longest Increasing Path in a Matrix          | Hard       | ⬜      | DFS + Memoization | Amazon, Google, Meta |  |
 | 417  | Pacific Atlantic Water Flow                  | Medium     | ⬜      | DFS / BFS | Amazon, Google, Bloomberg |  |
 | 547  | Number of Provinces                          | Medium     | ⬜      | Union Find / DFS | Amazon, Google, Microsoft |  |
-| 684  | Redundant Connection                         | Medium     | ⬜      | Union Find | Amazon, Google |  |
+| 684  | Redundant Connection                         | Medium     | ✅ [Solution](src/graph/RedundantConnection.java) | Union Find | Amazon, Google |  |
 | 695  | Max Area of Island                           | Medium     | ⬜      | DFS / BFS | Amazon, Google, Meta | Day 6 |
 | 721  | Accounts Merge                               | Medium     | ⬜      | Union Find / DFS | Amazon, Google, Meta |  |
 | 733  | Flood Fill                                   | Easy       | ✅ [Solution](src/graph/FloodFill.java) | DFS on grid | Amazon, Google, Microsoft |  |
-| 743  | Network Delay Time                           | Medium     | ⬜      | Dijkstra's | Amazon, Google, Meta, Bloomberg |  |
-| 787  | Cheapest Flights Within K Stops              | Medium     | ⬜      | Bellman-Ford | Amazon, Google, Meta |  |
+| 743  | Network Delay Time                           | Medium     | ✅ [Solution](src/graph/DijkstraAlgorithm.java) | Dijkstra's | Amazon, Google, Meta, Bloomberg |  |
+| 787  | Cheapest Flights Within K Stops              | Medium     | ✅ [Solution](src/graph/BellmanFordAlgorithm.java) | Bellman-Ford | Amazon, Google, Meta |  |
 | 797  | All Paths From Source to Target              | Medium     | ✅ [Solution](src/graph/AllPathsSourceTarget.java) | DFS / Backtracking | Amazon, Google |  |
 | 802  | Find Eventual Safe States                    | Medium     | ⬜      | DFS | Google, Meta |  |
 | 827  | Making A Large Island                        | Hard       | ⬜      | DFS | Amazon, Google |  |
 | 994  | Rotting Oranges                              | Medium     | ✅ [Solution](src/graph/RottingOranges.java) | BFS (multi-source) | Amazon, Google, Microsoft, Meta | Day 7 |
 | 1091 | Shortest Path in Binary Matrix               | Medium     | ⬜      | BFS | Amazon, Google, Meta, Bloomberg | Day 7 |
-| 1584 | Min Cost to Connect All Points               | Medium     | ⬜      | MST (Prim's) | Amazon, Google, Meta |  |
+| 1584 | Min Cost to Connect All Points               | Medium     | ✅ [Solution](src/graph/PrimsAlgorithm.java) | MST (Prim's) | Amazon, Google, Meta |  |
 
 ---
 
@@ -736,4 +736,4 @@ src/
 
 ---
 
-*Last updated: April 19, 2026*
+*Last updated: April 22, 2026*
