@@ -1,12 +1,12 @@
 ====================
 LeetCode Practice — Solved Problems
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: April 18, 2026
+Last Updated: April 23, 2026
 ====================
 
 Statistics
 ====================
-Total Files: 232
+Total Files: 243
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -18,7 +18,7 @@ Category Breakdown:
 - Daily Challenges   :  6
 - Hashing            :  5
 - Heap               : 13
-- Graph              : 19
+- Graph              : 30
 - Sorting Algorithms : 11
 - Dynamic Programming:  2
 - Map & Set Design   :  2
@@ -220,27 +220,38 @@ Sliding Window (2)
   1. SlidingWindow
   2. MaxSlidingWindow
 
-Graph (19)
+Graph (30)
 ---------
   1. AdjacencyMatrix
   2. AllPaths
   3. AllPathsSourceTarget
-  4. BFSTraversalInGraph
-  5. CourseSchedule
-  6. CourseScheduleCycleDetection
-  7. CourseScheduleOptimal
-  8. CourseScheduleDFSOptimal
-  9. CourseScheduleIIBfs
- 10. CourseScheduleIIDfs
- 11. CycleDetectionDirectedGraph
- 12. CycleDetectionUndirectedGraph
- 13. DFSTraversalInGraph
- 14. Graph
- 15. NumberOfIslands
- 16. RottingOranges
- 17. TopologicalSortingBFS
- 18. TopologicalSortingDFS
- 19. WeightedGraph
+  4. BellmanFordAlgorithm
+  5. BellmanFordAlgorithmEdge
+  6. BFSTraversalInGraph
+  7. CloneGraph
+  8. CourseSchedule
+  9. CourseScheduleCycleDetection
+ 10. CourseScheduleOptimal
+ 11. CourseScheduleDFSOptimal
+ 12. CourseScheduleIIBfs
+ 13. CourseScheduleIIDfs
+ 14. CycleDetectionDirectedGraph
+ 15. CycleDetectionUndirectedGraph
+ 16. DetectCycleIn2DGrid
+ 17. DFSTraversalInGraph
+ 18. DijkstraAlgorithm
+ 19. DisjointSetUnion
+ 20. FloodFill
+ 21. Graph
+ 22. KruskalAlgorithm
+ 23. NumberOfIslands
+ 24. PrimsAlgorithm
+ 25. RedundantConnection
+ 26. RottingOranges
+ 27. TopologicalSortingBFS
+ 28. TopologicalSortingDFS
+ 29. Trie
+ 30. WeightedGraph
 
 Sorting Algorithms (11)
 -----------------------
