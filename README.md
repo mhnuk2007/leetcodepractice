@@ -37,7 +37,7 @@ This repository is designed for coding interview preparation, featuring structur
 - [7️⃣ Stack & Queue](#7️⃣-stack--queue-12--31)
 - [8️⃣ Heap / Priority Queue](#8️⃣-heap--priority-queue-9--21)
 - [9️⃣ Trees](#9️⃣-trees-11--50)
-- [🔟 Backtracking](#-backtracking-13--22)
+- [🔟 Backtracking](#-backtracking-14--22)
 - [1️⃣1️⃣ Graphs](#1️⃣1️⃣-graphs-20--42)
 - [1️⃣2️⃣ Dynamic Programming](#1️⃣2️⃣-dynamic-programming-3--43)
 - [1️⃣3️⃣ Greedy](#1️⃣3️⃣-greedy-2--13)
@@ -61,7 +61,7 @@ This repository is designed for coding interview preparation, featuring structur
 | Stack & Queue | 31 | 12 | ████░░░░░░ 39% |
 | Heap / Priority Queue | 21 | 9 | ████░░░░░░ 43% |
 | Trees | 50 | 11 | ██░░░░░░░░ 22% |
-| Backtracking | 22 | 13 | ██████░░░░ 59% |
+| Backtracking | 22 | 14 | ██████░░░░ 64% |
 | Graphs | 42 | 20 | █████░░░░░ 48% |
 | Dynamic Programming | 43 | 3 | █░░░░░░░░░ 7% |
 | Greedy | 13 | 2 | ██░░░░░░░░ 15% |
@@ -69,7 +69,7 @@ This repository is designed for coding interview preparation, featuring structur
 | System Design / LLD | 3 | 0 | ░░░░░░░░░░ 0% |
 | Bit Manipulation | 12 | 4 | ███░░░░░░░ 33% |
 | Daily Challenges | 6 | 5 | ████████░░ 83% |
-| **Total** | **417** | **153** | **████░░░░░░ 37%** |
+| **Total** | **417** | **174** | **████░░░░░░ 42%** |
 
 > 📌 Graphs section updated to reflect all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. Total reflects all sessions through April 24, 2026.
 
@@ -209,7 +209,7 @@ The Company column lists major companies known to ask this problem in interviews
 | - | Kadane's Algorithm | - | ⬜ | - | - |
 | - | Pow xn | - | ⬜ | - | - |
 | - | 4Sum | - | ⬜ | - | - |
-| - | Search a 2D matrix | - | ⬜ | - | - |
+| - | Search a 2D matrix | - | ✅ Solution | Binary Search | Amazon, Google, Meta |
 | - | Merge overlapping intervals | - | ⬜ | - | - |
 | - | Set matrix zeroes | - | ⬜ | - | - |
 | - | Product of array except itself | - | ⬜ | - | - |
@@ -547,14 +547,14 @@ The Company column lists major companies known to ask this problem in interviews
 
 ---
 
-## 🔟 Backtracking (13 / 22)
+## 🔟 Backtracking (14 / 22)
 
 | # | Problem | Difficulty | Status | Pattern | Company |
 |---|---|---|---|---|---|
 | - | Knights Tour | - | ⬜ | - | - |
 | - | M Coloring | - | ⬜ | - | - |
 | - | Rat in a Maze | - | ⬜ | - | - |
-| - | Merge Sort | - | ⬜ | - | - |
+| - | Merge Sort | - | ✅ Solution | Recursion | Amazon, Google |
 | - | Count Inversions | - | ⬜ | - | - |
 | 17 | Letter Combinations of a Phone Number | Medium | ✅ Solution | Backtracking | Amazon, Google, Microsoft, Meta, Bloomberg |
 | 22 | Generate Parentheses | Medium | ✅ Solution | Backtracking | Amazon, Google, Microsoft, Meta, Bloomberg, Uber |
