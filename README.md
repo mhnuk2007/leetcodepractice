@@ -37,11 +37,11 @@ This repository is designed for coding interview preparation, featuring structur
 - [7️⃣ Stack & Queue](#7️⃣-stack--queue-12--31)
 - [8️⃣ Heap / Priority Queue](#8️⃣-heap--priority-queue-9--21)
 - [9️⃣ Trees](#9️⃣-trees-11--50)
-- [🔟 Backtracking](#-backtracking-11--22)
+- [🔟 Backtracking](#-backtracking-13--22)
 - [1️⃣1️⃣ Graphs](#1️⃣1️⃣-graphs-20--42)
 - [1️⃣2️⃣ Dynamic Programming](#1️⃣2️⃣-dynamic-programming-3--43)
 - [1️⃣3️⃣ Greedy](#1️⃣3️⃣-greedy-2--13)
-- [1️⃣4️⃣ Trie](#1️⃣4️⃣-trie-1--5)
+- [1️⃣4️⃣ Trie](#1️⃣4️⃣-trie-2--5)
 - [1️⃣5️⃣ System Design / LLD](#1️⃣5️⃣-system-design--lld-0--3)
 - [1️⃣6️⃣ Bit Manipulation](#1️⃣6️⃣-bit-manipulation-4--12)
 - [🌟 Daily Challenges](#-daily-challenges-5--6)
@@ -61,17 +61,17 @@ This repository is designed for coding interview preparation, featuring structur
 | Stack & Queue | 31 | 12 | ████░░░░░░ 39% |
 | Heap / Priority Queue | 21 | 9 | ████░░░░░░ 43% |
 | Trees | 50 | 11 | ██░░░░░░░░ 22% |
-| Backtracking | 22 | 11 | █████░░░░░ 50% |
+| Backtracking | 22 | 13 | ██████░░░░ 59% |
 | Graphs | 42 | 20 | █████░░░░░ 48% |
 | Dynamic Programming | 43 | 3 | █░░░░░░░░░ 7% |
 | Greedy | 13 | 2 | ██░░░░░░░░ 15% |
-| Trie | 5 | 1 | ██░░░░░░░░ 20% |
+| Trie | 5 | 2 | ████░░░░░░ 40% |
 | System Design / LLD | 3 | 0 | ░░░░░░░░░░ 0% |
 | Bit Manipulation | 12 | 4 | ███░░░░░░░ 33% |
 | Daily Challenges | 6 | 5 | ████████░░ 83% |
-| **Total** | **417** | **170** | **████░░░░░░ 41%** |
+| **Total** | **417** | **153** | **████░░░░░░ 37%** |
 
-> 📌 Graphs section updated to reflect all completed concept files and LC problems. Trie updated after LC 208 completion. Total reflects all sessions through April 23, 2026.
+> 📌 Graphs section updated to reflect all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. Total reflects all sessions through April 24, 2026.
 
 ---
 
@@ -106,7 +106,7 @@ Priority based on the current tracker: Heap, Graphs, Dynamic Programming, Slidin
 |---|---|---|
 | Day 11 | 22 (re-solve) · 78 (re-solve) | Backtracking template · choose → explore → undo |
 | Day 12 | 39 (re-solve) · 40 | Reuse vs no-reuse branches |
-| Day 13 | 79 · 131 (re-solve) | Grid backtracking · path partitioning |
+| Day 13 | 79 (re-solve) · 131 (re-solve) | Grid backtracking · path partitioning |
 | Day 14 | 70 (re-solve) · 198 | 1D DP basics · state definition |
 | Day 15 | 213 · 53 | Circular DP vs Kadane |
 | Day 16 | 322 · 518 | Unbounded knapsack intuition |
@@ -150,6 +150,7 @@ Priority based on the current tracker: Heap, Graphs, Dynamic Programming, Slidin
 
 | Date | Problems Solved | Notes |
 |---|---|---|
+| Apr 24 | 79, 212 | Word Search (Backtracking + DFS) · Word Search II (Trie + Backtracking) |
 | Apr 23 | 208, 684, 207, 210, DSU, CycleDetection, TopologicalSort | Trie implementation · Redundant Connection (DFS+BFS+DSU) · Cycle detection undirected/directed · Topological sort both approaches · DSU from scratch |
 | Apr 19 | 733, 210 (DFS + BFS) | Graph DFS on grids · Course Schedule II both approaches |
 | Apr 13 | 264, 355, 1492 | Heap deep dive |
@@ -546,7 +547,7 @@ The Company column lists major companies known to ask this problem in interviews
 
 ---
 
-## 🔟 Backtracking (11 / 22)
+## 🔟 Backtracking (13 / 22)
 
 | # | Problem | Difficulty | Status | Pattern | Company |
 |---|---|---|---|---|---|
@@ -566,10 +567,10 @@ The Company column lists major companies known to ask this problem in interviews
 | 52 | N-Queens II | Hard | ✅ Solution | Backtracking | Amazon, Google |
 | 77 | Combinations | Medium | ✅ Solution | Backtracking | Amazon, Google, Microsoft |
 | 78 | Subsets | Medium | ✅ Solution | Backtracking | Amazon, Google, Microsoft, Meta, Bloomberg |
-| 79 | Word Search | Medium | ⬜ | Backtracking + DFS | Amazon, Google, Microsoft, Meta, Bloomberg |
+| 79 | Word Search | Medium | ✅ Solution | Backtracking + DFS | Amazon, Google, Microsoft, Meta, Bloomberg |
 | 90 | Subsets II | Medium | ✅ Solution | Backtracking | Amazon, Google |
 | 131 | Palindrome Partitioning | Medium | ✅ Solution | Backtracking | Amazon, Google, Meta |
-| 212 | Word Search II | Hard | ⬜ | Backtracking + Trie | Amazon, Google, Meta, Bloomberg |
+| 212 | Word Search II | Hard | ✅ Solution | Backtracking + Trie | Amazon, Google, Meta, Bloomberg |
 | 216 | Combination Sum III | Medium | ⬜ | Backtracking | Amazon, Google |
 | 491 | Non-decreasing Subsequences | Medium | ⬜ | Backtracking | Amazon, Google |
 
@@ -703,7 +704,7 @@ The Company column lists major companies known to ask this problem in interviews
 
 ---
 
-## 1️⃣4️⃣ Trie (1 / 5)
+## 1️⃣4️⃣ Trie (2 / 5)
 
 | # | Problem | Difficulty | Status | Pattern | Company |
 |---|---|---|---|---|---|
@@ -711,7 +712,7 @@ The Company column lists major companies known to ask this problem in interviews
 | - | Longest String with All Prefix | - | ⬜ | - | - |
 | 208 | Implement Trie (Prefix Tree) | Medium | ✅ Solution | Trie | Amazon, Google, Microsoft, Meta, Bloomberg |
 | 211 | Design Add and Search Word | Medium | ⬜ | Trie + DFS | Amazon, Google, Meta, Bloomberg |
-| 212 | Word Search II | Hard | ⬜ | Trie + Backtracking | Amazon, Google, Meta, Bloomberg |
+| 212 | Word Search II | Hard | ✅ Solution | Trie + Backtracking | Amazon, Google, Meta, Bloomberg |
 
 ---
 
@@ -820,4 +821,4 @@ src/
 
 ---
 
-*Last updated: April 23, 2026*
+*Last updated: April 24, 2026*
