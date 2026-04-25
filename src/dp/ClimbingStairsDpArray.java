@@ -1,9 +1,8 @@
 package dp;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
-public class ClimbingStairs {
+public class ClimbingStairsDpArray {
     public int climbStairs(int n) {
         int[] dp = new int[n + 1];
         Arrays.fill(dp, -1);
@@ -18,7 +17,7 @@ public class ClimbingStairs {
     }
 
     public static void main(String[] args) {
-        ClimbingStairs cs = new ClimbingStairs();
+        ClimbingStairsDpArray cs = new ClimbingStairsDpArray();
         System.out.println(cs.climbStairs(5));
     }
 }
