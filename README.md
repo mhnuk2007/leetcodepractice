@@ -613,6 +613,8 @@
 
 ### 12. Dynamic Programming — 3/43
 
+> 📁 Additional DP practice files in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`
+>
 > **DP is your biggest gap — treat it as a 4-week dedicated focus, with at least one problem every single day.**
 
 **Before writing any code on a DP problem, write these four lines as comments:**
