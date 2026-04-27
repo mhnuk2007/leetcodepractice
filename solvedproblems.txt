@@ -6,7 +6,7 @@ Last Updated: April 24, 2026
 
 Statistics
 ====================
-Total Files: 245
+Total Files: 255
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -20,7 +20,7 @@ Category Breakdown:
 - Heap               : 13
 - Graph              : 31
 - Sorting Algorithms : 11
-- Dynamic Programming:  2
+- Dynamic Programming: 12
 - Map & Set Design   :  2
 - Misc / Root & Patterns: 9
 - Recursion          : 29
@@ -107,10 +107,20 @@ Daily Challenges (6)
   5. FindUniqueBinaryString
   6. ComplementBase10Integer
 
-Dynamic Programming (2)
+Dynamic Programming (12)
 -----------------------
   1. FindAllPossibleStableArraysI
   2. FindAllPossibleStableArraysII
+  3. Fibonacci
+  4. FibDP
+  5. FibDP2
+  6. TopDownSum
+  7. BottonUpSum
+  8. Tribonacci
+  9. HouseRobberMap
+ 10. HouseRobberArray
+ 11. ClimbingStairsDpMap
+ 12. ClimbingStairsDpArray
 
 Hashing (5)
 -----------

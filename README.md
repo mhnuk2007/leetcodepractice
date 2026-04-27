@@ -25,7 +25,7 @@
   - [Trees](#9-trees--1150)
   - [Backtracking](#10-backtracking--1422)
   - [Graphs](#11-graphs--2042)
-  - [Dynamic Programming](#12-dynamic-programming--343)
+  - [Dynamic Programming](#12-dynamic-programming--543)
   - [Greedy](#13-greedy--213)
   - [Trie](#14-trie--25)
   - [System Design / LLD](#15-system-design--lld--03)
@@ -54,15 +54,15 @@
 | 9 | Trees | 11 | 50 | `██░░░░░░░░` 22% |
 | 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
 | 11 | Graphs | 20 | 42 | `█████░░░░░` 48% |
-| 12 | Dynamic Programming | 3 | 43 | `█░░░░░░░░░` 7% |
+| 12 | Dynamic Programming | 5 | 43 | `██░░░░░░░░` 12% |
 | 13 | Greedy | 2 | 13 | `██░░░░░░░░` 15% |
 | 14 | Trie | 2 | 5 | `████░░░░░░` 40% |
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **174** | **417** | `████░░░░░░` **42%** |
+| | **Total** | **176** | **417** | `████░░░░░░` **42%** |
 
-> Last updated: April 24, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion.
+> Last updated: April 24, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. DP updated with 198 and 1137.
 
 ---
 
@@ -151,7 +151,7 @@
 
 | Date | Problems | Notes |
 |---|---|---|
-| Apr 24 | 79, 212 | Word Search (Backtracking + DFS) · Word Search II (Trie + Backtracking) |
+| Apr 24 | 79, 212, 198, 1137 | Word Search · Word Search II · House Robber (Map/Array) · Tribonacci |
 | Apr 23 | 208, 684, 207, 210, DSU, CycleDetection, TopologicalSort | Trie · Redundant Connection (DFS+BFS+DSU) · Cycle detection undirected/directed · Topological sort both approaches · DSU from scratch |
 | Apr 19 | 733, 210 (DFS + BFS) | Graph DFS on grids · Course Schedule II both approaches |
 | Apr 13 | 264, 355, 1492 | Heap deep dive |
@@ -611,9 +611,9 @@
 
 ---
 
-### 12. Dynamic Programming — 3/43
+### 12. Dynamic Programming — 5/43
 
-> 📁 Additional DP practice files in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`
+> 📁 Additional DP practice files in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`
 >
 > **DP is your biggest gap — treat it as a 4-week dedicated focus, with at least one problem every single day.**
 
@@ -632,7 +632,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 
 | Pattern | Problems | Core idea |
 |---|---|---|
-| **1D Linear DP** | 70, 198, 213, 91 | `dp[i]` depends on 1–2 previous states |
+| **1D Linear DP** | 70, 198, 213, 91, 1137 | `dp[i]` depends on 1–3 previous states |
 | **Kadane / Subarray** | 53, 152 | Track best result ending at index `i` |
 | **Grid DP** | 62, 63, 64, 931 | `dp[i][j] = top + left` |
 | **0/1 Knapsack** | 416, 494 | Pick or skip — each item used once |
@@ -667,10 +667,11 @@ If you cannot write all four lines before touching the code, stop — you are no
 | 70 | Climbing Stairs | Easy | ✅ | 1D Linear DP | A, G, M, Ap, B |
 | 72 | Edit Distance | Medium | ⬜ | String DP | A, G, M, Meta, B |
 | 91 | Decode Ways | Medium | ⬜ | Counting DP | A, G, Meta, B |
+| 1137 | N-th Tribonacci Number | Easy | ✅ | 1D Linear DP | A, G |
 | 123 | Best Time to Buy and Sell Stock III | Hard | ⬜ | Stock State Machine | A, G, Meta, B |
 | 139 | Word Break | Medium | ⬜ | String DP | A, G, M, Meta, B |
 | 152 | Maximum Product Subarray | Medium | ⬜ | Kadane's | A, G, Ly, B |
-| 198 | House Robber | Medium | ⬜ | 1D Linear DP | A, G, M, B, Ad |
+| 198 | House Robber | Medium | ✅ | 1D Linear DP | A, G, M, B, Ad |
 | 213 | House Robber II | Medium | ⬜ | 1D Linear DP | A, G |
 | 221 | Maximal Square | Medium | ⬜ | Grid DP | A, G, Meta, B |
 | 279 | Perfect Squares | Medium | ⬜ | Unbounded Knapsack | A, G |
@@ -686,7 +687,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 | 714 | Best Time to Buy and Sell Stock with Transaction Fee | Medium | ⬜ | Stock State Machine | A, G |
 | 740 | Delete and Earn | Medium | ⬜ | 1D Linear DP | A, G |
 | 931 | Minimum Falling Path Sum | Medium | ⬜ | Grid DP | A, G |
-| 1143 | Longest Common Subsequence | Medium | ⬜ | String DP | A, G, M, Meta, B |
+| 1143 | Longest Common Sequence | Medium | ⬜ | String DP | A, G, M, Meta, B |
 | 1155 | Number of Dice Rolls With Target Sum | Medium | ⬜ | Counting DP | G |
 | 1218 | Longest Arithmetic Subsequence of Given Difference | Medium | ⬜ | LIS | A, G |
 | 1639 | Number of Ways to Form a Target String Given a Dictionary | Hard | ⬜ | String DP | G, Meta |
