@@ -62,7 +62,7 @@
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
 | | **Total** | **176** | **417** | `████░░░░░░` **42%** |
 
-> Last updated: April 24, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. DP updated with 198 and 1137.
+> Last updated: April 28, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. DP updated with 198, 1137, 3129, and 3130.
 
 ---
 
@@ -613,8 +613,10 @@
 
 ### 12. Dynamic Programming — 5/43
 
-> 📁 Additional DP practice files in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`
->
+> 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `FindAllPossibleStableArraysI`, `FindAllPossibleStableArraysII`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`
+> 
+> These files demonstrate memoization, top-down DP, bottom-up DP, and custom practice beyond roadmap problem entries.
+> 
 > **DP is your biggest gap — treat it as a 4-week dedicated focus, with at least one problem every single day.**
 
 **Before writing any code on a DP problem, write these four lines as comments:**
