@@ -54,7 +54,7 @@
 | 9 | Trees | 11 | 50 | `██░░░░░░░░` 22% |
 | 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
 | 11 | Graphs | 20 | 42 | `█████░░░░░` 48% |
-| 12 | Dynamic Programming | 5 | 43 | `██░░░░░░░░` 12% |
+| 12 | Dynamic Programming | 9 | 43 | `██░░░░░░░░` 21% |
 | 13 | Greedy | 2 | 13 | `██░░░░░░░░` 15% |
 | 14 | Trie | 2 | 5 | `████░░░░░░` 40% |
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
@@ -62,7 +62,7 @@
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
 | | **Total** | **176** | **417** | `████░░░░░░` **42%** |
 
-> Last updated: April 28, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. DP updated with 198, 1137, 3129, and 3130.
+> Last updated: April 29, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, 198, 416, 746, 1137, 3129, and 3130.
 
 ---
 
@@ -611,9 +611,9 @@
 
 ---
 
-### 12. Dynamic Programming — 5/43
+### 12. Dynamic Programming — 8/43
 
-> 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `FindAllPossibleStableArraysI`, `FindAllPossibleStableArraysII`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`
+> 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `FindAllPossibleStableArraysI`, `FindAllPossibleStableArraysII`, `PartitionEqualSubSetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`
 > 
 > These files demonstrate memoization, top-down DP, bottom-up DP, and custom practice beyond roadmap problem entries.
 > 
@@ -650,8 +650,8 @@ If you cannot write all four lines before touching the code, stop — you are no
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
 |---|---|---|:---:|---|---|
-| — | 0-1 Knapsack | — | ⬜ | 0/1 Knapsack | — |
-| — | Unbounded Knapsack | — | ⬜ | Unbounded Knapsack | — |
+| — | 0-1 Knapsack | — | ✅ | 0/1 Knapsack | — |
+| — | Unbounded Knapsack | — | ✅ | Unbounded Knapsack | — |
 | — | Longest Common Substring | — | ⬜ | String DP | — |
 | — | Palindromic Partitioning (MCM) | — | ⬜ | Interval DP | — |
 | — | Unique BSTs | — | ⬜ | — | — |
@@ -682,11 +682,12 @@ If you cannot write all four lines before touching the code, stop — you are no
 | 312 | Burst Balloons | Hard | ⬜ | Interval DP | A, G, Meta |
 | 322 | Coin Change | Medium | ⬜ | Unbounded Knapsack | A, G, M, Meta, B, Ad |
 | 337 | House Robber III | Medium | ⬜ | DP on Trees | A, G |
-| 416 | Partition Equal Subset Sum | Medium | ⬜ | 0/1 Knapsack | A, G, Meta |
+| 416 | Partition Equal Subset Sum | Medium | ✅ | 0/1 Knapsack | A, G, Meta |
 | 494 | Target Sum | Medium | ⬜ | 0/1 Knapsack | A, G |
-| 518 | Coin Change II | Medium | ⬜ | Unbounded Knapsack | A, G |
+| 518 | Coin Change II | Medium | ✅ | Unbounded Knapsack | A, G |
 | 673 | Number of Longest Increasing Subsequence | Medium | ⬜ | LIS | A, G |
 | 714 | Best Time to Buy and Sell Stock with Transaction Fee | Medium | ⬜ | Stock State Machine | A, G |
+| 746 | Min Cost Climbing Stairs | Easy | ✅ | 1D Linear DP | A, G |
 | 740 | Delete and Earn | Medium | ⬜ | 1D Linear DP | A, G |
 | 931 | Minimum Falling Path Sum | Medium | ⬜ | Grid DP | A, G |
 | 1143 | Longest Common Sequence | Medium | ⬜ | String DP | A, G, M, Meta, B |

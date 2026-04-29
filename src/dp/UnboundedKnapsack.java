@@ -3,7 +3,7 @@ package dp;
 import java.util.Arrays;
 
 /**
- * Unbounded Knapsack Problem
+ *
  *
  * Given n items each with a weight and a value, and a knapsack with a fixed
  * capacity, find the maximum total value that can be placed in the knapsack.
