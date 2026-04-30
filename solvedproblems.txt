@@ -1,12 +1,12 @@
 ====================
 LeetCode Practice — Solved Problems
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: April 29, 2026
+Last Updated: April 30, 2026
 ====================
 
 Statistics
 ====================
-Total Files: 263
+Total Files: 265
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -20,7 +20,7 @@ Category Breakdown:
 - Heap               : 13
 - Graph              : 31
 - Sorting Algorithms : 11
-- Dynamic Programming: 20
+- Dynamic Programming: 22
 - Map & Set Design   :  2
 - Misc / Root & Patterns: 9
 - Recursion          : 29
@@ -107,7 +107,7 @@ Daily Challenges (6)
   5. FindUniqueBinaryString
   6. ComplementBase10Integer
 
-Dynamic Programming (20)
+Dynamic Programming (22)
 -----------------------
   1. FindAllPossibleStableArraysI
   2. FindAllPossibleStableArraysII
@@ -129,6 +129,8 @@ Dynamic Programming (20)
  18. UnboundedKnapsack
  19. TribonacciTopDown
  20. TribonacciBottomUp
+ 21. CoinChange
+ 22. CoinChangeII
 
 Hashing (5)
 -----------

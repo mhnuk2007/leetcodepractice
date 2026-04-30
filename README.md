@@ -25,7 +25,7 @@
   - [Trees](#9-trees--1150)
   - [Backtracking](#10-backtracking--1422)
   - [Graphs](#11-graphs--2042)
-  - [Dynamic Programming](#12-dynamic-programming--843)
+  - [Dynamic Programming](#12-dynamic-programming--1043)
   - [Greedy](#13-greedy--213)
   - [Trie](#14-trie--25)
   - [System Design / LLD](#15-system-design--lld--03)
@@ -54,15 +54,15 @@
 | 9 | Trees | 11 | 50 | `██░░░░░░░░` 22% |
 | 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
 | 11 | Graphs | 20 | 42 | `█████░░░░░` 48% |
-| 12 | Dynamic Programming | 8 | 43 | `████░░░░░░` 19% |
+| 12 | Dynamic Programming | 10 | 43 | `████░░░░░░` 23% |
 | 13 | Greedy | 2 | 13 | `██░░░░░░░░` 15% |
 | 14 | Trie | 2 | 5 | `████░░░░░░` 40% |
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **179** | **417** | `████░░░░░░` **43%** |
+| | **Total** | **181** | **417** | `████░░░░░░` **43%** |
 
-> Last updated: April 29, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, 198, 416, 494, 746, 1137, 3129, and 3130.
+> Last updated: April 30, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, 198, 322, 416, 494, 518, 746, 1137, 3129, and 3130.
 
 ---
 
@@ -151,6 +151,7 @@
 
 | Date | Problems | Notes |
 |---|---|---|
+| Apr 30 | 322, 518 | Coin Change · Coin Change II |
 | Apr 29 | 416, 494, 746, Knapsack01, UnboundedKnapsack, MultiStageGraph, TribonacciTopDown, TribonacciBottomUp | Partition Equal Subset Sum · Target Sum · Min Cost Climbing Stairs · 0/1 Knapsack (concept) · Unbounded Knapsack (concept) · Multi-Stage Graph (concept) · N-th Tribonacci Number (Top-Down) · N-th Tribonacci Number (Bottom-Up) |
 | Apr 24 | 79, 212, 198, 1137 | Word Search · Word Search II · House Robber (Map/Array) · Tribonacci |
 | Apr 23 | 208, 684, 207, 210, DSU, CycleDetection, TopologicalSort | Trie · Redundant Connection (DFS+BFS+DSU) · Cycle detection undirected/directed · Topological sort both approaches · DSU from scratch |
@@ -433,8 +434,8 @@
 | 862 | Shortest Subarray with Sum ≥ K | Hard | ⬜ | Monotonic Deque | G, Meta |
 | 907 | Sum of Subarray Minimums | Medium | ⬜ | Monotonic Stack | A, G |
 | 933 | Number of Recent Calls | Easy | ⬜ | Queue / Sliding Window | A |
-| 994 | Rotting Oranges | Medium | ✅ | BFS / Queue | A, G, M, Meta, B |
-| 1091 | Shortest Path in Binary Matrix | Medium | ⬜ | BFS / Queue | A, G, Meta, B |
+| 994 | Rotting Oranges | Medium | ✅ | BFS (multi-source) | A, G, M, Meta | Day 7 |
+| 1091 | Shortest Path in Binary Matrix | Medium | ⬜ | BFS | A, G, Meta, B | Day 7 |
 
 ---
 
@@ -612,9 +613,9 @@
 
 ---
 
-### 12. Dynamic Programming — 8/43
+### 12. Dynamic Programming — 10/43
 
-> 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`
+> 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`, `CoinChange`, `CoinChangeII`
 > 
 > These files demonstrate memoization, top-down DP, bottom-up DP, and custom practice beyond roadmap problem entries.
 > 
@@ -681,7 +682,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 | 300 | Longest Increasing Subsequence | Medium | ⬜ | LIS | A, G, M, Meta, B |
 | 309 | Best Time to Buy and Sell Stock with Cooldown | Medium | ⬜ | Stock State Machine | A, G |
 | 312 | Burst Balloons | Hard | ⬜ | Interval DP | A, G, Meta |
-| 322 | Coin Change | Medium | ⬜ | Unbounded Knapsack | A, G, M, Meta, B, Ad |
+| 322 | Coin Change | Medium | ✅ | Unbounded Knapsack | A, G, M, Meta, B, Ad |
 | 337 | House Robber III | Medium | ⬜ | DP on Trees | A, G |
 | 416 | Partition Equal Subset Sum | Medium | ✅ | 0/1 Knapsack | A, G, Meta |
 | 494 | Target Sum | Medium | ✅ | 0/1 Knapsack | A, G |
@@ -854,4 +855,4 @@ Code in this repository is provided as-is for learning. Use at your own risk.
 
 ---
 
-*Last updated: April 29, 2026*
+*Last updated: April 30, 2026*
