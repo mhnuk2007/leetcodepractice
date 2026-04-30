@@ -6,7 +6,7 @@ Last Updated: April 30, 2026
 
 Statistics
 ====================
-Total Files: 265
+Total Files: 266
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -20,7 +20,7 @@ Category Breakdown:
 - Heap               : 13
 - Graph              : 31
 - Sorting Algorithms : 11
-- Dynamic Programming: 22
+- Dynamic Programming: 23
 - Map & Set Design   :  2
 - Misc / Root & Patterns: 9
 - Recursion          : 29
@@ -114,8 +114,9 @@ Dynamic Programming (22)
   3. Fibonacci
   4. FibDP
   5. FibDP2
-  6. TopDownSum
-  7. BottonUpSum
+  6. LongestCommonSubsequence
+  7. TopDownSum
+  8. BottonUpSum
   8. Tribonacci
   9. HouseRobberMap
  10. HouseRobberArray
