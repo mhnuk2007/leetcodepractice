@@ -1,12 +1,12 @@
 ====================
 LeetCode Practice — Solved Problems
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: April 30, 2026
+Last Updated: May 1, 2026
 ====================
 
 Statistics
 ====================
-Total Files: 266
+Total Files: 269
 
 Category Breakdown:
 - Arrays & arrays101 : 44
@@ -20,7 +20,7 @@ Category Breakdown:
 - Heap               : 13
 - Graph              : 31
 - Sorting Algorithms : 11
-- Dynamic Programming: 23
+- Dynamic Programming: 26
 - Map & Set Design   :  2
 - Misc / Root & Patterns: 9
 - Recursion          : 29
@@ -107,7 +107,7 @@ Daily Challenges (6)
   5. FindUniqueBinaryString
   6. ComplementBase10Integer
 
-Dynamic Programming (22)
+Dynamic Programming (26)
 -----------------------
   1. FindAllPossibleStableArraysI
   2. FindAllPossibleStableArraysII
@@ -117,21 +117,24 @@ Dynamic Programming (22)
   6. LongestCommonSubsequence
   7. TopDownSum
   8. BottonUpSum
-  8. Tribonacci
-  9. HouseRobberMap
- 10. HouseRobberArray
- 11. ClimbingStairsDpMap
- 12. ClimbingStairsDpArray
- 13. TargetSum
- 14. Knapsack01
- 15. MultiStageGraph
- 16. MinCostClimbingStairs
- 17. PartitionEqualSubSetSum
- 18. UnboundedKnapsack
- 19. TribonacciTopDown
- 20. TribonacciBottomUp
- 21. CoinChange
- 22. CoinChangeII
+  9. Tribonacci
+ 10. HouseRobberMap
+ 11. HouseRobberArray
+ 12. ClimbingStairsDpMap
+ 13. ClimbingStairsDpArray
+ 14. TargetSum
+ 15. Knapsack01
+ 16. MultiStageGraph
+ 17. MinCostClimbingStairs
+ 18. PartitionEqualSubSetSum
+ 19. UnboundedKnapsack
+ 20. TribonacciTopDown
+ 21. TribonacciBottomUp
+ 22. CoinChange
+ 23. CoinChangeII
+ 24. DeleteAndEarn
+ 25. MaximumPathScore
+ 26. MaxScoreMulOps
 
 Hashing (5)
 -----------

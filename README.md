@@ -62,7 +62,7 @@
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
 | | **Total** | **181** | **417** | `████░░░░░░` **43%** |
 
-> Last updated: April 30, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, 198, 416, 746, 1137, 1143, 3129, and 3130.
+> Last updated: May 1, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, 198, 416, 740, 746, 1137, 1143, 3129, and 3130.
 
 ---
 
@@ -613,9 +613,9 @@
 
 ---
 
-### 12. Dynamic Programming — 11/43
+### 12. Dynamic Programming — 12/43
 
-> 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`, `CoinChange`, `CoinChangeII`
+> 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`, `CoinChange`, `CoinChangeII`, `DeleteAndEarn`, `MaximumPathScore`, `MaxScoreMulOps`
 > 
 > These files demonstrate memoization, top-down DP, bottom-up DP, and custom practice beyond roadmap problem entries.
 > 
@@ -690,7 +690,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 | 673 | Number of Longest Increasing Subsequence | Medium | ⬜ | LIS | A, G |
 | 714 | Best Time to Buy and Sell Stock with Transaction Fee | Medium | ⬜ | Stock State Machine | A, G |
 | 746 | Min Cost Climbing Stairs | Easy | ✅ | 1D Linear DP | A, G |
-| 740 | Delete and Earn | Medium | ⬜ | 1D Linear DP | A, G |
+| 740 | Delete and Earn | Medium | ✅ | 1D Linear DP | A, G |
 | 931 | Minimum Falling Path Sum | Medium | ⬜ | Grid DP | A, G |
 | 1143 | Longest Common Sequence | Medium | ✅ | String DP | A, G, M, Meta, B |
 | 1155 | Number of Dice Rolls With Target Sum | Medium | ⬜ | Counting DP | G |
