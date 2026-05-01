@@ -54,13 +54,13 @@
 | 9 | Trees | 11 | 50 | `██░░░░░░░░` 22% |
 | 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
 | 11 | Graphs | 20 | 42 | `█████░░░░░` 48% |
-| 12 | Dynamic Programming | 10 | 43 | `████░░░░░░` 23% |
+| 12 | Dynamic Programming | 12 | 43 | `████░░░░░░` 23% |
 | 13 | Greedy | 2 | 13 | `██░░░░░░░░` 15% |
 | 14 | Trie | 2 | 5 | `████░░░░░░` 40% |
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **181** | **417** | `████░░░░░░` **43%** |
+| | **Total** | **183** | **417** | `████░░░░░░` **44% |
 
 > Last updated: May 1, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, 198, 416, 740, 746, 1137, 1143, 3129, and 3130.
 
