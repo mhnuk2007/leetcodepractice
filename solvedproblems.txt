@@ -1,366 +1,118 @@
 ====================
-LeetCode Practice — Solved Problems
+LeetCode Practice - Solved Problems Inventory
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
 Last Updated: May 1, 2026
 ====================
 
-Statistics
+This file tracks the current Java solution/practice inventory under src/.
+It includes LeetCode submissions, DSA concept implementations, helper nodes,
+alternate approaches, and sandbox files. The LeetCode-specific roadmap count is
+tracked separately in README.md.
+
 ====================
-Total Files: 269
+Current Statistics
+====================
+
+Total Java files under src/: 270
 
 Category Breakdown:
-- Arrays & arrays101 : 44
-- Strings            : 22
-- Linked List        : 16
-- Stack              : 11
-- Two Pointers       : 10
-- Queue              :  9
-- Daily Challenges   :  6
-- Hashing            :  5
-- Heap               : 13
-- Graph              : 31
-- Sorting Algorithms : 11
-- Dynamic Programming: 26
-- Map & Set Design   :  2
-- Misc / Root & Patterns: 9
-- Recursion          : 29
-- Sliding Window     :  2
-- Tree               : 10
-- Bit Manipulation   :  1
-- Binary Search      : 11
-====================
-
-Solved Problems List
-====================
-
-Arrays & arrays101 (44)
-------------------------
-  1. PlusOne
-  2. RotateArray
-  3. RunningSum1d
-  4. SpiralMatrix
-  5. ArrayPartition
-  6. FindPivotIndex
-  7. MajorityElement
-  8. NextPermutation
-  9. PascalsTriangle
- 10. CircularArrayLoop
- 11. ContainsDuplicate
- 12. PascalsTriangleII
- 13. TrappingRainWater
- 14. TrappingRainWaterPrefix
- 15. MinSizeSubArraySum
- 16. RichestCustomerWealth
- 17. LargestNumberTwiceOthers
- 18. BestTimeToBuyAndSellStock
- 19. SearchInRotatedSortedArray
- 20. SpecialPositionsInBinaryMatrix
- 21. MoveZeroes
- 22. CountPairs
- 23. CheckIfExists
- 24. HeightChecker
- 25. RemoveElement
- 26. DuplicateZeros
- 27. EvenNoOfDigits
- 28. ReplaceElement
- 29. SquaresOfSorted
- 30. SquaresOfASortedArray
- 31. MergeSortedArray
- 32. RemoveDuplicates
- 33. RemoveDuplicates2
- 34. MaxConsecutiveOnes
- 35. ThirdMaximumNumber
- 36. ValidMountainArray
- 37. FindDisappearedNumber
- 38. CheckIfNAndItsDoubleExist
- 39. FindNumbersWithEvenNumberOfDigits
- 40. MinChangesAlternatingBinaryString
- 41. RemoveDuplicatesFromSortedArrayII
- 42. FindAllNumbersDisappearedInAnArray
- 43. ReplaceElementsWithGreatestElementOnRightSide
- 44. MoveZeros
-
-Binary Search (11)
------------------
-  1. BinarySearch
-  2. FindMinRotatedArray
-  3. FindPeakElement
-  4. FirstAndLastPosition
-  5. FirstBadVersion
-  6. GuessNumber
-  7. SearchInsert
-  8. SearchRotatedSortedArray
-  9. SearchRotatedSortedArrayII
- 10. SqrtX
- 11. FindKClosestElements
-
-Bit Manipulation (1)
---------------------
-  1. SingleNumber
-
-Daily Challenges (6)
---------------------
-  1. MinFlips
-  2. FindKthBit
-  3. MinimumSwaps
-  4. CheckOneSegment
-  5. FindUniqueBinaryString
-  6. ComplementBase10Integer
-
-Dynamic Programming (26)
------------------------
-  1. FindAllPossibleStableArraysI
-  2. FindAllPossibleStableArraysII
-  3. Fibonacci
-  4. FibDP
-  5. FibDP2
-  6. LongestCommonSubsequence
-  7. TopDownSum
-  8. BottonUpSum
-  9. Tribonacci
- 10. HouseRobberMap
- 11. HouseRobberArray
- 12. ClimbingStairsDpMap
- 13. ClimbingStairsDpArray
- 14. TargetSum
- 15. Knapsack01
- 16. MultiStageGraph
- 17. MinCostClimbingStairs
- 18. PartitionEqualSubSetSum
- 19. UnboundedKnapsack
- 20. TribonacciTopDown
- 21. TribonacciBottomUp
- 22. CoinChange
- 23. CoinChangeII
- 24. DeleteAndEarn
- 25. MaximumPathScore
- 26. MaxScoreMulOps
-
-Hashing (5)
------------
-  1. MinimumIndexSum
-  2. ContainsDuplicatesII
-  3. FirstUniqueCharacter
-  4. IntersectionOfArrays
-  5. IntersectionOfArraysII
-
-Heap (13)
---------
-  1. Main
-  2. MaxHeap
-  3. MinHeap
-  4. TopKFrequentElements
-  5. KthLargestElement
-  6. MergeKSortedLists
-  7. MedianFromDataStream
-  8. MedianFromDataStreamOptimal
-  9. KWeakestRows
- 10. LastStoneWeight
- 11. UglyNumberII
- 12. Twitter
- 13. KthFactorOfN
-
-Linked List (16)
-----------------
-  1. DeleteNode
-  2. MyLinkedList
-  3. AddTwoNumbers
-  4. LinkedListCycle
-  5. DesignLinkedList
-  6. SinglyLinkedList
-  7. LinkedListCycleII
-  8. ReverseLinkedList
-  9. MergeTwoSortedLists
- 10. PalindromeLinkedList
- 11. RemoveNthNodeFromEnd
- 12. LinkedListsIntersection
- 13. SplitCircularLinkedList
- 14. MaximumTwinSumOfLinkedList
- 15. ListNode
- 16. Main
-
-Map & Set Design (2)
---------------------
-  1. MyHashMap
-  2. MyHashSet
-
-Misc / Root & Patterns (9)
---------------------------
-  1. FirstOccuranceInAString
-  2. Main
-  3. MajorityElement
-  4. MaxProfit
-  5. PartitionDeciBinary
-  6. RotateArray
-  7. Solution
-  8. FloydTriangle
-  9. FloydTriangleMathematically
-
-Recursion (29)
---------------
-  1. ClimbingStairs
-  2. CombinationSum
-  3. Combinations
-  4. FibonacciNumber
-  5. GenerateParenthesis
-  6. KthSymbolInGrammar
-  7. LetterCombinations
-  8. NQueens
-  9. NQueensII
- 10. PalindromePartitioning
- 11. Permutations
- 12. PowXN
- 13. QuickSort
- 14. RecursionIntro
- 15. RecursionIntro2
- 16. RecursionSimulation
- 17. ReverseLinkedList
- 18. ReverseString
- 19. SearchA2DMatrixII
- 20. SearchInBST
- 21. StringPermutations
- 22. Subsets
- 23. SubsetsII
- 24. SudokuSolver
- 25. SudokuSolver2
- 26. SumOfNNums
- 27. SwapNodesInPairs
- 28. ValidateBST
- 29. WordSearch
-
-Queue (9)
----------
-  1. ArrayQueue
-  2. MovingAverage
-  3. ArrayListQueue
-  4. LinkedListQueue
-  5. MyCircularQueue
-  6. MyStackUsingQueue
-  7. MyQueueUsingStacks
-  8. MyCircularQueueArrayList
-  9. MyCircularQueueLinkedList
-
-Sliding Window (2)
-------------------
-  1. SlidingWindow
-  2. MaxSlidingWindow
-
-Graph (31)
----------
-  1. AdjacencyMatrix
-  2. AllPaths
-  3. AllPathsSourceTarget
-  4. BellmanFordAlgorithm
-  5. BellmanFordAlgorithmEdge
-  6. BFSTraversalInGraph
-  7. CloneGraph
-  8. CourseSchedule
-  9. CourseScheduleCycleDetection
- 10. CourseScheduleOptimal
- 11. CourseScheduleDFSOptimal
- 12. CourseScheduleIIBfs
- 13. CourseScheduleIIDfs
- 14. CycleDetectionDirectedGraph
- 15. CycleDetectionUndirectedGraph
- 16. DetectCycleIn2DGrid
- 17. DFSTraversalInGraph
- 18. DijkstraAlgorithm
- 19. DisjointSetUnion
- 20. FloodFill
- 21. Graph
- 22. KruskalAlgorithm
- 23. NumberOfIslands
- 24. PrimsAlgorithm
- 25. RedundantConnection
- 26. RottingOranges
- 27. TopologicalSortingBFS
- 28. TopologicalSortingDFS
- 29. Trie
- 30. WeightedGraph
- 31. WordSearchII
-
-Sorting Algorithms (11)
------------------------
-  1. BubbleSort
-  2. BubbleSortRec
-  3. InsertionSort
-  4. InsertionSortRec
-  5. MergeSort
-  6. MergeSortRec
-  7. PatternsViaRecursion
-  8. SelectionSort
-  9. SelectionSortRec
- 10. SortColors
- 11. TwoColorSort
-
-Stack (11)
-----------
-  1. MinStack
-  2. MinStackLinkedList
-  3. ArrayStack
-  4. ArrayListStack
-  5. LinkedListStack
-  6. ValidParenthesis
-  7. ValidParenthesisMap
-  8. DailyTemperatures
-  9. ReversePolishNotation
- 10. NextGreaterElement
- 11. NextGreaterElementII
-
-Strings (22)
-------------
-  1. Anagram
-  2. AddBinary
-  3. BinaryGap
-  4. AddStrings
-  5. Palindrome
-  6. PalindromeI
-  7. SplitString
-  8. PalindromeII
-  9. ValidAnagram
- 10. ReverseString
- 11. ValidPalindrome
- 12. JavaStringTokens
- 13. IsomorphicStrings
- 14. ReverseWordsInString
- 15. SmallestAndLargestSub
- 16. ValidWordAbbreviation
- 17. ReverseWordsInStringII
- 18. ReverseWordsInStringIII
- 19. FindIndexOfFirstOccurrence
- 20. MinChangesAlternatingBinaryString
- 21. PartitioningIntoMinDeciBinaryNumbers
- 22. LongestSubstringWithoutRepeatingCharacters
-
-Tree (10)
---------
-  1. BinaryTreeInorder
-  2. BinaryTreePostorder
-  3. BinaryTreePreorder
-  4. CountNodes
-  5. InvertBinaryTree
-  6. LevelOrderTraversal
-  7. MaxDepth
-  8. MyBinaryTree
-  9. RightSideView
- 10. SameTree
-
-Two Pointers (10)
------------------
-  1. TwoSum
-  2. ThreeSum
-  3. TwoSumII
-  4. HappyNumber
-  5. LengthOfLoop
-  6. AppendCharacters
-  7. MiddleOfLinkedList
-  8. StrobogrammaticNumber
-  9. ContainerWithMostWater
- 10. FindTheDuplicateNumber
+- arrays                  : 22
+- arrays101               : 24
+- binarysearch            : 11
+- dailychallenges         :  6
+- dp                      : 27
+- graph                   : 32
+- hashing                 :  5
+- heap                    : 13
+- linkedlist              : 16
+- map                     :  1
+- math                    :  1
+- patterns                :  2
+- queue                   :  9
+- recursion               : 29
+- set                     :  2
+- slidingwindow           :  2
+- sortalgorithms          : 11
+- stack                   : 11
+- strings                 : 24
+- tree                    : 10
+- twopointer              : 10
+- _sandbox                :  2
 
 ====================
-Note: Count includes practice files, design implementations,
-      helper classes, and alternate approaches — not just
-      LeetCode submissions. LeetCode-specific solved count
-      is tracked separately in the DSA Roadmap README.
+Subcategory Highlights
 ====================
+
+Arrays:
+- arrays/basics           :  5
+- arrays/greedy           :  5
+- arrays/matrix           :  3
+- arrays/prefix           :  5
+- arrays/rotation         :  4
+- arrays101               : 24
+
+Binary Search:
+- binarysearch/basics     :  4
+- binarysearch/rotated    :  4
+- binarysearch/advanced   :  2
+- binarysearch root       :  1
+
+Dynamic Programming:
+- dp/grid                 :  2
+- dp/knapsack             :  6
+- dp/linear               : 10
+- dp/memoization          :  5
+- dp/optimization         :  2
+- dp/subsequence          :  2
+
+Graph:
+- graph/advanced          :  4
+- graph/cycles            :  3
+- graph/mst               :  2
+- graph/shortestpath      :  4
+- graph/topological       :  8
+- graph/traversal         :  9
+- graph/unionfind         :  2
+
+Linked List:
+- linkedlist/basic        :  4
+- linkedlist/operations   :  4
+- linkedlist/cycles       :  2
+- linkedlist/traversal    :  2
+- linkedlist/advanced     :  3
+- linkedlist root         :  1
+
+Strings:
+- strings/basic           :  9
+- strings/pattern         :  9
+- strings/advanced        :  6
+- strings/encoding        :  0
+
+Tree:
+- tree/basic              :  5
+- tree/traversal          :  5
+- tree/advanced           :  0
+
+====================
+Notable Current Files
+====================
+
+Recently reconciled names/locations:
+- strings/advanced/FirstOccurrenceInAString.java
+- dp/memoization/BottomUpSum.java
+- strings/advanced/PartitionDeciBinary.java
+- strings/advanced/PartitioningIntoMinDeciBinaryNumbers.java
+- graph/traversal/MaxAreaOfIsland.java
+- dp/subsequence/LongestCommonSubstring.java
+- graph/topological/CourseScheduleIIBfs.java
+- graph/topological/CourseScheduleIIDfs.java
+- graph/shortestpath/DijkstraAlgorithm.java
+
+New package areas from the reorganization:
+- math/UglyNumber.java
+- _sandbox/Main.java
+- _sandbox/Solution.java
+
+For exact file lookup, use QUICK_REFERENCE.md.
+For the complete visual structure, use FOLDER_STRUCTURE_TREE.md.
+For the roadmap/problem status tracker, use README.md.

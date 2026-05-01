@@ -1,7 +1,9 @@
-# Java DSA — 417 LeetCode Problems & Solutions
+# Java DSA — 180+ LeetCode Problems & 270 Java DSA Files
 
 > **Pattern-based interview preparation in Java.**
-> Structured by topic, tracked by progress, built for FAANG-level readiness.
+> Structured by topic and algorithm pattern, tracked by progress, built for FAANG-level readiness.
+> 
+> ✨ **Recently reorganized** (May 2026): 40+ subcategories for pattern-based learning. See [Folder Structure](#folder-structure-with-subcategories) below.
 
 **Author:** Mohan Lal &nbsp;·&nbsp; **GitHub / LeetCode:** [mhnuk2007](https://github.com/mhnuk2007) &nbsp;·&nbsp; **Language:** Java
 &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/mhnuk2007) &nbsp;·&nbsp; [Portfolio](https://mhnuk2007.github.io)
@@ -10,6 +12,8 @@
 
 ## Table of Contents
 
+- [Quick Start - How to Use This Repository](#quick-start)
+- [Folder Structure with Subcategories](#folder-structure-with-subcategories)
 - [Progress Overview](#progress-overview)
 - [30-Day Interview Roadmap](#30-day-interview-roadmap)
 - [Daily Log](#daily-log)
@@ -24,8 +28,8 @@
   - [Heap / Priority Queue](#8-heap--priority-queue--921)
   - [Trees](#9-trees--1150)
   - [Backtracking](#10-backtracking--1422)
-  - [Graphs](#11-graphs--2042)
-  - [Dynamic Programming](#12-dynamic-programming--1043)
+  - [Graphs](#11-graphs--2142)
+  - [Dynamic Programming](#12-dynamic-programming--1343)
   - [Greedy](#13-greedy--213)
   - [Trie](#14-trie--25)
   - [System Design / LLD](#15-system-design--lld--03)
@@ -36,6 +40,122 @@
 - [Problem-Solving Philosophy](#problem-solving-philosophy)
 - [Contributing](#contributing)
 - [License & Disclaimer](#license--disclaimer)
+
+---
+
+## Quick Start
+
+Welcome! This repository contains **180+ tracked LeetCode solutions and 270 Java DSA files organized by algorithm patterns**.
+
+### 📂 How to Navigate
+- **Just starting?** Check `src/arrays101/` for beginner problems
+- **Need rotation array problems?** Go to `src/arrays/rotation/`
+- **Learning knapsack DP?** Go to `src/dp/knapsack/`
+- **Studying graph traversal?** Go to `src/graph/traversal/`
+
+For **complete file location guide**, see [QUICK_REFERENCE.md](QUICK_REFERENCE.md).
+
+---
+
+## Folder Structure with Subcategories
+
+### 📁 Arrays (6 subcategories)
+```
+src/arrays/
+├── basics/                [Array fundamentals: PlusOne, ContainsDuplicate]
+├── rotation/              [RotateArray, NextPermutation, CircularArrayLoop]
+├── prefix/                [Prefix sum: FindPivotIndex, TrappingRainWater, RunningSum1d]
+├── greedy/                [Greedy approach: BestTimeToBuyAndSellStock, MajorityElement]
+├── matrix/                [2D arrays: SpiralMatrix, SpecialPositions]
+└── advanced/              [Complex patterns: PascalsTriangle, etc.]
+```
+
+### 📁 Binary Search (3 subcategories)
+```
+src/binarysearch/
+├── basics/                [BinarySearch, SearchInsert, SqrtX, FirstBadVersion]
+├── rotated/               [SearchRotatedSortedArray, FindMinRotated, FindPeakElement]
+└── advanced/              [FirstAndLastPosition, FindKClosestElements]
+```
+
+### 📁 Dynamic Programming (6 subcategories)
+```
+src/dp/
+├── linear/                [1D DP: ClimbingStairs, HouseRobber, Tribonacci variants]
+├── knapsack/              [Knapsack, CoinChange, TargetSum, PartitionEqual]
+├── subsequence/           [LCS, LongestCommonSubstring]
+├── grid/                  [2D DP: MaximumPathScore, MultiStageGraph]
+├── memoization/           [Top-down: FibDP, TopDownSum]
+└── optimization/          [Advanced: StableArrays]
+```
+
+### 📁 Graph (7 subcategories)
+```
+src/graph/
+├── traversal/             [BFS, DFS, FloodFill, Islands, RottingOranges]
+├── shortestpath/          [Dijkstra, BellmanFord, WeightedGraph]
+├── mst/                   [Kruskal, Prim's Algorithm]
+├── unionfind/             [DSU, RedundantConnection]
+├── topological/           [TopoSort, CourseSchedule variants]
+├── cycles/                [CycleDetection in directed/undirected graphs]
+└── advanced/              [CloneGraph, Trie, WordSearchII]
+```
+
+### 📁 Strings (4 subcategories)
+```
+src/strings/
+├── basic/                 [ReverseString, AddBinary, AddStrings, JavaTokens]
+├── pattern/               [Palindrome, Anagram, IsomorphicStrings, ValidPalindrome]
+├── advanced/              [LongestSubstringWithoutRepeating, MinChanges, FirstOccurrence]
+└── encoding/              [Reserved for future encoding/decoding problems]
+```
+
+### 📁 Linked List (5 subcategories)
+```
+src/linkedlist/
+├── basic/                 [ListNode, SinglyLinkedList, MyLinkedList, DeleteNode]
+├── traversal/             [ReverseLinkedList, MaximumTwinSumOfLinkedList]
+├── operations/            [AddTwoNumbers, MergeTwoSortedLists, RemoveNthNode]
+├── cycles/                [LinkedListCycle, LinkedListCycleII]
+└── advanced/              [PalindromeLinkedList, Intersection, SplitCircular]
+```
+
+### 📁 Tree (3 subcategories)
+```
+src/tree/
+├── traversal/             [Inorder, Preorder, Postorder, LevelOrder, RightSideView]
+├── basic/                 [MaxDepth, InvertBinaryTree, SameTree, CountNodes]
+└── advanced/              [For BST, Segment Trees, etc. - future expansion]
+```
+
+### 📁 Other Major Categories
+```
+src/arrays101/             [LeetCode Arrays 101 Beginner Track - 24 files]
+src/heap/                  [MaxHeap, MinHeap, MedianFinder, TopKFrequent, Twitter]
+src/stack/                 [MinStack, ValidParenthesis, DailyTemperatures]
+src/queue/                 [CircularQueue, MyQueueUsingStacks, MovingAverage]
+src/hashing/               [HashMap/HashSet problems - 5 files]
+src/set/                   [SingleNumber, MyHashSet - with designhashset/]
+src/twopointer/            [TwoSum, ThreeSum, ContainerWithMostWater - 10 files]
+src/recursion/             [NQueens, Combinations, Subsets, Backtracking - 29 files]
+src/slidingwindow/         [MaxSlidingWindow, SlidingWindow - 2 files]
+src/sortalgorithms/        [BubbleSort, MergeSort, QuickSort, SelectionSort - 11 files]
+src/patterns/              [FloydTriangle, FloydTriangleMathematically]
+src/dailychallenges/       [Daily coding challenges - 6 problems]
+src/map/                   [designhashmap/ with MyHashMap]
+src/math/                  [UglyNumber - NEW PACKAGE]
+src/_sandbox/              [Main.java, Solution.java - Utility files - NEW PACKAGE]
+```
+
+---
+
+## 📖 Documentation Files
+
+Three comprehensive guides have been created to help you navigate the reorganized repository:
+
+1. **[REORGANIZATION_SUMMARY.md](REORGANIZATION_SUMMARY.md)** - Complete overview of the reorganization, benefits, and next steps
+2. **[FOLDER_STRUCTURE_TREE.md](FOLDER_STRUCTURE_TREE.md)** - Visual tree showing the complete folder structure
+3. **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick lookup guide for finding any specific problem by filename
 
 ---
 
@@ -53,16 +173,16 @@
 | 8 | Heap / Priority Queue | 9 | 21 | `████░░░░░░` 43% |
 | 9 | Trees | 11 | 50 | `██░░░░░░░░` 22% |
 | 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
-| 11 | Graphs | 20 | 42 | `█████░░░░░` 48% |
-| 12 | Dynamic Programming | 12 | 43 | `████░░░░░░` 23% |
+| 11 | Graphs | 21 | 42 | `█████░░░░░` 50% |
+| 12 | Dynamic Programming | 13 | 43 | `███░░░░░░░` 30% |
 | 13 | Greedy | 2 | 13 | `██░░░░░░░░` 15% |
 | 14 | Trie | 2 | 5 | `████░░░░░░` 40% |
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **183** | **417** | `████░░░░░░` **44% |
+| | **Total** | **185** | **417** | `████░░░░░░` **44%** |
 
-> Last updated: May 1, 2026. Graphs section reflects all completed concept files and LC problems. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, 198, 416, 740, 746, 1137, 1143, 3129, and 3130.
+> Last updated: May 1, 2026. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 740, 746, 1137, 1143, 3129, and 3130.
 
 ---
 
@@ -558,7 +678,7 @@
 
 ---
 
-### 11. Graphs — 20/42
+### 11. Graphs — 21/42
 
 > **30-Day focus:** Day 6 → 200, 695 &nbsp;·&nbsp; Day 7 → 994, 1091 &nbsp;·&nbsp; Day 8 → 207, 210
 
@@ -571,9 +691,9 @@
 | Adjacency Matrix | ✅ | `AdjacencyMatrix.java` |
 | Cycle Detection — Undirected (BFS + DFS) | ✅ | `CycleDetectionUndirectedGraph.java` |
 | Cycle Detection — Directed (BFS + DFS) | ✅ | `CourseSchedule.java` |
-| Topological Sort (DFS) | ✅ | `TopologicalSortingDFS.java` · `CourseScheduleII.java` |
-| Topological Sort (BFS / Kahn's) | ✅ | `TopologicalSortingBFS.java` · `CourseScheduleII.java` |
-| Dijkstra's Algorithm | ✅ | `DijkstrasAlgorithm.java` |
+| Topological Sort (DFS) | ✅ | `TopologicalSortingDFS.java` · `CourseScheduleIIDfs.java` |
+| Topological Sort (BFS / Kahn's) | ✅ | `TopologicalSortingBFS.java` · `CourseScheduleIIBfs.java` |
+| Dijkstra's Algorithm | ✅ | `DijkstraAlgorithm.java` |
 | Prim's Algorithm (MST) | ✅ | `PrimsAlgorithm.java` |
 | Kruskal's Algorithm (MST) | ✅ | `KruskalAlgorithm.java` |
 | Bellman-Ford Algorithm | ✅ | `BellmanFordAlgorithm.java` |
@@ -599,7 +719,7 @@
 | 417 | Pacific Atlantic Water Flow | Medium | ⬜ | DFS / BFS | A, G, B | — |
 | 547 | Number of Provinces | Medium | ⬜ | Union Find / DFS | A, G, M | — |
 | 684 | Redundant Connection | Medium | ✅ | Union Find + DFS + BFS | A, G | — |
-| 695 | Max Area of Island | Medium | ⬜ | DFS / BFS | A, G, Meta | Day 6 |
+| 695 | Max Area of Island | Medium | ✅ | DFS / BFS | A, G, Meta | Day 6 |
 | 721 | Accounts Merge | Medium | ⬜ | Union Find / DFS | A, G, Meta | — |
 | 733 | Flood Fill | Easy | ✅ | DFS on grid | A, G, M | — |
 | 743 | Network Delay Time | Medium | ✅ | Dijkstra's | A, G, Meta, B | — |
@@ -613,9 +733,9 @@
 
 ---
 
-### 12. Dynamic Programming — 12/43
+### 12. Dynamic Programming — 13/43
 
-> 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottonUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`, `CoinChange`, `CoinChangeII`, `DeleteAndEarn`, `MaximumPathScore`, `MaxScoreMulOps`
+> 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottomUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`, `CoinChange`, `CoinChangeII`, `DeleteAndEarn`, `MaximumPathScore`, `MaxScoreMulOps`, `LongestCommonSubstring`
 > 
 > These files demonstrate memoization, top-down DP, bottom-up DP, and custom practice beyond roadmap problem entries.
 > 
@@ -654,7 +774,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 |---|---|---|:---:|---|---|
 | — | 0-1 Knapsack | — | ✅ | 0/1 Knapsack | — |
 | — | Unbounded Knapsack | — | ✅ | Unbounded Knapsack | — |
-| — | Longest Common Substring | — | ⬜ | String DP | — |
+| — | Longest Common Substring | — | ✅ | String DP | — |
 | — | Palindromic Partitioning (MCM) | — | ⬜ | Interval DP | — |
 | — | Unique BSTs | — | ⬜ | — | — |
 | — | Nth Catalan | — | ⬜ | — | — |
@@ -855,4 +975,4 @@ Code in this repository is provided as-is for learning. Use at your own risk.
 
 ---
 
-*Last updated: April 30, 2026*
+*Last updated: May 1, 2026*
