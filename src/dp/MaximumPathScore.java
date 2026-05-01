@@ -42,13 +42,20 @@ public class MaximumPathScore {
     // Approach 1: Top-Down DP (Memoization)
     // Time  : O(m * n * k)
     // Space : O(m * n * k) -- memo table + O(m + n) recursion stack
+    //
+    // Sentinel design:
+    //   -1                = UNVISITED  (safe: valid scores are always >= 0)
+    //   Integer.MIN_VALUE = UNREACHABLE (cached and returned as-is -- no translation needed)
+    //   >= 0              = valid cached score
     // -------------------------------------------------------------------------
+
+    private static final int UNVISITED = -1;
 
     public static int maxPathScore(int[][] grid, int k) {
         int[][][] dp = new int[grid.length][grid[0].length][k + 1];
         for (int[][] surface : dp)
             for (int[] row : surface)
-                Arrays.fill(row, -2);
+                Arrays.fill(row, UNVISITED);
         int result = helper(grid, k, 0, 0, 0, dp);
         return result == Integer.MIN_VALUE ? -1 : result;
     }
@@ -58,11 +65,11 @@ public class MaximumPathScore {
         int newCost = cost + (grid[i][j] != 0 ? 1 : 0);
         if (newCost > k) return Integer.MIN_VALUE;
         if (i == grid.length - 1 && j == grid[0].length - 1) return grid[i][j];
-        if (dp[i][j][newCost] != -2) return dp[i][j][newCost];
+        if (dp[i][j][newCost] != UNVISITED) return dp[i][j][newCost];
         int goRight = helper(grid, k, i, j + 1, newCost, dp);
         int goDown  = helper(grid, k, i + 1, j, newCost, dp);
         int best = Math.max(goRight, goDown);
-        if (best == Integer.MIN_VALUE) return Integer.MIN_VALUE;
+        if (best == Integer.MIN_VALUE) return dp[i][j][newCost] = Integer.MIN_VALUE;
         return dp[i][j][newCost] = grid[i][j] + best;
     }
 
