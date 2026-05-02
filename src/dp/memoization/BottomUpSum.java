@@ -1,6 +1,6 @@
 package dp;
 
-public class BottonUpSum {
+public class BottomUpSum {
     public static void main(String[] args) {
         int n = 10;
         int[] dp = new int[n + 1];
