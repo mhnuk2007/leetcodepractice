@@ -125,7 +125,7 @@ src/linkedlist/
 src/tree/
 ├── traversal/             [Inorder, Preorder, Postorder, LevelOrder, RightSideView]
 ├── basic/                 [MaxDepth, InvertBinaryTree, SameTree, CountNodes]
-└── advanced/              [BalancedBinaryTree, DiameterOfBinaryTree, For BST, Segment Trees, etc.]
+└── advanced/              [BalancedBinaryTree, DiameterOfBinaryTree, LowestCommonAncestorOfBinaryTree, LowestCommonAncestorOfBST, PathSum, For BST, Segment Trees, etc.]
 ```
 
 ### 📁 Other Major Categories
@@ -171,7 +171,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 6 | Linked List | 13 | 26 | `█████░░░░░` 50% |
 | 7 | Stack & Queue | 12 | 31 | `████░░░░░░` 39% |
 | 8 | Heap / Priority Queue | 9 | 21 | `████░░░░░░` 43% |
-| 9 | Trees | 12 | 50 | `██░░░░░░░░` 24% |
+| 9 | Trees | 15 | 50 | `█████░░░░░` 30% |
 | 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
 | 11 | Graphs | 21 | 42 | `█████░░░░░` 50% |
 | 12 | Dynamic Programming | 13 | 43 | `███░░░░░░░` 30% |
@@ -180,9 +180,9 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **186** | **417** | `████░░░░░░` **45%** |
+| | **Total** | **189** | **417** | `████░░░░░░` **45%** |
 
-> Last updated: May 2, 2026. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 740, 746, 1137, 1143, 3129, and 3130.
+> Last updated: May 3, 2026. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 740, 746, 1137, 1143, 3129, and 3130.
 
 ---
 
@@ -271,6 +271,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 | Date | Problems | Notes |
 |---|---|---|
+| May 3 | 236, 235, 112 | Lowest Common Ancestor of Binary Tree · Lowest Common Ancestor of BST · Path Sum |
 | May 2 | 543 | Diameter of Binary Tree |
 | Apr 30 | 322, 518 | Coin Change · Coin Change II |
 | Apr 29 | 416, 494, 746, Knapsack01, UnboundedKnapsack, MultiStageGraph, TribonacciTopDown, TribonacciBottomUp | Partition Equal Subset Sum · Target Sum · Min Cost Climbing Stairs · 0/1 Knapsack (concept) · Unbounded Knapsack (concept) · Multi-Stage Graph (concept) · N-th Tribonacci Number (Top-Down) · N-th Tribonacci Number (Bottom-Up) |
@@ -805,7 +806,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 | 312 | Burst Balloons | Hard | ⬜ | Interval DP | A, G, Meta |
 | 322 | Coin Change | Medium | ✅ | Unbounded Knapsack | A, G, M, Meta, B, Ad |
 | 337 | House Robber III | Medium | ⬜ | DP on Trees | A, G |
-| 416 | Partition Equal Subset Sum | Medium | ✅ | 0/1 Knapsack | A, G, Meta |
+| 416 | Partition Equal Subset Sum | Medium | ✅ | 0/1 Knapsack | A, G |
 | 494 | Target Sum | Medium | ✅ | 0/1 Knapsack | A, G |
 | 518 | Coin Change II | Medium | ✅ | Unbounded Knapsack | A, G |
 | 673 | Number of Longest Increasing Subsequence | Medium | ⬜ | LIS | A, G |
@@ -976,4 +977,4 @@ Code in this repository is provided as-is for learning. Use at your own risk.
 
 ---
 
-*Last updated: May 2, 2026*
+*Last updated: May 3, 2026*

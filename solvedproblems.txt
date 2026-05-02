@@ -1,7 +1,7 @@
 ====================
 LeetCode Practice - Solved Problems Inventory
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: May 1, 2026
+Last Updated: May 3, 2026
 ====================
 
 This file tracks the current Java solution/practice inventory under src/.
@@ -13,7 +13,7 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 271
+Total Java files under src/: 274
 
 Category Breakdown:
 - arrays                  : 22
@@ -35,7 +35,7 @@ Category Breakdown:
 - sortalgorithms          : 11
 - stack                   : 11
 - strings                 : 24
-- tree                    : 12
+- tree                    : 15
 - twopointer              : 10
 - _sandbox                :  2
 
@@ -91,7 +91,7 @@ Strings:
 Tree:
 - tree/basic              :  5
 - tree/traversal          :  5
-- tree/advanced           :  2
+- tree/advanced           :  5
 
 ====================
 Notable Current Files
@@ -107,6 +107,9 @@ Recently reconciled names/locations:
 - graph/topological/CourseScheduleIIBfs.java
 - graph/topological/CourseScheduleIIDfs.java
 - graph/shortestpath/DijkstraAlgorithm.java
+- tree/advanced/LowestCommonAncestorOfBinaryTree.java
+- tree/advanced/LowestCommonAncestorOfBST.java
+- tree/advanced/PathSum.java
 
 New package areas from the reorganization:
 - math/UglyNumber.java
