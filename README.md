@@ -125,7 +125,7 @@ src/linkedlist/
 src/tree/
 ├── traversal/             [Inorder, Preorder, Postorder, LevelOrder, RightSideView]
 ├── basic/                 [MaxDepth, InvertBinaryTree, SameTree, CountNodes]
-└── advanced/              [BalancedBinaryTree, For BST, Segment Trees, etc.]
+└── advanced/              [BalancedBinaryTree, DiameterOfBinaryTree, For BST, Segment Trees, etc.]
 ```
 
 ### 📁 Other Major Categories
@@ -171,7 +171,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 6 | Linked List | 13 | 26 | `█████░░░░░` 50% |
 | 7 | Stack & Queue | 12 | 31 | `████░░░░░░` 39% |
 | 8 | Heap / Priority Queue | 9 | 21 | `████░░░░░░` 43% |
-| 9 | Trees | 11 | 50 | `██░░░░░░░░` 22% |
+| 9 | Trees | 12 | 50 | `██░░░░░░░░` 24% |
 | 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
 | 11 | Graphs | 21 | 42 | `█████░░░░░` 50% |
 | 12 | Dynamic Programming | 13 | 43 | `███░░░░░░░` 30% |
@@ -180,9 +180,9 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **185** | **417** | `████░░░░░░` **44%** |
+| | **Total** | **186** | **417** | `████░░░░░░` **45%** |
 
-> Last updated: May 1, 2026. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 740, 746, 1137, 1143, 3129, and 3130.
+> Last updated: May 2, 2026. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 740, 746, 1137, 1143, 3129, and 3130.
 
 ---
 
@@ -271,6 +271,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 | Date | Problems | Notes |
 |---|---|---|
+| May 2 | 543 | Diameter of Binary Tree |
 | Apr 30 | 322, 518 | Coin Change · Coin Change II |
 | Apr 29 | 416, 494, 746, Knapsack01, UnboundedKnapsack, MultiStageGraph, TribonacciTopDown, TribonacciBottomUp | Partition Equal Subset Sum · Target Sum · Min Cost Climbing Stairs · 0/1 Knapsack (concept) · Unbounded Knapsack (concept) · Multi-Stage Graph (concept) · N-th Tribonacci Number (Top-Down) · N-th Tribonacci Number (Bottom-Up) |
 | Apr 24 | 79, 212, 198, 1137 | Word Search · Word Search II · House Robber (Map/Array) · Tribonacci |
@@ -343,7 +344,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 414 | Third Maximum Number | Easy | ✅ | Tracking | A |
 | 448 | Find All Numbers Disappeared in an Array | Easy | ✅ | Array Traversal | A, G |
 | 457 | Circular Array Loop | Medium | ✅ | Fast & Slow Pointers | A |
-| 485 | Max Consecutive Ones | Easy | ✅ | Array Traversal | A, G |
+| 485 | Max Consecutive Ones | Easy | ✅ | Array Traversal | A |
 | 561 | Array Partition | Easy | ✅ | Sorting | A |
 | 724 | Find Pivot Index | Easy | ✅ | Prefix Sum | A, G |
 | 747 | Largest Number At Least Twice of Others | Easy | ✅ | Array Traversal | A |
@@ -584,12 +585,12 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 743 | Network Delay Time | Medium | ⬜ | Heap + Dijkstra's | A, G, Meta |
 | 778 | Swim in Rising Water | Hard | ⬜ | Heap | G |
 | 1046 | Last Stone Weight | Easy | ✅ | Heap | A, G |
-| 1337 | The K Weakest Rows in a Matrix | Easy | ✅ | Heap + Binary Search | A, G |
+| 1337 | The K Weakest Rows in a Matrix | Easy | ✅ | Heap | A, G |
 | 1492 | The Kth Factor of N | Medium | ✅ | Math + Heap | A |
 
 ---
 
-### 9. Trees — 11/50
+### 9. Trees — 12/50
 
 > **30-Day focus:** Days 1–3 cover 104, 110, 543, 98, 700, 235, 236, 112, 113
 > Additional tree files in repo: `MyBinaryTree` (custom implementation)
@@ -622,7 +623,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 104 | Maximum Depth of Binary Tree | Easy | ✅ | DFS | A, G, M, Ap, B | Day 1 re-solve |
 | 105 | Construct Binary Tree from Preorder and Inorder | Medium | ⬜ | Recursion | A, G, M, Meta, B | — |
 | 106 | Construct Binary Tree from Inorder and Postorder | Medium | ⬜ | Recursion | A, G, B | — |
-| 110 | Balanced Binary Tree | Easy | ⬜ | DFS | A, G, M, B | Day 1 |
+| 110 | Balanced Binary Tree | Easy | ✅ | DFS | A, G, M, B | Day 1 |
 | 112 | Path Sum | Easy | ⬜ | DFS | A, G, M, B | Day 3 |
 | 113 | Path Sum II | Medium | ⬜ | DFS + Backtracking | A, G, M, B | Day 3 |
 | 116 | Populating Next Right Pointers in Each Node | Medium | ⬜ | BFS / Pointer | A, G, M | — |
@@ -641,7 +642,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 404 | Sum of Left Leaves | Easy | ⬜ | DFS | A, G | — |
 | 437 | Path Sum III | Medium | ⬜ | DFS + Prefix Sum | A, G, Meta | — |
 | 450 | Delete Node in a BST | Medium | ⬜ | BST Properties | A, G, M | — |
-| 543 | Diameter of Binary Tree | Easy | ⬜ | DFS | A, G, Meta, B | Day 1 |
+| 543 | Diameter of Binary Tree | Easy | ✅ | DFS | A, G, Meta, B | Day 1 |
 | 572 | Subtree of Another Tree | Easy | ⬜ | DFS | A, G | — |
 | 700 | Search in a Binary Search Tree | Easy | ✅ | BST Properties / Recursion | A, G | Day 2 re-solve |
 | 814 | Binary Tree Pruning | Medium | ⬜ | DFS | G | — |
@@ -665,7 +666,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 40 | Combination Sum II | Medium | ⬜ | Backtracking | A, G, B |
 | 46 | Permutations | Medium | ✅ | Backtracking | A, G, M, Meta, B |
 | 47 | Permutations II | Medium | ⬜ | Backtracking | A, G |
-| 51 | N-Queens | Hard | ✅ | Backtracking | A, G, Ap, B |
+| 51 | N-Queens | Hard | ✅ | Backtracking | A, G, Ap |
 | 52 | N-Queens II | Hard | ✅ | Backtracking | A, G |
 | 77 | Combinations | Medium | ✅ | Backtracking | A, G, M |
 | 78 | Subsets | Medium | ✅ | Backtracking | A, G, M, Meta, B |
@@ -834,7 +835,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 | 55 | Jump Game | Medium | ⬜ | Greedy | A, G, M, Meta, B |
 | 121 | Best Time to Buy and Sell Stock | Easy | ✅ | Greedy | A, G, M, Ap, B, Meta |
 | 134 | Gas Station | Medium | ⬜ | Greedy | A, G, B |
-| 435 | Non-overlapping Intervals | Medium | ⬜ | Greedy + Sorting | A, G, Meta, B |
+| 435 | Non-overlapping Intervals | Medium | ⬜ | Greedy + Sorting | A, G, Meta |
 | 452 | Minimum Arrows to Burst Balloons | Medium | ⬜ | Greedy + Sorting | A, G |
 | 763 | Partition Labels | Medium | ⬜ | Greedy + Hashing | A, G, Meta |
 | 1689 | Partitioning Into Min Number of Deci-Binary Numbers | Easy | ✅ | Greedy | A |
@@ -975,4 +976,4 @@ Code in this repository is provided as-is for learning. Use at your own risk.
 
 ---
 
-*Last updated: May 1, 2026*
+*Last updated: May 2, 2026*

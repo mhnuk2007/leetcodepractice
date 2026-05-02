@@ -13,7 +13,7 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 270
+Total Java files under src/: 271
 
 Category Breakdown:
 - arrays                  : 22
@@ -35,7 +35,7 @@ Category Breakdown:
 - sortalgorithms          : 11
 - stack                   : 11
 - strings                 : 24
-- tree                    : 11
+- tree                    : 12
 - twopointer              : 10
 - _sandbox                :  2
 
@@ -91,7 +91,7 @@ Strings:
 Tree:
 - tree/basic              :  5
 - tree/traversal          :  5
-- tree/advanced           :  1
+- tree/advanced           :  2
 
 ====================
 Notable Current Files
