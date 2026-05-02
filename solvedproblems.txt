@@ -13,7 +13,7 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 274
+Total Java files under src/: 275
 
 Category Breakdown:
 - arrays                  : 22
@@ -35,7 +35,7 @@ Category Breakdown:
 - sortalgorithms          : 11
 - stack                   : 11
 - strings                 : 24
-- tree                    : 15
+- tree                    : 16
 - twopointer              : 10
 - _sandbox                :  2
 
@@ -85,13 +85,13 @@ Linked List:
 Strings:
 - strings/basic           :  9
 - strings/pattern         :  9
-- strings/advanced        :  6
+- strings/advanced           :  6
 - strings/encoding        :  0
 
 Tree:
 - tree/basic              :  5
 - tree/traversal          :  5
-- tree/advanced           :  5
+- tree/advanced           :  6
 
 ====================
 Notable Current Files
@@ -110,6 +110,7 @@ Recently reconciled names/locations:
 - tree/advanced/LowestCommonAncestorOfBinaryTree.java
 - tree/advanced/LowestCommonAncestorOfBST.java
 - tree/advanced/PathSum.java
+- tree/advanced/PathSumII.java
 
 New package areas from the reorganization:
 - math/UglyNumber.java
