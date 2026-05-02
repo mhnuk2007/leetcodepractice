@@ -26,7 +26,7 @@ Category Breakdown:
 - heap                    : 13
 - linkedlist              : 16
 - map                     :  1
-- math                    :  1
+- math                    :  2
 - patterns                :  2
 - queue                   :  9
 - recursion               : 29
@@ -35,7 +35,7 @@ Category Breakdown:
 - sortalgorithms          : 11
 - stack                   : 11
 - strings                 : 24
-- tree                    : 10
+- tree                    : 11
 - twopointer              : 10
 - _sandbox                :  2
 
@@ -91,7 +91,7 @@ Strings:
 Tree:
 - tree/basic              :  5
 - tree/traversal          :  5
-- tree/advanced           :  0
+- tree/advanced           :  1
 
 ====================
 Notable Current Files

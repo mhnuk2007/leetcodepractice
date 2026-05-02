@@ -125,7 +125,7 @@ src/linkedlist/
 src/tree/
 ├── traversal/             [Inorder, Preorder, Postorder, LevelOrder, RightSideView]
 ├── basic/                 [MaxDepth, InvertBinaryTree, SameTree, CountNodes]
-└── advanced/              [For BST, Segment Trees, etc. - future expansion]
+└── advanced/              [BalancedBinaryTree, For BST, Segment Trees, etc.]
 ```
 
 ### 📁 Other Major Categories
@@ -143,7 +143,7 @@ src/sortalgorithms/        [BubbleSort, MergeSort, QuickSort, SelectionSort - 11
 src/patterns/              [FloydTriangle, FloydTriangleMathematically]
 src/dailychallenges/       [Daily coding challenges - 6 problems]
 src/map/                   [designhashmap/ with MyHashMap]
-src/math/                  [UglyNumber - NEW PACKAGE]
+src/math/                  [UglyNumber, RotatedDigits]
 src/_sandbox/              [Main.java, Solution.java - Utility files - NEW PACKAGE]
 ```
 
@@ -722,7 +722,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 695 | Max Area of Island | Medium | ✅ | DFS / BFS | A, G, Meta | Day 6 |
 | 721 | Accounts Merge | Medium | ⬜ | Union Find / DFS | A, G, Meta | — |
 | 733 | Flood Fill | Easy | ✅ | DFS on grid | A, G, M | — |
-| 743 | Network Delay Time | Medium | ✅ | Dijkstra's | A, G, Meta, B | — |
+| 743 | Network Delay Time | Medium | ✅ | Dijkstra's | A, G, Meta | — |
 | 787 | Cheapest Flights Within K Stops | Medium | ✅ | Bellman-Ford | A, G, Meta | — |
 | 797 | All Paths From Source to Target | Medium | ✅ | DFS / Backtracking | A, G | — |
 | 802 | Find Eventual Safe States | Medium | ⬜ | DFS | G, Meta | — |
