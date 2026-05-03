@@ -44,7 +44,8 @@ public class UniqueBSTII {
         int val;
         TreeNode left, right;
 
-        TreeNode() {}
+        TreeNode() {
+        }
 
         TreeNode(int val) {
             this.val = val;
@@ -93,18 +94,55 @@ public class UniqueBSTII {
             return result;
         }
         for (int root = start; root <= end; root++) {
-            List<TreeNode> leftTrees  = build(start, root - 1);
+            List<TreeNode> leftTrees = build(start, root - 1);
             List<TreeNode> rightTrees = build(root + 1, end);
             for (TreeNode left : leftTrees) {
                 for (TreeNode right : rightTrees) {
                     TreeNode node = new TreeNode(root); // fresh node per combination
-                    node.left  = left;
+                    node.left = left;
                     node.right = right;
                     result.add(node);
                 }
             }
         }
         return result;
+    }
+
+    //Approach II
+
+    /**
+     * Optimized LeetCode 95 - Unique Binary Search Trees II
+     * <p>
+     * Optimization: Added 2D Memoization table to cache List<TreeNode> for ranges.
+     * This prevents re-generating identical subtree structures for the same [start, end] range.
+     */
+    public static List<TreeNode> generateTrees2(int n) {
+        if (n == 0) return new ArrayList<>();
+        List<TreeNode>[][] dp = new List[n + 1][n + 1];
+        return build2(1, n, dp);
+    }
+
+    private static List<TreeNode> build2(int start, int end, List<TreeNode>[][] dp) {
+        List<TreeNode> result = new ArrayList<>();
+        if (start > end) {
+            result.add(null);  // one empty subtree — must not return empty list
+            return result;
+        }
+        if(dp[start][end] != null) return  dp[start][end];
+        for (int root = start; root <= end; root++) {
+            List<TreeNode> leftTrees = build2(start, root - 1, dp);
+            List<TreeNode> rightTrees = build2(root + 1, end, dp);
+            for (TreeNode left : leftTrees) {
+                for (TreeNode right : rightTrees) {
+                    TreeNode node = new TreeNode(root); // fresh node per combination
+                    node.left = left;
+                    node.right = right;
+                    result.add(node);
+                }
+            }
+        }
+        return dp[start][end] = result;
+
     }
 
     // -------------------------------------------------------------------------

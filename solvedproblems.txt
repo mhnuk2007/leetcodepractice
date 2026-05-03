@@ -13,14 +13,14 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 275
+Total Java files under src/: 278
 
 Category Breakdown:
 - arrays                  : 22
 - arrays101               : 24
 - binarysearch            : 11
 - dailychallenges         :  6
-- dp                      : 27
+- dp                      : 29
 - graph                   : 32
 - hashing                 :  5
 - heap                    : 13
@@ -34,7 +34,7 @@ Category Breakdown:
 - slidingwindow           :  2
 - sortalgorithms          : 11
 - stack                   : 11
-- strings                 : 24
+- strings                 : 25
 - tree                    : 16
 - twopointer              : 10
 - _sandbox                :  2
@@ -62,7 +62,7 @@ Dynamic Programming:
 - dp/knapsack             :  6
 - dp/linear               : 10
 - dp/memoization          :  5
-- dp/optimization         :  2
+- dp/optimization         :  4
 - dp/subsequence          :  2
 
 Graph:
@@ -83,7 +83,7 @@ Linked List:
 - linkedlist root         :  1
 
 Strings:
-- strings/basic           :  9
+- strings/basic           : 10
 - strings/pattern         :  9
 - strings/advanced           :  6
 - strings/encoding        :  0
@@ -111,6 +111,9 @@ Recently reconciled names/locations:
 - tree/advanced/LowestCommonAncestorOfBST.java
 - tree/advanced/PathSum.java
 - tree/advanced/PathSumII.java
+- dp/optimization/UniqueBST.java
+- dp/optimization/UniqueBSTII.java
+- strings/basic/RotatingString.java
 
 New package areas from the reorganization:
 - math/UglyNumber.java

@@ -1,4 +1,4 @@
-# Java DSA — 180+ LeetCode Problems & 270 Java DSA Files
+# Java DSA — 180+ LeetCode Problems & 278 Java DSA Files
 
 > **Pattern-based interview preparation in Java.**
 > Structured by topic and algorithm pattern, tracked by progress, built for FAANG-level readiness.
@@ -45,7 +45,7 @@
 
 ## Quick Start
 
-Welcome! This repository contains **180+ tracked LeetCode solutions and 270 Java DSA files organized by algorithm patterns**.
+Welcome! This repository contains **180+ tracked LeetCode solutions and 278 Java DSA files organized by algorithm patterns**.
 
 ### 📂 How to Navigate
 - **Just starting?** Check `src/arrays101/` for beginner problems
@@ -86,7 +86,8 @@ src/dp/
 ├── subsequence/           [LCS, LongestCommonSubstring]
 ├── grid/                  [2D DP: MaximumPathScore, MultiStageGraph]
 ├── memoization/           [Top-down: FibDP, TopDownSum]
-└── optimization/          [Advanced: StableArrays]
+├── optimization/          [FindAllPossibleStableArraysI, FindAllPossibleStableArraysII, UniqueBST, UniqueBSTII]
+└── subsequence/           [LongestCommonSubsequence, LongestCommonSubstring]
 ```
 
 ### 📁 Graph (7 subcategories)
@@ -104,7 +105,7 @@ src/graph/
 ### 📁 Strings (4 subcategories)
 ```
 src/strings/
-├── basic/                 [ReverseString, AddBinary, AddStrings, JavaTokens]
+├── basic/                 [ReverseString, AddBinary, AddStrings, JavaTokens, RotatingString]
 ├── pattern/               [Palindrome, Anagram, IsomorphicStrings, ValidPalindrome]
 ├── advanced/              [LongestSubstringWithoutRepeating, MinChanges, FirstOccurrence]
 └── encoding/              [Reserved for future encoding/decoding problems]
@@ -125,7 +126,7 @@ src/linkedlist/
 src/tree/
 ├── traversal/             [Inorder, Preorder, Postorder, LevelOrder, RightSideView]
 ├── basic/                 [MaxDepth, InvertBinaryTree, SameTree, CountNodes]
-└── advanced/              [BalancedBinaryTree, DiameterOfBinaryTree, LowestCommonAncestorOfBinaryTree, LowestCommonAncestorOfBST, PathSum, For BST, Segment Trees, etc.]
+└── advanced/              [BalancedBinaryTree, DiameterOfBinaryTree, LowestCommonAncestorOfBinaryTree, LowestCommonAncestorOfBST, PathSum, PathSumII, For BST, Segment Trees, etc.]
 ```
 
 ### 📁 Other Major Categories
@@ -165,24 +166,24 @@ Three comprehensive guides have been created to help you navigate the reorganize
 |---|---|:---:|:---:|---|
 | 1 | Arrays & Two Pointers | 40 | 49 | `████████░░` 82% |
 | 2 | Sliding Window | 3 | 16 | `██░░░░░░░░` 19% |
-| 3 | Strings | 14 | 26 | `█████░░░░░` 54% |
+| 3 | Strings | 15 | 26 | `█████░░░░░` 58% |
 | 4 | HashMap / HashSet | 11 | 23 | `█████░░░░░` 48% |
 | 5 | Binary Search | 11 | 29 | `████░░░░░░` 38% |
 | 6 | Linked List | 13 | 26 | `█████░░░░░` 50% |
 | 7 | Stack & Queue | 12 | 31 | `████░░░░░░` 39% |
 | 8 | Heap / Priority Queue | 9 | 21 | `████░░░░░░` 43% |
-| 9 | Trees | 15 | 50 | `█████░░░░░` 30% |
+| 9 | Trees | 16 | 50 | `█████░░░░░` 32% |
 | 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
 | 11 | Graphs | 21 | 42 | `█████░░░░░` 50% |
-| 12 | Dynamic Programming | 13 | 43 | `███░░░░░░░` 30% |
+| 12 | Dynamic Programming | 15 | 43 | `███░░░░░░░` 34% |
 | 13 | Greedy | 2 | 13 | `██░░░░░░░░` 15% |
 | 14 | Trie | 2 | 5 | `████░░░░░░` 40% |
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **189** | **417** | `████░░░░░░` **45%** |
+| | **Total** | **196** | **417** | `████░░░░░░` **47%** |
 
-> Last updated: May 3, 2026. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 740, 746, 1137, 1143, 3129, and 3130.
+> Last updated: May 3, 2026. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 740, 746, 1137, 1143, 3129, 3130, 95, and 96. Trees updated with 112, 113, 235, 236. Strings updated with 796.
 
 ---
 
@@ -271,7 +272,9 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 | Date | Problems | Notes |
 |---|---|---|
-| May 3 | 236, 235, 112 | Lowest Common Ancestor of Binary Tree · Lowest Common Ancestor of BST · Path Sum |
+| May 3 | 796 | Rotating String |
+| May 3 | 96, 95 | Unique Binary Search Trees · Unique Binary Search Trees II |
+| May 3 | 236, 235, 112, 113 | Lowest Common Ancestor of Binary Tree · Lowest Common Ancestor of BST · Path Sum · Path Sum II |
 | May 2 | 543 | Diameter of Binary Tree |
 | Apr 30 | 322, 518 | Coin Change · Coin Change II |
 | Apr 29 | 416, 494, 746, Knapsack01, UnboundedKnapsack, MultiStageGraph, TribonacciTopDown, TribonacciBottomUp | Partition Equal Subset Sum · Target Sum · Min Cost Climbing Stairs · 0/1 Knapsack (concept) · Unbounded Knapsack (concept) · Multi-Stage Graph (concept) · N-th Tribonacci Number (Top-Down) · N-th Tribonacci Number (Bottom-Up) |
@@ -385,7 +388,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 3. Strings — 14/26
+### 3. Strings — 15/26
 
 > Additional practice files in repo (non-LeetCode): `Anagram`, `Palindrome`, `PalindromeI`, `SplitString`, `SmallestAndLargestSub`, `JavaStringTokens`
 
@@ -415,6 +418,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 424 | Longest Repeating Character Replacement | Medium | ⬜ | Sliding Window | G, Meta, B |
 | 557 | Reverse Words in a String III | Easy | ✅ | Two Pointers | A, M |
 | 680 | Valid Palindrome II | Easy | ✅ | Two Pointers | A, G, Meta, B |
+| 796 | Rotate String | Easy | ✅ | String | A, G |
 | 1689 | Partitioning Into Minimum Number of Deci-Binary Numbers | Easy | ✅ | Greedy | A |
 | 1758 | Minimum Changes to Make Alternating Binary String | Easy | ✅ | String | A |
 
@@ -591,7 +595,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 9. Trees — 12/50
+### 9. Trees — 16/50
 
 > **30-Day focus:** Days 1–3 cover 104, 110, 543, 98, 700, 235, 236, 112, 113
 > Additional tree files in repo: `MyBinaryTree` (custom implementation)
@@ -625,8 +629,8 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 105 | Construct Binary Tree from Preorder and Inorder | Medium | ⬜ | Recursion | A, G, M, Meta, B | — |
 | 106 | Construct Binary Tree from Inorder and Postorder | Medium | ⬜ | Recursion | A, G, B | — |
 | 110 | Balanced Binary Tree | Easy | ✅ | DFS | A, G, M, B | Day 1 |
-| 112 | Path Sum | Easy | ⬜ | DFS | A, G, M, B | Day 3 |
-| 113 | Path Sum II | Medium | ⬜ | DFS + Backtracking | A, G, M, B | Day 3 |
+| 112 | Path Sum | Easy | ✅ | DFS | A, G, M, B | Day 3 |
+| 113 | Path Sum II | Medium | ✅ | DFS + Backtracking | A, G, M, B | Day 3 |
 | 116 | Populating Next Right Pointers in Each Node | Medium | ⬜ | BFS / Pointer | A, G, M | — |
 | 124 | Binary Tree Maximum Path Sum | Hard | ⬜ | DFS | A, G, M, Meta, B | — |
 | 144 | Binary Tree Preorder Traversal | Easy | ✅ | DFS | A, G, M | — |
@@ -635,8 +639,8 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 222 | Count Complete Tree Nodes | Medium | ✅ | DFS | A, G | — |
 | 226 | Invert Binary Tree | Easy | ✅ | DFS / BFS | A, G, M, Ap, B | — |
 | 230 | Kth Smallest Element in a BST | Medium | ⬜ | DFS | A, G, M, Meta, B | — |
-| 235 | Lowest Common Ancestor of a BST | Medium | ⬜ | BST Properties | A, G, M, Meta, B | Day 2 |
-| 236 | Lowest Common Ancestor of a Binary Tree | Medium | ⬜ | DFS | A, G, M, Meta, B | Day 3 |
+| 235 | Lowest Common Ancestor of a BST | Medium | ✅ | BST Properties | A, G, M, Meta, B | Day 2 |
+| 236 | Lowest Common Ancestor of a Binary Tree | Medium | ✅ | DFS | A, G, M, Meta, B | Day 3 |
 | 257 | Binary Tree Paths | Easy | ⬜ | DFS + Backtracking | A, G | — |
 | 297 | Serialize and Deserialize Binary Tree | Hard | ⬜ | DFS / BFS | A, G, Meta, B, Ly | — |
 | 337 | House Robber III | Medium | ⬜ | DP on Trees | A, G | — |
@@ -735,7 +739,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 12. Dynamic Programming — 13/43
+### 12. Dynamic Programming — 15/43
 
 > 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottomUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`, `CoinChange`, `CoinChangeII`, `DeleteAndEarn`, `MaximumPathScore`, `MaxScoreMulOps`, `LongestCommonSubstring`
 > 
@@ -778,7 +782,8 @@ If you cannot write all four lines before touching the code, stop — you are no
 | — | Unbounded Knapsack | — | ✅ | Unbounded Knapsack | — |
 | — | Longest Common Substring | — | ✅ | String DP | — |
 | — | Palindromic Partitioning (MCM) | — | ⬜ | Interval DP | — |
-| — | Unique BSTs | — | ⬜ | — | — |
+| 95 | Unique Binary Search Trees II | Medium | ✅ | DP | G, M | — |
+| 96 | Unique Binary Search Trees | Medium | ✅ | DP | G, M | — |
 | — | Nth Catalan | — | ⬜ | — | — |
 | — | Wildcard Pattern Matching | — | ⬜ | String DP | — |
 | — | Rod Cutting | — | ⬜ | — | — |
