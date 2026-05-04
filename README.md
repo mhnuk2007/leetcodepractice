@@ -1,4 +1,4 @@
-# Java DSA — 180+ LeetCode Problems & 278 Java DSA Files
+# Java DSA — 180+ LeetCode Problems & 279 Java DSA Files
 
 > **Pattern-based interview preparation in Java.**
 > Structured by topic and algorithm pattern, tracked by progress, built for FAANG-level readiness.
@@ -45,7 +45,7 @@
 
 ## Quick Start
 
-Welcome! This repository contains **180+ tracked LeetCode solutions and 278 Java DSA files organized by algorithm patterns**.
+Welcome! This repository contains **180+ tracked LeetCode solutions and 279 Java DSA files organized by algorithm patterns**.
 
 ### 📂 How to Navigate
 - **Just starting?** Check `src/arrays101/` for beginner problems
@@ -126,7 +126,7 @@ src/linkedlist/
 src/tree/
 ├── traversal/             [Inorder, Preorder, Postorder, LevelOrder, RightSideView]
 ├── basic/                 [MaxDepth, InvertBinaryTree, SameTree, CountNodes]
-└── advanced/              [BalancedBinaryTree, DiameterOfBinaryTree, LowestCommonAncestorOfBinaryTree, LowestCommonAncestorOfBST, PathSum, PathSumII, For BST, Segment Trees, etc.]
+└── advanced/              [BalancedBinaryTree, ConstructBinaryTree, ConstructBinaryTree106, DiameterOfBinaryTree, LowestCommonAncestorOfBinaryTree, LowestCommonAncestorOfBST, PathSum, PathSumII, For BST, Segment Trees, etc.]
 ```
 
 ### 📁 Other Major Categories
@@ -172,7 +172,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 6 | Linked List | 13 | 26 | `█████░░░░░` 50% |
 | 7 | Stack & Queue | 12 | 31 | `████░░░░░░` 39% |
 | 8 | Heap / Priority Queue | 9 | 21 | `████░░░░░░` 43% |
-| 9 | Trees | 16 | 50 | `█████░░░░░` 32% |
+| 9 | Trees | 17 | 50 | `█████░░░░░` 34% |
 | 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
 | 11 | Graphs | 21 | 42 | `█████░░░░░` 50% |
 | 12 | Dynamic Programming | 15 | 43 | `███░░░░░░░` 34% |
@@ -181,9 +181,9 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **196** | **417** | `████░░░░░░` **47%** |
+| | **Total** | **197** | **417** | `████░░░░░░` **47%** |
 
-> Last updated: May 3, 2026. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 740, 746, 1137, 1143, 3129, 3130, 95, and 96. Trees updated with 112, 113, 235, 236. Strings updated with 796.
+> Last updated: May 3, 2026. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 740, 746, 1137, 1143, 3129, 3130, 95, and 96. Trees updated with 106, 112, 113, 235, 236. Strings updated with 796.
 
 ---
 
@@ -272,6 +272,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 | Date | Problems | Notes |
 |---|---|---|
+| May 3 | 106 | Construct Binary Tree from Inorder and Postorder Traversal |
 | May 3 | 796 | Rotating String |
 | May 3 | 96, 95 | Unique Binary Search Trees · Unique Binary Search Trees II |
 | May 3 | 236, 235, 112, 113 | Lowest Common Ancestor of Binary Tree · Lowest Common Ancestor of BST · Path Sum · Path Sum II |
@@ -595,7 +596,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 9. Trees — 16/50
+### 9. Trees — 17/50
 
 > **30-Day focus:** Days 1–3 cover 104, 110, 543, 98, 700, 235, 236, 112, 113
 > Additional tree files in repo: `MyBinaryTree` (custom implementation)
@@ -627,7 +628,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 102 | Binary Tree Level Order Traversal | Medium | ✅ | BFS | A, G, M, Meta, B | — |
 | 104 | Maximum Depth of Binary Tree | Easy | ✅ | DFS | A, G, M, Ap, B | Day 1 re-solve |
 | 105 | Construct Binary Tree from Preorder and Inorder | Medium | ⬜ | Recursion | A, G, M, Meta, B | — |
-| 106 | Construct Binary Tree from Inorder and Postorder | Medium | ⬜ | Recursion | A, G, B | — |
+| 106 | Construct Binary Tree from Inorder and Postorder | Medium | ✅ | Recursion | A, G, B | Day 3 |
 | 110 | Balanced Binary Tree | Easy | ✅ | DFS | A, G, M, B | Day 1 |
 | 112 | Path Sum | Easy | ✅ | DFS | A, G, M, B | Day 3 |
 | 113 | Path Sum II | Medium | ✅ | DFS + Backtracking | A, G, M, B | Day 3 |
