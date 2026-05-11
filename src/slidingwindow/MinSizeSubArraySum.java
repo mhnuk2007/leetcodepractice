@@ -1,4 +1,4 @@
-package arrays;
+package slidingwindow;
 
 /**
  * LC 209 - Minimum Size Subarray Sum
