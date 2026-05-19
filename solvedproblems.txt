@@ -1,7 +1,7 @@
 ====================
 LeetCode Practice - Solved Problems Inventory
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: May 3, 2026
+Last Updated: May 19, 2026
 ====================
 
 This file tracks the current Java solution/practice inventory under src/.
@@ -13,10 +13,10 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 279
+Total Java files under src/: 285
 
 Category Breakdown:
-- arrays                  : 22
+- arrays                  : 21
 - arrays101               : 24
 - binarysearch            : 11
 - dailychallenges         :  6
@@ -31,11 +31,11 @@ Category Breakdown:
 - queue                   :  9
 - recursion               : 29
 - set                     :  2
-- slidingwindow           :  2
+- slidingwindow           :  7
 - sortalgorithms          : 11
 - stack                   : 11
-- strings                 : 25
-- tree                    : 17
+- strings                 : 24
+- tree                    : 18
 - twopointer              : 10
 - _sandbox                :  2
 
@@ -47,7 +47,7 @@ Arrays:
 - arrays/basics           :  5
 - arrays/greedy           :  5
 - arrays/matrix           :  3
-- arrays/prefix           :  5
+- arrays/prefix           :  4
 - arrays/rotation         :  4
 - arrays101               : 24
 
@@ -85,20 +85,20 @@ Linked List:
 Strings:
 - strings/basic           : 10
 - strings/pattern         :  9
-- strings/advanced           :  6
+- strings/advanced        :  5
 - strings/encoding        :  0
 
 Tree:
 - tree/basic              :  5
 - tree/traversal          :  5
-- tree/advanced           :  7
+- tree/advanced           :  8
 
 ====================
 Notable Current Files
 ====================
 
 Recently reconciled names/locations:
-- strings/advanced/FirstOccurrenceInAString.java
+- strings/advanced/FindIndexOfFirstOccurrence.java
 - dp/memoization/BottomUpSum.java
 - strings/advanced/PartitionDeciBinary.java
 - strings/advanced/PartitioningIntoMinDeciBinaryNumbers.java
@@ -116,6 +116,12 @@ Recently reconciled names/locations:
 - strings/basic/RotatingString.java
 - tree/advanced/ConstructBinaryTree.java
 - tree/advanced/ConstructBinaryTree106.java
+- slidingwindow/DynamicWindow.java
+- slidingwindow/LongestSubstringWithoutRepeatingCharacters.java
+- slidingwindow/MaximumAverageSubarrayI.java
+- slidingwindow/MaxSumOfDistinctSubarray.java
+- slidingwindow/MaxSumOfSubArray.java
+- slidingwindow/MinSizeSubArraySum.java
 
 New package areas from the reorganization:
 - math/UglyNumber.java

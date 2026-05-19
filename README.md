@@ -1,4 +1,4 @@
-# Java DSA — 180+ LeetCode Problems & 281 Java DSA Files
+# Java DSA — 180+ LeetCode Problems & 285 Java DSA Files
 
 > **Pattern-based interview preparation in Java.**
 > Structured by topic and algorithm pattern, tracked by progress, built for FAANG-level readiness.
@@ -19,17 +19,17 @@
 - [Daily Log](#daily-log)
 - [Problem Sets](#problem-sets)
   - [Arrays & Two Pointers](#1-arrays--two-pointers--4049)
-  - [Sliding Window](#2-sliding-window--316)
+  - [Sliding Window](#2-sliding-window--416)
   - [Strings](#3-strings--1426)
   - [HashMap / HashSet](#4-hashmap--hashset--1123)
   - [Binary Search](#5-binary-search--1129)
   - [Linked List](#6-linked-list--1326)
   - [Stack & Queue](#7-stack--queue--1231)
   - [Heap / Priority Queue](#8-heap--priority-queue--921)
-  - [Trees](#9-trees--1750)
+  - [Trees](#9-trees--1850)
   - [Backtracking](#10-backtracking--1422)
   - [Graphs](#11-graphs--2142)
-  - [Dynamic Programming](#12-dynamic-programming--1543)
+  - [Dynamic Programming](#12-dynamic-programming--1843)
   - [Greedy](#13-greedy--213)
   - [Trie](#14-trie--25)
   - [System Design / LLD](#15-system-design--lld--03)
@@ -45,7 +45,7 @@
 
 ## Quick Start
 
-Welcome! This repository contains **180+ tracked LeetCode solutions and 281 Java DSA files organized by algorithm patterns**.
+Welcome! This repository contains **180+ tracked LeetCode solutions and 285 Java DSA files organized by algorithm patterns**.
 
 ### 📂 How to Navigate
 - **Just starting?** Check `src/arrays101/` for beginner problems
@@ -59,12 +59,12 @@ For **complete file location guide**, see [QUICK_REFERENCE.md](QUICK_REFERENCE.m
 
 ## Folder Structure with Subcategories
 
-### 📁 Arrays (5 subcategories · 22 files)
+### 📁 Arrays (5 subcategories · 21 files)
 ```
 src/arrays/
 ├── basics/                [5 files — PlusOne, ContainsDuplicate, PascalsTriangle, PascalsTriangleII, RichestCustomerWealth]
 ├── rotation/              [4 files — RotateArray, NextPermutation, CircularArrayLoop, RotateFunction]
-├── prefix/                [5 files — FindPivotIndex, TrappingRainWater, TrappingRainWaterPrefix, RunningSum1d, MinSizeSubArraySum]
+├── prefix/                [4 files — FindPivotIndex, TrappingRainWater, TrappingRainWaterPrefix, RunningSum1d]
 ├── greedy/                [5 files — BestTimeToBuyAndSellStock, MajorityElement, ArrayPartition, LargestNumberTwiceOthers, MaxProfit]
 └── matrix/                [3 files — SpiralMatrix, SpecialPositionsInBinaryMatrix, SearchInRotatedSortedArray]
 ```
@@ -113,8 +113,8 @@ src/graph/
 src/strings/
 ├── basic/                 [10 files — ReverseString, ReverseWordsInString, ReverseWordsInStringII, ReverseWordsInStringIII,
 │                                       AddBinary, AddStrings, BinaryGap, JavaStringTokens, RotatingString, SplitString]
-├── pattern/               [9 files  — Palindrome, PalindromeI, PalindromeII, ValidPalindrome, ValidPalindromeII(?),
-│                                       Anagram, ValidAnagram, IsomorphicStrings, SmallestAndLargestSub,
+├── pattern/               [9 files  — Palindrome, PalindromeI, PalindromeII, ValidPalindrome, IsomorphicStrings,
+│                                       Anagram, ValidAnagram, SmallestAndLargestSub,
 │                                       ValidWordAbbreviation]
 ├── advanced/              [5 files  — LongestSubstringWithoutRepeatingCharacters, FindIndexOfFirstOccurrence,
 │                                       MinChangesAlternatingBinaryString, PartitionDeciBinary,
@@ -148,7 +148,7 @@ src/tree/
 ```
 src/arrays101/             [24 files — LeetCode Arrays 101 Beginner Track]
 src/recursion/             [29 files — Recursion fundamentals + backtracking problems]
-src/heap/                  [13 files — MaxHeap, MinHeap, MedianFinder (×2), MergeKSortedLists,
+src/heap/                  [13 files — MaxHeap, MinHeap, MedianFromDataStream (×2), MergeKSortedLists,
                                         TopKFrequentElements, Twitter, UglyNumberII, KthLargestElement,
                                         KWeakestRows, KthFactorOfN, LastStoneWeight, Main]
 src/stack/                 [11 files — ArrayStack, ArrayListStack, LinkedListStack, MinStack, MinStackLinkedList,
@@ -164,7 +164,9 @@ src/twopointer/            [10 files — TwoSum, TwoSumII, ThreeSum, ContainerWi
                                         MiddleOfLinkedList, LengthOfLoop]
 src/hashing/               [5 files  — ContainsDuplicatesII, FirstUniqueCharacter, IntersectionOfArrays,
                                         IntersectionOfArraysII, MinimumIndexSum]
-src/slidingwindow/         [2 files  — MaxSlidingWindow, SlidingWindow]
+src/slidingwindow/         [7 files  — SlidingWindow, DynamicWindow, LongestSubstringWithoutRepeatingCharacters,
+                                        MaximumAverageSubarrayI, MaxSumOfDistinctSubarray,
+                                        MaxSumOfSubArray, MinSizeSubArraySum]
 src/dailychallenges/       [6 files  — 6 daily challenge problems]
 src/set/                   [2 files  — SingleNumber, designhashset/MyHashSet]
 src/map/                   [1 file   — designhashmap/MyHashMap]
@@ -190,25 +192,25 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | # | Category | Done | Total | Progress |
 |---|---|:---:|:---:|---|
 | 1 | Arrays & Two Pointers | 40 | 49 | `████████░░` 82% |
-| 2 | Sliding Window | 3 | 16 | `██░░░░░░░░` 19% |
+| 2 | Sliding Window | 4 | 16 | `███░░░░░░░` 25% |
 | 3 | Strings | 15 | 26 | `█████░░░░░` 58% |
 | 4 | HashMap / HashSet | 11 | 23 | `█████░░░░░` 48% |
 | 5 | Binary Search | 11 | 29 | `████░░░░░░` 38% |
 | 6 | Linked List | 13 | 26 | `█████░░░░░` 50% |
 | 7 | Stack & Queue | 12 | 31 | `████░░░░░░` 39% |
 | 8 | Heap / Priority Queue | 9 | 21 | `████░░░░░░` 43% |
-| 9 | Trees | 17 | 50 | `███░░░░░░░` 34% |
+| 9 | Trees | 18 | 50 | `████░░░░░░` 36% |
 | 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
 | 11 | Graphs | 21 | 42 | `█████░░░░░` 50% |
-| 12 | Dynamic Programming | 15 | 43 | `███░░░░░░░` 35% |
+| 12 | Dynamic Programming | 18 | 43 | `████░░░░░░` 42% |
 | 13 | Greedy | 2 | 13 | `██░░░░░░░░` 15% |
 | 14 | Trie | 2 | 5 | `████░░░░░░` 40% |
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **197** | **417** | `████░░░░░░` **47%** |
+| | **Total** | **199** | **417** | `█████░░░░░` **48%** |
 
-> Last updated: May 4, 2026. File count updated to 281 (verified from directory tree). Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 740, 746, 1137, 1143, 3129, 3130, 95, and 96. Trees updated with 106, 112, 113, 235, 236. Strings updated with 796.
+> Last updated: May 20, 2026. File count remains 285 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
 
 ---
 
@@ -297,6 +299,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 | Date | Problems | Notes |
 |---|---|---|
+| May 19 | 209, 2461, sliding window notes | Minimum Size Subarray Sum · Maximum Sum of Distinct Subarrays With Length K · DynamicWindow and SlidingWindow practice/refactor |
 | May 4 | README updated | File count corrected to 281 (verified from directory tree); folder breakdowns updated |
 | May 3 | 106 | Construct Binary Tree from Inorder and Postorder Traversal |
 | May 3 | 796 | Rotating String |
@@ -392,7 +395,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 2. Sliding Window — 3/16
+### 2. Sliding Window — 4/16
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
 |---|---|---|:---:|---|---|
@@ -412,6 +415,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 1493 | Longest Subarray of 1's After Deleting One Element | Medium | ⬜ | Sliding Window | A, G |
 | 1838 | Frequency of the Most Frequent Element | Medium | ⬜ | Sliding Window | A |
 | 2090 | K Radius Subarray Averages | Medium | ⬜ | Sliding Window | A |
+| 2461 | Maximum Sum of Distinct Subarrays With Length K | Medium | ✅ | Sliding Window + HashMap | A, G |
 
 ---
 
@@ -622,7 +626,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 9. Trees — 17/50
+### 9. Trees — 18/50
 
 > **30-Day focus:** Days 1–3 cover 104, 110, 543, 98, 700, 235, 236, 112, 113
 > Additional tree files in repo: `MyBinaryTree` (custom implementation)
@@ -653,7 +657,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 101 | Symmetric Tree | Easy | ⬜ | DFS / BFS | A, G, M, B | — |
 | 102 | Binary Tree Level Order Traversal | Medium | ✅ | BFS | A, G, M, Meta, B | — |
 | 104 | Maximum Depth of Binary Tree | Easy | ✅ | DFS | A, G, M, Ap, B | Day 1 re-solve |
-| 105 | Construct Binary Tree from Preorder and Inorder | Medium | ⬜ | Recursion | A, G, M, Meta, B | — |
+| 105 | Construct Binary Tree from Preorder and Inorder | Medium | ✅ | Recursion | A, G, M, Meta, B | — |
 | 106 | Construct Binary Tree from Inorder and Postorder | Medium | ✅ | Recursion | A, G, B | Day 3 |
 | 110 | Balanced Binary Tree | Easy | ✅ | DFS | A, G, M, B | Day 1 |
 | 112 | Path Sum | Easy | ✅ | DFS | A, G, M, B | Day 3 |
@@ -768,9 +772,9 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 12. Dynamic Programming — 15/43
+### 12. Dynamic Programming — 18/43
 
-> 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottomUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`, `CoinChange`, `CoinChangeII`, `DeleteAndEarn`, `MaximumPathScore`, `MaxScoreMulOps`, `LongestCommonSubstring`
+> 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottomUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`, `CoinChange`, `CoinChangeII`, `DeleteAndEarn`, `MaximumPathScore`, `MaxScoreMulOps`, `LongestCommonSubsequence`, `LongestCommonSubstring`, `UniqueBST`, `UniqueBSTII`
 >
 > **DP is your biggest gap — treat it as a 4-week dedicated focus, with at least one problem every single day.**
 
@@ -850,6 +854,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 | 1155 | Number of Dice Rolls With Target Sum | Medium | ⬜ | Counting DP | G |
 | 1218 | Longest Arithmetic Subsequence of Given Difference | Medium | ⬜ | LIS | A, G |
 | 1639 | Number of Ways to Form a Target String Given a Dictionary | Hard | ⬜ | String DP | G, Meta |
+| 1770 | Maximum Score from Performing Multiplication Operations | Medium | ✅ | 2D DP | G, Meta |
 | 3129 | Find All Possible Stable Binary Arrays I | Hard | ✅ | DP + Prefix Sum | G |
 | 3130 | Find All Possible Stable Binary Arrays II | Hard | ✅ | DP + Prefix Sum | G |
 
@@ -952,7 +957,7 @@ Problems that combine two or more core patterns — useful for recognizing overl
 
 ```
 src/
-├── arrays/              # Core array problems (22 files, 5 subcategories)
+├── arrays/              # Core array problems (21 files, 5 subcategories)
 ├── arrays101/           # LeetCode Arrays 101 explore card (24 files)
 ├── binarysearch/        # Binary search problems (11 files, 3 subcategories)
 ├── dailychallenges/     # Daily challenge solutions (6 files)
@@ -966,8 +971,8 @@ src/
 ├── patterns/            # Pattern practice — Floyd's triangle etc. (2 files)
 ├── queue/               # Queue problems + implementations (9 files)
 ├── recursion/           # Recursion fundamentals + backtracking (29 files)
-├── set/designhashset/   # LC 705 Design HashSet (2 files)
-├── slidingwindow/       # Sliding window problems (2 files)
+├── set/                 # SingleNumber + LC 705 Design HashSet (2 files)
+├── slidingwindow/       # Sliding window problems (7 files)
 ├── sortalgorithms/      # Sorting implementations + recursive variants (11 files)
 ├── stack/               # Stack problems + implementations (11 files)
 ├── strings/             # String problems (24 files, 3 active subcategories)
@@ -976,7 +981,7 @@ src/
 └── _sandbox/            # Main.java, Solution.java — scratch space (2 files)
 ```
 
-**Total: 281 Java files** (verified May 4, 2026)
+**Total: 285 Java files** (verified May 20, 2026)
 
 ---
 
@@ -1013,4 +1018,4 @@ Code in this repository is provided as-is for learning. Use at your own risk.
 
 ---
 
-*Last updated: May 4, 2026*
+*Last updated: May 20, 2026*
