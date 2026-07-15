@@ -23,63 +23,65 @@ package math;
  *   <li>So, {@code GCD(sumOdd, sumEven) = n * 1 = n}.</li>
  * </ol>
  *
- * <p><b>Complexity:</b>
- * <ul>
- *   <li>Time Complexity: O(1) — The result is calculated in constant time.</li>
- *   <li>Space Complexity: O(1) — No auxiliary space is used.</li>
- * </ul>
- *
  * @author mhnuk2007
  */
 public class GCDOfOddEvenSums {
 
+    // -------------------------------------------------------------------------
+    // Approach 1: Euclidean Algorithm (Explicit Sums)
+    // Time  : O(log(n^2)) = O(log n)
+    // Space : O(log n) recursive call stack
+    // -------------------------------------------------------------------------
+
     /**
-     * Calculates the GCD of the sum of the first n odd numbers and the sum of the first n even numbers.
+     * Calculates the GCD of the sum of the first n odd numbers and the sum of the first n even numbers
+     * using the explicit formulas and the Euclidean algorithm.
      *
      * @param n a positive integer
-     * @return the greatest common divisor of sumOdd and sumEven, which simplifies to n
+     * @return the greatest common divisor
+     */
+    public int gcdOfOddEvenSumsApproach1(int n) {
+        return gcd(n * n, n * (n + 1));
+    }
+
+    private int gcd(int x, int y) {
+        if (y == 0) return x;
+        return gcd(y, x % y);
+    }
+
+    // -------------------------------------------------------------------------
+    // Approach 2: Constant Time Math Observation (Optimal)
+    // Time  : O(1)
+    // Space : O(1)
+    // -------------------------------------------------------------------------
+
+    /**
+     * Calculates the GCD in O(1) time by leveraging the mathematical fact that
+     * GCD(n^2, n(n+1)) = n * GCD(n, n+1) = n * 1 = n.
+     *
+     * @param n a positive integer
+     * @return the greatest common divisor, which simplifies directly to n
      */
     public int gcdOfOddEvenSums(int n) {
         return n;
     }
 
     /**
-     * Interactive test runner for verifying the solution against the mathematical sums.
+     * Test runner for verifying both approaches.
      */
     public static void main(String[] args) {
         GCDOfOddEvenSums solver = new GCDOfOddEvenSums();
 
-        // Let's test for various n values and verify the mathematical property
         int[] testCases = {1, 2, 3, 5, 10, 100};
 
+        System.out.println("Running test cases for both approaches:");
         for (int n : testCases) {
-            long sumOdd = 0;
-            for (int i = 1; i <= n; i++) {
-                sumOdd += (2L * i - 1);
-            }
+            int result1 = solver.gcdOfOddEvenSumsApproach1(n);
+            int result2 = solver.gcdOfOddEvenSums(n);
 
-            long sumEven = 0;
-            for (int i = 1; i <= n; i++) {
-                sumEven += (2L * i);
-            }
-
-            long calculatedGcd = gcd(sumOdd, sumEven);
-            int solverResult = solver.gcdOfOddEvenSums(n);
-
-            System.out.printf("n = %d: sumOdd = %d, sumEven = %d, GCD(sumOdd, sumEven) = %d, Solver Result = %d (Pass: %b)%n",
-                    n, sumOdd, sumEven, calculatedGcd, solverResult, calculatedGcd == solverResult);
+            boolean match = (result1 == result2) && (result2 == n);
+            System.out.printf("n = %d: Approach 1 = %d, Approach 2 = %d (Pass: %b)%n",
+                    n, result1, result2, match);
         }
-    }
-
-    /**
-     * Euclidean algorithm helper to find GCD of two long values.
-     */
-    private static long gcd(long a, long b) {
-        while (b != 0) {
-            long temp = b;
-            b = a % b;
-            a = temp;
-        }
-        return a;
     }
 }
