@@ -16,7 +16,7 @@ Current Statistics
 Total Java files under src/: 288
 
 Category Breakdown:
-- arrays                  : 21
+- arrays                  : 22
 - arrays101               : 24
 - binarysearch            : 11
 - dailychallenges         :  6
@@ -49,6 +49,7 @@ Arrays:
 - arrays/matrix           :  3
 - arrays/prefix           :  4
 - arrays/rotation         :  4
+- arrays/advanced         :  1
 - arrays101               : 24
 
 Binary Search:
@@ -123,6 +124,7 @@ Recently reconciled names/locations:
 - slidingwindow/MaxSumOfSubArray.java
 - slidingwindow/MinSizeSubArraySum.java
 - slidingwindow/MinimumWindowSubstring.java
+- arrays/advanced/KadaneAlgorithm.java
 
 New package areas from the reorganization:
 - math/UglyNumber.java

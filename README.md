@@ -191,7 +191,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 | # | Category | Done | Total | Progress |
 |---|---|:---:|:---:|---|
-| 1 | Arrays & Two Pointers | 40 | 49 | `████████░░` 82% |
+| 1 | Arrays & Two Pointers | 41 | 49 | `████████░░` 84% |
 | 2 | Sliding Window | 5 | 16 | `███░░░░░░░` 31% |
 | 3 | Strings | 16 | 26 | `██████░░░░` 62% |
 | 4 | HashMap / HashSet | 11 | 23 | `█████░░░░░` 48% |
@@ -202,15 +202,15 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 9 | Trees | 18 | 50 | `████░░░░░░` 36% |
 | 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
 | 11 | Graphs | 21 | 42 | `█████░░░░░` 50% |
-| 12 | Dynamic Programming | 18 | 43 | `████░░░░░░` 42% |
+| 12 | Dynamic Programming | 19 | 43 | `████░░░░░░` 44% |
 | 13 | Greedy | 2 | 13 | `██░░░░░░░░` 15% |
 | 14 | Trie | 2 | 5 | `████░░░░░░` 40% |
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **200** | **417** | `█████░░░░░` **48%** |
+| | **Total** | **201** | **417** | `█████░░░░░` **48%** |
 
-> Last updated: July 15, 2026. File count remains 288 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
+> Last updated: July 15, 2026. File count remains 288 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 53, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
 
 ---
 
@@ -339,11 +339,11 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 1. Arrays & Two Pointers — 40/49
+### 1. Arrays & Two Pointers — 41/49
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
 |---|---|---|:---:|---|---|
-| — | Kadane's Algorithm | — | ⬜ | — | — |
+| 53 | Kadane's Algorithm (Maximum Subarray) | Medium | ✅ | Kadane's | A, G, M, Ap, B, Meta |
 | — | Pow(x, n) | — | ⬜ | — | — |
 | — | 4Sum | — | ⬜ | — | — |
 | — | Search a 2D Matrix | — | ⬜ | Binary Search | A, G, Meta |
@@ -772,7 +772,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 12. Dynamic Programming — 18/43
+### 12. Dynamic Programming — 19/43
 
 > 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottomUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`, `CoinChange`, `CoinChangeII`, `DeleteAndEarn`, `MaximumPathScore`, `MaxScoreMulOps`, `LongestCommonSubsequence`, `LongestCommonSubstring`, `UniqueBST`, `UniqueBSTII`
 >
@@ -822,7 +822,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 | — | Matrix Chain Multiplication | — | ⬜ | Interval DP | — |
 | — | Longest Bitonic Subsequence | — | ⬜ | LIS | — |
 | 5 | Longest Palindromic Substring | Medium | ⬜ | String DP | A, G, M, Ap, B |
-| 53 | Maximum Subarray | Medium | ⬜ | Kadane's | A, G, M, Ap, B, Meta |
+| 53 | Maximum Subarray | Medium | ✅ | Kadane's | A, G, M, Ap, B, Meta |
 | 62 | Unique Paths | Medium | ⬜ | Grid DP | A, G, M, B |
 | 63 | Unique Paths II | Medium | ⬜ | Grid DP | A, G, B |
 | 64 | Minimum Path Sum | Medium | ⬜ | Grid DP | A, G, B |
