@@ -13,7 +13,7 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 288
+Total Java files under src/: 290
 
 Category Breakdown:
 - arrays                  : 22
@@ -36,7 +36,7 @@ Category Breakdown:
 - stack                   : 11
 - strings                 : 24
 - tree                    : 18
-- twopointer              : 10
+- twopointer              : 11
 - _sandbox                :  2
 
 ====================
@@ -126,6 +126,7 @@ Recently reconciled names/locations:
 - slidingwindow/MinimumWindowSubstring.java
 - arrays/advanced/KadaneAlgorithm.java
 - recursion/PowXN.java
+- twopointer/FourSum.java
 
 New package areas from the reorganization:
 - math/UglyNumber.java
