@@ -57,7 +57,9 @@ D:\leetcodepractice\
      │    └─ advanced/          [For BST, Segment Trees, etc. - future use]
      │
      ├─── 📁 math/              ✨ NEW PACKAGE
-     │    └─ UglyNumber.java
+     │    ├─ UglyNumber.java
+     │    ├─ RotatedDigits.java
+     │    └─ GCDOfOddEvenSums.java
      │
      ├─── 📁 _sandbox/          ✨ NEW PACKAGE - Utility Files
      │    ├─ Main.java
@@ -116,7 +118,7 @@ D:\leetcodepractice\
 | strings | 4 | 22+ | ✅ Reorganized |
 | linkedlist | 5 | 16 | ✅ Reorganized |
 | tree | 3 | 10 | ✅ Reorganized |
-| math | - | 1 | ✅ NEW |
+| math | - | 3 | ✅ NEW |
 | _sandbox | - | 2+ | ✅ NEW |
 | **Total** | **40+** | **200+** | ✅ Complete |
 

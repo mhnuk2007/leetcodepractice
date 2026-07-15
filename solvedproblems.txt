@@ -13,7 +13,7 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 285
+Total Java files under src/: 287
 
 Category Breakdown:
 - arrays                  : 21
@@ -26,12 +26,12 @@ Category Breakdown:
 - heap                    : 13
 - linkedlist              : 16
 - map                     :  1
-- math                    :  2
+- math                    :  3
 - patterns                :  2
 - queue                   :  9
 - recursion               : 29
 - set                     :  2
-- slidingwindow           :  7
+- slidingwindow           :  8
 - sortalgorithms          : 11
 - stack                   : 11
 - strings                 : 24
@@ -125,6 +125,7 @@ Recently reconciled names/locations:
 
 New package areas from the reorganization:
 - math/UglyNumber.java
+- math/GCDOfOddEvenSums.java
 - _sandbox/Main.java
 - _sandbox/Solution.java
 

@@ -170,7 +170,7 @@ src/slidingwindow/         [7 files  — SlidingWindow, DynamicWindow, LongestSu
 src/dailychallenges/       [6 files  — 6 daily challenge problems]
 src/set/                   [2 files  — SingleNumber, designhashset/MyHashSet]
 src/map/                   [1 file   — designhashmap/MyHashMap]
-src/math/                  [2 files  — UglyNumber, RotatedDigits]
+src/math/                  [3 files  — UglyNumber, RotatedDigits, GCDOfOddEvenSums]
 src/patterns/              [2 files  — FloydTriangle, FloydTriangleMathematically]
 src/_sandbox/              [2 files  — Main.java, Solution.java]
 ```
@@ -967,12 +967,12 @@ src/
 ├── heap/                # Heap / Priority Queue problems (13 files)
 ├── linkedlist/          # Linked list problems (16 files, 5 subcategories)
 ├── map/designhashmap/   # LC 706 Design HashMap (1 file)
-├── math/                # Math utilities (2 files)
+├── math/                # Math utilities (3 files)
 ├── patterns/            # Pattern practice — Floyd's triangle etc. (2 files)
 ├── queue/               # Queue problems + implementations (9 files)
 ├── recursion/           # Recursion fundamentals + backtracking (29 files)
 ├── set/                 # SingleNumber + LC 705 Design HashSet (2 files)
-├── slidingwindow/       # Sliding window problems (7 files)
+├── slidingwindow/       # Sliding window problems (8 files)
 ├── sortalgorithms/      # Sorting implementations + recursive variants (11 files)
 ├── stack/               # Stack problems + implementations (11 files)
 ├── strings/             # String problems (24 files, 3 active subcategories)
@@ -981,7 +981,7 @@ src/
 └── _sandbox/            # Main.java, Solution.java — scratch space (2 files)
 ```
 
-**Total: 285 Java files** (verified May 20, 2026)
+**Total: 287 Java files** (verified May 20, 2026)
 
 ---
 
