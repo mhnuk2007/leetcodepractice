@@ -11,7 +11,7 @@ D:\leetcodepractice\
      │    ├─ greedy/            BestTimeToBuyAndSellStock, MajorityElement, LargestNumberTwiceOthers, ArrayPartition, MaxProfit
      │    ├─ matrix/            SpiralMatrix, SpecialPositionsInBinaryMatrix, SearchInRotatedSortedArray
      │    ├─ basics/            PlusOne, RichestCustomerWealth, ContainsDuplicate, PascalsTriangle (2 versions)
-     │    └─ advanced/          [Other array patterns]
+     │    └─ advanced/          KadaneAlgorithm
      │
      ├─── 📁 arrays101/         [UNCHANGED - Beginner LeetCode track]
      │    └─ (24 files) CheckIfExists, DuplicateZeros, MoveZeroes, RemoveDuplicates, etc.
@@ -83,13 +83,13 @@ D:\leetcodepractice\
      │         └─ MyHashSet.java
      │
      ├─── 📁 twopointer/        [UNCHANGED]
-     │    └─ (10 files) TwoSum, ThreeSum, TwoSumII, etc.
+     │    └─ (11 files) TwoSum, ThreeSum, TwoSumII, FourSum, etc.
      │
      ├─── 📁 recursion/         [UNCHANGED]
-     │    └─ (20 files) ClimbingStairs, NQueens, Permutations, etc.
+     │    └─ (29 files) ClimbingStairs, NQueens, Permutations, PowXN, etc.
      │
      ├─── 📁 slidingwindow/     [UNCHANGED]
-     │    └─ (2 files) SlidingWindow, MaxSlidingWindow
+     │    └─ (9 files) SlidingWindow, DynamicWindow, MinimumWindowSubstring, etc.
      │
      ├─── 📁 sortalgorithms/    [UNCHANGED]
      │    └─ (11 files) BubbleSort, MergeSort, QuickSort, etc.
@@ -111,16 +111,16 @@ D:\leetcodepractice\
 
 | Category | Subcategories | Files | Status |
 |----------|---------------|-------|--------|
-| arrays | 6 | 21 | ✅ Reorganized |
+| arrays | 6 | 22 | ✅ Reorganized |
 | binarysearch | 3 | 11 | ✅ Reorganized |
-| dp | 6 | 24+ | ✅ Reorganized |
-| graph | 7 | 30+ | ✅ Reorganized |
-| strings | 4 | 22+ | ✅ Reorganized |
+| dp | 6 | 29 | ✅ Reorganized |
+| graph | 7 | 32 | ✅ Reorganized |
+| strings | 4 | 24 | ✅ Reorganized |
 | linkedlist | 5 | 16 | ✅ Reorganized |
-| tree | 3 | 10 | ✅ Reorganized |
+| tree | 3 | 18 | ✅ Reorganized |
 | math | - | 3 | ✅ NEW |
-| _sandbox | - | 2+ | ✅ NEW |
-| **Total** | **40+** | **200+** | ✅ Complete |
+| _sandbox | - | 2 | ✅ NEW |
+| **Total** | **40+** | **290** | ✅ Complete |
 
 ---
 
