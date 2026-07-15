@@ -125,6 +125,7 @@ Recently reconciled names/locations:
 - slidingwindow/MinSizeSubArraySum.java
 - slidingwindow/MinimumWindowSubstring.java
 - arrays/advanced/KadaneAlgorithm.java
+- recursion/PowXN.java
 
 New package areas from the reorganization:
 - math/UglyNumber.java
