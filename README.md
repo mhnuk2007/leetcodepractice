@@ -1,4 +1,4 @@
-# Java DSA — 180+ LeetCode Problems & 285 Java DSA Files
+# Java DSA — 180+ LeetCode Problems & 288 Java DSA Files
 
 > **Pattern-based interview preparation in Java.**
 > Structured by topic and algorithm pattern, tracked by progress, built for FAANG-level readiness.
@@ -45,7 +45,7 @@
 
 ## Quick Start
 
-Welcome! This repository contains **180+ tracked LeetCode solutions and 285 Java DSA files organized by algorithm patterns**.
+Welcome! This repository contains **180+ tracked LeetCode solutions and 288 Java DSA files organized by algorithm patterns**.
 
 ### 📂 How to Navigate
 - **Just starting?** Check `src/arrays101/` for beginner problems
@@ -192,8 +192,8 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | # | Category | Done | Total | Progress |
 |---|---|:---:|:---:|---|
 | 1 | Arrays & Two Pointers | 40 | 49 | `████████░░` 82% |
-| 2 | Sliding Window | 4 | 16 | `███░░░░░░░` 25% |
-| 3 | Strings | 15 | 26 | `█████░░░░░` 58% |
+| 2 | Sliding Window | 5 | 16 | `███░░░░░░░` 31% |
+| 3 | Strings | 16 | 26 | `██████░░░░` 62% |
 | 4 | HashMap / HashSet | 11 | 23 | `█████░░░░░` 48% |
 | 5 | Binary Search | 11 | 29 | `████░░░░░░` 38% |
 | 6 | Linked List | 13 | 26 | `█████░░░░░` 50% |
@@ -208,9 +208,9 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **199** | **417** | `█████░░░░░` **48%** |
+| | **Total** | **200** | **417** | `█████░░░░░` **48%** |
 
-> Last updated: May 20, 2026. File count remains 285 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
+> Last updated: July 15, 2026. File count remains 288 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
 
 ---
 
@@ -395,12 +395,12 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 2. Sliding Window — 4/16
+### 2. Sliding Window — 5/16
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
 |---|---|---|:---:|---|---|
 | 3 | Longest Substring Without Repeating Characters | Medium | ✅ | Sliding Window | A, G, M, Ap, Meta, B, Ad |
-| 76 | Minimum Window Substring | Hard | ⬜ | Sliding Window | A, G, Meta, B, Ly |
+| 76 | Minimum Window Substring | Hard | ✅ | Sliding Window | A, G, Meta, B, Ly |
 | 209 | Minimum Size Subarray Sum | Medium | ✅ | Sliding Window | A, G, M |
 | 239 | Sliding Window Maximum | Hard | ✅ | Monotonic Deque | A, G, Meta, B |
 | 424 | Longest Repeating Character Replacement | Medium | ⬜ | Sliding Window | G, Meta, B |
@@ -419,7 +419,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 3. Strings — 15/26
+### 3. Strings — 16/26
 
 > Additional practice files in repo (non-LeetCode): `Anagram`, `Palindrome`, `PalindromeI`, `SplitString`, `SmallestAndLargestSub`, `JavaStringTokens`
 
@@ -436,7 +436,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 28 | Find the Index of the First Occurrence in a String | Easy | ✅ | Two Pointers | A, M |
 | 49 | Group Anagrams | Medium | ⬜ | Hashing | A, G, M, Meta, B, Ub |
 | 58 | Length of Last Word | Easy | ⬜ | String | A, G |
-| 76 | Minimum Window Substring | Hard | ⬜ | Sliding Window | A, G, Meta, B, Ly |
+| 76 | Minimum Window Substring | Hard | ✅ | Sliding Window | A, G, Meta, B, Ly |
 | 125 | Valid Palindrome | Easy | ✅ | Two Pointers | A, G, M, Meta, Ap |
 | 151 | Reverse Words in a String | Medium | ✅ | Two Pointers | A, G, M, B |
 | 186 | Reverse Words in a String II | Medium | ✅ | In-place / O(1) space | A, M |

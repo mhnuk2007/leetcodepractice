@@ -13,7 +13,7 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 287
+Total Java files under src/: 288
 
 Category Breakdown:
 - arrays                  : 21
@@ -31,7 +31,7 @@ Category Breakdown:
 - queue                   :  9
 - recursion               : 29
 - set                     :  2
-- slidingwindow           :  8
+- slidingwindow           :  9
 - sortalgorithms          : 11
 - stack                   : 11
 - strings                 : 24
@@ -122,6 +122,7 @@ Recently reconciled names/locations:
 - slidingwindow/MaxSumOfDistinctSubarray.java
 - slidingwindow/MaxSumOfSubArray.java
 - slidingwindow/MinSizeSubArraySum.java
+- slidingwindow/MinimumWindowSubstring.java
 
 New package areas from the reorganization:
 - math/UglyNumber.java
