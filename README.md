@@ -192,8 +192,8 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | # | Category | Done | Total | Progress |
 |---|---|:---:|:---:|---|
 | 1 | Arrays & Two Pointers | 43 | 49 | `████████░░` 88% |
-| 2 | Sliding Window | 5 | 16 | `███░░░░░░░` 31% |
-| 3 | Strings | 16 | 26 | `██████░░░░` 62% |
+| 2 | Sliding Window | 7 | 18 | `████░░░░░░` 39% |
+| 3 | Strings | 17 | 27 | `██████░░░░` 63% |
 | 4 | HashMap / HashSet | 11 | 23 | `█████░░░░░` 48% |
 | 5 | Binary Search | 11 | 29 | `████░░░░░░` 38% |
 | 6 | Linked List | 13 | 26 | `█████░░░░░` 50% |
@@ -208,7 +208,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **203** | **417** | `█████░░░░░` **49%** |
+| | **Total** | **205** | **419** | `█████░░░░░` **49%** |
 
 > Last updated: July 15, 2026. File count remains 290 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 53, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
 
@@ -395,17 +395,19 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 2. Sliding Window — 5/16
+### 2. Sliding Window — 7/18
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
 |---|---|---|:---:|---|---|
 | 3 | Longest Substring Without Repeating Characters | Medium | ✅ | Sliding Window | A, G, M, Ap, Meta, B, Ad |
 | 76 | Minimum Window Substring | Hard | ✅ | Sliding Window | A, G, Meta, B, Ly |
+| 187 | Repeated DNA Sequences | Medium | ✅ | Sliding Window + Hashing / Bit Encoding | G, Meta |
 | 209 | Minimum Size Subarray Sum | Medium | ✅ | Sliding Window | A, G, M |
 | 239 | Sliding Window Maximum | Hard | ✅ | Monotonic Deque | A, G, Meta, B |
 | 424 | Longest Repeating Character Replacement | Medium | ⬜ | Sliding Window | G, Meta, B |
 | 438 | Find All Anagrams in a String | Medium | ⬜ | Sliding Window | A, G, Meta, B |
 | 567 | Permutation in String | Medium | ⬜ | Sliding Window | A, G, M, B |
+| 643 | Maximum Average Subarray I | Easy | ✅ | Sliding Window | A, G |
 | 713 | Subarray Product Less Than K | Medium | ⬜ | Sliding Window | A, G |
 | 904 | Fruit Into Baskets | Medium | ⬜ | Sliding Window | G |
 | 1004 | Max Consecutive Ones III | Medium | ⬜ | Sliding Window | A, G |
@@ -419,7 +421,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 3. Strings — 16/26
+### 3. Strings — 17/27
 
 > Additional practice files in repo (non-LeetCode): `Anagram`, `Palindrome`, `PalindromeI`, `SplitString`, `SmallestAndLargestSub`, `JavaStringTokens`
 
@@ -440,6 +442,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 125 | Valid Palindrome | Easy | ✅ | Two Pointers | A, G, M, Meta, Ap |
 | 151 | Reverse Words in a String | Medium | ✅ | Two Pointers | A, G, M, B |
 | 186 | Reverse Words in a String II | Medium | ✅ | In-place / O(1) space | A, M |
+| 187 | Repeated DNA Sequences | Medium | ✅ | Sliding Window + Hashing / Bit Encoding | G, Meta |
 | 205 | Isomorphic Strings | Easy | ✅ | Hashing | A, G |
 | 242 | Valid Anagram | Easy | ✅ | Hashing | A, G, M, Ap |
 | 271 | Encode and Decode Strings | Medium | ⬜ | String | G, A, Meta, Ub |

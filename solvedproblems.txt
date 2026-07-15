@@ -124,6 +124,8 @@ Recently reconciled names/locations:
 - slidingwindow/MaxSumOfSubArray.java
 - slidingwindow/MinSizeSubArraySum.java
 - slidingwindow/MinimumWindowSubstring.java
+- slidingwindow/RepeatedDNASequence.java
+- slidingwindow/SlidingWindow.java
 - arrays/advanced/KadaneAlgorithm.java
 - recursion/PowXN.java
 - twopointer/FourSum.java
