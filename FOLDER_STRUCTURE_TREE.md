@@ -7,7 +7,7 @@ D:\leetcodepractice\
      │
      ├─── 📁 arrays/
      │    ├─ rotation/          RotateArray, NextPermutation, CircularArrayLoop, RotateFunction
-     │    ├─ prefix/            FindPivotIndex, RunningSum1d, TrappingRainWater (2 versions)
+     │    ├─ prefix/            FindPivotIndex, RunningSum1d, TrappingRainWater (2 versions), ProductOfArrayExceptSelf
      │    ├─ greedy/            BestTimeToBuyAndSellStock, MajorityElement, LargestNumberTwiceOthers, ArrayPartition, MaxProfit, MergeIntervals
      │    ├─ matrix/            SpiralMatrix, SpecialPositionsInBinaryMatrix, SearchInRotatedSortedArray, SetMatrixZeroes
      │    ├─ basics/            PlusOne, RichestCustomerWealth, ContainsDuplicate, PascalsTriangle (2 versions)
@@ -111,7 +111,7 @@ D:\leetcodepractice\
 
 | Category | Subcategories | Files | Status |
 |----------|---------------|-------|--------|
-| arrays | 6 | 24 | ✅ Reorganized |
+| arrays | 6 | 25 | ✅ Reorganized |
 | binarysearch | 3 | 12 | ✅ Reorganized |
 | dp | 6 | 29 | ✅ Reorganized |
 | graph | 7 | 32 | ✅ Reorganized |
@@ -120,7 +120,7 @@ D:\leetcodepractice\
 | tree | 3 | 18 | ✅ Reorganized |
 | math | - | 4 | ✅ NEW |
 | _sandbox | - | 2 | ✅ NEW |
-| **Total** | **40+** | **294** | ✅ Complete |
+| **Total** | **40+** | **295** | ✅ Complete |
 
 ---
 
