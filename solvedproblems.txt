@@ -13,12 +13,12 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 290
+Total Java files under src/: 291
 
 Category Breakdown:
 - arrays                  : 22
 - arrays101               : 24
-- binarysearch            : 11
+- binarysearch            : 12
 - dailychallenges         :  6
 - dp                      : 29
 - graph                   : 32
@@ -55,7 +55,7 @@ Arrays:
 Binary Search:
 - binarysearch/basics     :  4
 - binarysearch/rotated    :  4
-- binarysearch/advanced   :  2
+- binarysearch/advanced   :  3
 - binarysearch root       :  1
 
 Dynamic Programming:
@@ -129,6 +129,7 @@ Recently reconciled names/locations:
 - arrays/advanced/KadaneAlgorithm.java
 - recursion/PowXN.java
 - twopointer/FourSum.java
+- binarysearch/advanced/SearchIn2DMatrix.java
 
 New package areas from the reorganization:
 - math/UglyNumber.java

@@ -19,7 +19,7 @@ D:\leetcodepractice\
      ├─── 📁 binarysearch/
      │    ├─ basics/            BinarySearch, SearchInsert, SqrtX, FirstBadVersion, GuessGame
      │    ├─ rotated/           SearchRotatedSortedArray (2 versions), FindMinRotatedArray, FindPeakElement
-     │    └─ advanced/          FirstAndLastPosition, FindKClosestElements
+     │    └─ advanced/          FirstAndLastPosition, FindKClosestElements, SearchIn2DMatrix
      │
      ├─── 📁 dp/
      │    ├─ linear/            ClimbingStairs*, HouseRobber*, DeleteAndEarn, MinCostClimbingStairs, MaxScoreMulOps, Tribonacci* (3 versions)
@@ -112,7 +112,7 @@ D:\leetcodepractice\
 | Category | Subcategories | Files | Status |
 |----------|---------------|-------|--------|
 | arrays | 6 | 22 | ✅ Reorganized |
-| binarysearch | 3 | 11 | ✅ Reorganized |
+| binarysearch | 3 | 12 | ✅ Reorganized |
 | dp | 6 | 29 | ✅ Reorganized |
 | graph | 7 | 32 | ✅ Reorganized |
 | strings | 4 | 24 | ✅ Reorganized |
@@ -120,7 +120,7 @@ D:\leetcodepractice\
 | tree | 3 | 18 | ✅ Reorganized |
 | math | - | 3 | ✅ NEW |
 | _sandbox | - | 2 | ✅ NEW |
-| **Total** | **40+** | **290** | ✅ Complete |
+| **Total** | **40+** | **291** | ✅ Complete |
 
 ---
 
