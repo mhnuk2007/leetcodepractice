@@ -191,7 +191,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 | # | Category | Done | Total | Progress |
 |---|---|:---:|:---:|---|
-| 1 | Arrays & Two Pointers | 44 | 49 | `█████████░` 90% |
+| 1 | Arrays & Two Pointers | 45 | 49 | `█████████░` 91% |
 | 2 | Sliding Window | 7 | 18 | `████░░░░░░` 39% |
 | 3 | Strings | 17 | 27 | `██████░░░░` 63% |
 | 4 | HashMap / HashSet | 11 | 23 | `█████░░░░░` 48% |
@@ -208,9 +208,9 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **206** | **419** | `█████░░░░░` **49%** |
+| | **Total** | **207** | **419** | `█████░░░░░` **49%** |
 
-> Last updated: July 16, 2026. File count remains 292 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 53, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
+> Last updated: July 16, 2026. File count remains 293 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 53, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
 
 ---
 
@@ -339,7 +339,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 
 ---
 
-### 1. Arrays & Two Pointers — 44/49
+### 1. Arrays & Two Pointers — 45/49
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
 |---|---|---|:---:|---|---|
@@ -347,7 +347,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 50 | Pow(x, n) | Medium | ✅ | Recursion / Binary Exponentiation | A, G, M, Meta |
 | 18 | 4Sum | Medium | ✅ | Two Pointers | A, G, M, B |
 | 74 | Search a 2D Matrix | Medium | ✅ | Binary Search | A, G, Meta |
-| — | Merge Overlapping Intervals | — | ⬜ | — | — |
+| 56 | Merge Overlapping Intervals | Medium | ✅ | Greedy / Sorting | A, G, Meta, B |
 | — | Set Matrix Zeroes | — | ⬜ | — | — |
 | — | Product of Array Except Itself | — | ⬜ | — | — |
 | — | Count Inversions | — | ⬜ | — | — |

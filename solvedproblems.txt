@@ -13,10 +13,10 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 292
+Total Java files under src/: 293
 
 Category Breakdown:
-- arrays                  : 22
+- arrays                  : 23
 - arrays101               : 24
 - binarysearch            : 12
 - dailychallenges         :  6
@@ -45,7 +45,7 @@ Subcategory Highlights
 
 Arrays:
 - arrays/basics           :  5
-- arrays/greedy           :  5
+- arrays/greedy           :  6
 - arrays/matrix           :  3
 - arrays/prefix           :  4
 - arrays/rotation         :  4
@@ -130,6 +130,7 @@ Recently reconciled names/locations:
 - recursion/PowXN.java
 - twopointer/FourSum.java
 - binarysearch/advanced/SearchIn2DMatrix.java
+- arrays/greedy/MergeIntervals.java
 
 New package areas from the reorganization:
 - math/UglyNumber.java
