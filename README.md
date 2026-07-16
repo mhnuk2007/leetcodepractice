@@ -1,4 +1,4 @@
-# Java DSA — 180+ LeetCode Problems & 288 Java DSA Files
+# Java DSA — 180+ LeetCode Problems & 328 Java DSA Files
 
 > **Pattern-based interview preparation in Java.**
 > Structured by topic and algorithm pattern, tracked by progress, built for FAANG-level readiness.
@@ -45,7 +45,7 @@
 
 ## Quick Start
 
-Welcome! This repository contains **180+ tracked LeetCode solutions and 288 Java DSA files organized by algorithm patterns**.
+Welcome! This repository contains **180+ tracked LeetCode solutions and 328 Java DSA files organized by algorithm patterns**.
 
 ### 📂 How to Navigate
 - **Just starting?** Check `src/arrays101/` for beginner problems
@@ -55,21 +55,28 @@ Welcome! This repository contains **180+ tracked LeetCode solutions and 288 Java
 
 For **complete file location guide**, see [QUICK_REFERENCE.md](QUICK_REFERENCE.md).
 
+### 📊 Repository Snapshot (July 2026)
+- **328 Java files** across the main algorithm folders and supporting utilities
+- **180+ tracked LeetCode problems** with structured solutions by pattern
+- **40+ subcategories** for pattern-based interview preparation
+- **Recent additions:** CountInversions, ProductOfArrayExceptSelf, MergeIntervals, SetMatrixZeroes, and new sliding-window / graph practice files
+
 ---
 
 ## Folder Structure with Subcategories
 
-### 📁 Arrays (5 subcategories · 21 files)
+### 📁 Arrays (5 subcategories · 26 files)
 ```
 src/arrays/
 ├── basics/                [5 files — PlusOne, ContainsDuplicate, PascalsTriangle, PascalsTriangleII, RichestCustomerWealth]
+├── advanced/              [2 files — KadaneAlgorithm, CountInversions]
 ├── rotation/              [4 files — RotateArray, NextPermutation, CircularArrayLoop, RotateFunction]
 ├── prefix/                [4 files — FindPivotIndex, TrappingRainWater, TrappingRainWaterPrefix, RunningSum1d]
 ├── greedy/                [5 files — BestTimeToBuyAndSellStock, MajorityElement, ArrayPartition, LargestNumberTwiceOthers, MaxProfit]
 └── matrix/                [3 files — SpiralMatrix, SpecialPositionsInBinaryMatrix, SearchInRotatedSortedArray]
 ```
 
-### 📁 Binary Search (3 subcategories · 11 files)
+### 📁 Binary Search (3 subcategories · 12 files)
 ```
 src/binarysearch/
 ├── basics/                [4 files — BinarySearch, SearchInsert, SqrtX, FirstBadVersion]
@@ -78,7 +85,7 @@ src/binarysearch/
 └── (root)                 [1 file  — GuessNumber]
 ```
 
-### 📁 Dynamic Programming (6 subcategories · 29 files)
+### 📁 Dynamic Programming (6 subcategories · 30 files)
 ```
 src/dp/
 ├── linear/                [10 files — ClimbingStairsDpArray, ClimbingStairsDpMap, HouseRobberArray, HouseRobberMap,
@@ -92,7 +99,7 @@ src/dp/
 └── subsequence/           [2 files  — LongestCommonSubsequence, LongestCommonSubstring]
 ```
 
-### 📁 Graph (7 subcategories · 32 files)
+### 📁 Graph (7 subcategories · 62 files)
 ```
 src/graph/
 ├── traversal/             [9 files  — BFSTraversalInGraph, DFSTraversalInGraph, AdjacencyMatrix,
@@ -159,14 +166,14 @@ src/queue/                 [9 files  — ArrayQueue, ArrayListQueue, LinkedListQ
 src/sortalgorithms/        [11 files — BubbleSort, BubbleSortRec, InsertionSort, InsertionSortRec,
                                         MergeSort, MergeSortRec, SelectionSort, SelectionSortRec,
                                         PatternsViaRecursion, SortColors, TwoColorSort]
-src/twopointer/            [10 files — TwoSum, TwoSumII, ThreeSum, ContainerWithMostWater, HappyNumber,
+src/twopointer/            [11 files — TwoSum, TwoSumII, ThreeSum, ContainerWithMostWater, HappyNumber,
                                         FindTheDuplicateNumber, StrobogrammaticNumber, AppendCharacters,
-                                        MiddleOfLinkedList, LengthOfLoop]
+                                        MiddleOfLinkedList, LengthOfLoop, RotateString]
 src/hashing/               [5 files  — ContainsDuplicatesII, FirstUniqueCharacter, IntersectionOfArrays,
                                         IntersectionOfArraysII, MinimumIndexSum]
-src/slidingwindow/         [7 files  — SlidingWindow, DynamicWindow, LongestSubstringWithoutRepeatingCharacters,
+src/slidingwindow/         [9 files  — SlidingWindow, DynamicWindow, LongestSubstringWithoutRepeatingCharacters,
                                         MaximumAverageSubarrayI, MaxSumOfDistinctSubarray,
-                                        MaxSumOfSubArray, MinSizeSubArraySum]
+                                        MaxSumOfSubArray, MinSizeSubArraySum, MinimumSizeSubarraySum, ProductOfArrayExceptSelf]
 src/dailychallenges/       [6 files  — 6 daily challenge problems]
 src/set/                   [2 files  — SingleNumber, designhashset/MyHashSet]
 src/map/                   [1 file   — designhashmap/MyHashMap]
@@ -179,11 +186,12 @@ src/_sandbox/              [2 files  — Main.java, Solution.java]
 
 ## 📖 Documentation Files
 
-Three comprehensive guides have been created to help you navigate the reorganized repository:
+A set of practical guides has been created to help you navigate the reorganized repository:
 
 1. **[REORGANIZATION_SUMMARY.md](REORGANIZATION_SUMMARY.md)** - Complete overview of the reorganization, benefits, and next steps
 2. **[FOLDER_STRUCTURE_TREE.md](FOLDER_STRUCTURE_TREE.md)** - Visual tree showing the complete folder structure
-3. **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick lookup guide for finding any specific problem by filename
+3. **[DSA_REPOSITORY_STRUCTURE.md](DSA_REPOSITORY_STRUCTURE.md)** - Detailed repository map with folder-by-folder organization
+4. **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick lookup guide for finding any specific problem by filename
 
 ---
 
@@ -208,9 +216,9 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **209** | **419** | `█████░░░░░` **50%** |
+| | **Total** | **225** | **419** | `███████░░░` **54%** |
 
-> Last updated: July 17, 2026. File count is 327 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 53, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
+> Last updated: July 17, 2026. File count is 328 (verified from directory tree). Progress tracker reflects the current repository inventory and the latest array, DP, graph, and sliding-window practice additions.
 
 ---
 
@@ -296,6 +304,72 @@ Three comprehensive guides have been created to help you navigate the reorganize
 ---
 
 ## Daily Log
+
+### Practice History (Updated July 17, 2026)
+
+- Yesterday — 238. Product of Array Except Self (Medium, Accepted, 4) · 73. Set Matrix Zeroes (Medium, Accepted, 3) · 56. Merge Intervals (Medium, Accepted, 1) · 3867. Sum of GCD of Formed Pairs (Medium, Accepted, 5) · 74. Search a 2D Matrix (Medium, Accepted, 1)
+- Wed — 18. 4Sum (Medium, Accepted, 1) · 53. Maximum Subarray (Medium, Accepted, 1) · 76. Minimum Window Substring (Hard, Accepted, 1) · 3658. GCD of Odd and Even Sums (Easy, Accepted, 4)
+- Tue — 3336. Find the Number of Subsequences With Equal GCD (Hard, Accepted, 1)
+- Mon — 16. 3Sum Closest (Medium, Accepted, 1) · 25. Reverse Nodes in k-Group (Hard, Accepted, 1) · 80. Remove Duplicates from Sorted Array II (Medium, Accepted, 1) · 123. Best Time to Buy and Sell Stock III (Hard, Accepted, 1) · 122. Best Time to Buy and Sell Stock II (Medium, Accepted, 1) · 1291. Sequential Digits (Medium, Accepted, 4)
+- Sun — 14. Longest Common Prefix (Easy, Accepted, 1) · 1331. Rank Transform of an Array (Easy, Accepted, 1) · 13. Roman to Integer (Easy, Accepted, 1) · 685. Redundant Connection II (Hard, Accepted, 1)
+- Jul 11 — 2685. Count the Number of Complete Components (Medium, Accepted, 6) · 3534. Path Existence Queries in a Graph II (Hard, Accepted, 1)
+- Jul 10 — 329. Longest Increasing Path in a Matrix (Hard, Accepted, 1)
+- Jul 9 — 3532. Path Existence Queries in a Graph I (Medium, Accepted, 6)
+- Jul 8 — 3756. Concatenate Non-Zero Digits and Multiply by Sum II (Medium, Accepted, 1)
+- Jul 7 — 1857. Largest Color Value in a Directed Graph (Hard, Accepted, 1) · 3754. Concatenate Non-Zero Digits and Multiply by Sum I (Easy, Accepted, 3)
+- Jul 6 — 1288. Remove Covered Intervals (Medium, Accepted, 3)
+- Jun 28 — 1192. Critical Connections in a Network (Hard, Accepted, 1)
+- Jun 27 — 1584. Min Cost to Connect All Points (Medium, Accepted, 4)
+- Jun 25 — 210. Course Schedule II (Medium, Accepted, 4) · 207. Course Schedule (Medium, Accepted, 6)
+- Jun 24 — 994. Rotting Oranges (Medium, Accepted, 3) · 200. Number of Islands (Medium, Accepted, 3)
+- Jun 22 — 547. Number of Provinces (Medium, Accepted, 2)
+- Jun 17 — 787. Cheapest Flights Within K Stops (Medium, Accepted, 1)
+- Jun 11 — 743. Network Delay Time (Medium, Accepted, 1)
+- May 31 — 198. House Robber (Medium, Accepted, 9)
+- May 30 — 70. Climbing Stairs (Easy, Accepted, 9) · 509. Fibonacci Number (Easy, Accepted, 7)
+- May 30 — 5. Longest Palindromic Substring (Medium, Accepted, 4)
+- May 29 — 647. Palindromic Substrings (Medium, Accepted, 3)
+- May 28 — 4. Median of Two Sorted Arrays (Hard, Accepted, 1)
+- May 20 — 187. Repeated DNA Sequences (Medium, Accepted, 2)
+- May 16 — 3. Longest Substring Without Repeating Characters (Medium, Accepted, 5) · 153. Find Minimum in Rotated Sorted Array (Medium, Accepted, 2) · 643. Maximum Average Subarray I (Easy, Accepted, 3)
+- May 7 — 2461. Maximum Sum of Distinct Subarrays With Length K (Medium, Accepted, 2)
+- May 4 — 106. Construct Binary Tree from Inorder and Postorder Traversal (Medium, Accepted, 2) · 105. Construct Binary Tree from Preorder and Inorder Traversal (Medium, Accepted, 2) · 95. Unique Binary Search Trees II (Medium, Accepted, 2) · 96. Unique Binary Search Trees (Medium, Accepted, 6)
+- May 3 — 796. Rotate String (Easy, Accepted, 1) · 113. Path Sum II (Medium, Accepted, 2) · 112. Path Sum (Easy, Accepted, 3) · 236. Lowest Common Ancestor of a Binary Tree (Medium, Accepted, 1) · 235. Lowest Common Ancestor of a Binary Search Tree (Medium, Accepted, 3)
+- May 2 — 543. Diameter of Binary Tree (Easy, Accepted, 1) · 788. Rotated Digits (Medium, Accepted, 3) · 110. Balanced Binary Tree (Easy, Accepted, 2)
+- May 1 — 396. Rotate Function (Medium, Accepted, 1) · 3742. Maximum Path Score in a Grid (Medium, Accepted, 5) · 1770. Maximum Score from Performing Multiplication Operations (Hard, Accepted, 4)
+- Apr 30 — 740. Delete and Earn (Medium, Accepted, 1) · 1143. Longest Common Subsequence (Medium, Accepted, 1) · 518. Coin Change II (Medium, Accepted, 2) · 322. Coin Change (Medium, Accepted, 1) · 494. Target Sum (Medium, Accepted, 1)
+- Apr 29 — 416. Partition Equal Subset Sum (Medium, Accepted, 2)
+- Apr 28 — 746. Min Cost Climbing Stairs (Easy, Accepted, 4) · 1137. N-th Tribonacci Number (Easy, Accepted, 3)
+- Apr 26 — 1559. Detect Cycles in 2D Grid (Medium, Accepted, 3) · 150. Evaluate Reverse Polish Notation (Medium, Accepted, 2) · 448. Find All Numbers Disappeared in an Array (Easy, Accepted, 2) · 1365. How Many Numbers Are Smaller Than the Current Number (Easy, Accepted, 2) · 645. Set Mismatch (Easy, Accepted, 2) · 485. Max Consecutive Ones (Easy, Accepted, 2) · 1470. Shuffle the Array (Easy, Accepted, 1) · 1929. Concatenation of Array (Easy, Accepted, 1)
+- Apr 24 — 695. Max Area of Island (Medium, Accepted, 1) · 212. Word Search II (Hard, Accepted, 1)
+- Apr 23 — 79. Word Search (Medium, Accepted, 2) · 208. Implement Trie (Prefix Tree) (Medium, Accepted, 1)
+- Apr 22 — 684. Redundant Connection (Medium, Accepted, 3) · 133. Clone Graph (Medium, Accepted, 3)
+- Apr 21 — 733. Flood Fill (Easy, Accepted, 1)
+- Apr 18 — 797. All Paths From Source to Target (Medium, Accepted, 1)
+- Apr 15 — 1492. The kth Factor of n (Medium, Accepted, 2) · 355. Design Twitter (Medium, Accepted, 2) · 264. Ugly Number II (Medium, Accepted, 2) · 263. Ugly Number (Easy, Accepted, 1)
+- Apr 13 — 1337. The K Weakest Rows in a Matrix (Easy, Accepted, 1)
+- Apr 12 — 295. Find Median from Data Stream (Hard, Accepted, 2) · 215. Kth Largest Element in an Array (Medium, Accepted, 3) · 347. Top K Frequent Elements (Medium, Accepted, 2) · 23. Merge k Sorted Lists (Hard, Accepted, 1)
+- Apr 10 — 17. Letter Combinations of a Phone Number (Medium, Accepted, 1) · 22. Generate Parentheses (Medium, Accepted, 5)
+- Apr 9 — 100. Same Tree (Easy, Accepted, 3) · 37. Sudoku Solver (Hard, Accepted, 4) · 77. Combinations (Medium, Accepted, 2)
+- Apr 8 — 52. N-Queens II (Hard, Accepted, 1) · 51. N-Queens (Hard, Accepted, 4) · 240. Search a 2D Matrix II (Medium, Accepted, 2)
+- Apr 7 — 98. Validate Binary Search Tree (Medium, Accepted, 1) · 779. K-th Symbol in Grammar (Medium, Accepted, 6) · 21. Merge Two Sorted Lists (Easy, Accepted, 3)
+- Apr 6 — 50. Pow(x, n) (Medium, Accepted, 8) · 119. Pascal's Triangle II (Easy, Accepted, 6)
+- Apr 5 — 700. Search in a Binary Search Tree (Easy, Accepted, 1) · 206. Reverse Linked List (Easy, Accepted, 2) · 24. Swap Nodes in Pairs (Medium, Accepted, 2) · 344. Reverse String (Easy, Accepted, 2)
+- Apr 4 — 131. Palindrome Partitioning (Medium, Accepted, 1) · 39. Combination Sum (Medium, Accepted, 1) · 46. Permutations (Medium, Accepted, 1) · 90. Subsets II (Medium, Accepted, 2) · 78. Subsets (Medium, Accepted, 1)
+- Apr 3 — 33. Search in Rotated Sorted Array (Medium, Accepted, 5) · 1342. Number of Steps to Reduce a Number to Zero (Easy, Accepted, 3)
+- Apr 2 — 704. Binary Search (Easy, Accepted, 3) · 658. Find K Closest Elements (Medium, Accepted, 1) · 162. Find Peak Element (Medium, Accepted, 3) · 278. First Bad Version (Easy, Accepted, 1) · 81. Search in Rotated Sorted Array II (Medium, Accepted, 1) · 374. Guess Number Higher or Lower (Easy, Accepted, 2) · 69. Sqrt(x) (Easy, Accepted, 3)
+- Mar 31 — 34. Find First and Last Position of Element in Sorted Array (Medium, Accepted, 2) · 35. Search Insert Position (Easy, Accepted, 1)
+- Mar 30 — 199. Binary Tree Right Side View (Medium, Accepted, 2) · 145. Binary Tree Postorder Traversal (Easy, Accepted, 2) · 226. Invert Binary Tree (Easy, Accepted, 2) · 104. Maximum Depth of Binary Tree (Easy, Accepted, 1) · 222. Count Complete Tree Nodes (Easy, Accepted, 1) · 102. Binary Tree Level Order Traversal (Medium, Accepted, 2) · 94. Binary Tree Inorder Traversal (Easy, Accepted, 2) · 144. Binary Tree Preorder Traversal (Easy, Accepted, 2)
+- Mar 29 — 225. Implement Stack using Queues (Easy, Accepted, 1) · 232. Implement Queue using Stacks (Easy, Accepted, 1) · 622. Design Circular Queue (Medium, Accepted, 2)
+- Mar 28 — 503. Next Greater Element II (Medium, Accepted, 1) · 496. Next Greater Element I (Easy, Accepted, 1) · 739. Daily Temperatures (Medium, Accepted, 2) · 20. Valid Parentheses (Easy, Accepted, 3)
+- Mar 27 — 155. Min Stack (Medium, Accepted, 2) · 868. Binary Gap (Easy, Accepted, 4) · 415. Add Strings (Easy, Accepted, 1) · 67. Add Binary (Easy, Accepted, 3)
+- Mar 26 — 54. Spiral Matrix (Medium, Accepted, 1) · 561. Array Partition (Easy, Accepted, 2)
+- Mar 25 — 209. Minimum Size Subarray Sum (Medium, Accepted, 1) · 189. Rotate Array (Medium, Accepted, 7) · 557. Reverse Words in a String III (Easy, Accepted, 1) · 151. Reverse Words in a String (Medium, Accepted, 1) · 118. Pascal's Triangle (Easy, Accepted, 1) · 66. Plus One (Easy, Accepted, 1)
+- Mar 24 — 747. Largest Number At Least Twice of Others (Easy, Accepted, 2) · 724. Find Pivot Index (Easy, Accepted, 1) · 2. Add Two Numbers (Medium, Accepted, 1) · 42. Trapping Rain Water (Hard, Accepted, 1) · 3296. Minimum Number of Seconds to Make Mountain Height Zero (Medium, Accepted, 2)
+- Mar 23 — 219. Contains Duplicate II (Easy, Accepted, 3) · 350. Intersection of Two Arrays II (Easy, Accepted, 2) · 387. First Unique Character in a String (Easy, Accepted, 2) · 599. Minimum Index Sum of Two Lists (Easy, Accepted, 1) · 205. Isomorphic Strings (Easy, Accepted, 3) · 349. Intersection of Two Arrays (Easy, Accepted, 3) · 136. Single Number (Easy, Accepted, 3) · 706. Design HashMap (Easy, Accepted, 1) · 705. Design HashSet (Easy, Accepted, 2) · 1009. Complement of Base 10 Integer (Easy, Accepted, 1) · 2486. Append Characters to String to Make Subsequence (Medium, Accepted, 1) · 457. Circular Array Loop (Medium, Accepted, 2) · 3130. Find All Possible Stable Binary Arrays II (Hard, Accepted, 2)
+- Mar 22 — 2130. Maximum Twin Sum of a Linked List (Medium, Accepted, 1) · 1582. Special Positions in a Binary Matrix (Easy, Accepted, 1) · 234. Palindrome Linked List (Easy, Accepted, 2) · 287. Find the Duplicate Number (Medium, Accepted, 2) · 3129. Find All Possible Stable Binary Arrays I (Medium, Accepted, 1) · 202. Happy Number (Easy, Accepted, 1) · 19. Remove Nth Node From End of List (Medium, Accepted, 2) · 237. Delete Node in a Linked List (Medium, Accepted, 1) · 160. Intersection of Two Linked Lists (Easy, Accepted, 4) · 11. Container With Most Water (Medium, Accepted, 1) · 217. Contains Duplicate (Easy, Accepted, 1) · 1980. Find Unique Binary String (Medium, Accepted, 2) · 142. Linked List Cycle II (Medium, Accepted, 1) · 141. Linked List Cycle (Easy, Accepted, 1)
+- Mar 21 — 707. Design Linked List (Medium, Accepted, 2) · 1888. Minimum Number of Flips to Make the Binary String Alternating (Medium, Accepted, 1) · 75. Sort Colors (Medium, Accepted, 1) · 1784. Check if Binary String Has at Most One Segment of Ones (Easy, Accepted, 2) · 15. 3Sum (Medium, Accepted, 1) · 167. Two Sum II - Input Array Is Sorted (Medium, Accepted, 1) · 1. Two Sum (Easy, Accepted, 2) · 1758. Minimum Changes To Make Alternating Binary String (Easy, Accepted, 1) · 2824. Count Pairs Whose Sum is Less than Target (Easy, Accepted, 3) · 680. Valid Palindrome II (Easy, Accepted, 1) · 125. Valid Palindrome (Easy, Accepted, 3) · 977. Squares of a Sorted Array (Easy, Accepted, 4) · 414. Third Maximum Number (Easy, Accepted, 7) · 1051. Height Checker (Easy, Accepted, 1) · 27. Remove Element (Easy, Accepted, 5) · 905. Sort Array By Parity (Easy, Accepted, 2) · 283. Move Zeroes (Easy, Accepted, 5) · 26. Remove Duplicates from Sorted Array (Easy, Accepted, 5) · 1299. Replace Elements with Greatest Element on Right Side (Easy, Accepted, 1) · 941. Valid Mountain Array (Easy, Accepted, 2) · 1346. Check If N and Its Double Exist (Easy, Accepted, 3) · 88. Merge Sorted Array (Easy, Accepted, 4) · 1545. Find Kth Bit in Nth Binary String (Medium, Accepted, 3) · 1536. Minimum Swaps to Arrange a Binary Grid (Medium, Accepted, 1) · 1089. Duplicate Zeros (Easy, Accepted, 2) · 1295. Find Numbers with Even Number of Digits (Easy, Accepted, 2) · 1689. Partitioning Into Minimum Number Of Deci-Binary Numbers (Medium, Accepted, 1) · 383. Ransom Note (Easy, Accepted, 2) · 876. Middle of the Linked List (Easy, Accepted, 1) · 412. Fizz Buzz (Easy, Accepted, 2) · 1480. Running Sum of 1d Array (Easy, Accepted, 1) · 1672. Richest Customer Wealth (Easy, Accepted, 2)
+- Apr 24, 2025 — 28. Find the Index of the First Occurrence in a String (Easy, Accepted, 2) · 121. Best Time to Buy and Sell Stock (Easy, Accepted, 1) · 169. Majority Element (Easy, Accepted, 2)
 
 | Date | Problems | Notes |
 |---|---|---|
@@ -961,12 +1035,12 @@ Problems that combine two or more core patterns — useful for recognizing overl
 
 ```
 src/
-├── arrays/              # Core array problems (21 files, 5 subcategories)
+├── arrays/              # Core array problems (26 files, 5 subcategories)
 ├── arrays101/           # LeetCode Arrays 101 explore card (24 files)
-├── binarysearch/        # Binary search problems (11 files, 3 subcategories)
+├── binarysearch/        # Binary search problems (12 files, 3 subcategories)
 ├── dailychallenges/     # Daily challenge solutions (6 files)
-├── dp/                  # Dynamic programming (29 files, 6 subcategories)
-├── graph/               # Graph problems + concept implementations (32 files, 7 subcategories)
+├── dp/                  # Dynamic programming (30 files, 6 subcategories)
+├── graph/               # Graph problems + concept implementations (62 files, 7 subcategories)
 ├── hashing/             # HashMap / HashSet problems (5 files)
 ├── heap/                # Heap / Priority Queue problems (13 files)
 ├── linkedlist/          # Linked list problems (16 files, 5 subcategories)
@@ -976,16 +1050,16 @@ src/
 ├── queue/               # Queue problems + implementations (9 files)
 ├── recursion/           # Recursion fundamentals + backtracking (29 files)
 ├── set/                 # SingleNumber + LC 705 Design HashSet (2 files)
-├── slidingwindow/       # Sliding window problems (8 files)
+├── slidingwindow/       # Sliding window problems (9 files)
 ├── sortalgorithms/      # Sorting implementations + recursive variants (11 files)
 ├── stack/               # Stack problems + implementations (11 files)
 ├── strings/             # String problems (24 files, 3 active subcategories)
 ├── tree/                # Tree problems (18 files, 3 subcategories)
-├── twopointer/          # Two pointer problems (10 files)
+├── twopointer/          # Two pointer problems (11 files)
 └── _sandbox/            # Main.java, Solution.java — scratch space (2 files)
 ```
 
-**Total: 287 Java files** (verified May 20, 2026)
+**Total: 328 Java files** (verified July 17, 2026)
 
 ---
 
@@ -1022,4 +1096,4 @@ Code in this repository is provided as-is for learning. Use at your own risk.
 
 ---
 
-*Last updated: May 20, 2026*
+*Last updated: July 17, 2026*
