@@ -59,8 +59,8 @@ D:\leetcodepractice\
      ├─── 📁 math/              ✨ NEW PACKAGE
      │    ├─ UglyNumber.java
      │    ├─ RotatedDigits.java
-     │    └─ GCDOfOddEvenSums.java
-     │
+     │    ├─ GCDOfOddEvenSums.java
+     │    └─ SumOfGCDOfFormedPairs.java
      ├─── 📁 _sandbox/          ✨ NEW PACKAGE - Utility Files
      │    ├─ Main.java
      │    └─ Solution.java
@@ -118,9 +118,9 @@ D:\leetcodepractice\
 | strings | 4 | 24 | ✅ Reorganized |
 | linkedlist | 5 | 16 | ✅ Reorganized |
 | tree | 3 | 18 | ✅ Reorganized |
-| math | - | 3 | ✅ NEW |
+| math | - | 4 | ✅ NEW |
 | _sandbox | - | 2 | ✅ NEW |
-| **Total** | **40+** | **291** | ✅ Complete |
+| **Total** | **40+** | **292** | ✅ Complete |
 
 ---
 

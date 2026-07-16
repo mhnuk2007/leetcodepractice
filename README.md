@@ -170,7 +170,7 @@ src/slidingwindow/         [7 files  — SlidingWindow, DynamicWindow, LongestSu
 src/dailychallenges/       [6 files  — 6 daily challenge problems]
 src/set/                   [2 files  — SingleNumber, designhashset/MyHashSet]
 src/map/                   [1 file   — designhashmap/MyHashMap]
-src/math/                  [3 files  — UglyNumber, RotatedDigits, GCDOfOddEvenSums]
+src/math/                  [4 files  — UglyNumber, RotatedDigits, GCDOfOddEvenSums, SumOfGCDOfFormedPairs]
 src/patterns/              [2 files  — FloydTriangle, FloydTriangleMathematically]
 src/_sandbox/              [2 files  — Main.java, Solution.java]
 ```
@@ -210,7 +210,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
 | | **Total** | **206** | **419** | `█████░░░░░` **49%** |
 
-> Last updated: July 16, 2026. File count remains 291 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 53, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
+> Last updated: July 16, 2026. File count remains 292 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 53, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
 
 ---
 
@@ -971,7 +971,7 @@ src/
 ├── heap/                # Heap / Priority Queue problems (13 files)
 ├── linkedlist/          # Linked list problems (16 files, 5 subcategories)
 ├── map/designhashmap/   # LC 706 Design HashMap (1 file)
-├── math/                # Math utilities (3 files)
+├── math/                # Math utilities (4 files)
 ├── patterns/            # Pattern practice — Floyd's triangle etc. (2 files)
 ├── queue/               # Queue problems + implementations (9 files)
 ├── recursion/           # Recursion fundamentals + backtracking (29 files)
