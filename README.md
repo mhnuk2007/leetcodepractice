@@ -3,7 +3,7 @@
 > **Pattern-based interview preparation in Java.**
 > Structured by topic and algorithm pattern, tracked by progress, built for FAANG-level readiness.
 >
-> ✨ **Recently reorganized** (May 2026): 40+ subcategories for pattern-based learning. See [Folder Structure](#folder-structure-with-subcategories) below.
+> ✨ **Recently reorganized** (July 2026): 40+ subcategories for pattern-based learning. See [Folder Structure](#folder-structure-with-subcategories) below.
 
 **Author:** Mohan Lal &nbsp;·&nbsp; **GitHub / LeetCode:** [mhnuk2007](https://github.com/mhnuk2007) &nbsp;·&nbsp; **Language:** Java
 &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/mhnuk2007) &nbsp;·&nbsp; [Portfolio](https://mhnuk2007.github.io)
@@ -210,7 +210,7 @@ Three comprehensive guides have been created to help you navigate the reorganize
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
 | | **Total** | **209** | **419** | `█████░░░░░` **50%** |
 
-> Last updated: July 16, 2026. File count remains 295 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 53, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
+> Last updated: July 17, 2026. File count is 327 (verified from directory tree). Progress tracker corrected for LC 105, LC 1770, and LC 2461. Graphs section reflects completed concept files plus LC 695. Trie updated after LC 208 and LC 212 completion. DP updated with 0-1 Knapsack, Unbounded Knapsack, Longest Common Substring, 53, 198, 416, 494, 518, 740, 746, 1137, 1143, 1770, 3129, 3130, 95, and 96. Trees updated with 105, 106, 112, 113, 235, 236. Strings updated with 796.
 
 ---
 

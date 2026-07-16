@@ -1,7 +1,7 @@
 ====================
 LeetCode Practice - Solved Problems Inventory
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: May 19, 2026
+Last Updated: July 17, 2026
 ====================
 
 This file tracks the current Java solution/practice inventory under src/.
@@ -13,17 +13,19 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 295
+Total Java files under src/: 327
 
 Category Breakdown:
+- _sandbox                :  2
 - arrays                  : 25
 - arrays101               : 24
 - binarysearch            : 12
 - dailychallenges         :  6
-- dp                      : 29
-- graph                   : 32
+- dp                      : 30
+- graph                   : 62
 - hashing                 :  5
 - heap                    : 13
+- interval                :  1
 - linkedlist              : 16
 - map                     :  1
 - math                    :  4
@@ -37,7 +39,6 @@ Category Breakdown:
 - strings                 : 24
 - tree                    : 18
 - twopointer              : 11
-- _sandbox                :  2
 
 ====================
 Subcategory Highlights
@@ -59,6 +60,7 @@ Binary Search:
 - binarysearch root       :  1
 
 Dynamic Programming:
+- dp/digitdp              :  1
 - dp/grid                 :  2
 - dp/knapsack             :  6
 - dp/linear               : 10
@@ -67,13 +69,13 @@ Dynamic Programming:
 - dp/subsequence          :  2
 
 Graph:
-- graph/advanced          :  4
-- graph/cycles            :  3
-- graph/mst               :  2
-- graph/shortestpath      :  4
-- graph/topological       :  8
-- graph/traversal         :  9
-- graph/unionfind         :  2
+- graph/advanced          :  5
+- graph/cycles            :  7
+- graph/mst               :  8
+- graph/shortestpath      :  8
+- graph/topological       : 13
+- graph/traversal         : 16
+- graph/unionfind         :  5
 
 Linked List:
 - linkedlist/basic        :  4
@@ -81,7 +83,6 @@ Linked List:
 - linkedlist/cycles       :  2
 - linkedlist/traversal    :  2
 - linkedlist/advanced     :  3
-- linkedlist root       :  1
 
 Strings:
 - strings/basic           : 10
@@ -134,11 +135,13 @@ Recently reconciled names/locations:
 - arrays/matrix/SetMatrixZeroes.java
 - arrays/prefix/ProductOfArrayExceptSelf.java
 
-New package areas from the reorganization:
+New package areas from the reorganization & follow-up:
 - math/UglyNumber.java
 - math/GCDOfOddEvenSums.java
 - math/RotatedDigits.java
 - math/SumOfGCDOfFormedPairs.java
+- interval/RemoveCoveredIntervals.java
+- dp/digitdp/CountOnes.java
 - _sandbox/Main.java
 - _sandbox/Solution.java
 

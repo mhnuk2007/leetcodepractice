@@ -87,6 +87,33 @@ FindAllPossibleStableArraysII.java  → dp/optimization/
 
 ### Graph
 ```
+DijkstraAdjacencyList.java          → graph/shortestpath/ [added from other PC]
+BellmanFordAdjacencyList.java       → graph/shortestpath/ [added from other PC]
+CheapestFlightsWithinKStops.java    → graph/shortestpath/ [added from other PC]
+NetworkDelayTime.java               → graph/shortestpath/ [added from other PC]
+Kruskal.java                        → graph/mst/          [added from other PC]
+PrimAlgorithm.java                  → graph/mst/          [added from other PC]
+MaximizeSpanningTreeStability.java  → graph/mst/          [added from other PC]
+MinCostToConnectAllPoints.java      → graph/mst/          [added from other PC] (3 versions)
+DSU.java                            → graph/unionfind/    [added from other PC]
+PathExistenceQueries.java           → graph/unionfind/    [added from other PC] (2 versions)
+CourseScheduleDfs.java              → graph/topological/  [added from other PC]
+CourseScheduleII.java               → graph/topological/  [added from other PC]
+KahnsAlgorithm.java                 → graph/topological/  [added from other PC]
+TopologicalSort.java                → graph/topological/  [added from other PC]
+LargestColorValueInDirGraph.java    → graph/topological/  [added from other PC]
+BfsTraversal.java                   → graph/traversal/    [added from other PC]
+DfsTraversal.java                   → graph/traversal/    [added from other PC]
+CheckDuplicatesBruteForce.java      → graph/traversal/    [added from other PC]
+FloodFillSimple.java                → graph/traversal/    [added from other PC]
+GraphSimple.java                    → graph/traversal/    [added from other PC]
+NumberOfIslandsInPlace.java         → graph/traversal/    [added from other PC]
+RottingOrangesSimple.java           → graph/traversal/    [added from other PC]
+CriticalConInANet.java              → graph/cycles/       [added from other PC]
+DetectCycleBFS.java                 → graph/cycles/       [added from other PC]
+DetectCycleDFS.java                 → graph/cycles/       [added from other PC]
+DetectCycleDirectedDFS.java         → graph/cycles/       [added from other PC]
+TarjanAlgorithm.java                → graph/advanced/     [added from other PC]
 DFSTraversalInGraph.java            → graph/traversal/
 BFSTraversalInGraph.java            → graph/traversal/
 AdjacencyMatrix.java                → graph/traversal/
@@ -196,6 +223,8 @@ CountNodes.java                     → tree/basic/
 
 ### New Packages
 ```
+RemoveCoveredIntervals.java         → interval/ [NEW PACKAGE]
+CountOnes.java                      → dp/digitdp/ [added from other PC]
 UglyNumber.java                     → math/  [NEW PACKAGE]
 Main.java                           → _sandbox/  [from root]
 Solution.java                       → _sandbox/  [from binarysearch]
@@ -232,6 +261,8 @@ Looking for a specific problem? Use this guide:
 | Union Find / DSU | `graph/unionfind/` |
 | Topological sort | `graph/topological/` |
 | Cycle detection | `graph/cycles/` |
+| Interval problems | `interval/` |
+| Digit DP | `dp/digitdp/` |
 | String reversal | `strings/basic/` |
 | Palindrome problems | `strings/pattern/` |
 | Substring/advanced problems | `strings/advanced/` |
