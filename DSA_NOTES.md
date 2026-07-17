@@ -3,8 +3,7 @@
 **Author:** Mohan Lal | **GitHub:** [mhnuk2007](https://github.com/mhnuk2007) | **LeetCode:** [mhnuk2007](https://leetcode.com/mhnuk2007)
 
 > Comprehensive reference for core DSA patterns, templates, and techniques used in solving LeetCode problems in Java.
->
-> ✨ Updated July 2026: this repository now contains 330 Java files under src, with verified solutions such as CountSmallerAfterSelf in [src/sortalgorithms/CountSmallerAfterSelf.java](src/sortalgorithms/CountSmallerAfterSelf.java).
+> ✨ Updated July 2026: this repository now contains 330 Java files under src, with verified solutions such as CountSmallerAfterSelf in [src/sortalgorithms/CountSmallerAfterSelf.java](src/sortalgorithms/CountSmallerAfterSelf.java) and CountInversions in [src/arrays/advanced/CountInversions.java](src/arrays/advanced/CountInversions.java).
 
 ---
 

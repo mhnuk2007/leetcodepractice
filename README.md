@@ -2,8 +2,7 @@
 
 > **Pattern-based interview preparation in Java.**
 > Structured by topic and algorithm pattern, tracked by progress, and maintained for FAANG-style review.
->
-> ✨ **Current snapshot (July 2026):** 330 Java source files under src, 23 top-level topic folders, and a verified merge-sort solution for CountSmallerAfterSelf. The documentation below reflects the latest workspace state.
+> ✨ **Current snapshot (July 2026):** 330 Java source files under src, 23 top-level topic folders, and verified merge-sort solutions for CountSmallerAfterSelf and CountInversions. The documentation below reflects the latest workspace state.
 
 **Author:** Mohan Lal &nbsp;·&nbsp; **GitHub / LeetCode:** [mhnuk2007](https://github.com/mhnuk2007) &nbsp;·&nbsp; **Language:** Java
 &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/mhnuk2007) &nbsp;·&nbsp; [Portfolio](https://mhnuk2007.github.io)
@@ -60,7 +59,7 @@ For **complete file location guide**, see [QUICK_REFERENCE.md](QUICK_REFERENCE.m
 - **180+ tracked LeetCode problems** with structured solutions by pattern
 - **23 top-level source folders** under src for topic-based organization
 - **Recent additions:** CountInversions in the arrays advanced package, CountSmallerAfterSelf in the sort algorithms package, SortedPairGCDQueries in the math package, plus updated daily challenge and graph practice solutions
-- **Verified recently:** the CountSmallerAfterSelf solution compiled and ran successfully with the expected outputs
+- **Verified recently:** the CountSmallerAfterSelf and CountInversions solutions compiled and ran successfully with the expected outputs
 
 ---
 
@@ -199,8 +198,8 @@ A set of practical guides has been created to help you navigate the reorganized 
 ## Current Repository Snapshot
 - Verified on 2026-07-17: 330 Java files found under src
 - Main topic folders include arrays, arrays101, binarysearch, dp, graph, heap, linkedlist, sortalgorithms, strings, tree, and twopointer
-- Recent verified solution: [src/sortalgorithms/CountSmallerAfterSelf.java](src/sortalgorithms/CountSmallerAfterSelf.java)
-- Build check: javac/java completed successfully for the CountSmallerAfterSelf program
+- Recent verified solutions: [src/sortalgorithms/CountSmallerAfterSelf.java](src/sortalgorithms/CountSmallerAfterSelf.java) and [src/arrays/advanced/CountInversions.java](src/arrays/advanced/CountInversions.java)
+- Build check: javac/java completed successfully for the CountSmallerAfterSelf and CountInversions programs
 
 ## Progress Overview
 
