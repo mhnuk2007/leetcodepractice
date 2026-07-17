@@ -1,5 +1,7 @@
 # ⚡ QUICK REFERENCE - File Movement Guide
 
+> Updated July 2026. The repository currently contains 330 Java files under src, and the latest verified addition is CountSmallerAfterSelf in [src/sortalgorithms/CountSmallerAfterSelf.java](src/sortalgorithms/CountSmallerAfterSelf.java).
+
 ## 🗂️ Where Did My File Go?
 
 ### Arrays
@@ -30,6 +32,7 @@ RichestCustomerWealth.java          → arrays/basics/
 ContainsDuplicate.java              → arrays/basics/
 PascalsTriangle.java                → arrays/basics/
 PascalsTriangleII.java              → arrays/basics/
+CountInversions.java                → arrays/advanced/
 ```
 
 ### Binary Search

@@ -18,22 +18,22 @@ LeetCodePractice/
 ```
 
 **Total Statistics:**
-- **Java Source Files**: 288+
+- **Java Source Files**: 330+
 - **LeetCode Problems Solved**: 180+
-- **Topic Packages**: 20
+- **Topic Packages**: 23+
 - **Subcategories**: 40+
 
 ---
 
 ## 📁 Source Code Directory (`src/`)
 
-### 1. **Arrays** (21 files · 5 subcategories)
+### 1. **Arrays** (22+ files · 5 subcategories)
 Core array manipulation problems.
 
 | Subcategory | Files | Content |
 |-------------|-------|---------|
 | `basics/` | 5 | PlusOne, ContainsDuplicate, PascalsTriangle (2 versions), RichestCustomerWealth |
-| `advanced/` | 1 | KadaneAlgorithm |
+| `advanced/` | 2 | KadaneAlgorithm, CountInversions |
 | `greedy/` | 6 | BestTimeToBuyAndSellStock, MajorityElement, ArrayPartition, LargestNumberTwiceOthers, MaxProfit, MergeIntervals |
 | `matrix/` | 4 | SpiralMatrix, SpecialPositionsInBinaryMatrix, SearchInRotatedSortedArray, SetMatrixZeroes |
 | `prefix/` | 5 | FindPivotIndex, RunningSum1d, TrappingRainWater (2 versions), ProductOfArrayExceptSelf |
@@ -83,7 +83,7 @@ DP optimization strategies with memoization and tabulation.
 
 ---
 
-### 5. **Graph** (73 files · 7 subcategories)
+### 5. **Graph** (70+ files · 7 subcategories)
 Graph algorithms covering traversal, shortest path, MST, and topological sorting.
 
 | Subcategory | Files | Key Algorithms |
@@ -161,7 +161,7 @@ Recursive problem solving strategies.
 
 ---
 
-### 11. **Two Pointer** (11 files)
+### 11. **Two Pointer** (11+ files)
 Two-pointer technique problems.
 
 **Files**: AppendCharacters, ContainerWithMostWater, FindTheDuplicateNumber, FourSum, HappyNumber, LengthOfLoop, MiddleOfLinkedList, StrobogrammaticNumber, ThreeSum, TwoSum, TwoSumII
@@ -170,7 +170,7 @@ Two-pointer technique problems.
 
 ---
 
-### 12. **Sliding Window** (9 files)
+### 12. **Sliding Window** (9+ files)
 Window-based substring/subarray problems.
 
 **Files**: DynamicWindow, LongestSubstringWithoutRepeatingCharacters, MaximumAverageSubarrayI, MaxSumOfDistinctSubarray, MaxSumOfSubArray, MinimumWindowSubstring, MinSizeSubArraySum, RepeatedDNASequence, SlidingWindow
@@ -217,6 +217,12 @@ Set-based problems.
 ---
 
 ### 17. **Map** (1+ files)
+
+---
+
+## ✅ Recently Verified Solution
+- [src/sortalgorithms/CountSmallerAfterSelf.java](src/sortalgorithms/CountSmallerAfterSelf.java)
+- Verified on 2026-07-17: the solution compiled successfully and produced the expected outputs for the sample test cases.
 Custom map implementations.
 
 - `designhashmap/`: MyHashMap (custom hash map implementation)

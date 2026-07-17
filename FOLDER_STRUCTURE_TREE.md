@@ -23,11 +23,11 @@ D:\leetcodepractice\
 │    │    ├─ Main.java
 │    │    └─ Solution.java
 │    │
-│    ├─── 📁 arrays/                    [5 subcategories · 21 files]
+│    ├─── 📁 arrays/                    [5 subcategories · 22+ files]
 │    │    ├─ basics/
 │    │    │  └─ (5) PlusOne, ContainsDuplicate, PascalsTriangle, PascalsTriangleII, RichestCustomerWealth
 │    │    ├─ advanced/
-│    │    │  └─ (1) KadaneAlgorithm
+│    │    │  └─ (2) KadaneAlgorithm, CountInversions
 │    │    ├─ greedy/
 │    │    │  └─ (6) BestTimeToBuyAndSellStock, MajorityElement, ArrayPartition, LargestNumberTwiceOthers, MaxProfit, MergeIntervals
 │    │    ├─ matrix/
@@ -37,7 +37,7 @@ D:\leetcodepractice\
 │    │    └─ rotation/
 │    │       └─ (4) RotateArray, NextPermutation, CircularArrayLoop, RotateFunction
 │    │
-│    ├─── 📁 arrays101/                 [Beginner LeetCode Track · 24 files]
+│    ├─── 📁 arrays101/                 [Beginner LeetCode Track · 24+ files]
 │    │    └─ CheckIfExists, CheckIfNAndItsDoubleExist, CountPairs, DuplicateZeros, EvenNoOfDigits,
 │    │       FindAllNumbersDisappearedInAnArray, FindDisappearedNumber, FindNumbersWithEvenNumberOfDigits,
 │    │       HeightChecker, MaxConsecutiveOnes, MergeSortedArray, MinChangesAlternatingBinaryString,
@@ -45,7 +45,7 @@ D:\leetcodepractice\
 │    │       RemoveElement, ReplaceElement, ReplaceElementsWithGreatestElementOnRightSide,
 │    │       SquaresOfASortedArray, SquaresOfSorted, ThirdMaximumNumber, ValidMountainArray
 │    │
-│    ├─── 📁 binarysearch/              [3 subcategories · 11 files]
+│    ├─── 📁 binarysearch/              [3 subcategories · 11+ files]
 │    │    ├─ basics/
 │    │    │  └─ (4) BinarySearch, FirstBadVersion, SearchInsert, SqrtX
 │    │    ├─ advanced/
@@ -58,7 +58,7 @@ D:\leetcodepractice\
 │    ├─── 📁 dailychallenges/           [6 files]
 │    │    └─ CheckOneSegment, ComplementBase10Integer, FindKthBit, FindUniqueBinaryString, MinFlips, MinimumSwaps
 │    │
-│    ├─── 📁 dp/                        [6 subcategories · 29 files]
+│    ├─── 📁 dp/                        [6 subcategories · 29+ files]
 │    │    ├─ digitdp/
 │    │    │  └─ (1) CountOnes
 │    │    ├─ grid/
@@ -75,7 +75,7 @@ D:\leetcodepractice\
 │    │    └─ subsequence/
 │    │       └─ (2) LongestCommonSubsequence, LongestCommonSubstring
 │    │
-│    ├─── 📁 graph/                     [7 subcategories · 73 files]
+│    ├─── 📁 graph/                     [7 subcategories · 70+ files]
 │    │    ├─ advanced/
 │    │    │  └─ (5) CloneGraph, Graph, TarjanAlgorithm, Trie, WordSearchII
 │    │    ├─ cycles/
@@ -155,9 +155,10 @@ D:\leetcodepractice\
 │    │       MaxSumOfDistinctSubarray, MaxSumOfSubArray, MinimumWindowSubstring, MinSizeSubArraySum,
 │    │       RepeatedDNASequence, SlidingWindow
 │    │
-│    ├─── 📁 sortalgorithms/            [11 files]
-│    │    └─ BubbleSort, BubbleSortRec, InsertionSort, InsertionSortRec, MergeSort, MergeSortRec,
-│    │       PatternsViaRecursion, SelectionSort, SelectionSortRec, SortColors, TwoColorSort
+│    ├─── 📁 sortalgorithms/            [12+ files]
+│    │    └─ BubbleSort, BubbleSortRec, CountSmallerAfterSelf, InsertionSort, InsertionSortRec,
+│    │       MergeSort, MergeSortRec, PatternsViaRecursion, SelectionSort, SelectionSortRec,
+│    │       SortColors, TwoColorSort
 │    │
 │    ├─── 📁 stack/                     [11 files]
 │    │    └─ ArrayListStack, ArrayStack, DailyTemperatures, LinkedListStack, MinStack, MinStackLinkedList,
@@ -205,9 +206,9 @@ D:\leetcodepractice\
 
 ## 📊 Statistics
 
-- **Total Java Source Files**: 288+
+- **Total Java Source Files**: 330+
 - **LeetCode Problems Solved**: 180+
-- **Main Topics/Packages**: 20
+- **Main Topics/Packages**: 23+
 - **Subcategories**: 40+
 - **Compiled Output Directory**: `out/production/LeetCodePractice/`
 
@@ -215,7 +216,7 @@ D:\leetcodepractice\
 
 | Folder | Files | Purpose |
 |--------|-------|---------|
-| `arrays` | 21 | Array manipulation, rotation, prefix sum, greedy |
+| `arrays` | 22+ | Array manipulation, rotation, prefix sum, greedy |
 | `arrays101` | 24 | Beginner-level array problems |
 | `binarysearch` | 11 | Binary search & variants |
 | `dp` | 29 | Dynamic programming (6 subcategories) |
