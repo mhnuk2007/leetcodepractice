@@ -59,7 +59,7 @@ For **complete file location guide**, see [QUICK_REFERENCE.md](QUICK_REFERENCE.m
 - **330 Java files** across the main algorithm folders and supporting utilities
 - **180+ tracked LeetCode problems** with structured solutions by pattern
 - **23 top-level source folders** under src for topic-based organization
-- **Recent additions:** CountSmallerAfterSelf in the sort algorithms package, SortedPairGCDQueries in the math package, plus updated daily challenge and graph practice solutions
+- **Recent additions:** CountInversions in the arrays advanced package, CountSmallerAfterSelf in the sort algorithms package, SortedPairGCDQueries in the math package, plus updated daily challenge and graph practice solutions
 - **Verified recently:** the CountSmallerAfterSelf solution compiled and ran successfully with the expected outputs
 
 ---
@@ -70,7 +70,7 @@ For **complete file location guide**, see [QUICK_REFERENCE.md](QUICK_REFERENCE.m
 ```
 src/arrays/
 ├── basics/                [5 files — PlusOne, ContainsDuplicate, PascalsTriangle, PascalsTriangleII, RichestCustomerWealth]
-├── advanced/              [2 files — KadaneAlgorithm, CountInversions]
+├── advanced/              [2 files — KadaneAlgorithm, CountInversions]  ← inversion counting solution added
 ├── rotation/              [4 files — RotateArray, NextPermutation, CircularArrayLoop, RotateFunction]
 ├── prefix/                [4 files — FindPivotIndex, TrappingRainWater, TrappingRainWaterPrefix, RunningSum1d]
 ├── greedy/                [5 files — BestTimeToBuyAndSellStock, MajorityElement, ArrayPartition, LargestNumberTwiceOthers, MaxProfit]
