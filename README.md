@@ -430,7 +430,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 | 56 | Merge Overlapping Intervals | Medium | ✅ | Greedy / Sorting | A, G, Meta, B |
 | 73 | Set Matrix Zeroes | Medium | ✅ | Matrix / Array Manipulation | A, G, Meta, B |
 | 238 | Product of Array Except Self | Medium | ✅ | Prefix Sum / Prefix Product | A, G, Meta, M, B |
-| — | Count Inversions | — | ⬜ | — | — |
+| — | Count Inversions | — | ✅ | Merge Sort / Divide and Conquer | — |
 | — | Reverse Pairs | — | ⬜ | — | — |
 | 1 | Two Sum | Easy | ✅ | Hashing | A, G, Ap, M, Meta, Ad, B |
 | 11 | Container With Most Water | Medium | ✅ | Two Pointers | A, G, Meta, B, Ad |
