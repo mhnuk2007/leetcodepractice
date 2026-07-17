@@ -1,7 +1,7 @@
 ====================
 LeetCode Practice - Solved Problems Inventory
 Author: Mohan Lal | GitHub: mhnuk2007 | LeetCode: mhnuk2007
-Last Updated: July 17, 2026
+Last Updated: July 18, 2026
 ====================
 
 This file tracks the current Java solution/practice inventory under src/.
@@ -13,7 +13,7 @@ tracked separately in README.md.
 Current Statistics
 ====================
 
-Total Java files under src/: 327
+Total Java files under src/: 331
 
 Category Breakdown:
 - _sandbox                :  2
@@ -34,7 +34,7 @@ Category Breakdown:
 - recursion               : 29
 - set                     :  2
 - slidingwindow           :  9
-- sortalgorithms          : 11
+- sortalgorithms          : 13
 - stack                   : 11
 - strings                 : 24
 - tree                    : 18

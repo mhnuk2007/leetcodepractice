@@ -238,10 +238,10 @@ Custom map implementations.
 
 ---
 
-### 18. **Sort Algorithms** (11 files)
+### 18. **Sort Algorithms** (13 files)
 Sorting algorithm implementations.
 
-**Files**: BubbleSort, BubbleSortRec, InsertionSort, InsertionSortRec, MergeSort, MergeSortRec, PatternsViaRecursion, SelectionSort, SelectionSortRec, SortColors, TwoColorSort
+**Files**: BubbleSort, BubbleSortRec, InsertionSort, InsertionSortRec, MergeSort, MergeSortRec, SelectionSort, SelectionSortRec, PatternsViaRecursion, ReversePairs, SortColors, TwoColorSort
 
 **Key Concepts**: O(n²) and O(n log n) sorting, recursive implementations
 

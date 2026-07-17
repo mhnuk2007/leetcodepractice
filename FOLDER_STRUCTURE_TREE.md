@@ -155,7 +155,7 @@ D:\leetcodepractice\
 │    │       MaxSumOfDistinctSubarray, MaxSumOfSubArray, MinimumWindowSubstring, MinSizeSubArraySum,
 │    │       RepeatedDNASequence, SlidingWindow
 │    │
-│    ├─── 📁 sortalgorithms/            [12+ files]
+│    ├─── 📁 sortalgorithms/            [13 files]
 │    │    └─ BubbleSort, BubbleSortRec, CountSmallerAfterSelf, InsertionSort, InsertionSortRec,
 │    │       MergeSort, MergeSortRec, PatternsViaRecursion, SelectionSort, SelectionSortRec,
 │    │       SortColors, TwoColorSort
@@ -231,7 +231,7 @@ D:\leetcodepractice\
 | `queue` | 9 | Queue implementations & problems |
 | `twopointer` | 11 | Two-pointer technique problems |
 | `slidingwindow` | 9 | Sliding window problems |
-| `sortalgorithms` | 11 | Sorting algorithms |
+| `sortalgorithms` | 13 | Sorting algorithms |
 | `set` | 1+ | Set operations |
 | `map` | 1+ | Hash map implementations |
 | `interval` | 1 | Interval-based problems |

@@ -44,7 +44,7 @@
 
 ## Quick Start
 
-Welcome! This repository contains **180+ tracked LeetCode solutions and 328 Java DSA files organized by algorithm patterns**.
+Welcome! This repository contains **180+ tracked LeetCode solutions and 331 Java DSA files organized by algorithm patterns**.
 
 ### 📂 How to Navigate
 - **Just starting?** Check `src/arrays101/` for beginner problems
@@ -55,7 +55,7 @@ Welcome! This repository contains **180+ tracked LeetCode solutions and 328 Java
 For **complete file location guide**, see [QUICK_REFERENCE.md](QUICK_REFERENCE.md).
 
 ### 📊 Repository Snapshot (July 2026)
-- **330 Java files** across the main algorithm folders and supporting utilities
+- **331 Java files** across the main algorithm folders and supporting utilities
 - **180+ tracked LeetCode problems** with structured solutions by pattern
 - **23 top-level source folders** under src for topic-based organization
 - **Recent additions:** CountInversions in the arrays advanced package, CountSmallerAfterSelf in the sort algorithms package, SortedPairGCDQueries in the math package, plus updated daily challenge and graph practice solutions
@@ -163,9 +163,9 @@ src/stack/                 [11 files — ArrayStack, ArrayListStack, LinkedListS
                                         NextGreaterElement, NextGreaterElementII, ReversePolishNotation]
 src/queue/                 [9 files  — ArrayQueue, ArrayListQueue, LinkedListQueue, MyCircularQueue (×3 impl),
                                         MyQueueUsingStacks, MyStackUsingQueue, MovingAverage]
-src/sortalgorithms/        [11 files — BubbleSort, BubbleSortRec, InsertionSort, InsertionSortRec,
+src/sortalgorithms/        [13 files — BubbleSort, BubbleSortRec, InsertionSort, InsertionSortRec,
                                         MergeSort, MergeSortRec, SelectionSort, SelectionSortRec,
-                                        PatternsViaRecursion, SortColors, TwoColorSort]
+                                        PatternsViaRecursion, ReversePairs, SortColors, TwoColorSort]
 src/twopointer/            [11 files — TwoSum, TwoSumII, ThreeSum, ContainerWithMostWater, HappyNumber,
                                         FindTheDuplicateNumber, StrobogrammaticNumber, AppendCharacters,
                                         MiddleOfLinkedList, LengthOfLoop, RotateString]
@@ -196,7 +196,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 ---
 
 ## Current Repository Snapshot
-- Verified on 2026-07-17: 330 Java files found under src
+- Verified on 2026-07-18: 331 Java files found under src
 - Main topic folders include arrays, arrays101, binarysearch, dp, graph, heap, linkedlist, sortalgorithms, strings, tree, and twopointer
 - Recent verified solutions: [src/sortalgorithms/CountSmallerAfterSelf.java](src/sortalgorithms/CountSmallerAfterSelf.java) and [src/arrays/advanced/CountInversions.java](src/arrays/advanced/CountInversions.java)
 - Build check: javac/java completed successfully for the CountSmallerAfterSelf and CountInversions programs
@@ -1057,7 +1057,7 @@ src/
 ├── recursion/           # Recursion fundamentals + backtracking (29 files)
 ├── set/                 # SingleNumber + LC 705 Design HashSet (2 files)
 ├── slidingwindow/       # Sliding window problems (9 files)
-├── sortalgorithms/      # Sorting implementations + recursive variants (11 files)
+├── sortalgorithms/      # Sorting implementations + recursive variants (13 files)
 ├── stack/               # Stack problems + implementations (11 files)
 ├── strings/             # String problems (24 files, 3 active subcategories)
 ├── tree/                # Tree problems (18 files, 3 subcategories)
@@ -1065,7 +1065,7 @@ src/
 └── _sandbox/            # Main.java, Solution.java — scratch space (2 files)
 ```
 
-**Total: 328 Java files** (verified July 17, 2026)
+**Total: 331 Java files** (verified July 18, 2026)
 
 ---
 
