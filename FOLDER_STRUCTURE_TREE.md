@@ -128,8 +128,8 @@ D:\leetcodepractice\
 │    │    └─ designhashmap/
 │    │       └─ MyHashMap
 │    │
-│    ├─── 📁 math/                      [4 files]
-│    │    └─ GCDOfOddEvenSums, RotatedDigits, SumOfGCDOfFormedPairs, UglyNumber
+│    ├─── 📁 math/                      [5 files]
+│    │    └─ GCDOfOddEvenSums, RotatedDigits, SortedPairGCDQueries, SumOfGCDOfFormedPairs, UglyNumber
 │    │
 │    ├─── 📁 patterns/                  [2 files]
 │    │    └─ FloydTriangle, FloydTriangleMathematically

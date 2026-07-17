@@ -146,6 +146,13 @@ Binary tree traversals and operations.
 ### 9. **Heap** (13 files)
 Priority queue and heap-based problems.
 
+### 10. **Math** (5 files)
+Mathematical and number-theory problems.
+
+**Files**: GCDOfOddEvenSums, RotatedDigits, SortedPairGCDQueries, SumOfGCDOfFormedPairs, UglyNumber
+
+**Key Concepts**: GCD, divisibility, number theory, prefix-based counting
+
 **Files**: KthFactorOfN, KthLargestElement, KWeakestRows, LastStoneWeight, Main, MaxHeap, MedianFromDataStream, MedianFromDataStreamOptimal, MergeKSortedLists, MinHeap, TopKFrequentElements, Twitter, UglyNumberII
 
 **Key Concepts**: Min/Max heap, heap operations, priority queue, heap sort
