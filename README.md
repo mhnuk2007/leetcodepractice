@@ -437,7 +437,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 ### 1. Arrays & Two Pointers — 54/54
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | 53 | Maximum Subarray (Kadane's Algorithm) | Medium | ✅ | Kadane's | A, G, M, Ap, B, Meta |
 | 50 | Pow(x, n) | Medium | ✅ | Recursion / Binary Exponentiation | A, G, M, Meta |
 | 18 | 4Sum | Medium | ✅ | Two Pointers | A, G, M, B |
@@ -498,7 +498,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 ### 2. Sliding Window — 8/19
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | 3 | Longest Substring Without Repeating Characters | Medium | ✅ | Sliding Window | A, G, M, Ap, Meta, B, Ad |
 | 76 | Minimum Window Substring | Hard | ✅ | Sliding Window | A, G, Meta, B, Ly |
 | 187 | Repeated DNA Sequences | Medium | ✅ | Sliding Window + Hashing / Bit Encoding | G, Meta |
@@ -526,7 +526,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 > Additional practice files in repo (non-LeetCode): `Anagram`, `Palindrome`, `PalindromeI`, `SplitString`, `SmallestAndLargestSub`, `JavaStringTokens`
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | — | Remove All Occurrences of String | — | ⬜ | — | — |
 | — | String Compression | — | ⬜ | — | — |
 | — | KMP Algorithm | — | ⬜ | — | — |
@@ -561,7 +561,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 ### 4. HashMap / HashSet — 11/23
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | 49 | Group Anagrams | Medium | ⬜ | Hashing | A, G, M, Meta, B, Ub |
 | 128 | Longest Consecutive Sequence | Medium | ⬜ | Hashing | A, G, Meta, B |
 | 205 | Isomorphic Strings | Easy | ✅ | Hashing | A, G |
@@ -591,7 +591,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 ### 5. Binary Search — 13/31
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | — | Peak Index in Mountain Array | — | ⬜ | — | — |
 | — | Single Element in Sorted Array | — | ⬜ | — | — |
 | — | Book Allocation (Min Pages) | — | ⬜ | BS on Answer | — |
@@ -631,7 +631,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 > Additional files in repo: `MyLinkedList`, `SinglyLinkedList`, `SplitCircularLinkedList`, `ListNode`
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | — | Remove Cycle in LL | — | ⬜ | — | — |
 | — | Flatten LL | — | ⬜ | — | — |
 | — | Reverse Nodes in K Groups | — | ⬜ | — | — |
@@ -666,7 +666,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 > Additional implementations in repo: `ArrayStack`, `ArrayListStack`, `LinkedListStack`, `ArrayQueue`, `ArrayListQueue`, `LinkedListQueue`, `MovingAverage`
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | — | 1st Non-Repeating in Stream | — | ⬜ | — | — |
 | — | Reverse 1st K Elements of Queue | — | ⬜ | — | — |
 | — | Time Needed to Buy Tickets | — | ⬜ | — | — |
@@ -706,7 +706,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 > **30-Day focus:** Day 4 → 215, 1046 &nbsp;·&nbsp; Day 5 → 347, 703, 295
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | — | Heap Sort | — | ⬜ | — | — |
 | — | Smallest Range in K Sorted Lists | — | ⬜ | — | — |
 | 23 | Merge K Sorted Lists | Hard | ✅ | Heap | A, G, M, Meta, B, Ly |
@@ -737,7 +737,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 > Additional tree files in repo: `MyBinaryTree` (custom implementation)
 
 | # | Problem | Difficulty | Status | Pattern | Companies | Roadmap |
-|---|---|---|---|:---:|---|---|---|
+|---|---|---|---|:---:|---|---|
 | — | Minimum Distance Between Nodes | — | ⬜ | — | — | — |
 | — | Are 2 Trees Identical | — | ⬜ | — | — | — |
 | — | Check if BT Mirror of Itself | — | ⬜ | — | — | — |
@@ -794,7 +794,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 ### 10. Backtracking — 15/23
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | — | Knight's Tour | — | ⬜ | — | — |
 | — | M Coloring | — | ⬜ | — | — |
 | — | Rat in a Maze | — | ⬜ | — | — |
@@ -850,7 +850,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 #### LeetCode problems
 
 | # | Problem | Difficulty | Status | Pattern | Companies | Roadmap |
-|---|---|---|---|:---:|---|---|---|
+|---|---|---|---|:---:|---|---|
 | 133 | Clone Graph | Medium | ✅ | DFS / BFS | A, G, M, Meta, B | — |
 | 200 | Number of Islands | Medium | ✅ | DFS / BFS | A, G, M, Meta, B, Ub | Day 6 |
 | 207 | Course Schedule | Medium | ✅ | Topological Sort (BFS + DFS) | A, G, M, Meta, B | Day 8 |
@@ -919,7 +919,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 #### Problem list
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | — | 0-1 Knapsack | — | ✅ | 0/1 Knapsack | — |
 | — | Unbounded Knapsack | — | ✅ | Unbounded Knapsack | — |
 | — | Longest Common Substring | — | ✅ | String DP | — |
@@ -976,7 +976,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 13. Greedy — 2/13
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | — | Indian Coins | — | ⬜ | — | — |
 | — | Fractional Knapsack | — | ⬜ | — | — |
 | — | Maximum Length of Pair Chain | — | ⬜ | — | — |
@@ -996,7 +996,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 14. Trie — 2/5
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | — | Implement a Phone Directory | — | ⬜ | Trie | — |
 | — | Longest String with All Prefixes | — | ⬜ | Trie | — |
 | 208 | Implement Trie (Prefix Tree) | Medium | ✅ | Trie | A, G, M, Meta, B |
@@ -1008,7 +1008,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 15. System Design / LLD — 0/3
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | 146 | LRU Cache | Medium | ⬜ | Doubly LL + HashMap | A, G, M, Meta, B, Ub |
 | 460 | LFU Cache | Hard | ⬜ | HashMap + TreeMap | A, G, Meta |
 | 588 | Design In-Memory File System | Hard | ⬜ | Trie + HashMap | A, G, Dropbox |
@@ -1018,7 +1018,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 16. Bit Manipulation — 4/12
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | 67 | Add Binary | Easy | ✅ | Bit Manipulation | A, G, Ap |
 | 136 | Single Number | Easy | ✅ | XOR | A, G, M, B |
 | 190 | Reverse Bits | Easy | ⬜ | Bit Manipulation | A, Ap, B |
@@ -1037,7 +1037,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 17. Daily Challenges — 5/6
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | 1318 | Minimum Flips to Make a OR b Equal to c | Medium | ✅ | Bit Manipulation | A, G |
 | 1536 | Minimum Swaps to Arrange a Binary Grid | Medium | ✅ | Greedy / Simulation | A |
 | 1545 | Find Kth Bit in Nth Binary String | Medium | ✅ | Recursion | A, G |
@@ -1050,7 +1050,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 18. Math — 8/8
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | 263 | Ugly Number | Easy | ✅ | Math | A, G |
 | 788 | Rotated Digits | Medium | ✅ | Math | G |
 | 3658 | GCD of Odd and Even Sums | Easy | ✅ | Math | — |
@@ -1062,7 +1062,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 19. Interval — 1/1
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|
 | 1288 | Remove Covered Intervals | Medium | ✅ | Greedy / Sorting | A, G |
 
 ---
