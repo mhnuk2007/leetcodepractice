@@ -34,6 +34,7 @@
   - [System Design / LLD](#15-system-design--lld--03)
   - [Bit Manipulation](#16-bit-manipulation--412)
   - [Daily Challenges](#17-daily-challenges--56)
+  - [Math](#18-math--44)
 - [Multi-Pattern Index](#multi-pattern-index)
 - [Project Structure](#project-structure)
 - [Problem-Solving Philosophy](#problem-solving-philosophy)
@@ -44,7 +45,7 @@
 
 ## Quick Start
 
-Welcome! This repository contains **225 tracked LeetCode solutions and 331 Java DSA files organized by algorithm patterns**.
+Welcome! This repository contains **238 tracked LeetCode solutions and 331 Java DSA files organized by algorithm patterns**.
 
 ### 📂 How to Navigate
 - **Just starting?** Check `src/arrays101/` for beginner problems
@@ -56,7 +57,7 @@ For **complete file location guide**, see [QUICK_REFERENCE.md](QUICK_REFERENCE.m
 
 ### 📊 Repository Snapshot (July 2026)
 - **331 Java files** across the main algorithm folders and supporting utilities
-- **225 tracked LeetCode problems** with structured solutions by pattern
+- **238 tracked LeetCode problems** with structured solutions by pattern
 - **23 top-level source folders** under src for topic-based organization
 - **Recent additions:** CountInversions in the arrays advanced package, CountSmallerAfterSelf and ReversePairs in the sort algorithms package, SortedPairGCDQueries in the math package, plus updated daily challenge and graph practice solutions
 - **Verified recently:** the CountSmallerAfterSelf, ReversePairs, and CountInversions solutions compiled and ran successfully with the expected outputs
@@ -216,24 +217,25 @@ A set of practical guides has been created to help you navigate the reorganized 
 
 | # | Category | Done | Total | Progress |
 |---|---|:---:|:---:|---|
-| 1 | Arrays & Two Pointers | 49 | 49 | `██████████` 100% |
+| 1 | Arrays & Two Pointers | 53 | 53 | `██████████` 100% |
 | 2 | Sliding Window | 9 | 19 | `█████░░░░░` 47% |
 | 3 | Strings | 17 | 28 | `██████░░░░` 61% |
 | 4 | HashMap / HashSet | 11 | 23 | `█████░░░░░` 48% |
-| 5 | Binary Search | 12 | 30 | `████░░░░░░` 40% |
+| 5 | Binary Search | 13 | 31 | `████░░░░░░` 42% |
 | 6 | Linked List | 13 | 26 | `█████░░░░░` 50% |
 | 7 | Stack & Queue | 12 | 31 | `████░░░░░░` 39% |
 | 8 | Heap / Priority Queue | 9 | 21 | `████░░░░░░` 43% |
 | 9 | Trees | 19 | 50 | `██████░░░░` 38% |
-| 10 | Backtracking | 14 | 22 | `██████░░░░` 64% |
-| 11 | Graphs | 28 | 42 | `████████░░` 67% |
-| 12 | Dynamic Programming | 19 | 48 | `████░░░░░░` 40% |
+| 10 | Backtracking | 15 | 23 | `███████░░░` 65% |
+| 11 | Graphs | 29 | 43 | `███████░░░` 67% |
+| 12 | Dynamic Programming | 21 | 50 | `████░░░░░░` 42% |
 | 13 | Greedy | 2 | 13 | `██░░░░░░░░` 15% |
 | 14 | Trie | 2 | 5 | `████░░░░░░` 40% |
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| | **Total** | **225** | **428** | `█████░░░░░` **53%** |
+| 18 | Math | 4 | 4 | `██████████` 100% |
+| | **Total** | **238** | **441** | `█████░░░░░` **54%** |
 
 > Last updated: July 18, 2026. File count is 331 (verified from directory tree). Progress tracker reflects the current repository inventory and the latest array, DP, graph, and sliding-window practice additions.
 
@@ -430,7 +432,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 
 ---
 
-### 1. Arrays & Two Pointers — 49/49
+### 1. Arrays & Two Pointers — 53/53
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
 |---|---|---|:---:|---|---|
@@ -466,6 +468,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 | 246 | Strobogrammatic Number | Easy | ✅ | Two Pointers | G, Meta |
 | 283 | Move Zeroes | Easy | ✅ | Two Pointers | A, G, M, B, Ad |
 | 287 | Find the Duplicate Number | Medium | ✅ | Floyd's Cycle | A, G, B |
+| 315 | Count of Smaller Numbers After Self | Hard | ✅ | Merge Sort / Divide and Conquer | G, Meta |
 | 414 | Third Maximum Number | Easy | ✅ | Tracking | A |
 | 448 | Find All Numbers Disappeared in an Array | Easy | ✅ | Array Traversal | A, G |
 | 457 | Circular Array Loop | Medium | ✅ | Fast & Slow Pointers | A |
@@ -473,6 +476,8 @@ A set of practical guides has been created to help you navigate the reorganized 
 | 561 | Array Partition | Easy | ✅ | Sorting | A |
 | 724 | Find Pivot Index | Easy | ✅ | Prefix Sum | A, G |
 | 747 | Largest Number At Least Twice of Others | Easy | ✅ | Array Traversal | A |
+| 941 | Valid Mountain Array | Easy | ✅ | Array Traversal | A |
+| 977 | Squares of a Sorted Array | Easy | ✅ | Two Pointers | A, G |
 | 1051 | Height Checker | Easy | ✅ | Sorting | A |
 | 1089 | Duplicate Zeros | Easy | ✅ | Two Pointers | A, G |
 | 1295 | Find Numbers with Even Number of Digits | Easy | ✅ | Array Traversal | A |
@@ -483,6 +488,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 | 1672 | Richest Customer Wealth | Easy | ✅ | Matrix Traversal | A |
 | 2176 | Count Equal and Divisible Pairs in an Array | Easy | ✅ | Array Traversal | A |
 | 2486 | Append Characters to String to Make Subsequence | Medium | ✅ | Two Pointers | G |
+| 2824 | Count Pairs Whose Sum is Less Than Target | Easy | ✅ | Two Pointers / Sorting | — |
 
 ---
 
@@ -579,7 +585,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 
 ---
 
-### 5. Binary Search — 12/30
+### 5. Binary Search — 13/31
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
 |---|---|---|:---:|---|---|
@@ -613,6 +619,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 | 2226 | Maximum Candies Allocated to K Children | Medium | ⬜ | BS on Answer | A |
 | 2300 | Successful Pairs of Spells and Potions | Medium | ⬜ | Binary Search | A, G |
 | 3296 | Minimum Number of Seconds to Make Mountain Height Zero | Medium | ⬜ | BS on Answer | G |
+| 240 | Search a 2D Matrix II | Medium | ✅ | Binary Search / Matrix | A, G, Meta |
 
 ---
 
@@ -781,7 +788,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 
 ---
 
-### 10. Backtracking — 14/22
+### 10. Backtracking — 15/23
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
 |---|---|---|:---:|---|---|
@@ -807,10 +814,11 @@ A set of practical guides has been created to help you navigate the reorganized 
 | 212 | Word Search II | Hard | ✅ | Backtracking + Trie | A, G, Meta, B |
 | 216 | Combination Sum III | Medium | ⬜ | Backtracking | A, G |
 | 491 | Non-decreasing Subsequences | Medium | ⬜ | Backtracking | A, G |
+| 779 | K-th Symbol in Grammar | Medium | ✅ | Recursion | A, G |
 
 ---
 
-### 11. Graphs — 28/42
+### 11. Graphs — 29/43
 
 > **30-Day focus:** Day 6 → 200, 695 &nbsp;·&nbsp; Day 7 → 994, 1091 &nbsp;·&nbsp; Day 8 → 207, 210
 
@@ -864,10 +872,11 @@ A set of practical guides has been created to help you navigate the reorganized 
 | 994 | Rotting Oranges | Medium | ✅ | BFS (multi-source) | A, G, M, Meta | Day 7 |
 | 1091 | Shortest Path in Binary Matrix | Medium | ⬜ | BFS | A, G, Meta, B | Day 7 |
 | 1584 | Min Cost to Connect All Points | Medium | ✅ | MST (Prim's) | A, G, Meta | — |
+| 1559 | Detect Cycles in 2D Grid | Medium | ✅ | DFS / Union Find | G | — |
 
 ---
 
-### 12. Dynamic Programming — 19/48
+### 12. Dynamic Programming — 21/50
 
 > 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottomUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`, `CoinChange`, `CoinChangeII`, `DeleteAndEarn`, `MaximumPathScore`, `MaxScoreMulOps`, `LongestCommonSubsequence`, `LongestCommonSubstring`, `UniqueBST`, `UniqueBSTII`
 >
@@ -939,6 +948,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 | 337 | House Robber III | Medium | ⬜ | DP on Trees | A, G |
 | 416 | Partition Equal Subset Sum | Medium | ✅ | 0/1 Knapsack | A, G |
 | 494 | Target Sum | Medium | ✅ | 0/1 Knapsack | A, G |
+| 509 | Fibonacci Number | Easy | ✅ | 1D Linear DP | A, G |
 | 518 | Coin Change II | Medium | ✅ | Unbounded Knapsack | A, G |
 | 673 | Number of Longest Increasing Subsequence | Medium | ⬜ | LIS | A, G |
 | 714 | Best Time to Buy and Sell Stock with Transaction Fee | Medium | ⬜ | Stock State Machine | A, G |
@@ -952,6 +962,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 | 1770 | Maximum Score from Performing Multiplication Operations | Medium | ✅ | 2D DP | G, Meta |
 | 3129 | Find All Possible Stable Binary Arrays I | Hard | ✅ | DP + Prefix Sum | G |
 | 3130 | Find All Possible Stable Binary Arrays II | Hard | ✅ | DP + Prefix Sum | G |
+| 3742 | Maximum Path Score in a Grid | Medium | ✅ | Grid DP | — |
 
 ---
 
