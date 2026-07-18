@@ -17,24 +17,25 @@
 - [30-Day Interview Roadmap](#30-day-interview-roadmap)
 - [Daily Log](#daily-log)
 - [Problem Sets](#problem-sets)
-  - [Arrays & Two Pointers](#1-arrays--two-pointers--4949)
-  - [Sliding Window](#2-sliding-window--919)
+  - [Arrays & Two Pointers](#1-arrays--two-pointers--5454)
+  - [Sliding Window](#2-sliding-window--819)
   - [Strings](#3-strings--1728)
   - [HashMap / HashSet](#4-hashmap--hashset--1123)
   - [Binary Search](#5-binary-search--1230)
   - [Linked List](#6-linked-list--1326)
   - [Stack & Queue](#7-stack--queue--1231)
-  - [Heap / Priority Queue](#8-heap--priority-queue--921)
+  - [Heap / Priority Queue](#8-heap--priority-queue--1021)
   - [Trees](#9-trees--1950)
   - [Backtracking](#10-backtracking--1422)
-  - [Graphs](#11-graphs--2842)
-  - [Dynamic Programming](#12-dynamic-programming--1948)
+  - [Graphs](#11-graphs--3343)
+  - [Dynamic Programming](#12-dynamic-programming--2148)
   - [Greedy](#13-greedy--213)
   - [Trie](#14-trie--25)
   - [System Design / LLD](#15-system-design--lld--03)
   - [Bit Manipulation](#16-bit-manipulation--412)
   - [Daily Challenges](#17-daily-challenges--56)
-  - [Math](#18-math--44)
+  - [Math](#18-math--88)
+  - [Interval](#19-interval--11)
 - [Multi-Pattern Index](#multi-pattern-index)
 - [Project Structure](#project-structure)
 - [Problem-Solving Philosophy](#problem-solving-philosophy)
@@ -45,7 +46,7 @@
 
 ## Quick Start
 
-Welcome! This repository contains **238 tracked LeetCode solutions and 331 Java DSA files organized by algorithm patterns**.
+Welcome! This repository contains **247 tracked LeetCode solutions and 331 Java DSA files organized by algorithm patterns**.
 
 ### 📂 How to Navigate
 - **Just starting?** Check `src/arrays101/` for beginner problems
@@ -57,7 +58,7 @@ For **complete file location guide**, see [QUICK_REFERENCE.md](QUICK_REFERENCE.m
 
 ### 📊 Repository Snapshot (July 2026)
 - **331 Java files** across the main algorithm folders and supporting utilities
-- **238 tracked LeetCode problems** with structured solutions by pattern
+- **247 tracked LeetCode problems** with structured solutions by pattern
 - **23 top-level source folders** under src for topic-based organization
 - **Recent additions:** CountInversions in the arrays advanced package, CountSmallerAfterSelf and ReversePairs in the sort algorithms package, SortedPairGCDQueries in the math package, plus updated daily challenge and graph practice solutions
 - **Verified recently:** the CountSmallerAfterSelf, ReversePairs, and CountInversions solutions compiled and ran successfully with the expected outputs
@@ -217,25 +218,26 @@ A set of practical guides has been created to help you navigate the reorganized 
 
 | # | Category | Done | Total | Progress |
 |---|---|:---:|:---:|---|
-| 1 | Arrays & Two Pointers | 53 | 53 | `██████████` 100% |
-| 2 | Sliding Window | 9 | 19 | `█████░░░░░` 47% |
+| 1 | Arrays & Two Pointers | 54 | 54 | `██████████` 100% |
+| 2 | Sliding Window | 8 | 19 | `████░░░░░░` 42% |
 | 3 | Strings | 17 | 28 | `██████░░░░` 61% |
 | 4 | HashMap / HashSet | 11 | 23 | `█████░░░░░` 48% |
 | 5 | Binary Search | 13 | 31 | `████░░░░░░` 42% |
 | 6 | Linked List | 13 | 26 | `█████░░░░░` 50% |
 | 7 | Stack & Queue | 12 | 31 | `████░░░░░░` 39% |
-| 8 | Heap / Priority Queue | 9 | 21 | `████░░░░░░` 43% |
+| 8 | Heap / Priority Queue | 10 | 21 | `████░░░░░░` 48% |
 | 9 | Trees | 19 | 50 | `██████░░░░` 38% |
 | 10 | Backtracking | 15 | 23 | `███████░░░` 65% |
-| 11 | Graphs | 29 | 43 | `███████░░░` 67% |
-| 12 | Dynamic Programming | 21 | 50 | `████░░░░░░` 42% |
+| 11 | Graphs | 33 | 43 | `███████░░░` 77% |
+| 12 | Dynamic Programming | 21 | 48 | `████░░░░░░` 44% |
 | 13 | Greedy | 2 | 13 | `██░░░░░░░░` 15% |
 | 14 | Trie | 2 | 5 | `████░░░░░░` 40% |
 | 15 | System Design / LLD | 0 | 3 | `░░░░░░░░░░` 0% |
 | 16 | Bit Manipulation | 4 | 12 | `███░░░░░░░` 33% |
 | 17 | Daily Challenges | 5 | 6 | `████████░░` 83% |
-| 18 | Math | 4 | 4 | `██████████` 100% |
-| | **Total** | **238** | **441** | `█████░░░░░` **54%** |
+| 18 | Math | 8 | 8 | `██████████` 100% |
+| 19 | Interval | 1 | 1 | `██████████` 100% |
+| | **Total** | **247** | **450** | `█████░░░░░` **55%** |
 
 > Last updated: July 18, 2026. File count is 331 (verified from directory tree). Progress tracker reflects the current repository inventory and the latest array, DP, graph, and sliding-window practice additions.
 
@@ -432,11 +434,11 @@ A set of practical guides has been created to help you navigate the reorganized 
 
 ---
 
-### 1. Arrays & Two Pointers — 53/53
+### 1. Arrays & Two Pointers — 54/54
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
-| 53 | Kadane's Algorithm (Maximum Subarray) | Medium | ✅ | Kadane's | A, G, M, Ap, B, Meta |
+|---|---|---|---|:---:|---|---|
+| 53 | Maximum Subarray (Kadane's Algorithm) | Medium | ✅ | Kadane's | A, G, M, Ap, B, Meta |
 | 50 | Pow(x, n) | Medium | ✅ | Recursion / Binary Exponentiation | A, G, M, Meta |
 | 18 | 4Sum | Medium | ✅ | Two Pointers | A, G, M, B |
 | 74 | Search a 2D Matrix | Medium | ✅ | Binary Search | A, G, Meta |
@@ -469,6 +471,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 | 283 | Move Zeroes | Easy | ✅ | Two Pointers | A, G, M, B, Ad |
 | 287 | Find the Duplicate Number | Medium | ✅ | Floyd's Cycle | A, G, B |
 | 315 | Count of Smaller Numbers After Self | Hard | ✅ | Merge Sort / Divide and Conquer | G, Meta |
+| 396 | Rotate Function | Medium | ✅ | Array Manipulation | A, G |
 | 414 | Third Maximum Number | Easy | ✅ | Tracking | A |
 | 448 | Find All Numbers Disappeared in an Array | Easy | ✅ | Array Traversal | A, G |
 | 457 | Circular Array Loop | Medium | ✅ | Fast & Slow Pointers | A |
@@ -492,15 +495,15 @@ A set of practical guides has been created to help you navigate the reorganized 
 
 ---
 
-### 2. Sliding Window — 9/19
+### 2. Sliding Window — 8/19
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | 3 | Longest Substring Without Repeating Characters | Medium | ✅ | Sliding Window | A, G, M, Ap, Meta, B, Ad |
 | 76 | Minimum Window Substring | Hard | ✅ | Sliding Window | A, G, Meta, B, Ly |
 | 187 | Repeated DNA Sequences | Medium | ✅ | Sliding Window + Hashing / Bit Encoding | G, Meta |
 | 209 | Minimum Size Subarray Sum | Medium | ✅ | Sliding Window | A, G, M |
-| 239 | Sliding Window Maximum | Hard | ✅ | Monotonic Deque | A, G, Meta, B |
+| 239 | Sliding Window Maximum | Hard | ⬜ | Monotonic Deque | A, G, Meta, B |
 | 424 | Longest Repeating Character Replacement | Medium | ⬜ | Sliding Window | G, Meta, B |
 | 438 | Find All Anagrams in a String | Medium | ⬜ | Sliding Window | A, G, Meta, B |
 | 567 | Permutation in String | Medium | ⬜ | Sliding Window | A, G, M, B |
@@ -523,7 +526,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 > Additional practice files in repo (non-LeetCode): `Anagram`, `Palindrome`, `PalindromeI`, `SplitString`, `SmallestAndLargestSub`, `JavaStringTokens`
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | — | Remove All Occurrences of String | — | ⬜ | — | — |
 | — | String Compression | — | ⬜ | — | — |
 | — | KMP Algorithm | — | ⬜ | — | — |
@@ -558,7 +561,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 ### 4. HashMap / HashSet — 11/23
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | 49 | Group Anagrams | Medium | ⬜ | Hashing | A, G, M, Meta, B, Ub |
 | 128 | Longest Consecutive Sequence | Medium | ⬜ | Hashing | A, G, Meta, B |
 | 205 | Isomorphic Strings | Easy | ✅ | Hashing | A, G |
@@ -588,7 +591,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 ### 5. Binary Search — 13/31
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | — | Peak Index in Mountain Array | — | ⬜ | — | — |
 | — | Single Element in Sorted Array | — | ⬜ | — | — |
 | — | Book Allocation (Min Pages) | — | ⬜ | BS on Answer | — |
@@ -628,7 +631,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 > Additional files in repo: `MyLinkedList`, `SinglyLinkedList`, `SplitCircularLinkedList`, `ListNode`
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | — | Remove Cycle in LL | — | ⬜ | — | — |
 | — | Flatten LL | — | ⬜ | — | — |
 | — | Reverse Nodes in K Groups | — | ⬜ | — | — |
@@ -663,7 +666,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 > Additional implementations in repo: `ArrayStack`, `ArrayListStack`, `LinkedListStack`, `ArrayQueue`, `ArrayListQueue`, `LinkedListQueue`, `MovingAverage`
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | — | 1st Non-Repeating in Stream | — | ⬜ | — | — |
 | — | Reverse 1st K Elements of Queue | — | ⬜ | — | — |
 | — | Time Needed to Buy Tickets | — | ⬜ | — | — |
@@ -698,12 +701,12 @@ A set of practical guides has been created to help you navigate the reorganized 
 
 ---
 
-### 8. Heap / Priority Queue — 9/21
+### 8. Heap / Priority Queue — 10/21
 
 > **30-Day focus:** Day 4 → 215, 1046 &nbsp;·&nbsp; Day 5 → 347, 703, 295
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | — | Heap Sort | — | ⬜ | — | — |
 | — | Smallest Range in K Sorted Lists | — | ⬜ | — | — |
 | 23 | Merge K Sorted Lists | Hard | ✅ | Heap | A, G, M, Meta, B, Ly |
@@ -720,7 +723,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 | 630 | Course Schedule III | Hard | ⬜ | Heap + Greedy | G, B |
 | 632 | Smallest Range Covering Elements from K Lists | Hard | ⬜ | Heap | G |
 | 703 | Kth Largest Element in a Stream | Easy | ⬜ | Heap | A, G, Ly |
-| 743 | Network Delay Time | Medium | ⬜ | Heap + Dijkstra's | A, G, Meta |
+| 743 | Network Delay Time | Medium | ✅ | Heap + Dijkstra's | A, G, Meta |
 | 778 | Swim in Rising Water | Hard | ⬜ | Heap | G |
 | 1046 | Last Stone Weight | Easy | ✅ | Heap | A, G |
 | 1337 | The K Weakest Rows in a Matrix | Easy | ✅ | Heap | A, G |
@@ -734,7 +737,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 > Additional tree files in repo: `MyBinaryTree` (custom implementation)
 
 | # | Problem | Difficulty | Status | Pattern | Companies | Roadmap |
-|---|---|---|:---:|---|---|---|
+|---|---|---|---|:---:|---|---|---|
 | — | Minimum Distance Between Nodes | — | ⬜ | — | — | — |
 | — | Are 2 Trees Identical | — | ⬜ | — | — | — |
 | — | Check if BT Mirror of Itself | — | ⬜ | — | — | — |
@@ -791,7 +794,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 ### 10. Backtracking — 15/23
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | — | Knight's Tour | — | ⬜ | — | — |
 | — | M Coloring | — | ⬜ | — | — |
 | — | Rat in a Maze | — | ⬜ | — | — |
@@ -818,7 +821,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 
 ---
 
-### 11. Graphs — 29/43
+### 11. Graphs — 33/43
 
 > **30-Day focus:** Day 6 → 200, 695 &nbsp;·&nbsp; Day 7 → 994, 1091 &nbsp;·&nbsp; Day 8 → 207, 210
 
@@ -847,7 +850,7 @@ A set of practical guides has been created to help you navigate the reorganized 
 #### LeetCode problems
 
 | # | Problem | Difficulty | Status | Pattern | Companies | Roadmap |
-|---|---|---|:---:|---|---|---|
+|---|---|---|---|:---:|---|---|---|
 | 133 | Clone Graph | Medium | ✅ | DFS / BFS | A, G, M, Meta, B | — |
 | 200 | Number of Islands | Medium | ✅ | DFS / BFS | A, G, M, Meta, B, Ub | Day 6 |
 | 207 | Course Schedule | Medium | ✅ | Topological Sort (BFS + DFS) | A, G, M, Meta, B | Day 8 |
@@ -871,12 +874,16 @@ A set of practical guides has been created to help you navigate the reorganized 
 | 827 | Making A Large Island | Hard | ⬜ | DFS | A, G | — |
 | 994 | Rotting Oranges | Medium | ✅ | BFS (multi-source) | A, G, M, Meta | Day 7 |
 | 1091 | Shortest Path in Binary Matrix | Medium | ⬜ | BFS | A, G, Meta, B | Day 7 |
-| 1584 | Min Cost to Connect All Points | Medium | ✅ | MST (Prim's) | A, G, Meta | — |
+| 1192 | Critical Connections in a Network | Hard | ✅ | Tarjan's Algorithm | A, G, Meta | — |
 | 1559 | Detect Cycles in 2D Grid | Medium | ✅ | DFS / Union Find | G | — |
+| 1584 | Min Cost to Connect All Points | Medium | ✅ | MST (Prim's) | A, G, Meta | — |
+| 1857 | Largest Color Value in a Directed Graph | Hard | ✅ | Topological Sort + DP | G, Meta | — |
+| 3532 | Path Existence Queries in a Graph I | Medium | ✅ | Union Find | G | — |
+| 3534 | Path Existence Queries in a Graph II | Hard | ✅ | Union Find | G | — |
 
 ---
 
-### 12. Dynamic Programming — 21/50
+### 12. Dynamic Programming — 21/48
 
 > 📁 Additional DP practice files and custom implementations in repo: `Fibonacci`, `FibDP`, `FibDP2`, `BottomUpSum`, `TopDownSum`, `ClimbingStairsDpArray`, `ClimbingStairsDpMap`, `HouseRobberArray`, `HouseRobberMap`, `Knapsack01`, `MinCostClimbingStairs`, `MultiStageGraph`, `PartitionEqualSubSetSum`, `TargetSum`, `UnboundedKnapsack`, `Tribonacci`, `TribonacciBottomUp`, `TribonacciTopDown`, `CoinChange`, `CoinChangeII`, `DeleteAndEarn`, `MaximumPathScore`, `MaxScoreMulOps`, `LongestCommonSubsequence`, `LongestCommonSubstring`, `UniqueBST`, `UniqueBSTII`
 >
@@ -912,7 +919,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 #### Problem list
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | — | 0-1 Knapsack | — | ✅ | 0/1 Knapsack | — |
 | — | Unbounded Knapsack | — | ✅ | Unbounded Knapsack | — |
 | — | Longest Common Substring | — | ✅ | String DP | — |
@@ -969,7 +976,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 13. Greedy — 2/13
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | — | Indian Coins | — | ⬜ | — | — |
 | — | Fractional Knapsack | — | ⬜ | — | — |
 | — | Maximum Length of Pair Chain | — | ⬜ | — | — |
@@ -989,7 +996,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 14. Trie — 2/5
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | — | Implement a Phone Directory | — | ⬜ | Trie | — |
 | — | Longest String with All Prefixes | — | ⬜ | Trie | — |
 | 208 | Implement Trie (Prefix Tree) | Medium | ✅ | Trie | A, G, M, Meta, B |
@@ -1001,7 +1008,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 15. System Design / LLD — 0/3
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | 146 | LRU Cache | Medium | ⬜ | Doubly LL + HashMap | A, G, M, Meta, B, Ub |
 | 460 | LFU Cache | Hard | ⬜ | HashMap + TreeMap | A, G, Meta |
 | 588 | Design In-Memory File System | Hard | ⬜ | Trie + HashMap | A, G, Dropbox |
@@ -1011,7 +1018,7 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 16. Bit Manipulation — 4/12
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | 67 | Add Binary | Easy | ✅ | Bit Manipulation | A, G, Ap |
 | 136 | Single Number | Easy | ✅ | XOR | A, G, M, B |
 | 190 | Reverse Bits | Easy | ⬜ | Bit Manipulation | A, Ap, B |
@@ -1030,13 +1037,33 @@ If you cannot write all four lines before touching the code, stop — you are no
 ### 17. Daily Challenges — 5/6
 
 | # | Problem | Difficulty | Status | Pattern | Companies |
-|---|---|---|:---:|---|---|
+|---|---|---|---|:---:|---|---|
 | 1318 | Minimum Flips to Make a OR b Equal to c | Medium | ✅ | Bit Manipulation | A, G |
 | 1536 | Minimum Swaps to Arrange a Binary Grid | Medium | ✅ | Greedy / Simulation | A |
 | 1545 | Find Kth Bit in Nth Binary String | Medium | ✅ | Recursion | A, G |
 | 1784 | Check if Binary String Has at Most One Segment of Ones | Easy | ✅ | String | A |
 | 1980 | Find Unique Binary String | Medium | ✅ | Backtracking | A, G |
 | 2193 | Minimum Number of Moves to Make Palindrome | Hard | ⬜ | Greedy | G, Meta |
+
+---
+
+### 18. Math — 8/8
+
+| # | Problem | Difficulty | Status | Pattern | Companies |
+|---|---|---|---|:---:|---|---|
+| 263 | Ugly Number | Easy | ✅ | Math | A, G |
+| 788 | Rotated Digits | Medium | ✅ | Math | G |
+| 3658 | GCD of Odd and Even Sums | Easy | ✅ | Math | — |
+| 3867 | Sum of GCD of Formed Pairs | Medium | ✅ | Math | — |
+| — | Sorted Pair GCD Queries | — | ✅ | Math | — |
+
+---
+
+### 19. Interval — 1/1
+
+| # | Problem | Difficulty | Status | Pattern | Companies |
+|---|---|---|---|:---:|---|---|
+| 1288 | Remove Covered Intervals | Medium | ✅ | Greedy / Sorting | A, G |
 
 ---
 
@@ -1125,4 +1152,4 @@ Code in this repository is provided as-is for learning. Use at your own risk.
 
 ---
 
-*Last updated: July 17, 2026*
+*Last updated: July 18, 2026*
