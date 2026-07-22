@@ -14,12 +14,13 @@ public class MaximizeActiveSectionsWithTradeII {
         }
     }
 
-    public List<Integer> maxActiveSectionsAfterTrade(String s, int[][] queries) {
+    public static List<Integer> maxActiveSectionsAfterTrade(String s, int[][] queries) {
         int n = s.length();
         int[] prefixOnes = new int[n + 1];
         for (int i = 0; i < n; i++) {
             prefixOnes[i + 1] = prefixOnes[i] + (s.charAt(i) == '1' ? 1 : 0);
         }
+        int totalOnes = prefixOnes[n];
         List<Integer> blockLen = new ArrayList<>();
         List<Integer> blockLeft = new ArrayList<>();
         List<Integer> blockRight = new ArrayList<>();
@@ -28,7 +29,7 @@ public class MaximizeActiveSectionsWithTradeII {
         while (i < n) {
             if (s.charAt(i) == '0') {
                 int start = i;
-                while (i < n && s.charAt(i) != '0') i++;
+                while (i < n && s.charAt(i) == '0') i++;
                 blockLen.add(i - start);
                 blockLeft.add(start);
                 blockRight.add(i - 1);
@@ -37,14 +38,13 @@ public class MaximizeActiveSectionsWithTradeII {
         int m = blockLen.size();
         int[] pairSums = new int[Math.max(m - 1, 0)];
         for (int j = 0; j + 1 < m; j++) {
-            pairSums[j] = blockLen.get(j) + blockLeft.get(j + 1);
+            pairSums[j] = blockLen.get(j) + blockLen.get(j + 1);
         }
 
-        SegTreeNode root = pairSums.length > 0 ? build(pairSums, 0, pairSums.length) : null;
+        SegTreeNode root = pairSums.length > 0 ? build(pairSums, 0, pairSums.length - 1) : null;
         List<Integer> ans = new ArrayList<>();
         for (int[] q : queries) {
             int l = q[0], r = q[1];
-            int activeInRange = prefixOnes[r + 1] - prefixOnes[l];
             int bestGain = 0;
 
             int firstBlock = firstBlockTouching(blockRight, l);
@@ -68,13 +68,13 @@ public class MaximizeActiveSectionsWithTradeII {
                 }
             }
 
-            ans.add(activeInRange + bestGain);
+            ans.add(totalOnes + bestGain);
         }
 
         return ans;
     }
 
-    private SegTreeNode build(int[] data, int start, int end) {
+    private static SegTreeNode build(int[] data, int start, int end) {
         SegTreeNode node = new SegTreeNode(start, end);
         if (start == end) {
             node.maxVal = data[start];
@@ -87,13 +87,13 @@ public class MaximizeActiveSectionsWithTradeII {
         return node;
     }
 
-    private int queryMax(SegTreeNode node, int l, int r) {
+    private static int queryMax(SegTreeNode node, int l, int r) {
         if (node == null || r < node.start || node.end < l) return 0;
         if (l <= node.start && node.end <= r) return node.maxVal;
         return Math.max(queryMax(node.left, l, r), queryMax(node.right, l, r));
     }
 
-    private int firstBlockTouching(List<Integer> blockRight, int target) {
+    private static int firstBlockTouching(List<Integer> blockRight, int target) {
         int lo = 0, hi = blockRight.size();
         while (lo < hi) {
             int mid = (lo + hi) / 2;
@@ -103,7 +103,7 @@ public class MaximizeActiveSectionsWithTradeII {
         return lo;
     }
 
-    private int lastBlockTouching(List<Integer> blockLeft, int target) {
+    private static int lastBlockTouching(List<Integer> blockLeft, int target) {
         int lo = 0, hi = blockLeft.size();
         while (lo < hi) {
             int mid = (lo + hi) / 2;
@@ -111,5 +111,30 @@ public class MaximizeActiveSectionsWithTradeII {
             else hi = mid;
         }
         return lo;
+    }
+
+    public static void main(String[] args) {
+        String s = "1000100";
+
+        int[][] queries = {
+                {1, 5},
+                {0, 6},
+                {0, 4}
+        };
+
+        List<Integer> result = maxActiveSectionsAfterTrade(s, queries);
+
+        System.out.println("Input:");
+        System.out.println("s = " + s);
+
+        System.out.println("queries = ");
+        for (int[] query : queries) {
+            System.out.println("[" + query[0] + ", " + query[1] + "]");
+        }
+
+        System.out.println("\nOutput:");
+        System.out.println(result);
+
+        // Expected: [6, 7, 2]
     }
 }
